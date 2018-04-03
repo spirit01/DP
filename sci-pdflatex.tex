@@ -115,7 +115,10 @@
 \usepackage{amsfonts}
 \usepackage{url}      %% Hyperlinks
 \usepackage{mhchem}
+\usepackage{subfigure}
 \usepackage{listings} %% Source code highlighting
+%\usepackage{chemmacros}
+
 \lstset{
   basicstyle      = \ttfamily,%
   identifierstyle = \color{black},%
@@ -131,28 +134,31 @@
 
 
 
-\chapter{Introduction}
+\chapter{Teoretický úvod}
 
-\section{Experiment  X}
-The goal of the thesis was to verify experimental results provided by Mgr. Aleš Stýskalík, PhD. His work was focused on silicophosphates and hypervalent silicon. Concept of hypervalent moleculs is a little bit confusing. It is possible to find a one signification for two different phenomenon. First, hypervalent molecule is a molecule with one or more elements apparently bearing more than eight electrons in their valence shells. Otherwise .... doplním podle literatury
-\subsection{Silicophosphates}
-Silicophosphates are important advanced-technology materials consisting of Si-O-P group most often. Silicon and phosphorus are close together in periodic table of elements hence they have similar size. For this reason, silicon and phosphorus are easily exchangeable in compounds. Both elements occur in minerals and other oxidic materials, generally surrounded by four oxygen atoms in nature. Moreover, they have extraordinary physical properties like Brønsted acidity or high proton conductivity. In future they could be applied as catalysts, electrolytes, optical glasses, and biocompatible materials. Approximative form of silicophosphates is shown in the figure \ref{si_polymer_cely}. \cite{Styskalik2015thesis} Groups of Si-O-P create poors with very variable sizes. However, it is hard to describe the exact structure of silicophosphates because silicophosphates are amorphous structure.
+\section{Experimentální podklady}
+Cílem práce je podat vysvětlení některých experimentálních jevů, které byly pozorovány u silikofosfátových polymerů. Těmto sloučeninám se již dříve věnovala pozornost kolegů z materiálové chemie. Silicofosfátové polymery mají potenciál jako porézní materiály, které obsahují opakující se skupiny Si-O-P\cite{Styskalik2015thesis}.
+Naše pozornost se zameřila na přítomnost hypervalentního křemíku, fosfátových a karbonylových esterů v těchto polymerech. Modely, které měly reprezentovat vybrané části z těchto polymerů, se dělily na dvě části. První část tvořily skutečně pozorované struktury a druhou část tvořily teoretické struktury, kde byly vybrané fosfátové skupiny nahrazeny karbonylem. Důležitým srovnávacím parametrem mezi toeretickými modely a experimentem se stala spektroskopická data, konkrétně NMR parametry.
 
-\subsubsection{Hypervalent silicon}
- Silicon creates binary phases, halides, hydrides or metal organic and organometallic silicon compounds. Silicon in silicophosphates is 4-, 5- and 6- coordinated and displays hypercoordinacy. Chemistry calls higher-coordinated compouds either hypercoordinated or hypervalent compounds. On the other hand, detailed explanation of higher-coordintaed compounds remains limited.
+\subsection{Silikofosfátové polymery}
+ V přírodě se křemík ve svých sloučeninách vyskytuje běžně jako čtyřvazný s přímou vazbou na kyslík a to především ve formě křemičitanů. Zajímavostí je minerál thaumasit, kde se křemík vyskytuje jako \ce{SiO6}. Zjednodušená struktura připravených silikofosfátu je na obrázku \ref{si_polymer_cely}. Ve strukturách byly identifikovány tři druhy koordinačního okolí křemíku. Jeden tetraedricky koordinovaný křemík a dva oktaedricky koordinované křemíky. Silikofosfáty jsou homogenní a amorfní sloučeniny a proto je obtížné určit přesnou strukturu \cite{Styskalik2015thesis}. Důležitou vlastnotstí silikofosfátů je schopnost tvořit vnitřní cykly pomocí skupiny Si-O-P různých velikostí a vytvážet porézní struktury. Ve strukturách byl pozorován jev, že když je kyslík nahrazen uhlíkem přímou vazbou na křemík, tak je ovlivněna nejen velikost cyklů, ale i schopnost jeho koordinace.
 \begin{figure}[h!]
-\caption{Silicophosphat's net \cite{Styskalik2015thesis}. }
+\caption{Silikofosfátová síť, \cite{Styskalik2015thesis}. }
   \center
   \includegraphics[width=12cm]{si_polymer_cely.png}
   \label{si_polymer_cely}
   \end{figure}
-Silicon is similar to carbon, both create fourfold coordinated in most cases. Silicon observes in the third periods thus silicon has sufficient amount of orbitals in order to create five or six bonds. \ce{(SiF6)^{2-}} and \ce{(Si(NH2)2F3)^{2-}} is long known silicon structure with six bonds. First structure were already known in the nineteenth century. In the twentieth century study of silicon's compound expanded, nevertheless advanced structures were developed mostly in the last decade.
-Detail analysis of acquired structure provided information and unsighted into structure and bonding in hypercoordinated silicons structures. \cite{Wagler2014}\\
+  Konkrétní metody příprav slikofosfátových sloučenin jsou uvedeny například v práci Mgr. Aleše Stýskalíka, PhD  \cite{Styskalik2015thesis}.
 
+\subsubsection{Křemík jako hypervalentní sloučenina}
+Sloučeniny, kde se vyskytuje jeden nebo více atomů s více než osmi elektrony (oktet) se nazývají hypervalentní/hyperkoordinované. Sloučeniny zároveň musí být schopné vytvořit více vazeb než je číslo jejich atomových orbitalů. V případě prvků p-skupiny to znamená, že jsou schopny tvořit více než čtyři vazby, obvykle počet vazeb je pět nebo šest. Konkrétně křemík může vytvářet 4-,5- a 6- koordinované sloučeniny a stát se hypervalentní. Silikofosfáty vznikají substitucí křemíku za P-OH skupiny. Díky podobnosti křemíku a fosforu jsou tyto dva atomy ve svých sloučeninách snadno zaměnitelné. \\
 
-\subsubsection{Physical and chemical properties}
-Silicophosphates have unusual physical and chemical properties and they could be used in an industry applications. There is a strong influence of electro-negativity donors in bonds between silicon and donor's elements.  Donors such as C, N, O, F and Cl support increasing coordination of Si. The strongest electronegative element is fluor, hence first structure with hexacoordinated silicon contains six fluors. After that there was developed hexacoodinated structure with oxygen or nitrogen. In contrast, carbon is above silicon and it is capable of very different bonding characteristics. \\
-Creating of hexacoordinated structure determines lewis acidity. Good lewis acid has a vacant orbital, thus structure has enough space to create another bonds. Bond between silicon and oxygens belong to a good lewis acids. In contrast, bond between silicon and carbon is little acidic thus creation hexacoodinated structure is disabled. Pentavalent silicon is better Lewis acid than fourcoordinated structure and supports hypervalency.\cite{Wagler2014}\\
+První hypervalentní sloučeniny křemíku byly připraveny už v devatenáctém století. Jako ligand musely být použity vysoce elektronegativní prvky, tento jev však byl objasněn až mnohem později. V prvních sloučeninách byl elektronegativním ligandem fluor, \ce{(SiF6)^{2-}} a \ce{(Si(NH2)2F3)^{2-}}. Nejvýznamější objevy v oblasti hypervalentních struktur byly ale uskutečněny až v nedávné době a to především díky pokročilejším zobrazovacím analytickým metodám. Podrobnější pohled na hypervalentní struktury křemíku, vazebné poměry a možnosti přípravy jsou shrnuty například v literatuře \cite{Wagler2014}.\\
+
+\subsubsection{Fyzikální a chemické vlastnosti silikofosfátových sloučenin}
+Samotné silikofosfátové polymery mají zajímavé fyzikální a chemické vlastnosti. Příkladem je Brønstedovská kyselost nebo vysoká protonová vodivost. Jedno z možných uplatnění silikofosfátových polymerů mohou být konduktory, elektrolyty, optická vlákna a biokompatibilní materiály. Fyzikální a chemické vlastnosti lze dobře vysvětlit pomocí analýzy molekulových orbitalů. Obecně mají Lewisovské kyseliny prázdné molekulové orbitaly, které leži dostatečně blízko obsazeným MO \footnote{MO = Molekulový orbital} konjugované báze. Vazba mezi křemíkem a jeho ligandem je silně ovlivněna elektronegativitou donorního ligandu. Atomy jako uhlík, dusík, kyslík, fluor nebo chlor podporují navyšování koordinace křemíku. V případě čtyřkoordinovaných sloučenin křemík poskytuje do vazeb všechny své valenční elektorny. Ve vyšším koordinačním stupeni už může křemík poskytnou pouze prázdné orbitaly a proto chová se jako Lewisovská kyselina.\\
+
+Vazbu mezi křemíkem a kyslíkem lze považovat za dobrou Lewisovskou kyselinu. Z experimentu je známo, že \ce{SiO4} je dostatečnou Lewisovskou kyselinou, aby křemík mohl přímo reagovat s Lewivoskou bazí. Pokud je jeden z kyslíku ve struktuře nahrazen uhlíkem, schopnost navyšovat koordinaci je ztracena. Stejný jev pozoroval Aleš Sýskalík a spol. \cite{Styskalik2015thesis} a to vedlo k hypotéze o snížení Lewisovské kyselosti křemíku při tvorbě přímé vazby Si - C. Naopak pětikoordinovaný křemík je lepší Lewisovskou kyselinou než čtyřkoordinovaný a hypervalency podporuje.\cite{Wagler2014}\\
 
 \begin{figure}[h!]
 \caption{\cite{hypervalentsiliconmacmillangroup2005}}
@@ -161,27 +167,36 @@ Creating of hexacoordinated structure determines lewis acidity. Good lewis acid 
   \label{schema_silicon_coordinate}
   \end{figure}
 
+Pro vysvětlení hypervalence křemíku lze použít teorii hybridizace. Obecně se čtykoordinované sloučeniny vyskytují jako tetraedry, hybridizace $sp^3$. Pětikoordinované sloučeniny tvoří trigonální bipyramidu, hybridizace $sp^3d$. A šestikoordinované sloučeniny tvoří oktaedr, hybridizace $sp^3d^2$. (obrázek?) \\
 
- Explanation of penta- and hexavalency was frequently discussed. First explanation of hypervalent coordination was using sp3d2 hybridization. Disadvantages of this claim is high energy of the sp3d2 hybridization. Energy of 3d orbitals is relatively high thus it is accepted that role of 3d orbital is not significant. Permission of pentavalency is determined by 3c-4e bonds, show in figure .... . Hypervalent compounds are more lewis acids because of d+ effect at the central silicon. The reason is transformation of the electron density to the ligands atoms because of non-bonding MO. This electron density distribution stabilizes structure. For this reason electronegative elements occurs in hypervalents compounds. Explanation of this phenomenon gives Ben's rule: "Electronegative elements prefer bonds with more p-character".\cite{hypervalentsiliconmacmillangroup2005} \\
+Čtyřkoordinovaný křemík slňuje tetraedrické uspořádání. Při zvýšení koordinace na pět by měla být pozorována trigonální bipyramida, $sp^3d$. Výskyt $d$ orbitalu ve vazbě ale způsobuje nárust energie vazby na více než 200 kcal/mol. Z tohoto důvodu se předpokládá, že $d$ orbitaly se podílejí pouze na polarizaci porbitalů. Pentavalentní koordinace je poté realizována jako $3sp^2$ hybridizace doplněna třícenterní, čtyřelektronovou vazbou $3c-4e$ s p orbitalem.
+ V případě pětikoordinované sloučeniny se ale spíše uvažuje hybridizace $sp^2$ a jedna vazba $3c-4e$ s p orbitalem, právě kvůli energii $d$ orbitalů. (obrázek?) \\
+ Hypervalentní sloučeniny jsou lepší Lewisovské kyseliny díky d+ efektu na centralním křemíku. Důvodem je přesun elektronové hustoty na ligandy skrz nevazebné MO a podpora $3c-4e$ vazby. Rozložení elektronové hustoty molekulu stabilizuje a z tohoto důvodu se v hypervalentních sloučeninách vyskytují jako ligandy prvky s vysokou elektronegativitou. Tento jev dobře popisuje tzv. Benovo pravidlo:"Elektronegativní prvek dáva přednost vazbe s větším p-charakterem."\cite{hypervalentsiliconmacmillangroup2005}.\\
+Pro křemík v koordinaci šest lze také předpokládat, že význam $d$ orbitalů nebude významný vzhledem k jejich energii. I zde se do vazby zapojí $3c-4e$ vazby\cite{Wagler2014}.\\
 
- Another intepretation of hypercoordination is subsubsection namebased on the higher ionicity of the silicon bonds than in the corresponding tetrahedral species. Moreover, behavior and properties of Si-E compounds strongly depend on atom E and steric and electronis constraints. Behavior of silicon bonds can be divided into ionic, sigma bonds and dative interactions. \cite{Wagler2014}\\
-For this reason we decided to compare Lewis acidity in order to determine stability of parts of silicon. Moreover we wanted to find the parameter, which determines the size of pores. I was interested in molecular orbitals, which could give us a lot of information about molecules, bonds, structure, acidity e.g. Analysis were made by density functional theory, which ranks among quantum chemistry methods. In addition, similar analysis was based on natural bond orbitals, which gets better practical view on chemical bond. Natural bond orbitals help with a transformation from a number to a chemical sense.
+Další možnost interpretace hypervalence je založena na vysoké iontovosti vazby na křemíku. Obecně iontovost s koordinačním číslem roste.
+Navíc chování vazby Si-ligand silně závisí na samotném ligandu a sterickém a elektronovém uspořádání. Hovoříme o Lewisovské kyselosti křemíkové vazby s elektronegativním atomem. Chování křemíku lze rozdělit na iontové, sigma vazebné a donor interakci.\cite{Wagler2014}\\
+
+Z tohoto důvod jsme se rozhodli porovnávat Lewivoskou kyselost, abychom určili stabilitu jednotlivých částí silikofosfátů. Navíc jsme se snažili najít parametr, který by umožnil určit velikost póru v závislosti na okolí křemíku. Jako prostředek ke zkoumání silikofosfátů jsem zvolila molekulové orbitaly, které poskytují široké spektrum informací o molekule, vazbách, struktuře, kyselosti,..  Analýza byla provedena s pomocí teorie funkcionální hustoty(DFT)\footnote{DFT - Density Functional Theory, česky Teorie funkcionálu hustoty}, která se řadí mezi kvatově-chemické metody. Pro porovnání byla stejná analýza udělána s pomocí teorie Přirozených molekulových orbitalů(NBO)\footnote{NBO - Natural Bond Orbitals, česky Přirozené Molekulové orbitaly}. Výhoda přístupu NBO je snadnější převod čísel do chemického významu.
 
 
-\section{Methods of quantum chemistry}
-Chemical properties are obviously determine by electrons. Behavior of electrons is desribed by Schrödiger equation. This is a second-order differential equation and exact solution exists only for system with two particles. Therefor, it is nessesary to use an aproximation in chemical applications. The basis are Born-Oppenheimer aproximation and Slaters determinant. Born-Oppenheimer approximation assumes, that movement of nuclei and electrons can be separated. Wavefunctions is broken into two parts, electronic and nuclear \ref{B_O_approximace}. The solution reduces to 3N spatial coordinates. Furtheremore, nuclei are fixed in a certain configuration, obviously the equilibrium configuration. In the second step we get potencial energy surface for each geometry and Schrödinger equation depends only on 3N spatial coordinates of electrons.
+\section{Metody kvantové chemie}
+Chemické vlastnosti molekul jsou určeny elektrony. Elektrony se řadí mezi elementární částice a proto pro jejich popis nelze použít běžnou newtonovskou mechaniku. Chování elektronů popisuje Schrödingerova rovnice, která se řadí mezi diferenciální rovnice druhého řádu. Její exatní řešení existuje pouze pro velice malé systémy, konkrétně systémy s dvěma částicemi. Z tohoto důvodu je v chemických aplikavích nutno použít zjednodušení. Základem je Born-Oppenhemrova aproximace(B-O) \ref{B_O_approximace}, která předpokládá, že pohyb elektronů a jader lze oddělit a Vlnová funkce elektronů závisí pouze na poloze jader, ne jejich rychlosti. Vlnová funkce se rozpadá na dvě části, elektronovou a jadernou. Řešení se redukuje na 3N prostorových souřadnic. Zároveň je vlnová funkce parametricky závislá na poloze jader, pro každou geometrii jader je získána jiná vlnová funkce. Ve druhém kroku dostaneme plochu potenciální energie (PES)*/footnote{PES - Potential Energy Surface} pro každou geometrii a Schodingerova rovnice najednou závisí pouze na 3N prostorových souřadnících elektornů \cite{lechamolecularmodeling}.
+
+ Dalšík krokem je Hartree-Fockova metoda (HF), někdy nazývána self-konzistentní metoda. HF využívá principů z Hartreeho metody, kdy se elektron pohybuje v časově průměrném poli ostatních elektronů, vlnová funkce je součin jednoelektronových funkcí. Výsledná vlvnová funkce je nalezena s pomocí variačního principu jako ta s nejnižší enenrgií. Orbitaly musí ortogonální a ortonormální.
+ \begin{equation}
+ S_{ii} = \int \psi_i * \psi_i dx dy dz = 1 ~ \wedge ~ S_{ij} = \int \psi_i * \psi_j dx dy dz = 0
+ \end{equation}
+
 \begin{equation}
   \Psi_{total} = \Psi_{electronic} \cdot \Psi_{nuclear}
   \label{B_O_approximace}
 \end{equation}
- Results are energies and configuration of electrons for each geometry of nuclei.
+Výsledkem je energie a uspořádání elektronů pro každou vzájemnou polohu jader.
 \begin{equation}
 \Psi_{total} = \Psi_{electronic} \cdot \Psi_{nuclear}
 \end{equation}
-Slater determinat is one ways to write the Schrödinger equation. Slater determinat consists of atoms orbitals as a product of N one-electron wavefunction. Atoms orbitals must be orthogonal and orthonormal.
-\begin{equation}
-S_{ii} = \int \psi_i * \psi_i dx dy dz = 1 ~ \wedge ~ S_{ij} = \int \psi_i * \psi_j dx dy dz = 0
-\end{equation}
+Původní Hartreeho metoda neobsahovala antisymetrii. Tu později doplnil Vladimir Aleksandrovič Fock a John Slater. Výsledke je Hartree-Fockova metoda self-konzistentního pole(HF-SCF). Nejnižěí energie se hledá pomocí variačního počtu. Vlnovou funkci lze zapsat jako Slaterův determinant, který zaručuje antisymetrii vlnové funkce vůči výměně polohových a spinových souřadnic \ref{Slateruv_determinant}.
 \begin{equation}
 \psi =  \frac{1}{\sqrt{N!}}\begin{vmatrix}
 \psi_1(1)\alpha(1) & \psi_1(1) \beta (1)  & \dots & \psi_{n/2}(1)\beta(1) \\
@@ -191,57 +206,59 @@ S_{ii} = \int \psi_i * \psi_i dx dy dz = 1 ~ \wedge ~ S_{ij} = \int \psi_i * \ps
 \end{vmatrix}
 \label{Slateruv_determinant}
 \end{equation}
-The next step is Hartre-Fock method (HF), sometimes it is called self-consisted method. HF use the principles from simply Harrtre method. Harrtree method calculates the final field from the average field of electrons. Focks equations gives the antisymmetry of wavefunction, thus Hartree-Fock methods. It doesn't contain correlation of electron's movements. Extension of HF methods are Many-Body Pertrubation theory (MBPT), Configuration Interaction (CI), Coupled
-Cluster methods (CC). Time complexity of those methods is shown in the picture. Advantage of methods is accuracy.
-The most suitable energy is minimal energy. Minimal energy can be found using a variation principe.
+$\psi_i$ je jednoelektronová vlnová funkce, $s_j$ jsou elektrony, $\sqrt{N!}$ je normalizační faktor.
+ Nevýhoda HF-SCF přístupu je fakt, že neuvažuje korelaci elektronového pohybu. Tento jev v sobě zahrnují metody, které jsou rozšířením HF, jako například poruchova teorie (MBPT)*/footnote{MBPT - Many-Body Pertrubation theory}, metoda konfigurakční interakce (CI)*/footnote{Configuration Interaction} nebo clustrové metody (CC)*/footnote{Coupled
+Cluster methods}. Časová složitost těchto metod je uvedena na obrázku. Velkou výhodou těchto metod je jejich přesnost, bohužel vzhledem k časové náročnosti je lze použít pouze pro malé systémy.
 
+\subsection{Bázové funkce}
+Data z experimentu mohou pomoci s výběrem vhodné výpočetní metody. Jedním z přístupů je model bázových funkcí, kdy jsou MO hledány jako kombinace sady bázových funkcí. Podle postulátu QM o úplných vlastních hodnotách uplných Hermitovských operátorů lze každý molekulový orbital sestrojit jako lineární kombinaci atomových orbitalů, tzv. LCAO*/footnote{LCAO - Linear Combination of Atomic Orbitals.}. Konkrétně jsou AO sestaveny jako kombinace orbitalů Gaussovského (GTO) nebo Slaterova typu(STO).
+Kompletní sada bázovýchh funkcí obsahuje nekonečně mnoho funkcí, což dělá problém neřešitelný. Vhodný konečný počet funkcí byl určen s pomocí ladění chyb a poskytuje dostatečně přesné výsledky za příměřenou cenu. Každá elektronové korelačních metod škáluje rozdílně podle počtu elektronů(určeno počty obsazených MO) a podle sady bázových funkcí (počet neobsazených, virtuálních, MO).\\
+Minimální sada bázových funkcí v sobě obsahuje elektrony v základním stavu. Naopak rozšířená sada bázových funkcí v sobě obsahuje polorizační funkce nebo difúzní funkce. Typ bázových funkcí mohou být vodíkového typu, GTO nebo STO. Nevýhoda funkcí vodíkového typu je délka výpočtu. STO oproti tomu nemají žádné radiální uzly a jejich sčítání není lineární. Vhodnou aproximací jsou orbitaly gaussovského typu, které sice nemají vhodné chování na jádře, ale platí pro ně pravidlo, že součet GTO je opět GTO.\cite{lowe2011quantum}
 
-\subsection{Basis Sets}
- Experimental data helps to select computational methods. One of this approach is a model of basis sets. Molecular orbitals are searched for as a combination of basis function's set.
-According to a qantum mechanics postulate on the completencess of hermitian operator eigenvalue set, any molecular orbitals can be expressed as na linear combination of atoms orbitals (LCAO). The atom orbitals are concentionally expressed as linear combinations of GTOs and STOs.
- However, a complete basis set consists of an infinite number of function which makes the solution of the problem unachievable. Thus, suitable finite basis sets have been developed which, via a proper blance in error cancellation, provide sufficienty accurate results at a reasonable price. Each of the available electron correlation methods has a differennt computational scaling with the number of electrons (determing the number of occupied MOs) and basis sets (determing the number of virtual MOs).
+Sada bázových funkcí přirozených atomových orbitalů je příkladem zmenšením báze. Přirozené orbitaly jsou takové, které diagonalizují matici hustoty a počet elektronů v orbitalu odpovídá obsazovacímu čísli.
 
-Minimum basis set contains electrons in a ground state. On the other side, expanding basis set consists polarizations functions or diffuse function. Basic types of basis set for atoms orbitals are hydrogen function, Slaters function and Gaussian function. The disadvantage of hydrogen function is duration. STO does not have any radial nodes and it scales not linearly. An appropriate approximation is Gaussians orbitals. Advantages are sum of GTO is also GTO. On the contrary, it misinterpreted behaviour on the nuclei.\cite{lowe2011quantum}
-Atomic Natural Orbitals Basis Sets is an example of contraction basis. Natural orbitals diagonalize the density matrix. The number of electrons in an orbital is an orbital occupation number.
-\subsubsection{Effective Core Potential Basis Sets}
-A system with a large number of core electrons, obviously after the third period, is time-consuming. From the point of view of chemical bonding, explicit inclusion of core electrons is much less important. The same situation occurs with too many atoms in the system. Simply, system or molecules are too large. In both cases, core electrons are modelled by a suitable function. ECP has four major steps. First, all electron wave function is generated for an atom with Hartree-Fock calculation. Valence orbitals are replaced by a set of nodeless pseudo-orbitals.
-
+\subsubsection{Effective Core Potential Basis Sets (ECP)}
+Systém s velkým počtem core, vnitřních, elektronů, jsou časové náročné. Často to jsou prvky za třetí periodou. Z pohledu chemické vazby je možno vliv core elektronů považovat za méně důležitý. Stejná situace nastává ve chvíli, kdy je v systému příliš mnoho elektornů. Jednoduše, systém je příliš velký. V obou případech lze použít funkci, ktra bude modelovat chování core elektronů. ECP má čtyři hlavní kroky. Prvním krokem je, že vlnová funkce pro všechny elektrony je vytvořdna s pomocí HF metody. Valenční orbitaly jsou nahrazeny skupinou psudoorbitalů bez nodálních ploch.
 
 \section{Density functional theory (DFT)}
-The electronic structure of any system of chemical interest is desribed by the many electrons wavefunction. The three way of describing electron correlations are to be discussed in section 1.2. Here I would just say that the traditional ab inito ways of including elctron correlation have two basis disadvantages: computational requirements and conceptual complexity.
+Elektronová struktura každého chemického systému je popsána jako mnohoelektornová funkce. Tři možnosti korelace pohybu elektronů jsou popsány v kapitole ... . Tady bych ráda zmínila, že tradiční ab inito metody zahrnující elektronové korelace mají dvě nevýhody, výpočetní náročnost a složitost.
 
-Density functional theory\footnote{In mathematical analysis, it refers to a mapping from a vector space V into a field such as the real or complex numbers.} attempts to provide a solution for larger systems. The concept DFT is ingenious in looking at the electron structure from a completely different perspective.
- DFT is a quantum mechanical modelling used in chemistry, physics and materials science.  Between electrons density of system and energy exists correspondence. Advantages of DFT include, that it is a function of three variables, independent on the number of electrons thus a number of variables are independent of the system size.  Correlation energy is part of the result from DFT. Energy is determined as a functional of electronic density. Exact functional between energy and electron density is not known yet. Functional could be divided into three parts, as a wavefunction. Kinetic energy, an attraction between the nuclei and electrons and electron-electron repulsion. E-E repulsion consists of Coulomb part and Exchange part. This model is an approximation for electron gas, for this reason, it is inapplicable in chemistry. On the other hand, it is an appropriate method to start.
+Teorie funkcionálu hustoty\footnote{Z matematické analýzy je funkcionál operátor zobrazení z množiny funkcí do množiny obecně komplexních čísel.}poskytuje řešení pro velké systémy. Myšlenka DFT dává pohled na elektronovou strukturu z úplně jiného úhlu. DFT je kvantově mechanické modelování používané v chemii, fyzice a materiálových vědách. Existuje spojitost mezi elektronovou hustotou systému a jeho energií.
+Výhodou DFT přístupu je fakt, že funkcí pouze tři souřadnic, nezávislé na počtu elektronů a počet proměnných je nezávislý na velikosti systému. Jeden z výsledků DFT je korelace energie. Energie je určena jako funkce elektronové hustoty. Přesný funkcionál mezi energii a elektronovou hustotou není doposud znám. Funkcionály lze rozdělit do tří částí, stejně jako vlnovou funkci. Kinetická energie, přitahování elektronů a jader a repulze mezi elektrony(E-E). Elektronová repulze se skládá z Columbovské části a Výměnné části. Tento model je aproximací pro elektronový plyn, z tohoto důvodu je pro chemii nepoužitelný. Na druhou stranu je to dobrý model, kde lze začít.
 
-The disadvantage is a non-interacting uniform electron. Error in total energy is 15-50\%. Molecules and bonds don't exist in this model.\cite{jensen2007introduction}
 
-Contemporary DFT methods were born in 1964 as the result of two theorems. It took almost 40 years from Thomas-Fermi models. The first Hohenberg-Kohn theorems(H-K) speaks about ground state. The external potential $V_ext$ is a unique functional of $\varrho$. All properties of the ground state of many electrons system are determined by an electronic density. On the other hand, it must be said, that density determines just ground state. The density of excited state cannot be used. It depends only on three spatial coordinates and due to it is better for larger systems.
-Electron density is provided by the second theorem. Moreover, the second theorem proves, that founded density is the only one right. It uses variation principle to determine electron density without wavefunction. Right electron's density must have lowest and the most exact energy. The energy of exact ground state must be lower than energy of others electron's density. Weakness is the kinetic energy of electrons, correlations and exchange effects. For computational chemistry are much better Kohn-Sham's orbital. Kinetic energy is split into two parts. One exacts part and correction term.\cite{jensen2007introduction}\cite{koch2000chemist}
-Slater determinant corresponds to interacting electrons. Exact kinetic energy is connected with natural orbitals.
+Nevýhoda modelu bez interakcí je celková chyba, která dosahuje 15-50\%. V tomto modelu nelze mluvit o existenci molekul.\cite{jensen2007introduction}
 
-Minimum of the energy functional represents the ground state of many-electron system.
+Moderní DFT metody se začaly objevovat po roce 1964 jako výsled dvou teorému. Trvalo to bezmála 40 let od modelu elektronového plynu. Prvním je Hohenberg-Kohn teorém (H-K), který mluví o základním stavu. Vnější potenciál  $V_ext$ je jednoznačnná funkce elektronové hustoty $\varrho$. Všechny vlasnosti základního stavu mnohaelektronového systému jsou určeny elektronovou hustotou. Nevýhodou je, že elektronovou hustotou je určen pouze základní stav a pro excitované stavy jej nelze použít.
+
+Samotná elektronová hustota je výsledkem druhého teorému. Ten říká, že nalezená elektornová hustota je jediná správná. Využívá variačního principu pro určení elektronové hustoty bez vlnové funkce. Správná elektronová hustota musí mít nejnižší energii a nejpřesnější energii. Energie excitovaného stavu musí být nižší než energie elektroové hustoty ostatních elektronů. Pro výpočetní chemii mají větší význam Kohn-Shamovy orbitaly. Kinetická energie se rozpadá na dvě části. Exaktní a korekční část. \cite{jensen2007introduction}\cite{koch2000chemist}
+Slaterův determinant odpovídá interakci elektronů. Přesná kinetická energie je spojená s přirozenými orbitaly. Funkcionál pro nejmenší energii představuje základní stav mnohaelektronvého systému.
+
 \begin{equation}
   E[\varrho] = \int \varrho(r)v(r)dr + F[\varrho] \quad F[\varrho] = T[\varrho] + V_{ee}[\varrho]
 \end{equation}
-Tomas-Fermi model lose accurac because it uses an electron density alone. Kohn-Sham indirect approach to the kinetic energy $T[\varrho]$ is ingenious and turn density functional theory into a practical tool for rigorous calculations. \cite{parr1994density}
+Tomas-Fermi model ztrácí přesnost, protože uvažuje eletronovou hustotu samostatně. K-S ke kinetické energii  $T[\varrho]$ přistupuje nepřímo a umožňuje použít DFT pro praktické použití při výpočtech. \cite{parr1994density}
 
-\section{Natural Bond Orbital}
-There are many types of analysis molecular wavefunction. SCHE provides energy for each wavefunction. Wavefunction describes position of electrons and nuclei. It is possible to determine whether two atoms are bonded? A good example of parameters which could provide molecular properties is an atomic charge. Common methods for assigning a charge to a given electron is an analysis based on basics function, electrostatic potential, wavefunction, localized orbitals or natural bond orbitals. The first excess uses MO and DS(density matrix) and Mulliken Population Analysis. Mathematical it is hard to indicate the bests result. Set of population charges does not correspond to real multipole moments,...  The charge could be much better described with electrostatic potential. The charge is deeply rooted in force field method. Non-bonded interaction is described in term of electrostatic interaction. the mathematically accurate method is AIM (atoms in the molecule). Electron density could be analyzed as a normal function - maxima, minima or saddle points. The border between two atoms in three-dimensional space is spacious with two dimensions. Another approach is Localized Orbitals. The last on is Natural Orbitals (NO). The first-order density matrix is diagonalized and its eigenvectors are called Natural orbitals. Eigenvalues are occupation number. Natural orbitals provide the fastest convergence. Natural bond may describe distribution of electron and derive atomic charge and molecular bonds.\cite{jensen2007introduction}
+\section{Přirozené orbitaly (NBO)}
+Přirozené molekulové orbitaly \footnote{NBO - Natural Bond orbital} jsopou odlišným pohledem na chemickou vazbu. Existuje spoustu přístupů k analýze vlnové funkce. Schrödingerova rovnice určuje energii pro každou vlnovou funkci. Vlnová funkce určuje pozici elektronů i jader. Jak je možné určite, zda jsou dva atomy spojené vazbou? Dobrým příkladem parametru, který lze použít pro určení vlasnosti molekul je atomový náboj. Obvyklé metody pro přiřazení náboje elektronu je analýza založená na bázových funkcí, elektrostatické potenciálu nebo vlnové funkci, lokalizovaných orbitalech nebo přirozených orbitalech. \\
+První přístup používá MO a matici hustoty (DS)\footnote{DS - Density Matrix} a Mullikenovu populační analýzu. Čiste matematikcým přístupem je těžké určit správný výsledek. Sada populačních nábojů neodpovídá skutečným multipole moment.
 
+Lepší přístup pro popis náboje je elektrostatický potenciál. Náboj je silně spojen s force field method. Nevazebné interakce josu popsány jako část elektrostatické interakce. Cčsitě matemtický přístup poskytuje metoda AIM\footnote{AIM = Atoms in Molecules}. Elektronová hustota může být vyhodnocena jako normální funkce, která má své minimum, maximum nebo sedlové body. Hranice mezi dvěma atomy v tři dimenzionálním prostoru prostorem s dvěmi dimenzemi. \\
+Dalším způsobem vyhodnocení jsou Lokalizované Orbitaly (NO).  První řád matice je diagonalizován a jeho vlastní vektory jsou označeny jako přirozené orbitaly. Vlastní hodnoty jsou obsazovací čísla. NO dávájí nejrychlejší konvergenci a mohou popsat rozložení elektronů v atomech a odvození atomového náboje a vazby.  \cite{jensen2007introduction} \\
+ NO jsou teoretickým zjednodušením, které určuje elektronovou hustoty v atomech a  tento přístup odpovídá přístupu Lewisovských struktur. NO byly objeveny v roce 1955 Per-Olov Lödwin. NO mohou být vyvořeny z Slaterova determinantu. K-S nemají fyzikální význam a je zde problém s interpretací výsledků. Ale platí, že HF i K-S orbitaly mohou být použity pro tvorbu sady přirozených vazebných orbitalů. Přiozené orbitaly jsou vytvořeny diagonalizací matice hustoty
+(NBO program)
 
-Natural Orbitals are theoretical approximation which determines electron density in atoms. This approach corresponds with Lewis structures. Natural Orbitals were introduced in 1955 by Per-Olov Lödwin. Orbitals could be created from Slaters determinant. Obviously, Kohn-Sham orbitals do not have physical meaning and there is a problem with interpretation. Although, HF and K-S orbitals could be used for a better set of orbitals, called natural bond orbital. Natural orbitals are created by diagonalising the distance matrix. (NBO program)
+Lepší sada orbitalů se nazývá "přirozené" a jsou schopné zahrnout korelaci $\varrho$(r). Přirozené orbitaly mají maximální ovsazenost a jsou určené ze samotné vlnové funkce.
 
-Better set orbitals are called 'natural' and they are able to describe correlation $\varrho$(r). Natural orbitals have maximum occupancy and they are determined from wavefunction itself.
+\section{Tvrdost a měkkost kyselin a báze}
+Chemickí tvrdost a měkkost má pro experimentální chemii velký význam . S pomocí analýzy tvrdosti/měkkost může být predikován produkt reakce a jeho stabilita. Bylo pozorováno, že reakce dvou tvrdých molekul poskytuje stabilní produkt, stejně to platí i pro reakci dvou měkkých molekul. \\
+Globální tvrdost a měkkost můžou být použity pro celou molekulu. Jednotlivé atomy mají tvrdost a měkkost lokální. Tuto vlastnost lze interpretovat jako lokální náboj. Globální vlastnosti pochází z energie HOMO a LUMO orbitalů. Určení lokálních vlastností je obtížné, protože jsou spojeny s Fukuiho rovnicí. Ty popisují, který atom v molekule přijme nebo ztratí elektron. Chemická interpretace je schopnost nuklefilního nebo elektrofilního útoku. Stejně dobře to popíše externí elektrické pole a polarizace. Toto je přímo spojené s elektronovou hustotou a DFT metodami.
 
-\section{Hard and Soft Acid and Basis in theory}
-Chemical hardness and softness are significant for experimental chemistry. Stability of reaction product could be predicted by hardness and softness of molecule. It is observed that hard molecule with hard molecule should give the stable product as well as a soft molecule with the soft molecule. Global softness and global hardness are both used for the whole molecule. Individual atoms have local softness and hardness. It could be interpreted as a local charge. Those parameters can be indirectly obtained from ab initio calculation. Global properties come from energies of HOMO and LUMO orbitals. Local properties are a little bit difficult. Local properties are dealing with calculated Fukui equation. Fukui functions
-describe which atoms in a molecule will lose or accept an electron. It is something like reactivity indices. Chemical interpretations are the ability of a nucleophile or an electrophilic attack. As well as it tells us behaviour in external electric field and polarization. This is connected with electron density and DFT methods.
-
-Electrophilicity of atom A in molecule M with N electrons.
+Elektrofilita atomu A v molekule M s N elektrony.
 \begin{equation}
 f_A^+ = P_A(N+1) - P_A(N)
 \end{equation}
-Nucleophilicity of atom A in molecule M with N electrons
+Nuklefilita atomu A v molekule M s N elektrony.
 \begin{equation}
 f_A^- = P-A(N) - P_A(N-1)
 \end{equation}
@@ -250,9 +267,44 @@ Radical attack susceptibility of atom A in molecule M with N electrons.
 f_A^0 = \frac{1}{2}[P_(N+1) - P_A(N-1)]
 \end{equation}
 
-Finding occupation number on each atom is really sensitive to the selection of basis sets. A large basis set gives wrong results.
+Nalezení obsazovacího čísla na každém atommu je citlivé na výběru baze. Příliš velká baze dává špatné výsledky.
 
-\section{•}
+
+\section{Výpočetní část}
+Výpočetní část byla rozdělena do tří částí. První část se zabývá stukturami, druhá část dává podrobnější pohled na vazby ve zvolených strukturách a třetí, poslední, část se zaměřuje na spektroskopii.
+Cílem strukturní bylo modelovat části struktur silikofosfátů metodami DFT. Struktura silikofosfátu byla rozdělena do tři skupin, aby co nejlépe popsala jevy, které se tam objevují. Vazby byly analyzovány metodou NBO a analýzou složení kanonických orbitalů. Poslední část, která se věnuje spektroskopii, dává pohled na NMR parametry.
+
+\subsection{Struktury}
+Struktury pro teoretickou část jsou rozděleny podle velikosti a zároveň podle stupně koordinace křemíku.
+\subsubsection{Malé modely}
+
+\subsubsection{Středně velké modely}
+Tato část se věňuje nejmenším možným modelům, které již tvoří uvnitř svých struktur cyklus. Jako referenční molekula byl použita \ce{(acetylmethoxyl)trifluorsilan} z článku \ref{Chipanina2011}. Strutktura \ce{(acetylmethoxyl)trifluorsilan} slouží jako model křemíku v koordinaci čtyři, který má ve svém okolí vysoce elektronegativní atomy. To podporuje teoretické předpoklady o hypervalenci křemíku, pokud má ve svém okolí silně elektronegativní prvek.
+\begin{figure}
+\begin{center}
+\subfigure[(acetylmethoxyl)trifluorsilan]{\includegraphics[width=5cm]{acetylmethyltrifluor.png} \label{obr_h4sio4_MO_s1_1}}
+\subfigure[]{\includegraphics[width=5cm]{si_model_methyl.png}\label{obr_h4sio4_MO_s1_20}}
+\subfigure[]{\includegraphics[width=5cm]{si_model_orezany.png}\label{obr_h4sio4_MO_s1_24}}
+\caption{}
+
+\label{obr_h4sio4_vysledky_I}
+
+
+
+\end{center}
+\end{figure}
+Pro zvolené sloučeniny byla provedena analýza kanonických orbitalů, výsledky jsou uvedeny v tabulce.
+\subsubsection{Velké modely}
+
+
+
+
+\subsection{Vazby}
+
+\subsection{Spektroskopi}
+
+
+
 
 
 
