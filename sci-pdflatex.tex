@@ -115,6 +115,7 @@
 \usepackage{amsfonts}
 \usepackage{url}      %% Hyperlinks
 \usepackage{mhchem}
+\usepackage{chemfig}
 \usepackage{subfigure}
 \usepackage{listings} %% Source code highlighting
 \usepackage{braket}
@@ -136,31 +137,64 @@
 
 
 
-\chapter{Teoretický úvod}
+\chapter{Úvod}
 
 \section{Experimentální motivace}
-Cílem této práce je podat vysvětlení některých experimentálních jevů, které byly pozorovány u silikofosfátových polymerů. Studium vysoce porézních silikofosfátů je jedním ze zaměření skupiny anorganické a materiálové chemie na tomto ústavu .
-Naše pozornost se zameřila na přítomnost hypervalentního křemíku v jednotlivých strukturách, tj. v šesti nebo pěti koordinovaného. Postupnějsme hlavní otázku, řešenou v této práci, zformulovali do následující podoby: Jaká je souvislost mezi kombinací ligandů na čtyřkoordinovaném Si a Lewisovskou kyselostí těchto čtyřkoordinovaných sloučenin, vedoucí ke sklonu křemíku zvýčit svoji koordinaci na pět nebo šest. Modely, které měly reprezentovat vybrané části z těchto polymerů, se dělily na dvě části. První část tvořily skutečně pozorované struktury a druhou část tvořily teoretické struktury, kde byly vybrané fosfátové skupiny nahrazeny karbonylem. Důležitým srovnávacím parametrem mezi toeretickými modely a experimentem se stala spektroskopická data, konkrétně NMR parametry.
+Cílem této práce je podat vysvětlení některých experimentálních jevů, které byly pozorovány u silikofosfátových polymerů. Studium vysoce porézních silikofosfátů je jedním ze zaměření skupiny anorganické a materiálové chemie na našem ústavu .
+Studie prezentované v této práci se zaměřuje na na přítomnost hypervalentního pěti nebo šestikoordinovaného křemíku v jednotlivých strukturách. Postupně jsme hlavní otázku, řešenou v této práci, zformulovali do následující podoby: Jaká je souvislost mezi kombinací ligandů na čtyřkoordinovaném Si a Lewisovskou kyselostí těchto čtyřkoordinovaných sloučenin, vedoucí ke sklonu křemíku zvýšit svoji koordinaci na pět nebo šest ligandů. Modely reprezentují vybrané části z těchto polymerů a dělí se na dvě části. Anomální struktura silikofosfátových xerogelů neumožňuje jejich přímou strukturní charakterizaci. Modely navržené v této práci byly motivovány rentgenovými struktruami analogickýxh periodických struktur \cite{C3NJ00721A} anebo příbuznými strukturami \cite{Chipanina2011}(zde myslíte struktur s fluorem?)Dále byla využita data z NMR spektroskopie, z nichž byly odvozeny informace o výši koordinace křemíku a složení ligandů(fosfátové vs. organické estery) \cite{Styskalik2015thesis}.
+
 
 \subsection{Silikofosfátové polymery}
-Nejčastější formou výskytu křemíku v přírodě jsou křemičitany, sloučeniny obsahující křemík tetraedricky koordinovaný čtyřmi atomy kyslíku. Existují však i minerály s vyšší koordinací, např. thaumasit.[doplnit odkaz] Vzhledem k vysokému významu křemíku v přírodě jsou sloučeniny typu \ce{Sio2} rozsáhle připravovány a studovány i laboratorně. Čisté křemičitany \ce{SiO2} je hned po vodě nejvíce studovanou sloučeninou. Zároveň jsou studovány také hlinitokřemičitany a fosfokřemičitany. Obě zmíněné skupiny jsou charakteristické svojí trojrozměrnou  porézní strukturou.
-V ústavu anorganické a materiálové chemie jsou připravovány silikofosfáty. Zjednodušená struktura připravených silikofosfátu je na obrázku \ref{si_polymer_cely}. Ve strukturách byly identifikovány tři druhy koordinačního okolí křemíku. Jeden tetraedricky koordinovaný křemík a dva oktaedricky koordinované křemíky. Silikofosfáty jsou amorfní sloučeniny a proto je obtížné určit přesnou strukturu \cite{Styskalik2015thesis}. Důležitou vlastnotstí silikofosfátů je schopnost tvořit vnitřní cykly pomocí skupiny Si-O-P různých velikostí a vytvážet porézní struktury. Celé kruhy jsou tvořeny obvykle osmi atomy, příklad vazeb je uveden na obrázku \ref{si_polymer_cely}.
- Ve strukturách byl pozorován jev, že když je kyslík nahrazen uhlíkem přímou vazbou na křemík, tak je ovlivněna nejen velikost cyklů, ale i schopnost jeho koordinace. Práce, které se věnují přípravě silikofosfátových polemrů na ústavu anorganické a materiálové chemie jsou například \cite{1401364}, \cite{1349974}, \cite{1393656}.
+Nejčastější formou výskytu křemíku v přírodě jsou křemičitany, sloučeniny obsahující křemík tetraedricky koordinovaný čtyřmi atomy kyslíku. Existují však i minerály s vyšší koordinací, např. thaumasit.[doplnit odkaz] Vzhledem k vysokému významu křemíku v přírodě jsou křemičitany rozsáhle připravovány a studovány i laboratorně. Oxid křemičitý \ce{SiO2} je po vodě nejvíce studovanou sloučeninou. Díky tomu, že \ce{Si^4+} je velikostně snadno zaměnitelný za \ce{Al^3+} nebo \ce{P^5+}, vznikají pak hlinitokřemičitany, obsahující Si-O-Al, (zeolity) nebo fosfokřemičitany, obsahující Si-O-P, tj. silikofosfáty. Obě skupiny molekul jsou rozsáhle studovány. Zmíněné skupiny jsou charakteristické svojí trojrozměrnou  porézní strukturou. Naše pozornost je v této práci soustředěna na silikofosfáty. Předpokládaná struktura připravených silikofosfátů studovaných v předchozích experimentálních prací je znázorněna na obrázku \ref{si_polymer_cely} \cite{Styskalik2015thesis}. Charakteristickou vlastnotstí struktur silikofosfátů je uspořádání jednotek Si-O-P do cyklů. Ačkoliv nejnovější struktura zahrnuje dvanáctičlenové cykly vzniklé trojnásobným opakování motivu Si-O-P-O (Pinkas et. aln Inorganic Chemistry), struktury s hypervalentním křemíkem obsahují osmičlenné cykly vzniklé dvojnásobným opakování jednotky Si-O-P-O[Pinkas]. Obrázek \ref{si_polymer_cely} znázorňuje předpokládanou strukturu silikofosfátového xerogleu se třemi druhy křemíkových center (koordinace čtyřmi fosfáty, šesti fosfáty, anebo čtyřmi fosfáty a dvěma organickými estery současně) a osmičlennými cykly Si-O-P. Stupeň koordinace křemíku a současně velikost pórů se ukázala být silně závislá na typu prekurzoru. Pokud byl ve výchozích sloučeninách jeden z fosfátů nahrazen methylovou skupinou přímo vázanou na křemík, ve výsledném xerogelu se nevyskytovay oktaedricky koordinované křemíky a velikost pórů byla větší. Silikofosfátové cykly jsou pak dále organizovány do vyšší stuktury skeletu mikroporézního (šířka pórů doo 2 nm) až mezoporézního (šířka póru 2-50 nm).
 \begin{figure}[h!]
 \caption{Silikofosfátová síť, \cite{Styskalik2015thesis}. }
   \center
   \includegraphics[width=12cm]{si_polymer_cely.png}
   \label{si_polymer_cely}
   \end{figure}
-  Konkrétní metody příprav slikofosfátových sloučenin jsou uvedeny například v práci Mgr. Aleše Stýskalíka, PhD  \cite{Styskalik2015thesis}.
+  Konkrétní metody příprav slikofosfátových sloučenin jsou uvedeny například v práci Aleše Stýskalíka  \cite{Styskalik2015thesis}.
 
 \subsubsection{Křemík jako hypervalentní sloučenina}\label{teorie_hypervalence}
-Sloučeniny, kde se vyskytuje jeden nebo více atomů s více než osmi elektrony (oktet) se nazývají hypervalentní/hyperkoordinované. Sloučeniny zároveň musí být schopné vytvořit více vazeb než je číslo jejich atomových orbitalů. V případě prvků p-skupiny to znamená, že jsou schopny tvořit více než čtyři vazby, obvykle počet vazeb je pět nebo šest. Konkrétně křemík může vytvářet 4-,5- a 6- koordinované sloučeniny a stát se hypervalentní. Silikofosfáty vznikají substitucí křemíku za P-OH skupiny. Díky podobnosti křemíku a fosforu jsou tyto dva atomy ve svých sloučeninách snadno zaměnitelné. \\
+Podle klasické teorie AO mohou $p$ prvky tvořit čtyři vazby. Z experimentálních pozorování je ale známo, že prvky $p$  tvoří i více než čtyři vazby, obvykle pět nebo šest. Příklady?
+Sloučeniny, kde se vyskytuje jeden nebo více atomů s více než osmi elektrony (oktet) se nazývají hypervalentní/hyperkoordinované. Sloučeniny zároveň musí být schopné vytvořit více vazeb než je číslo jejich atomových orbitalů. Konkrétně křemík může vytvářet 4-,5- a 6- koordinované sloučeniny a stát se hypervalentní.  \\
+Existující, experimentálně připravené Hypervalentní sloučeniny s křemíkem lze rozdělit podle jednotlivých ligandů a jejich poloze v periodické tabulce. Křemík je schopen tvořit hypervalentní sloučeniny s fluorem, příkladem může být struktura  \ce{(SiF6)^{2-}} \ref{si_f6} \cite{memoriesphysiquelussac}. Tato struktura byla připravena v 19. století a považuje se za první připravenou sloučeninu křemíku v koordinaci šest. Pokud budeme postupovat ve skupine halogenů dolů, dalším ligandem by měl být logicky chlor. Sloučenina \ce{SiCl6^{2-}} není známá, naopak \ce{GeCl6^{2-}} ano. Schopnost atomu tvořit hypervalentní sloučeniny roste ve skupině dolů. Germanium má tedy vysokou schopnost tvořit hypervalentní sloučeniny, křemík ovšem potřebuje ligand s výrazně vyšší elektro elektronegativitou. Hypervalentní sloučeniny s chlorem byly proto připraveny až později, například \ref{si_cl_o} \cite{LAZAREV199716}.\\
+Díky relativně vysoké elektronegativitě může fluor nahradit kyslík \ref{si_o_f}, \cite{C0DT01115K}.\\
+Sloučenina, kde je křemík obklopen fluorem a dusíkem \ref{si_f_n}, \cite{C0DT01115K}.\\
+Fluor s kyslíkem a vodíkem \ref{si_fluor_vodik_kyslik} \cite{BOYER19812165}.\\
+Křemík s fluorem a uhlíkem \ref{si_with_fluor_carbons} \cite{kremikfluorcarbon}.\\
+Křemík s fluorem a dusíkem \cite{si_f_n}.\\
+Křemík pouze s kyslíkem v koordinačním okolí \ref{si_only_o}, cite{flyn1969}. Strukutra \ce{Sio6} se vyskytuje také v minerálu thaumasite \cite{Edge:a08100}.\\
 
-První hypervalentní sloučeniny křemíku byly připraveny už v devatenáctém století. Jako ligand musely být použity vysoce elektronegativní prvky, tento jev však byl objasněn až mnohem později. V prvních sloučeninách byl elektronegativním ligandem fluor, \ce{(SiF6)^{2-}} a \ce{(Si(NH2)2F3)^{2-}}. Nejvýznamější objevy v oblasti hypervalentních struktur byly ale uskutečněny až v nedávné době a to především díky pokročilejším zobrazovacím analytickým metodám. Podrobnější pohled na hypervalentní struktury křemíku, vazebné poměry a možnosti přípravy jsou shrnuty například v literatuře \cite{Wagler2014}.\\
+Křemík s kyslíkem, uhlíkem a dusíkem \ref{si_n_o_c}, \cite{Wagler2014}.\\%TODO
+Křemík s pouze s kyslíkem a dusíkem \ref{si_o_n} \cite{Wagler2014} .
+Křemík pouze s uhlíke \ref{si_only_c}, \cite{A901953G}.
+ \cite{Wagler2014}.
+ \begin{figure}
+ \begin{center}
+   \subfigure[]{\includegraphics[width=2cm]{si_f6.png}\label{si_f6}}
+ \subfigure[]{\includegraphics[width=3cm]{si_cl_o.png}\label{si_cl_o}}
+ \subfigure[]{\includegraphics[width=5cm]{si_o_f.png}\label{si_o_f}}
+ \subfigure[]{\includegraphics[width=3cm]{si_f_n.png}\label{si_f_n}}
+ \subfigure[]{\includegraphics[width=5cm]{si_with_fluor_carbons.png} \label{si_with_fluor_carbons}}
+ \subfigure[]{\includegraphics[width=5cm]{si_only_o.png} \label{si_only_o}}
+ \subfigure[]{\includegraphics[width=5cm]{si_n_o_c.png}\label{si_n_o_c}}
+
+
+ \subfigure[]{\includegraphics[width=5cm]{si_fluor_vodik_kyslik.png} \label{si_fluor_vodik_kyslik}}
+ \subfigure[]{\includegraphics[width=5cm]{si_o_n.png} \label{si_o_n}}
+ \subfigure[]{\includegraphics[width=5cm]{si_only_c.png} \label{si_only_c}}
+
+ \label{obr_h4sio4_vysledky_I}
+
+
+
+ \end{center}
+ \end{figure}
+
+
 
 \subsubsection{Fyzikální a chemické vlastnosti silikofosfátových sloučenin}
-Samotné silikofosfátové polymery mají zajímavé fyzikální a chemické vlastnosti. Příkladem je Brønstedovská kyselost nebo vysoká protonová vodivost. Jedno z možných uplatnění silikofosfátových polymerů mohou být konduktory, elektrolyty, optická vlákna a biokompatibilní materiály. Fyzikální a chemické vlastnosti lze dobře vysvětlit pomocí analýzy molekulových orbitalů. Obecně mají Lewisovské kyseliny prázdné molekulové orbitaly, které leži dostatečně blízko obsazeným MO \footnote{MO = Molekulový orbital} konjugované báze. Vazba mezi křemíkem a jeho ligandem je silně ovlivněna elektronegativitou donorního ligandu. Atomy jako uhlík, dusík, kyslík, fluor nebo chlor podporují navyšování koordinace křemíku. V případě čtyřkoordinovaných sloučenin křemík poskytuje do vazeb všechny své valenční elektorny. Ve vyšším koordinačním stupeni už může křemík poskytnou pouze prázdné orbitaly a proto chová se jako Lewisovská kyselina.\\
+Samotné silikofosfátové polymery mají zajímavé fyzikální a chemické vlastnosti. Příkladem je Brønstedovská kyselost nebo vysoká protonová vodivost. JNěkolik z možných uplatnění silikofosfátových polymerů mohou být konduktory, elektrolyty, optická vlákna a biokompatibilní materiály. Fyzikální a chemické vlastnosti silikofosfátovýchh polymerů lze dobře vysvětlit pomocí analýzy molekulových orbitalů. Obecně mají Lewisovské kyseliny prázdné molekulové orbitaly, které leži dostatečně blízko obsazeným MO \footnote{MO = Molekulový orbital} konjugované báze. Vazba mezi křemíkem a jeho ligandem je silně ovlivněna elektronegativitou donorního ligandu. Atomy jako uhlík, dusík, kyslík, fluor nebo chlor podporují navyšování koordinace křemíku. V případě čtyřkoordinovaných sloučenin křemík poskytuje do vazeb všechny své valenční elektorny. Ve vyšším koordinačním stupeni už může křemík poskytnou pouze prázdné orbitaly a proto chová se jako Lewisovská kyselina.\\
 
 Vazbu mezi křemíkem a kyslíkem lze považovat za dobrou Lewisovskou kyselinu. Z experimentu je známo, že \ce{SiO4} je dostatečnou Lewisovskou kyselinou, aby křemík mohl přímo reagovat s Lewivoskou bazí. Pokud je jeden z kyslíku ve struktuře nahrazen uhlíkem, schopnost navyšovat koordinaci je ztracena. Stejný jev pozoroval Aleš Sýskalík a spol. \cite{Styskalik2015thesis} a to vedlo k hypotéze o snížení Lewisovské kyselosti křemíku při tvorbě přímé vazby Si - C. Naopak pětikoordinovaný křemík je lepší Lewisovskou kyselinou než čtyřkoordinovaný a hypervalency podporuje.\cite{Wagler2014}\\
 
@@ -293,7 +327,8 @@ Cílem strukturní části bylo modelovat menší části struktur silikofosfát
 \subsection{Struktury}
 Struktury pro teoretickou část jsou rozděleny podle velikosti, podle stupně koordinace křemíku a podle množství cyklů ve strukturách. Zvolené modely byly tvořeny podle experimentální motivace. Snahou bylo co nejlépe modelovat koordinační okolí křemíku. Malé sturktury měly za cíl podrobnou analýzu vazby křemík-uhlík. Jednoduchý model umožňoval detailní pohled na chemickou vazbu.\\
 
-Modely střední velikosti představovaly rozsáhlejší struktury, které ale byly stále dostatečně malé pro podrobnou analýzu. (acetoxymethyl)trifluorosilan sloužil jako model křemíku, kde se vyskytovala příma vazba na uhlík a zároveň byly kolem vysoce elektronegativní fluory. Jak bylo zmíněno v kapitole \ref{teorie_hypervalence}, křemík je ochotný navyšovat koordinaci s vysoce elektronegativními ligandy. Zároveň je (acetoxymethyl)trifluorosilan schopen tvořit intramolekulární vazbu s Si-O a tím navbýšit koordinaci křemíku na pět. Tyto strukutry jsou experimentálně pozorovány a nazývají se dragonoidy \cite{Chipanina2011}. Další dva střední modely už obsahovaly cykly, prozatím ale malé. Model middle1 \ce{SiCH3(PO4)CH3(SiP2O10)(CH3)4} obsahoval jeden cyklus, volně navázaný fosfát a přímou vazbu křemík-uhlík. Model middle2 \ce{Si(P2SiO10(CH3)4)2} už obsahoval dva cykly, které byly pozorovány v silikofosfátových polymerech. Jednalo se o nejmenší model, který už obsahoval dva cykly.\\
+Modely střední velikosti reprezentovaly širší okolí křemíku. (acetoxymethyl)trifluorosilan sloužil jako model křemíku, kde se vyskytovala příma vazba na uhlík a zároveň byly kolem vysoce elektronegativní fluory. Jak bylo zmíněno v kapitole \ref{teorie_hypervalence}, křemík je ochotný navyšovat koordinaci s vysoce elektronegativními ligandy. Zároveň je (acetoxymethyl)trifluorosilan schopen tvořit intramolekulární vazbu s Si-O a tím navbýšit koordinaci křemíku na pět. Tyto strukutry jsou experimentálně pozorovány a nazývají se dragonoidy \cite{Chipanina2011}. Další dva střední modely už obsahovaly cykly, prozatím ale malé. \\
+Model middle1 \ce{SiCH3(PO4)CH3(SiP2O10)(CH3)4} obsahoval jeden cyklus, volně navázaný fosfát a přímou vazbu křemík-uhlík. Model middle2 \ce{Si(P2SiO10(CH3)4)2} už obsahoval dva cykly, které byly pozorovány v silikofosfátových polymerech. Jednalo se o nejmenší model, který už obsahoval dva cykly.\\
 
 Největším problémem se ukázaly velké struktury, kde nalezení vhodného modelu trvalo nejdelší dobu. Nalezení vhodného modelu se stalo klíčovým problémem této práce.  Výchozí strukturou byla struktura z rentgenové analýzy \cite{C3NJ00721A}, kde se křemík vyskytoval v koordinaci šest. Z tohoto modelu vycházely všechny ostatní struktury se šestikoordinovaným křemíkem. V experimentálních struktruách silikofosfátů se krom fosfátových skupiny vyskytovaly tak různé acetylové skupiny. Právě přítomnost acetylových skupin měla vliv na chování křemíku. Acetylové skupiny  se v okolí křemíku vždy vyskytovaly po dvou a toto bylo dodrženo i v modleových strukturách. Zvolila jsem dvě možnosti umístění acetylových skupin, poloha cis a trans(obrázek). První návrh byl velice podobný původní krystalové struktuře, včetně přítomnost osmi cyklů. To se ukázalo jako problematické a pro různé modely bylo nutno dělat rozdílná uvolnění cyklů. Zde je klíčové zminit, že naše modely byly pouze výseky z rozsáhlých struktur a chyběla stabilizace okolní hmotou. Pro všechny modelové struktury bylo nutno povolít napětí mezi cykly. Původní krystalová struktura obsahovala šest cyklů. Mnou upravené struktury obsahovaly cykly dva (cis) nebo čyři(trans). Další koordinací, která byla pozorována byl křemík v koordinaci pět. Tento typ nebyl příliš častý, ale řadí se mezi experimentálně pozorované. Proto jsem také pětikoordinovaný křemík zařadila do analýzy. V případě pětikoordinované struktury byla snaha kompenzovat náboj a dosáhnout náboje nula, stejně jako u předchozích struktur. To se nakonec ukázalo jako nevhodné a model s křemíkem v koordinaci pět měl náboj mínus jedna.
 
@@ -323,11 +358,7 @@ Tato část se věňuje nejmenším možným modelům, které již tvoří uvnit
 \subfigure[]{\includegraphics[width=5cm]{si_model_methyl.png}\label{obr_h4sio4_MO_s1_20}}
 \subfigure[]{\includegraphics[width=5cm]{si_model_orezany.png}\label{obr_h4sio4_MO_s1_24}}
 \caption{}
-
 \label{obr_h4sio4_vysledky_I}
-
-
-
 \end{center}
 \end{figure}
 Pro zvolené sloučeniny byla provedena analýza kanonických orbitalů, výsledky jsou uvedeny v tabulce.
