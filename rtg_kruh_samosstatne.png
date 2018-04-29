@@ -1,0 +1,1327 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: Molden
+%%For: Schaft
+%%Creator: Drs G Schaftenaar
+%%DocumentFonts: Courier
+%%Pages (atend)
+%%BoundingBox: 0 0 612 792
+%%EndComments
+%
+%###### User Preferences ############
+%
+%---- SIZE AND ORIENTATION OF THE PLOT ---
+%
+/size    {  0.24 } def
+%---- These number can be negative -------
+/originx {  39.0 } def
+/originy { 753.0 } def
+/angle   { -90.0 } def
+%For Portrait use
+%/originx { 40.0 } def
+%/originy { 240.0 } def
+%/angle   { 0.0 } def
+%and BoundingBox: 25 255 535 765
+%
+%---- COLORS FOR DENSITY CONTOURS  -------
+%
+/poscontour { 18 } def
+/negcontour { 19 } def
+%---- FILL COLORS OF DENSITY SPACE MODE  -
+/posfill { 16 } def
+/negfill { 17 } def
+%---- COLOR OF UNIT CELL DEF. BLACK -
+/cellcol { 0 setcol } def
+/labelcol { 0 setcol } def
+%/cellcol { 1 setcol } def
+%
+%---- COLORS HAVE A HUE AND SATURATION ---
+%
+/hues {[.0 .0 .17 .33 .66 .5 .12 .54 .0 .83 .33 .1 .08 .15 .10 .0 .33 .1 .66 .0]} def
+/satus {[.0 .93 .95 1. .5 1. 1. .38 .0 1. .9 .41 1. .6 .95 .0 .5 .7 1. 1.]} def
+%
+%---- SET BOND RENDERING:  ---------------
+%---- shadedrod, whiterod, blackrod  -----
+%
+/dorod { shadedrod } def
+%
+%---- Include Tabel & Logo, Fontsize -----
+/tabel {true} def
+/titleandlogo {true} def
+/nullcontour {false} def
+/contourvalues {false} def
+/stickwidth {8} def
+/fontwidth {27} def
+/fontheight {35} def
+/dobackground {false} def
+%
+%###### END User Preferences ########
+/hue {hues col get} def
+/satu {satus col get} def
+/setcol {
+ /col exch def col 0 eq
+ {hue satu 0.0 sethsbcolor}
+ {hue satu 1.0 sethsbcolor}
+ifelse} def
+/m { moveto } def
+/l { lineto } def
+/s { stroke } def
+/n { newpath } def
+/lc { setlinecap } def
+/offset { 0 0 moveto (A) false charpath
+flattenpath pathbbox
+pop pop pop -1 mul /xoff exch def } def
+/doatom
+{ gsave
+  rx ry translate
+  90 -5 1
+  { gsave
+    dup cos hue exch satu exch sethsbcolor sin dup scale
+    newpath
+    0 0 rad 0 360 arc
+    closepath fill grestore } for
+    grestore } def
+/shadedrod
+{ gsave
+  x1 y1 translate
+  x2 x1 neg add
+  y2 y1 neg add
+  {atan neg rotate} stopped not {
+  85 -5 0
+  {dup
+  gsave
+  newpath
+   cos 1.0 cosb 0.5 mul neg add mul
+   hue exch satu exch sethsbcolor
+   sin 1.0 scale
+   1 cosb scale
+   0 0 hd 0 180 arcn
+   x2 x1 neg add dup mul
+   y2 y1 neg add dup mul
+   add sqrt
+  0 cosb eq {/cosb 1.0 def} if 0 exch cosb div translate
+   0 0 hd 180 360 arc
+  closepath fill
+  grestore } for
+  } if
+  grestore } def
+/blackrod
+{ gsave
+  x1 y1 translate
+  x2 x1 neg add
+  y2 y1 neg add
+  {atan neg rotate} stopped not {
+  newpath
+   0 setgray
+   1 cosb scale
+   0 0 hd 0 180 arcn
+   x2 x1 neg add dup mul
+   y2 y1 neg add dup mul
+   add sqrt
+  0 cosb eq {/cosb 1.0 def} if 0 exch cosb div translate
+   0 0 hd 180 360 arc
+  closepath stroke
+  } if
+  grestore } def
+/whiterod
+{ gsave
+  x1 y1 translate
+  x2 x1 neg add
+  y2 y1 neg add
+  {atan neg rotate} stopped not {
+  newpath
+   1 setgray
+   1 cosb scale
+   0 0 hd 0 180 arcn
+   x2 x1 neg add dup mul
+   y2 y1 neg add dup mul
+   add sqrt
+  0 cosb eq {/cosb 1.0 def} if 0 exch cosb div translate
+   0 0 hd 180 360 arc
+  closepath stroke
+  } if
+  grestore } def
+/dobond
+{ gsave
+  0 setlinecap
+  newpath moveto lineto
+  90 -5 5
+  { gsave dup cos hue exch satu exch sethsbcolor
+    sin 23 mul setlinewidth
+    stroke grestore } for
+  grestore } def
+/dobond2
+{ gsave
+  1 setlinecap
+  2 setlinejoin
+  newpath moveto lineto lineto
+  90 -5 5
+  { gsave dup cos hue exch satu exch sethsbcolor
+    sin 23 mul setlinewidth
+    stroke grestore } for
+  grestore } def
+/doshadedstick
+{ gsave
+  stickwidth setlinewidth
+  1 setlinecap
+  2 setlinejoin
+   1.0 cosb 0.8 mul neg add 
+   hue exch satu exch sethsbcolor
+  newpath
+  x1 y1 moveto
+  x2 y2 lineto
+  stroke
+  grestore } def
+/dostick
+{ gsave
+  stickwidth setlinewidth
+  1 setlinecap
+  2 setlinejoin
+  newpath
+  x1 y1 moveto
+  x2 y2 lineto
+  stroke
+  grestore } def
+/dobg
+{ gsave
+  setgray
+  newpath
+  0 0 m 2000 0 l 2000 2000 l 0 2000 l
+  closepath fill
+  grestore } def
+/Helvetica-Bold findfont [ fontwidth   0   0  fontheight   0   0] makefont setfont
+originx originy translate
+angle rotate
+   3 setlinewidth
+2 setlinecap
+size size scale
+%%EndProlog
+%%Page: ? 1
+dobackground {0.5 dobg} if
+n
+ /rx         1461  def
+ /ry          743  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /x1         1468  def
+ /y1          751  def
+ /x2         1490  def
+ /y2          777  def
+ /cosb   0.783208728      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx         1784  def
+ /ry          740  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /x1         1772  def
+ /y1          749  def
+ /x2         1734  def
+ /y2          776  def
+ /cosb   0.579397678      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx         1509  def
+ /ry          799  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1         1558  def
+ /y1          799  def
+ /x2         1652  def
+ /y2          799  def
+ /cosb   0.147212923      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /x1         1478  def
+ /y1          820  def
+ /x2         1419  def
+ /y2          860  def
+ /cosb   0.587369561      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx          376  def
+ /ry          680  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /x1          384  def
+ /y1          675  def
+ /x2          409  def
+ /y2          660  def
+ /cosb   0.837058842      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx         1701  def
+ /ry          799  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1         1719  def
+ /y1          821  def
+ /x2         1754  def
+ /y2          862  def
+ /cosb   0.768580377      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx         1107  def
+ /ry          516  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /x1         1097  def
+ /y1          502  def
+ /x2         1068  def
+ /y2          455  def
+ /cosb   0.459233582      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx         1075  def
+ /ry          293  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /x1         1070  def
+ /y1          311  def
+ /x2         1056  def
+ /y2          369  def
+ /cosb   0.333284676      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx         1256  def
+ /ry          881  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /x1         1276  def
+ /y1          881  def
+ /x2         1335  def
+ /y2          881  def
+ /cosb   0.154706538      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx          368  def
+ /ry          368  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /x1          377  def
+ /y1          382  def
+ /x2          404  def
+ /y2          426  def
+ /cosb   0.489009410      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx          431  def
+ /ry          647  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1          452  def
+ /y1          683  def
+ /x2          493  def
+ /y2          750  def
+ /cosb   0.491412401      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /x1          430  def
+ /y1          600  def
+ /x2          428  def
+ /y2          510  def
+ /cosb   0.268843234      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx         1387  def
+ /ry          881  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1         1405  def
+ /y1          902  def
+ /x2         1438  def
+ /y2          943  def
+ /cosb   0.788959265      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx          907  def
+ /ry          436  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /x1          927  def
+ /y1          433  def
+ /x2          992  def
+ /y2          424  def
+ /cosb    2.45209169E-02  def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx         1044  def
+ /ry          417  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1         1060  def
+ /y1          418  def
+ /x2         1100  def
+ /y2          423  def
+ /cosb   0.928935707      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx          426  def
+ /ry          463  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1          447  def
+ /y1          451  def
+ /x2          486  def
+ /y2          429  def
+ /cosb   0.836243629      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx          517  def
+ /ry          912  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /x1          516  def
+ /y1          893  def
+ /x2          515  def
+ /y2          835  def
+ /cosb   0.277936786      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx         1772  def
+ /ry          884  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1         1741  def
+ /y1          904  def
+ /x2         1681  def
+ /y2          944  def
+ /cosb   0.592666149      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /x1         1824  def
+ /y1          885  def
+ /x2         1884  def
+ /y2          886  def
+ /cosb   0.134231374      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx          871  def
+ /ry         1371  def
+ /col            1  def
+ /rad           56  def
+ doatom
+ /x1          884  def
+ /y1         1342  def
+ /x2          904  def
+ /y2         1293  def
+ /cosb   0.721008658      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx         1904  def
+ /ry          887  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /rx          514  def
+ /ry          785  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1          535  def
+ /y1          774  def
+ /x2          575  def
+ /y2          753  def
+ /cosb   0.843822598      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx         1455  def
+ /ry          964  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1         1425  def
+ /y1          985  def
+ /x2         1345  def
+ /y2         1038  def
+ /cosb   0.605668366      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /x1         1505  def
+ /y1          965  def
+ /x2         1601  def
+ /y2          965  def
+ /cosb   0.126799718      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx         1650  def
+ /ry          965  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1         1670  def
+ /y1          987  def
+ /x2         1692  def
+ /y2         1013  def
+ /cosb   0.775780737      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx         1442  def
+ /ry          514  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /x1         1433  def
+ /y1          499  def
+ /x2         1405  def
+ /y2          449  def
+ /cosb   0.418528736      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx         1115  def
+ /ry         1151  def
+ /col            1  def
+ /rad           56  def
+ doatom
+ /x1         1154  def
+ /y1         1134  def
+ /x2         1233  def
+ /y2         1099  def
+ /cosb   0.453558356      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /x1         1071  def
+ /y1         1174  def
+ /x2          982  def
+ /y2         1221  def
+ /cosb    9.28608626E-02  def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx         1426  def
+ /ry          290  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /x1         1420  def
+ /y1          307  def
+ /x2         1399  def
+ /y2          363  def
+ /cosb   0.340977341      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx          967  def
+ /ry         1720  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /x1          970  def
+ /y1         1725  def
+ /x2          981  def
+ /y2         1739  def
+ /cosb   0.944194913      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx          507  def
+ /ry          417  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1          506  def
+ /y1          367  def
+ /x2          506  def
+ /y2          309  def
+ /cosb   0.268287599      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /x1          528  def
+ /y1          452  def
+ /x2          568  def
+ /y2          519  def
+ /cosb   0.493272275      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx          921  def
+ /ry         1253  def
+ /col            2  def
+ /rad           73  def
+ doatom
+ /x1          876  def
+ /y1         1202  def
+ /x2          811  def
+ /y2         1126  def
+ /cosb   0.113280229      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /x1          926  def
+ /y1         1286  def
+ /x2          933  def
+ /y2         1331  def
+ /cosb   0.841196001      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx         1125  def
+ /ry          426  def
+ /col           11  def
+ /rad           84  def
+ doatom
+ /x1         1104  def
+ /y1          499  def
+ /x2         1075  def
+ /y2          599  def
+ /cosb   0.264668971      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /x1         1205  def
+ /y1          420  def
+ /x2         1333  def
+ /y2          412  def
+ /cosb    7.32501000E-02  def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /x1         1089  def
+ /y1          371  def
+ /x2         1032  def
+ /y2          282  def
+ /cosb   0.509744525      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx          506  def
+ /ry          290  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /rx          779  def
+ /ry         1088  def
+ /col            1  def
+ /rad           56  def
+ doatom
+ /x1          762  def
+ /y1         1054  def
+ /x2          729  def
+ /y2          984  def
+ /cosb   0.577119112      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx         1383  def
+ /ry          409  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1         1396  def
+ /y1          410  def
+ /x2         1413  def
+ /y2          412  def
+ /cosb   0.953331947      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx          595  def
+ /ry          742  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1          616  def
+ /y1          778  def
+ /x2          670  def
+ /y2          871  def
+ /cosb   0.491223514      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /x1          594  def
+ /y1          695  def
+ /x2          590  def
+ /y2          603  def
+ /cosb   0.255233645      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx         1700  def
+ /ry         1021  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /rx         1357  def
+ /ry         1477  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /x1         1365  def
+ /y1         1472  def
+ /x2         1389  def
+ /y2         1457  def
+ /cosb   0.844907343      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx         1062  def
+ /ry          644  def
+ /col            1  def
+ /rad           56  def
+ doatom
+ /x1         1066  def
+ /y1          668  def
+ /x2         1073  def
+ /y2          713  def
+ /cosb   0.841196120      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx          589  def
+ /ry          555  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1          610  def
+ /y1          542  def
+ /x2          634  def
+ /y2          527  def
+ /cosb   0.844907343      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx         1296  def
+ /ry         1071  def
+ /col           11  def
+ /rad           84  def
+ doatom
+ /x1         1270  def
+ /y1         1015  def
+ /x2         1237  def
+ /y2          945  def
+ /cosb   0.577118993      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /x1         1329  def
+ /y1         1128  def
+ /x2         1383  def
+ /y2         1221  def
+ /cosb   0.491223752      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx          581  def
+ /ry         1586  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /x1          586  def
+ /y1         1587  def
+ /x2          603  def
+ /y2         1589  def
+ /cosb   0.953331947      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx          990  def
+ /ry         1751  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1          967  def
+ /y1         1717  def
+ /x2          910  def
+ /y2         1628  def
+ /cosb   0.509744287      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /x1          970  def
+ /y1         1799  def
+ /x2          945  def
+ /y2         1858  def
+ /cosb   0.169122249      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /x1         1042  def
+ /y1         1751  def
+ /x2         1106  def
+ /y2         1751  def
+ /cosb   0.149341494      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx         1061  def
+ /ry          123  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /x1         1054  def
+ /y1          141  def
+ /x2         1029  def
+ /y2          200  def
+ /cosb   0.169122249      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx          873  def
+ /ry          248  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /x1          893  def
+ /y1          248  def
+ /x2          957  def
+ /y2          248  def
+ /cosb   0.149342045      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx         1126  def
+ /ry         1751  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /rx          938  def
+ /ry         1876  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /rx         1009  def
+ /ry          248  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1         1018  def
+ /y1          260  def
+ /x2         1029  def
+ /y2          274  def
+ /cosb   0.944194853      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx         1418  def
+ /ry          413  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /rx          703  def
+ /ry          928  def
+ /col           11  def
+ /rad           84  def
+ doatom
+ /x1          766  def
+ /y1          900  def
+ /x2          845  def
+ /y2          865  def
+ /cosb   0.453558624      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /x1          654  def
+ /y1          961  def
+ /x2          574  def
+ /y2         1014  def
+ /cosb   0.605668545      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx         1410  def
+ /ry         1444  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1         1409  def
+ /y1         1396  def
+ /x2         1405  def
+ /y2         1304  def
+ /cosb   0.255233645      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /x1         1431  def
+ /y1         1480  def
+ /x2         1471  def
+ /y2         1547  def
+ /cosb   0.493271470      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx          937  def
+ /ry         1355  def
+ /col            1  def
+ /rad           56  def
+ doatom
+ /x1          924  def
+ /y1         1400  def
+ /x2          895  def
+ /y2         1500  def
+ /cosb   0.264669418      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx          642  def
+ /ry          522  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /rx          299  def
+ /ry          978  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /x1          307  def
+ /y1          986  def
+ /x2          329  def
+ /y2         1012  def
+ /cosb   0.775780737      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx         1404  def
+ /ry         1257  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1         1424  def
+ /y1         1246  def
+ /x2         1464  def
+ /y2         1225  def
+ /cosb   0.843822598      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx          616  def
+ /ry         1590  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1          666  def
+ /y1         1587  def
+ /x2          794  def
+ /y2         1579  def
+ /cosb    7.32497945E-02  def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /x1          600  def
+ /y1         1636  def
+ /x2          579  def
+ /y2         1692  def
+ /cosb   0.340976834      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /x1          594  def
+ /y1         1550  def
+ /x2          566  def
+ /y2         1500  def
+ /cosb   0.418528736      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx         1220  def
+ /ry          911  def
+ /col            1  def
+ /rad           56  def
+ doatom
+ /x1         1188  def
+ /y1          873  def
+ /x2         1123  def
+ /y2          797  def
+ /cosb   0.113280229      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx         1493  def
+ /ry         1709  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /x1         1493  def
+ /y1         1690  def
+ /x2         1493  def
+ /y2         1632  def
+ /cosb   0.268286228      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx          874  def
+ /ry         1573  def
+ /col           11  def
+ /rad           84  def
+ doatom
+ /x1          899  def
+ /y1         1576  def
+ /x2          939  def
+ /y2         1581  def
+ /cosb   0.928935587      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx         1078  def
+ /ry          746  def
+ /col            2  def
+ /rad           73  def
+ doatom
+ /x1         1017  def
+ /y1          778  def
+ /x2          928  def
+ /y2          825  def
+ /cosb    9.28613842E-02  def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /x1         1095  def
+ /y1          706  def
+ /x2         1115  def
+ /y2          657  def
+ /cosb   0.721008658      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx         1492  def
+ /ry         1582  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1         1513  def
+ /y1         1570  def
+ /x2         1552  def
+ /y2         1548  def
+ /cosb   0.836243808      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx         1032  def
+ /ry          279  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /rx          573  def
+ /ry         1709  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /rx          884  def
+ /ry          848  def
+ /col            1  def
+ /rad           56  def
+ doatom
+ /rx          557  def
+ /ry         1485  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /rx          349  def
+ /ry         1034  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1          398  def
+ /y1         1034  def
+ /x2          494  def
+ /y2         1034  def
+ /cosb   0.126799718      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /x1          318  def
+ /y1         1055  def
+ /x2          258  def
+ /y2         1095  def
+ /cosb   0.592666149      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx          544  def
+ /ry         1035  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1          561  def
+ /y1         1056  def
+ /x2          594  def
+ /y2         1097  def
+ /cosb   0.788959265      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx         1485  def
+ /ry         1214  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1         1484  def
+ /y1         1164  def
+ /x2         1483  def
+ /y2         1106  def
+ /cosb   0.277935982      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /x1         1506  def
+ /y1         1249  def
+ /x2         1547  def
+ /y2         1316  def
+ /cosb   0.491412401      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx           95  def
+ /ry         1112  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /x1          115  def
+ /y1         1113  def
+ /x2          175  def
+ /y2         1114  def
+ /cosb   0.134231955      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx         1128  def
+ /ry          628  def
+ /col            1  def
+ /rad           56  def
+ doatom
+ /rx          227  def
+ /ry         1115  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1          245  def
+ /y1         1137  def
+ /x2          280  def
+ /y2         1178  def
+ /cosb   0.768580377      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx         1482  def
+ /ry         1087  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /rx         1573  def
+ /ry         1536  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1         1571  def
+ /y1         1489  def
+ /x2         1569  def
+ /y2         1399  def
+ /cosb   0.268843621      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /x1         1595  def
+ /y1         1573  def
+ /x2         1622  def
+ /y2         1617  def
+ /cosb   0.489009887      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx          955  def
+ /ry         1582  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1          943  def
+ /y1         1630  def
+ /x2          929  def
+ /y2         1688  def
+ /cosb   0.333285958      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /x1          931  def
+ /y1         1544  def
+ /x2          902  def
+ /y2         1497  def
+ /cosb   0.459234744      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /x1         1007  def
+ /y1         1575  def
+ /x2         1072  def
+ /y2         1566  def
+ /cosb    2.45223194E-02  def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx         1092  def
+ /ry         1563  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /rx          612  def
+ /ry         1118  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1          580  def
+ /y1         1139  def
+ /x2          521  def
+ /y2         1179  def
+ /cosb   0.587369263      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /x1          664  def
+ /y1         1118  def
+ /x2          723  def
+ /y2         1118  def
+ /cosb   0.154705957      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx         1568  def
+ /ry         1352  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1         1590  def
+ /y1         1339  def
+ /x2         1615  def
+ /y2         1324  def
+ /cosb   0.837058604      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx         1631  def
+ /ry         1631  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /rx          743  def
+ /ry         1118  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /rx          924  def
+ /ry         1706  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /rx          892  def
+ /ry         1483  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /rx          298  def
+ /ry         1200  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1          265  def
+ /y1         1223  def
+ /x2          227  def
+ /y2         1250  def
+ /cosb   0.579396605      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /x1          347  def
+ /y1         1200  def
+ /x2          441  def
+ /y2         1200  def
+ /cosb   0.147212535      def
+ /col 0 def
+ /hd           25  def
+ dorod
+ /rx         1623  def
+ /ry         1319  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /rx          490  def
+ /ry         1200  def
+ /col           14  def
+ /rad           56  def
+ doatom
+ /x1          509  def
+ /y1         1222  def
+ /x2          531  def
+ /y2         1248  def
+ /cosb   0.783208728      def
+ /col 0 def
+ /hd           19  def
+ dorod
+ /rx          215  def
+ /ry         1259  def
+ /col           15  def
+ /rad           28  def
+ doatom
+ /rx          538  def
+ /ry         1256  def
+ /col           15  def
+ /rad           28  def
+ doatom
+titleandlogo {
+labelcol
+2100 1700 m
+(defaults used                           ) show
+2100 1640 m
+(                                        ) show
+2100 1580 m
+(point  0                                ) show
+2100 1520 m
+(                                        ) show
+2100 1460 m
+(                                        ) show
+2100 1400 m
+(                                        ) show
+/print { 0 0 moveto 4 0 (MOLDEN) ashow } def
+2200 1850 translate
+4.0 4.0 scale
+.95 -.05 0
+{setgray print -1.5 +1.5 translate } for
+1 setgray print
+} if
+/#copies    1 def
+showpage
+39.00 753.00 translate
+-90.00 rotate
+1 setlinewidth
+2 setlinecap
+0.240000 0.240000 scale
+n

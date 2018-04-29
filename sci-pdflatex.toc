@@ -1,0 +1,55 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {czech}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}\bfseries \IeC {\'U}vod}{1}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}\slshape Experiment\IeC {\'a}ln\IeC {\'\i } motivace}{1}{section.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}\slshape Silikofosf\IeC {\'a}tov\IeC {\'e} polymery}{1}{section.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}\slshape Hypervalence p-prvk\IeC {\r u}}{4}{section.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}\slshape Hypervalence slou\IeC {\v c}enin k\IeC {\v r}em\IeC {\'\i }ku}{6}{section.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.5}\slshape Formulace teoretick\IeC {\'e}ho probl\IeC {\'e}mu}{9}{section.1.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}\bfseries Metody kvantov\IeC {\'e} chemie}{10}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}\slshape Kvantov\IeC {\v e}-mechanick\IeC {\'y} popis elektronov\IeC {\'e} struktury}{10}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}\slshape Teorie funkcion\IeC {\'a}lu hustoty}{13}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.1}\rmfamily DFT metody v praxi}{15}{subsection.2.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.2}\rmfamily B\IeC {\'a}zov\IeC {\'e} funkce}{15}{subsection.2.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\rmfamily Pseudopotenci\IeC {\'a}l (ECP)}{16}{section*.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}\slshape P\IeC {\v r}irozen\IeC {\'e} orbitaly (NBO)}{16}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}\slshape Tvrdost a m\IeC {\v e}kkost kyselin a b\IeC {\'a}ze}{17}{section.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}\slshape Mullikenova popula\IeC {\v c}n\IeC {\'\i } anal\IeC {\'y}za}{18}{section.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}\slshape V\IeC {\'y}po\IeC {\v c}etn\IeC {\'\i } detaily}{18}{section.2.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}\bfseries V\IeC {\'y}sledky a diskuze}{19}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}\slshape Struktury}{19}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.1}\rmfamily \IeC {\v C}ty\IeC {\v r}koordinovan\IeC {\'y} k\IeC {\v r}em\IeC {\'\i }k jako reaktant}{20}{subsection.3.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.2}\rmfamily Mal\IeC {\'e} modely}{20}{subsection.3.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.3}\rmfamily St\IeC {\v r}edn\IeC {\v e} velk\IeC {\'e} modely}{22}{subsection.3.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.4}\rmfamily Velk\IeC {\'e} modely}{24}{subsection.3.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}\slshape Vazby}{24}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}\slshape Spektroskopi}{24}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}\bfseries Z\IeC {\'a}v\IeC {\v e}r}{28}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Literatura}{29}{chapter*.11}
