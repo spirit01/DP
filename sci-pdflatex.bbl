@@ -897,95 +897,165 @@
       \verb https://books.google.cz/books?id=OOmGAwAAQBAJ
       \endverb
     \endentry
-    \entry{Avogadro}{article}{}
-      \name{author}{6}{}{%
-        {{hash=85ef0ab1abe1897a3f6d044fabe7d00d}{%
-           family={HANWELL},
-           familyi={H\bibinitperiod},
-           given={Marcus\bibnamedelima D.},
-           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-        {{hash=f7f3d07bfe14655d58eb3763bc8ccd54}{%
-           family={CURTIS},
-           familyi={C\bibinitperiod},
-           given={Donald\bibnamedelima E.},
-           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-        {{hash=23aff74d9f85010bdec5a9f77aa7a9d1}{%
-           family={LONIE},
-           familyi={L\bibinitperiod},
-           given={David\bibnamedelima C.},
-           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-        {{hash=434cb5cca4bbe34c168c5c445d476f44}{%
-           family={VANDERMEERSCH},
-           familyi={V\bibinitperiod},
-           given={Tim},
-           giveni={T\bibinitperiod}}}%
-        {{hash=8f6da1a7864636a8cdc792aa18e67b4a}{%
-           family={ZUREK},
-           familyi={Z\bibinitperiod},
-           given={Eva},
-           giveni={E\bibinitperiod}}}%
-        {{hash=f9897d380ded1e30bb995a2d3c64cdb6}{%
-           family={HUTCHISON},
-           familyi={H\bibinitperiod},
-           given={Geoffrey\bibnamedelima R.},
-           giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+    \entry{hsabclanek}{article}{}
+      \name{author}{1}{}{%
+        {{hash=dc8f27de6db7259309a9edf53ea31642}{%
+           family={PEARSON},
+           familyi={P\bibinitperiod},
+           given={Ralph\bibnamedelima G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
       }
-      \strng{namehash}{de0a08dcd50a8601c36173fdc3cddfc4}
-      \strng{fullhash}{de0a08dcd50a8601c36173fdc3cddfc4}
-      \strng{authornamehash}{de0a08dcd50a8601c36173fdc3cddfc4}
-      \strng{authorfullhash}{de0a08dcd50a8601c36173fdc3cddfc4}
+      \strng{namehash}{dc8f27de6db7259309a9edf53ea31642}
+      \strng{fullhash}{dc8f27de6db7259309a9edf53ea31642}
+      \strng{authornamehash}{dc8f27de6db7259309a9edf53ea31642}
+      \strng{authorfullhash}{dc8f27de6db7259309a9edf53ea31642}
       \field{sortinit}{4}
       \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{1758-2946}
-      \field{journaltitle}{Journal of Cheminformatics}
-      \field{number}{1}
-      \field{title}{Avogadro: an advanced semantic chemical editor, visualization, and analysis platform}
-      \field{volume}{4}
-      \field{year}{2012}
-      \field{pages}{1\bibrangedash 17}
-      \range{pages}{17}
-      \verb{doi}
-      \verb 10.1186/1758-2946-4-17
-      \endverb
+      \field{journaltitle}{Journal of the American Chemical Society}
+      \field{number}{22}
+      \field{title}{Hard and Soft Acids and Bases}
+      \field{volume}{85}
+      \field{year}{1963}
+      \field{pages}{3533\bibrangedash 3539}
+      \range{pages}{7}
       \verb{url}
-      \verb http://dx.doi.org/10.1186/1758-2946-4-17
+      \verb http://dx.doi.org/10.1021/ja00905a001
       \endverb
     \endentry
-    \entry{iglo}{book}{}
-      \name{author}{3}{}{%
-        {{hash=24d9624fac050d1b5971052aa55963a3}{%
-           family={Kutzelnigg},
-           familyi={K\bibinitperiod},
-           given={Werner},
-           giveni={W\bibinitperiod}}}%
-        {{hash=1f2508c287dfd8c69caba34a82ce1e91}{%
-           family={Fleischer},
-           familyi={F\bibinitperiod},
-           given={Ulrich},
+    \entry{hsabwatoc}{proceedings}{}
+      \name{editor}{3}{}{%
+        {{hash=47ccebfdf25a61ef9939f909f423be69}{%
+           family={BÖGEL},
+           familyi={B\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=88466893c85c68ec18fd8b295f8ac916}{%
+           family={LAUBE},
+           familyi={L\bibinitperiod},
+           given={U.},
            giveni={U\bibinitperiod}}}%
-        {{hash=e57739e3cb738203bc3209d14b742f30}{%
-           family={Schindler},
-           familyi={S\bibinitperiod},
-           given={Michael},
+        {{hash=ed1ee194b2fa34af517089f1e6f2c0b2}{%
+           family={HANSEN},
+           familyi={H\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Jeruzalem, Izrael}%
+      }
+      \list{publisher}{1}{%
+        {WATOC}%
+      }
+      \strng{namehash}{488a10db840fe98e51e239647be4b595}
+      \strng{fullhash}{488a10db840fe98e51e239647be4b595}
+      \strng{editornamehash}{488a10db840fe98e51e239647be4b595}
+      \strng{editorfullhash}{488a10db840fe98e51e239647be4b595}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{title}{The HSAB concept can be developed into an universal scheme based on quantum chemistry}
+      \field{year}{1996}
+      \verb{url}
+      \verb http://www.ch.ic.ac.uk/rzepa/watoc96/abstracts/27/
+      \endverb
+    \endentry
+    \entry{kratochvilexcerpta}{book}{}
+      \name{author}{1}{}{%
+        {{hash=b76e08ac48cd9d6d1466de66d949bf00}{%
+           family={KRATOCHVÍL},
+           familyi={K\bibinitperiod},
+           given={Milan},
            giveni={M\bibinitperiod}}}%
       }
-      \strng{namehash}{b74e5802b412fd34a6d8530edfd68f3a}
-      \strng{fullhash}{b74e5802b412fd34a6d8530edfd68f3a}
-      \strng{authornamehash}{b74e5802b412fd34a6d8530edfd68f3a}
-      \strng{authorfullhash}{b74e5802b412fd34a6d8530edfd68f3a}
+      \list{location}{1}{%
+        {Brno}%
+      }
+      \list{publisher}{1}{%
+        {Masarykova univerzita}%
+      }
+      \strng{namehash}{b76e08ac48cd9d6d1466de66d949bf00}
+      \strng{fullhash}{b76e08ac48cd9d6d1466de66d949bf00}
+      \strng{authornamehash}{b76e08ac48cd9d6d1466de66d949bf00}
+      \strng{authorfullhash}{b76e08ac48cd9d6d1466de66d949bf00}
       \field{sortinit}{4}
       \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{N M R Basic Princ. Prog.}
-      \field{month}{01}
-      \field{title}{The IGLO-Method: Ab-initio Calculation and Interpretation of NMR Chemical Shifts and Magnetic Susceptibilities}
-      \field{volume}{23}
-      \field{year}{1991}
-      \field{pages}{65\bibrangedash 262}
-      \range{pages}{198}
+      \field{edition}{1.}
+      \field{isbn}{978-80-210-6067-8}
+      \field{title}{Excerpta z teoretické chemie}
+      \field{year}{2012}
+      \verb{url}
+      \verb http://excerpta.chemi.muni.cz/
+      \endverb
+    \endentry
+    \entry{pearson1986absolute}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d1384cd0f58c4a459ba97adb8091f64d}{%
+           family={PEARSON},
+           familyi={P\bibinitperiod},
+           given={Ralph\bibnamedelima G},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {National Acad Sciences}%
+      }
+      \strng{namehash}{d1384cd0f58c4a459ba97adb8091f64d}
+      \strng{fullhash}{d1384cd0f58c4a459ba97adb8091f64d}
+      \strng{authornamehash}{d1384cd0f58c4a459ba97adb8091f64d}
+      \strng{authorfullhash}{d1384cd0f58c4a459ba97adb8091f64d}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences}
+      \field{number}{22}
+      \field{title}{Absolute electronegativity and hardness correlated with molecular orbital theory}
+      \field{volume}{83}
+      \field{year}{1986}
+      \field{pages}{8440\bibrangedash 8441}
+      \range{pages}{2}
+    \endentry
+    \entry{Standara2006thesis}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=0522a737575669843049dca96d9fa429}{%
+           family={STANDARA},
+           familyi={S\bibinitperiod},
+           given={Stanislav},
+           giveni={S\bibinitperiod}}}%
+      }
+      \name{supervisor}{1}{}{%
+        {{hash=7ad205ccf437ff8ccffffcbe61a5c09e}{%
+           family={Marek},
+           familyi={M\bibinitperiod},
+           given={Radek},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Masarykova univerzita, Přírodovědecká fakulta, Brno}%
+      }
+      \strng{namehash}{0522a737575669843049dca96d9fa429}
+      \strng{fullhash}{0522a737575669843049dca96d9fa429}
+      \strng{authornamehash}{0522a737575669843049dca96d9fa429}
+      \strng{authorfullhash}{0522a737575669843049dca96d9fa429}
+      \strng{supervisornamehash}{7ad205ccf437ff8ccffffcbe61a5c09e}
+      \strng{supervisorfullhash}{7ad205ccf437ff8ccffffcbe61a5c09e}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Výpočet NMR parametrů modifikovaných purinů [online]}
+      \field{type}{Diplomová práce}
+      \field{year}{2006 [cit. 2016-05-28]}
+      \verb{url}
+      \verb http://is.muni.cz/th/43015/prif_m/
+      \endverb
     \endentry
     \entry{g09}{misc}{}
       \name{author}{73}{}{%
@@ -1361,13 +1431,146 @@
       \strng{fullhash}{40244b6d72100dba36c5c0f77eef728d}
       \strng{authornamehash}{515875380dab94a6e8279401a3e319b6}
       \strng{authorfullhash}{40244b6d72100dba36c5c0f77eef728d}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Gaussian Inc. Wallingford CT}
       \field{title}{Gaussian˜16 {R}evision {B}.01}
       \field{year}{2016}
+    \endentry
+    \entry{Avogadro}{article}{}
+      \name{author}{6}{}{%
+        {{hash=85ef0ab1abe1897a3f6d044fabe7d00d}{%
+           family={HANWELL},
+           familyi={H\bibinitperiod},
+           given={Marcus\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=f7f3d07bfe14655d58eb3763bc8ccd54}{%
+           family={CURTIS},
+           familyi={C\bibinitperiod},
+           given={Donald\bibnamedelima E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=23aff74d9f85010bdec5a9f77aa7a9d1}{%
+           family={LONIE},
+           familyi={L\bibinitperiod},
+           given={David\bibnamedelima C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=434cb5cca4bbe34c168c5c445d476f44}{%
+           family={VANDERMEERSCH},
+           familyi={V\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+        {{hash=8f6da1a7864636a8cdc792aa18e67b4a}{%
+           family={ZUREK},
+           familyi={Z\bibinitperiod},
+           given={Eva},
+           giveni={E\bibinitperiod}}}%
+        {{hash=f9897d380ded1e30bb995a2d3c64cdb6}{%
+           family={HUTCHISON},
+           familyi={H\bibinitperiod},
+           given={Geoffrey\bibnamedelima R.},
+           giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{de0a08dcd50a8601c36173fdc3cddfc4}
+      \strng{fullhash}{de0a08dcd50a8601c36173fdc3cddfc4}
+      \strng{authornamehash}{de0a08dcd50a8601c36173fdc3cddfc4}
+      \strng{authorfullhash}{de0a08dcd50a8601c36173fdc3cddfc4}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1758-2946}
+      \field{journaltitle}{Journal of Cheminformatics}
+      \field{number}{1}
+      \field{title}{Avogadro: an advanced semantic chemical editor, visualization, and analysis platform}
+      \field{volume}{4}
+      \field{year}{2012}
+      \field{pages}{1\bibrangedash 17}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1186/1758-2946-4-17
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1186/1758-2946-4-17
+      \endverb
+    \endentry
+    \entry{iglo}{book}{}
+      \name{author}{3}{}{%
+        {{hash=24d9624fac050d1b5971052aa55963a3}{%
+           family={Kutzelnigg},
+           familyi={K\bibinitperiod},
+           given={Werner},
+           giveni={W\bibinitperiod}}}%
+        {{hash=1f2508c287dfd8c69caba34a82ce1e91}{%
+           family={Fleischer},
+           familyi={F\bibinitperiod},
+           given={Ulrich},
+           giveni={U\bibinitperiod}}}%
+        {{hash=e57739e3cb738203bc3209d14b742f30}{%
+           family={Schindler},
+           familyi={S\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{b74e5802b412fd34a6d8530edfd68f3a}
+      \strng{fullhash}{b74e5802b412fd34a6d8530edfd68f3a}
+      \strng{authornamehash}{b74e5802b412fd34a6d8530edfd68f3a}
+      \strng{authorfullhash}{b74e5802b412fd34a6d8530edfd68f3a}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{N M R Basic Princ. Prog.}
+      \field{month}{01}
+      \field{title}{The IGLO-Method: Ab-initio Calculation and Interpretation of NMR Chemical Shifts and Magnetic Susceptibilities}
+      \field{volume}{23}
+      \field{year}{1991}
+      \field{pages}{65\bibrangedash 262}
+      \range{pages}{198}
+    \endentry
+    \entry{doi:10.1002/jcc.23266}{article}{}
+      \name{author}{3}{}{%
+        {{hash=2e3fcb7ee4f432ce2bfb2f8ef9fa5062}{%
+           family={Glendening},
+           familyi={G\bibinitperiod},
+           given={Eric\bibnamedelima D.},
+           giveni={E\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=98bf195322e53c85b30e9e5165a370ad}{%
+           family={Landis},
+           familyi={L\bibinitperiod},
+           given={Clark\bibnamedelima R.},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=cdb202add32da6d5dc1b9a5ff8aaf0af}{%
+           family={Weinhold},
+           familyi={W\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{73c4936eda75938bd42ea6524110ad21}
+      \strng{fullhash}{73c4936eda75938bd42ea6524110ad21}
+      \strng{authornamehash}{73c4936eda75938bd42ea6524110ad21}
+      \strng{authorfullhash}{73c4936eda75938bd42ea6524110ad21}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational Chemistry}
+      \field{number}{16}
+      \field{title}{NBO 6.0: Natural bond orbital analysis program}
+      \field{volume}{34}
+      \field{pages}{1429\bibrangedash 1437}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1002/jcc.23266
+      \endverb
+      \verb{eprint}
+      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/jcc.23266
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.23266
+      \endverb
+      \keyw{natural bond orbital,wavefunction analysis,chemical bonding interactions}
     \endentry
     \entry{Chipanina2011}{article}{}
       \name{author}{5}{}{%
@@ -1401,8 +1604,8 @@
       \strng{fullhash}{792bb120aa47eb7c1c33edc22e68600d}
       \strng{authornamehash}{792bb120aa47eb7c1c33edc22e68600d}
       \strng{authorfullhash}{792bb120aa47eb7c1c33edc22e68600d}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1608-3350}
@@ -1453,8 +1656,8 @@
       \strng{fullhash}{87b7c94e6e5f56baf1074cf434f7e782}
       \strng{authornamehash}{87b7c94e6e5f56baf1074cf434f7e782}
       \strng{authorfullhash}{87b7c94e6e5f56baf1074cf434f7e782}
-      \field{sortinit}{5}
-      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{sortinit}{6}
+      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of the American Chemical Society}

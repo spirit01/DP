@@ -66,7 +66,7 @@
     gender          = f,
     advisor         = doc. Markéta Munzarová Dr. rer. nat. ,
     title           = Studium elektronové struktury fosfosilikátů a jejich silikátových          prekurzorů metodou DFT,
-    TeXtitle        = A DFT study of the Electronic Structure of Silicate Precursors for Phosphosilicates
+    TeXtitle        = Studium elektronové struktury fosfosilikátů a jejich silikátových          prekurzorů metodou DFT
 .
 ,
     titleEn         = A DFT study of the Electronic Structure of Silicate Precursors for Phosphosilicates
@@ -74,9 +74,9 @@
     TeXtitleEn      = A DFT study of the Electronic Structure of Silicate Precursors for Phosphosilicates
 ,
     extra = {
-      titleCs       =A DFT study of the Electronic Structure of Silicate Precursors for Phosphosilicates
+      titleCs       =Studium elektronové struktury fosfosilikátů a jejich silikátových          prekurzorů metodou DFT
 ,
-      TeXtitleCs    = A DFT study of the Electronic Structure of Silicate Precursors for Phosphosilicates
+      TeXtitleCs    = Studium elektronové struktury fosfosilikátů a jejich silikátových          prekurzorů metodou DFT
 ,
     },
     keywords        = {kľúčové slovo 1, kľúčové slovo 2, ...},
@@ -156,7 +156,7 @@ Ačkoliv nejnovější struktura zahrnuje dvanáctičlenové cykly vzniklé troj
  \begin{figure}[h!]
  \caption{RTG struktura cyklu Si-O-P-O, \cite{C4TA06823H}.}
    \center
-   \includegraphics[width=10cm]{rtg_kruh_samostatne.png}
+   \includegraphics[width=8cm]{rtg_kruh_samostatne.png}
    \label{rtg_cyklus}
    \end{figure}
   Obrázek \ref{si_polymer_cely} znázorňuje předpokládanou strukturu silikofosfátového xerogleu se třemi druhy křemíkových center (koordinace čtyřmi fosfáty, šesti fosfáty, anebo čtyřmi fosfáty a dvěma organickými estery současně) a osmičlennými cykly Si-O-P.  Konkrétní podoba osmičlenného cyklu byla ověřena metodou RTG \cite{C4TA06823H}. Stupeň koordinace křemíku a~současně velikost pórů se ukázala být silně závislá na typu prekurzoru. Pokud byl ve výchozích sloučeninách jeden z fosfátů nahrazen methylovou skupinou přímo vázanou na křemík, ve výsledném xerogelu se nevyskytovaly oktaedricky koordinované křemíky a velikost pórů byla větší. Konkrétní podobu okolí křemíku je ukázáno ve schématu níže. Koordinační okolí bylo získáno kombinací NMR dat a IR dat \cite{C4TA06823H}.
@@ -393,15 +393,17 @@ Základní teorémy metody funkcionálu hustoty (1. a 2. Hohensberg-Kohnův teor
 
 Moderní DFT metody se začaly objevovat po roce 1964 jako výsledek Hohensberg-Kohnův teorémů. Aplikace v kvantově-chemických výpočtech se datují až od 90. let. Prvním Hohenberg-Kohn teorém (H-K) mluví o základním stavu. "Vnější potenciál  $V_ext$ je až na konstantu jednoznačným funkcionálem $\varrho(\vec{r})$, protože $V_ext$ určuje $\widehat{H}$, je úplný popis mnohačásticového základního stavu jednoznačným funkconálem $\varrho(\vec{r})$."\cite{PhysRev.136.B864} První H-K teorém můžeme schématicky vyjádřit takto:
 \begin{equation}
-\varrho_0 \Rightarrow {N, Z_A, R_A} \Rightarrow \widehat{H} \Rightarrow \Psi_0 \Rightarrow E_0
+\varrho_0 \Rightarrow \{N, Z_A, R_A\} \Rightarrow \widehat{H} \Rightarrow \Psi_0 \Rightarrow E_0
  \end{equation}
  Všechny vlastnosti základního stavu mnohaelektronového systému jsou tedy jednoznačně určeny elektronovou hustotou.
 
-Samotná elektronová hustota je výsledkem druhého teorému. Ten říká, že nalezená elektornová hustota je jediná správná. Využívá variačního principu pro určení elektronové hustoty bez vlnové funkce. Správná elektronová hustota musí mít nejnižší energii a nejpřesnější energii.
+Návodem pro získání elektronové hustota je druhéhy teorém Obsaehm druhého H-K teorému je tedy variační princip, který lze v našem kontextu vyjádřit následovně.
 \begin{equation}
-E [\varrho_0] < E[\varrho ']
+E_0 < E [\tilde{\varrho}] = T[\tilde{\varrho}] + E_{Ne}[\tilde{\varrho}] + E_{ee}[\tilde{\varrho}]
 \end{equation}
- Energie excitovaného stavu musí být nižší než energie elektroové hustoty ostatních elektronů. Pro výpočetní chemii mají větší význam Kohn-Shamovy orbitaly, které byly výsledkem geniální myšlenky o rozdělení funkcionálu. Obecně je největší problém vyjádřit kinetickou energii elektornů. Ta se rozpadla na dvě části. Exaktní a korekční část.
+Kde $\tilde{\varrho}(\vec{r})$ je zkušební hustota, splňující vazbené podmínky.
+
+ Pro výpočetní chemii mají větší význam Kohn-Shamovy orbitaly, které byly výsledkem geniální myšlenky o rozdělení funkcionálu. Obecně je největší problém vyjádřit kinetickou energii elektornů. Ta se rozpadla na dvě části. Exaktní a korekční část.
 \begin{equation}
 E(\varrho(\vec{r})) = T_s[\varrho(\vec{r})] + J[\varrho(\vec{r})] + \int V_{EX}(\vec{r})\varrho(\vec{r})d\vec{r} + E_{XC}[\varrho(\vec{r})]
 \end{equation}
@@ -413,16 +415,35 @@ E(\varrho(\vec{r})) = T_s[\varrho(\vec{r})] + J[\varrho(\vec{r})] + \int V_{EX}(
  Kinetická energie $T_s$ ale není přesným vyjádřením kinetické energie. Chybějící část je zajištěna $E_{EX}[\varrho(\vec{r})]$, výměnná-korelační energie. $J[\varrho(\vec{r})]$ je přesná Coulombovská repulze. $\int V_{EX}(\vec{r})\varrho(\vec{r})d\vec{r}$ je přesná energie atrakce elektronů jádry.  \cite{parr1994density}
 
 \subsection{DFT metody v praxi}
-
-\subsection{Bázové funkce}
-Data z experimentu mohou pomoci s výběrem vhodné výpočetní metody. Jedním z přístupů je model bázových funkcí, kdy jsou MO hledány jako kombinace sady bázových funkcí. Podle postulátu QM o úplných vlastních hodnotách uplných Hermitovských operátorů lze každý molekulový orbital sestrojit jako lineární kombinaci atomových orbitalů, tzv. LCAO\footnote{LCAO - Linear Combination of Atomic Orbitals.}. Konkrétně jsou AO sestaveny jako kombinace orbitalů Gaussovského (GTO) nebo Slaterova typu(STO).
-Kompletní sada bázovýchh funkcí obsahuje nekonečně mnoho funkcí, což dělá problém neřešitelný. Vhodný konečný počet funkcí byl určen s pomocí ladění chyb a poskytuje dostatečně přesné výsledky za příměřenou cenu. Každá elektronové korelačních metod škáluje rozdílně podle počtu elektronů(určeno počty obsazených MO) a podle sady bázových funkcí (počet neobsazených, virtuálních, MO).\\
-Minimální sada bázových funkcí v sobě obsahuje elektrony v základním stavu. Naopak rozšířená sada bázových funkcí v sobě obsahuje polorizační funkce nebo difúzní funkce. Typ bázových funkcí mohou být vodíkového typu, GTO nebo STO. Nevýhoda funkcí vodíkového typu je délka výpočtu. STO oproti tomu nemají žádné radiální uzly a jejich sčítání není lineární. Vhodnou aproximací jsou orbitaly gaussovského typu, které sice nemají vhodné chování na jádře, ale platí pro ně pravidlo, že součet GTO je opět GTO.\cite{lowe2011quantum} GTO jsou využívány díky dobrým matematickým vlastnostem, i když STO nebo AO mají větší fyziální význam. V praxi se STO orbitaly vytvoří kombinací primitivních gaussiánů.
-
-Sada bázových funkcí přirozených atomových orbitalů je příkladem zmenšením báze. Přirozené orbitaly jsou takové, které diagonalizují matici hustoty a počet elektronů v orbitalu odpovídá obsazovacímu čísli.
-
-\subsubsection{Pseudopotenciál (ECP)}
-Systém s velkým počtem core, vnitřních, elektronů, jsou časové náročné. Často to jsou prvky za třetí periodou. Z pohledu chemické vazby je možno vliv core elektronů považovat za méně důležitý. Stejná situace nastává ve chvíli, kdy je v systému příliš mnoho elektornů. Jednoduše, systém je příliš velký. V obou případech lze použít funkci, ktra bude modelovat chování core elektronů. ECP má čtyři hlavní kroky. Prvním krokem je, že vlnová funkce pro všechny elektrony je vytvořdna s pomocí HF metody. Valenční orbitaly jsou nahrazeny skupinou psudoorbitalů bez nodálních ploch.
+Největším problémem při aplikaci DFT je nalzení vhodného výměně-korelačního potenciálu. V principu přesný KS přístup neříká nic o tom, jak výměně-korelační potenciál nalézt. Existují dva způsoby hledání tohoto parametru. První hledá vhodný $E_{EX}$ z teorie, jedná se o čistý $ab inito$ přístup. Druhý přístup hledá parametry pro $E_{EX}$, které lze určit z experimentálních dat. \\
+První přístup se ozačuje jako Aproximace lokální hustoty(LDA\footnote{LDA = The Local Density Approximations}) a vychází z modelu homogenního elektronového plynu. Jedná se o hypotetický stav, kde se elektorny pohybují na kladném pozadí a celkový náboj je neutrální. Celý prostor se rozdělí na jednotky objemu a elektronová hustota se počítá vždy ve středu tohoto objektu. Celkovou energii najdeme jako součet přes všechny objemy. Tento model je vhodný pro jednoduché kovy, napříkald sodík. S jeho pomocí lze popsat valenční elektorny v kovech. Význam LDA modelu je, že je to jediný systém, pro který známe přesně $E_{EX}$ část. Vylepšením LDA modelu je oddělená práce s elektronovou hustotou elektronů se spinem $\alpha$ a $\beta$, označováno jako LSDA, Local Spin Denstiy Approximation. Nevýhodou je, že obě metody nelze dobře použít pro nehomogenní elektrostatické pole molekul a chemických reakcí.\\
+ Druhým přístupem je metoda gradientu hustoty (GGA - Generelazized Gradient Approximation). S pomocí Taylorova rozvoje lze z lokálního hodnoty elektronové hustoty v daném objemu získat gradient hustoty $\nabla \varrho(\vec{r})$, výměnný-korelační funkcionál má obecný tvar. Nejvýznamější funkcionály je Beckeho výměnný funkcionál s jedním parametrem. Dalíš znám yje LYP nebo BLPY. Práce GGA funkcionály vedlyk rozšířením DFT v kvantové chemii. \\
+ Třetí významnou skupinou funkcionálu josu hybridní funkcionály. Hybridní funkcionály jsou kobinací čistého DFT přístupu a přesné HF výměny. Nejznámějším funkcionálem je B3LYP, navržen v roce 1994. Funkcionál B3LYP je dodnes považován za univerzální a nejpoužívanější funkcionál. Nachází využití v mnoha chemických aplikaích \cite{koch2000chemist}.
+\section{Báze v kvantově chmemických výpočtech}
+Základním přístupem pro hledání molekulových orbitalů je metoda MO-LCAO, která je založena na postulátu o úplnosti systému vlastních funkcí.
+Podle postulátu QM o úplných vlastních hodnotách uplných Hermitovských operátorů lze každý molekulový orbital sestrojit jako lineární kombinaci atomových orbitalů, tzv. LCAO\footnote{LCAO - Linear Combination of Atomic Orbitals.}. Jednotlivé molekulové orbitaly jsou hledány jako lineární kombinace atomových orbitalů.
+\begin{equation}
+\Psi_i = \sum_{v=1}^{K}c_{vi} \cdot \phi_{v}
+\end{equation}
+$\Psi_i$ je $i-$tý molekulový spinoorbital, $\phi_{v}$ je bázová funkce a $c$ je rozvojový koeficient, získají se výpočtme SCF procedury. Protože jsou však atomové orbitaly pro praktické výpočty příliš složitými matematickými funkcemi (například kvůli složité struktuře radiálních uzlů), nevstupují do výpočtu přímo, ale jsou v něm rozloženy do sady buď tzv. Slaterových orbitalů (STO), nebo Gaussovských orbitalů (GTO). Samotné STO nemají radiální uzly a jejich násobení není lineární.
+\ref{STO_orbital} \cite{jensen2007introduction}.
+\begin{equation}
+\chi_{\zeta, n, l, m}(r, \theta, \varphi) = NY_{l,m} (\theta, \varphi) r^{n-1} e^{-\zeta r}
+\label{STO_orbital}
+\end{equation}
+\begin{equation}
+\chi(r) = Nr^n e^{-a(r-r_A)^2}
+\end{equation}
+ Naopak součin GTO je stále GTO. Výhodou STO je vhodné chování v blízkosti jádra. GTO mají v jádře nulovou derivaci, tento problém zle řešit pomocí zahrnutí většího počtu primitivních gaussiánů. Obvyklý tvar funkce.
+\begin{equation}
+\phi_\mu = \sum_{i=1}^{N}d_{i\mu}e^{-\alpha_{i\mu}f^2_{\mu}r^2}
+\end{equation}
+$N$ je počet primitivních funkcí, $d$ je kontrakčné koeficient, $\alpha$ je exponent, $f$ je škálovací faktor.
+Úplné vyjádření MP pomocí AO vyžaduje úplný, tj. nekonečně velký systém AO, a rozvinuté AO do STO nebo GTO vyžaduje v principu nekonečně velkou sadu těchto tzv. bázových funkcí.\\
+Nejmenší smyslnuplnou sadou bázových funkcí je ta, která obsahuje jeden STO na každý orbital příslušného atomu, který může být v základním stavu obsazen. Například pro uhlík je touto nejmenší sadou - tzv. minimální bazí množina STO reprezentující orbitaly $\{1s, 2S, 2_x, 2p_y, 2p_z \}$. Pro přesnější popis chování atomů a molekul je výhodné použít rozšířené bázové funkce. Vzhledem k lepšímu matematickému chování GTO jsou STO vyjádřeny jako kombinace $n$ primitivních gaussiánů \cite{lowe2011quantum}.
+Double Zeta (DZ) používá dvoujnásobný počet bázových funkcí než minimální báze. Triple Zeta trojnásobný počet bazí než minimální báze. Další kategorií jsou Split valence báze, příkladem je Poplovy báze 6-31G. Každý nevalenční orbital je šesti a každý valenční orbital je popsán primitivními gaussiány dvěmou skupin - jedním a třemi gaussiany. Nadstavbou ještě bývají polarizační báze, které obsahují funkce pro $d$(pro p prvky) nebo $p$ (pro vodík) orbitaly. Popisují polarizaci elektornového obalu v důsledku působenení ostatních jader atomů. \\
+Speciáním případem je sada bázových funkcí přirozených atommových orbitalů, které jsou lokalizované v jednom centru. Sada bázových funkcí přirozených atomových orbitalů je příkladem zmenšením báze. Přirozené orbitaly jsou takové, které diagonalizují matici hustoty a počet elektronů v orbitalu odpovídá obsazovacímu čísli. NAO v sobě obsahují místní posuny náboje, které se do systému zavádí pomocí variačního přístupu z více základních funkcí. Výhodou NBO přístupu je lepší převod na chemické vlasnosti, jako je například Lewisovskká kyselost. \\
+Poslední zmíněnou možností pro popis elektrů v systému je model psudopotenciálu. Systém s velkým počtem core, vnitřních, elektronů, jsou časové náročné. Často to jsou prvky za třetí periodou. Z pohledu chemické vazby je možno vliv core elektronů považovat za méně důležitý. Stejná situace nastává ve chvíli, kdy je v systému příliš mnoho elektornů. Jednoduše, systém je příliš velký. V obou případech lze použít funkci, ktra bude modelovat chování core elektronů. ECP má čtyři hlavní kroky. Prvním krokem je, že vlnová funkce pro všechny elektrony je vytvořdna s pomocí HF metody. Valenční orbitaly jsou nahrazeny skupinou psudoorbitalů bez nodálních ploch.
 
 \section{Přirozené orbitaly (NBO)}
 Přirozené molekulové orbitaly \footnote{NBO - Natural Bond orbital} jsopou odlišným pohledem na chemickou vazbu. Existuje spoustu přístupů k analýze vlnové funkce. Schrödingerova rovnice určuje energii pro každou vlnovou funkci. Vlnová funkce určuje pozici elektronů i jader. Jak je možné určite, zda jsou dva atomy spojené vazbou? Dobrým příkladem parametru, který lze použít pro určení vlasnosti molekul je atomový náboj. Obvyklé metody pro přiřazení náboje elektronu je analýza založená na bázových funkcí, elektrostatické potenciálu nebo vlnové funkci, lokalizovaných orbitalech nebo přirozených orbitalech. \\
@@ -436,7 +457,8 @@ Dalším způsobem vyhodnocení jsou Lokalizované Orbitaly (NO).  První řád 
 
 Lepší sada orbitalů se nazývá "přirozené" a jsou schopné zahrnout korelaci $\varrho$(r). Přirozené orbitaly mají maximální obsazenost a jsou určené ze samotné vlnové funkce.
 
-\section{Tvrdost a měkkost kyselin a báze}
+\section{Kvalitativní koncepty v kvantové chemii}
+\subsection{Tvrdost a měkkost kyselin a báze}
 Chemickí tvrdost a měkkost má pro experimentální chemii velký význam . S pomocí analýzy tvrdosti/měkkost může být predikován produkt reakce a jeho stabilita. Bylo pozorováno, že reakce dvou tvrdých molekul poskytuje stabilní produkt, stejně to platí i pro reakci dvou měkkých molekul. \\
 Globální tvrdost a měkkost můžou být použity pro celou molekulu. Jednotlivé atomy mají tvrdost a měkkost lokální. Tuto vlastnost lze interpretovat jako lokální náboj. Globální vlastnosti pochází z energie HOMO a LUMO orbitalů. Určení lokálních vlastností je obtížné, protože jsou spojeny s Fukuiho rovnicí. Ty popisují, který atom v molekule přijme nebo ztratí elektron. Chemická interpretace je schopnost nuklefilního nebo elektrofilního útoku. Stejně dobře to popíše externí elektrické pole a polarizace. Toto je přímo spojené s elektronovou hustotou a DFT metodami.
 
@@ -452,17 +474,29 @@ Radical attack susceptibility of atom A in molecule M with N electrons.
 \begin{equation}
 f_A^0 = \frac{1}{2}[P_(N+1) - P_A(N-1)]
 \end{equation}
-Nalezení obsazovacího čísla na každém atommu je citlivé na výběru baze. Příliš velká baze dává špatné výsledky.
+Nalezení obsazovacího čísla na každém atommu je citlivé na výběru baze. Příliš velká baze dává špatné výsledky.\\
 
-\section{Mullikenova populační analýza}
+Ochotu tvořit hypervalentní molekuly lze odhadnout podle konceptu HSAB (Hard and Sfot Acids and Basics). Kyseliny a~báze mohou být rozděleny na měkké a~tvrdé. HSAB teorie říká, že tvrdá kyselina a~tvrdá báze spolu poskytnou stabilní komplex, naopak slabá kyselina a~slabá báze spolu poskytnou méně stabilní komplex. Z~toho vyplývá, že ze znalosti reakčních podmínek a~příslušné tvrdosti lze predikovat stabilitu vzniklého komplexu. Jeden z~možností kvantitativního určení tvrdosti/měkkosti je určení parametrů $\chi$ \ref{hsab_vypocet_elektronegativita} a~$\eta$ \ref{hsab_vypocet_tvrdost} \cite{hsabclanek}.
+\begin{equation}
+\chi = - \left( \frac{\delta E}{\delta N} \right) = \frac{IP + EA}{2} = -\mu
+\label{hsab_vypocet_elektronegativita}
+\end{equation}
+\begin{equation}
+\eta = \frac{1}{2} \left( \frac{\delta \mu}{\delta N} \right) = \frac{1}{2}\left( \frac{\delta^2 E}{\delta N^2} \right) = \frac{I~- A}{2}
+\label{hsab_vypocet_tvrdost}
+\end{equation}
+$\chi$ je absolutní elektronegativita  \footnote{Elektronegativity byla Paulingem definována pomocí ionizačního potenciálu a~elektronové afinity} , $\mu$ je chemický potenciál, $E$ je energie a~$N$ je počet elektronů \cite{hsabwatoc}. Podle Koopmansova teorému $E_{HOMO} = - IP$, $IP$ je ionizační potenciál a~$E_{LUMO} = -EA$, $EA$ je elektronová afinita \cite{kratochvilexcerpta}. $\eta$ je atomová tvrdost \footnote{$\eta = \frac{1}{\sigma}$, $\sigma$ je měkkost atomu} \cite{pearson1986absolute}. Tvrdá kyselina a~báze je charakterizována velkým rozdílem $IP$ a~$IA$, což se projeví jako vysoké hodnoty $\chi$ a~$\eta$. Při znalosti $E_{HOMO}$ a~$E_{LUMO}$ lze predikovat ochotu reakčního centra interagovat s~námi zvoleným reagentem a~zároveň odhadnout stabilitu vzniklého komplexu. Systémy s~velkým rozdílem $E_{HOMO}$ a~$E_{LUMO}$ jsou tvrdší, stabilnější a~méně reaktivní \cite{hsabwatoc}.
+\subsection{Mullikenova populační analýza}
+
+\subsection{Spektroskopické vlasnosti atomů a molekul}
+DFT metodami lze kromě optimalizací počítat také parametry nukleární magnetické rezonance (NMR). Jedním z~NMR charakteristik molekul je chemické stínění. Do \textit{ab-inito} výpočtu nově vstupuje vnější magnetické pole $B_0$, které je reprezentováno vektorovým potenciálem tohoto pole. V~ideálním případě by neměla mít volba počátku tohoto pole vliv na výsledek. Jedním z~důsledků aproximace v~kvantové chemii je fakt, že volba počátku výrazně ovlivňuje výsledné chemické stínění. Problém se nazývá \uv{Gauge origin problem}. Metoda GIAO (Gauge  Including Atomic Orbitals) řeší problém způsobem, že zahrnuje počátek vektorového potenciálu do atomových orbitalů. Vhodnou bazí pro tyto výpočty je IGLO$-$III (Individual Gauge for Localized Orbitals) \cite{Standara2006thesis} \cite{g09}.
+
 
 \section{Výpočetní detaily}
 První podoby modelů silikofosfátů byly tvořeny v programu Avogadro \cite{Avogadro}. Pro získání optimalizovaných struktur byl použt program Gaussian, verze ES64L-G09RevD.01 24-Apr-2013. Všechny výpočty byly prováděny metodou DFT. Výchozí parametr optimalizace pro použité struktury byl funkcionál B3LYP s bazí 6-31G*. Pro malé modely byly ve dvou případech přidány speciální volby Opt=CalcFC a SCF=Vshift. Klíčové slovo Opt=CalcFC zajistí výpočet silových konstant v prvním bodě optimalizace. Narozdíl od běžné volby Opt, kdy je Hessian pouze odhadovaný, při použití klíčového slova CalcFC je Hessian vypočítán jako při frekvenční analýze. Druhé klíčové slovo SCF=VShift[N] pomáhá s konvergencí struktury, protože posune energii orbitalů o N*0,0001 [miliHartrees]. My jsme použili výchozí nastavení N=-1. \\
 Pro střední modely bylo postačující základní nastavení. Pro velké molekuly byly použity dva přístupy. Pro méně přesný model bylo použito klíčové slovo Pseudo=Read. V druhém kroku optimalizace již byl použit zmíněný funkcionál i báze. \\
 Pro získání orbitalů pro Mullikenovu populační analýzu byla použita menší báze 3-21G, funkcionál B3LYP. Pro analýzu NMR parametrů byla použita speciální báze IGLO \cite{iglo} a klíčové slovo nmr \cite{g09}.
- Pro NBO analýzu byl nejprve programem Gaussian vytvořen soubor file.47, který sloužil jako vstup do programu NBO6. Přidáním klíčového slova $PLOT$ do vstupu NBO6 byly ziskány soubory file.31 až file.46. Pro vykreslení přirozených orbitalů byl použit soubor file.37 [dodělat zdroj NBO6].
-
-
+ Pro NBO analýzu byl nejprve programem Gaussian vytvořen soubor file.47, který sloužil jako vstup do programu NBO6. Přidáním klíčového slova $PLOT$ do vstupu NBO6 byly ziskány soubory file.31 až file.46. Pro vykreslení přirozených orbitalů byl použit soubor file.37 \cite{doi:10.1002/jcc.23266}.
 
 \chapter{Výsledky a diskuze}
 Výpočetní část byla rozdělena do tří částí. První část se zabývá stukturami, druhá část dává podrobnější pohled na vazby ve zvolených strukturách a třetí, poslední, část se zaměřuje na spektroskopii.
@@ -474,7 +508,7 @@ Struktury pro teoretickou část jsou rozděleny podle velikosti, podle stupně 
 Modely střední velikosti reprezentovaly širší okolí křemíku. (acetoxymethyl)trifluorosilan sloužil jako model křemíku, kde se vyskytovala příma vazba na uhlík a zároveň byly kolem vysoce elektronegativní fluory. Jak bylo zmíněno v kapitole \ref{teorie_hypervalence}, křemík je ochotný navyšovat koordinaci s vysoce elektronegativními ligandy. Zároveň je (acetoxymethyl)trifluorosilan schopen tvořit intramolekulární vazbu s Si-O a tím navbýšit koordinaci křemíku na pět. Tyto strukutry jsou experimentálně pozorovány a nazývají se dragonoidy \cite{Chipanina2011}. Další dva střední modely už obsahovaly cykly, prozatím ale malé. \\
 Model middle1 \ce{SiCH3(PO4)CH3(SiP2O10)(CH3)4} obsahoval jeden cyklus, volně navázaný fosfát a přímou vazbu křemík-uhlík. Model middle2 \ce{Si(P2SiO10(CH3)4)2} už obsahoval dva cykly, které byly pozorovány v silikofosfátových polymerech. Jednalo se o nejmenší model, který už obsahoval dva cykly.\\
 
-Největším problémem se ukázaly velké struktury, kde nalezení vhodného modelu trvalo nejdelší dobu. Nalezení vhodného modelu se stalo klíčovým problémem této práce.  Výchozí strukturou byla struktura z rentgenové analýzy \cite{C3NJ00721A}, kde se křemík vyskytoval v koordinaci šest. Z tohoto modelu vycházely všechny ostatní struktury se šestikoordinovaným křemíkem. V experimentálních struktruách silikofosfátů se krom fosfátových skupiny vyskytovaly tak různé acetylové skupiny. Právě přítomnost acetylových skupin měla vliv na chování křemíku. Acetylové skupiny  se v okolí křemíku vždy vyskytovaly po dvou a toto bylo dodrženo i v modleových strukturách. Zvolila jsem dvě možnosti umístění acetylových skupin, poloha cis a trans(obrázek). První návrh byl velice podobný původní krystalové struktuře, včetně přítomnost osmi cyklů. To se ukázalo jako problematické a pro různé modely bylo nutno dělat rozdílná uvolnění cyklů. Zde je klíčové zminit, že naše modely byly pouze výseky z rozsáhlých struktur a chyběla stabilizace okolní hmotou. Pro všechny modelové struktury bylo nutno povolít napětí mezi cykly. Původní krystalová struktura obsahovala šest cyklů. Mnou upravené struktury obsahovaly cykly dva (cis) nebo čyři(trans). Další koordinací, která byla pozorována byl křemík v koordinaci pět. Tento typ nebyl příliš častý, ale řadí se mezi experimentálně pozorované. Proto jsem také pětikoordinovaný křemík zařadila do analýzy. Výchozí stukturou byla sloučnina \cite{rtg_5}. V případě pětikoordinované struktury byla snaha kompenzovat náboj a dosáhnout náboje nula, stejně jako u předchozích struktur. Z důvodu symetrie nebylo možné náboj v molekule vhodně umístit a proto byl zvolen náboj -1, nikoli 0
+Největším problémem se ukázaly velké struktury, kde nalezení vhodného modelu trvalo nejdelší dobu. Nalezení vhodného modelu se stalo klíčovým problémem této práce.  Výchozí strukturou byla struktura z rentgenové analýzy \cite{C3NJ00721A}, kde se křemík vyskytoval v koordinaci šest. Z tohoto modelu vycházely všechny ostatní struktury se šestikoordinovaným křemíkem. V experimentálních struktruách silikofosfátů se krom fosfátových skupiny vyskytovaly tak různé acetylové skupiny. Právě přítomnost acetylových skupin měla vliv na chování křemíku. Acetylové skupiny  se v okolí křemíku vždy vyskytovaly po dvou a toto bylo dodrženo i v modleových strukturách. Zvolila jsem dvě možnosti umístění acetylových skupin, poloha cis a trans(obrázek). První návrh byl velice podobný původní krystalové struktuře, včetně přítomnost osmi cyklů. To se ukázalo jako problematické a pro různé modely bylo nutno dělat rozdílná uvolnění cyklů. Zde je klíčové zminit, že naše modely byly pouze výseky z rozsáhlých struktur a chyběla stabilizace okolní hmotou. Pro všechny modelové struktury bylo nutno povolít napětí mezi cykly. Původní krystalová struktura obsahovala šest cyklů. Mnou upravené struktury obsahovaly cykly dva (cis) nebo čyři(trans). Další koordinací, která byla pozorována byl křemík v koordinaci pět. Tento typ nebyl příliš častý, ale řadí se mezi experimentálně pozorované. Proto jsem také pětikoordinovaný křemík zařadila do analýzy. Výchozí stukturou byla sloučnina \cite{rtg_5}. V případě pětikoordinované struktury byla snaha kompenzovat náboj a dosáhnout náboje nula, stejně jako u předchozích struktur. Z důvodu symetrie nebylo možné náboj v molekule vhodně umístit a proto byl zvolen náboj -1, nikoli 0.
 \begin{figure}
 \begin{center}
 \subfigure[\ce{SiCH3(OCH3)3}]{\includegraphics[width=5cm]{acetylmethyltrifluor.png} \label{acetylfluro}}
@@ -489,8 +523,7 @@ Největším problémem se ukázaly velké struktury, kde nalezení vhodného mo
 Na základě experimentální práce Aleše Stýskalíka jsem se zabývala křemíkem v koordinaci čtyři, který sloužil jako výchozí reaktant pro přípravu silikofosfátových polymerů.
 
 \subsection{Malé modely}
-Malé modely podávají podrobnější pohled na charakter vazby Si-C. Obrázky struktur jsou uveden na obrázku \ref{prehled_male_modely}. Pro strukturu \ce{SiCH3(OCH3)5} \ref{si_ch3_och3_5} bylo nutno použit klíčové slovo Opt=CalcFC. Pro sturkturu \ce{Si(OCH3)6} \ref{si_och3_6} byl použit parametr SCF=Vshift. Pro NBO analýzu byly brány HOMO orbitaly.
-Přehled výsledků z analýzy NBO je uveden v tabulce \ref{nbo_small}.
+Malé modely podávají podrobnější pohled na charakter vazby Si-C. Obrázky struktur jsou uveden na obrázku \ref{prehled_male_modely}. Pro strukturu \ce{SiCH3(OCH3)5} \ref{si_ch3_och3_5} bylo nutno použit klíčové slovo Opt=CalcFC. Pro sturkturu \ce{Si(OCH3)6} \ref{si_och3_6} byl použit parametr SCF=Vshift. Pro NBO analýzu byly brány HOMO orbitaly. Přehled výsledků z analýzy NBO je uveden v tabulce \ref{nbo_small}.
 \begin{figure}
 \begin{center}
 \subfigure[\ce{SiCH3(OCH3)3}]{\includegraphics[width=5cm]{si_ch3_och3.png} \label{si_ch3_och3}}
@@ -530,9 +563,42 @@ F & Si-Cl & 1-2  & 0,125 & 77,9\% & 22,1\% & 24,9\% & 50,0\% & 25,1\% \\ \hline
 \end{center}
 \label{nbo_small}
 \end{table}
+\begin{table}[htbp]
+\caption{Výsledky MPA pro model \ce{SiCH3(OCH3)3} \ref{si_ch3_och3}}
+\begin{center}
+\begin{tabular}{|l|r|r|l|l|r|r|r|}
+\hline
+ & \multicolumn{1}{l|}{1S} & \multicolumn{1}{l|}{2S} & 3S & 4S & \multicolumn{1}{l|}{Suma2} & \multicolumn{1}{l|}{prekryv} & \multicolumn{1}{l|}{procento} \\ \hline
+Si & -0,024 & 0,156 & \multicolumn{1}{r|}{-0,004} & \multicolumn{1}{r|}{-0,863} & 0,77 & -0,06 & 71,0\% \\ \hline
+O & -0,059 & -0,043 & \multicolumn{1}{r|}{0,442} &  & 0,20 & -0,04 & 16,4\% \\ \hline
+O & -0,062 & 0,044 & \multicolumn{1}{r|}{0,474} &  & 0,23 & 0,02 & 24,9\% \\ \hline
+O & -0,059 & 0,042 & \multicolumn{1}{r|}{0,442} &  & 0,20 & 0,02 & 21,8\% \\ \hline
+C & -0,024 & 0,007 & \multicolumn{1}{r|}{0,419} &  & 0,18 & 0,00 & 17,7\% \\ \hline
+ & \multicolumn{1}{l|}{2PX} & \multicolumn{1}{l|}{3PX} & 4PX &  & \multicolumn{1}{l|}{Suma2} & \multicolumn{1}{l|}{prekryv} & \multicolumn{1}{l|}{procento} \\ \hline
+Si & 0,001 & -0,002 & \multicolumn{1}{r|}{-0,007} &  & 0,00 & 0,00 & 0,0\% \\ \hline
+O & 0,017 & -0,010 &  &  & 0,00 & 0,00 & 0,0\% \\ \hline
+O & 0,000 & -0,002 &  &  & 0,00 & 0,00 & 0,0\% \\ \hline
+O & -0,017 & 0,009 &  &  & 0,00 & 0,00 & 0,0\% \\ \hline
+C & -0,118 & -0,339 &  &  & 0,13 & 0,04 & 17,1\% \\ \hline
+ & \multicolumn{1}{l|}{2PY} & \multicolumn{1}{l|}{3PY} & 4PY &  & \multicolumn{1}{l|}{Suma2} & \multicolumn{1}{l|}{prekryv} & \multicolumn{1}{l|}{procento} \\ \hline
+Si & 0,021 & -0,038 & \multicolumn{1}{r|}{-0,039} &  & 0,00 & 0,00 & 0,5\% \\ \hline
+O & 0,031 & 0,030 &  &  & 0,00 & 0,00 & 0,3\% \\ \hline
+O & -0,032 & -0,021 &  &  & 0,00 & 0,00 & 0,2\% \\ \hline
+O & 0,032 & 0,033 &  &  & 0,00 & 0,00 & 0,3\% \\ \hline
+C & 0,017 & 0,036 &  &  & 0,00 & 0,00 & 0,2\% \\ \hline
+ & \multicolumn{1}{l|}{2PZ} & \multicolumn{1}{l|}{3PZ} & 4PZ &  & \multicolumn{1}{l|}{Suma2} & \multicolumn{1}{l|}{prekryv} & \multicolumn{1}{l|}{procento} \\ \hline
+Si & -0,016 & 0,032 & \multicolumn{1}{r|}{-0,044} &  & 0,00 & 0,00 & 0,1\% \\ \hline
+O & 0,075 & 0,117 &  &  & 0,02 & 0,01 & 2,8\% \\ \hline
+O & -0,085 & -0,129 &  &  & 0,02 & 0,01 & 3,5\% \\ \hline
+O & 0,075 & 0,117 &  &  & 0,02 & 0,01 & 2,8\% \\ \hline
+C & 0,071 & 0,178 &  &  & 0,04 & 0,01 & 5,0\% \\ \hline
+\end{tabular}
+\end{center}
+\label{MPA_si_ch3_och3_4}
+\end{table}
 
 \subsection{Středně velké modely}
-Tato část se věňuje nejmenším možným modelům, které již tvoří uvnitř svých struktur cyklus. Jako referenční molekula byl použita \ce{(acetylmethoxyl)trifluorsilan} z článku \ref{Chipanina2011}. Strutktura \ce{(acetylmethoxyl)trifluorsilan} slouží jako model křemíku v koordinaci čtyři, který má ve svém okolí vysoce elektronegativní atomy. To podporuje teoretické předpoklady o hypervalenci křemíku, pokud má ve svém okolí silně elektronegativní prvek.
+Tato část se věňuje nejmenším možným modelům, které již tvoří uvnitř svých struktur cyklus. Jako referenční molekula byl použita \ce{(acetylmethoxyl)trifluorsilan} z článku \cite{Chipanina2011}. Strutktura \ce{(acetylmethoxyl)trifluorsilan} slouží jako model křemíku v koordinaci čtyři, který má ve svém okolí vysoce elektronegativní atomy. To podporuje teoretické předpoklady o hypervalenci křemíku, pokud má ve svém okolí silně elektronegativní prvek.
 \begin{figure}
 \begin{center}
 \subfigure[(acetylmethoxyl)trifluorsilan]{\includegraphics[width=5.5cm]{acetylmethyltrifluor.png} \label{obr_h4sio4_MO_s1_1}}
@@ -570,10 +636,10 @@ C & Si-O & 0,086 & 87,1\% & 12,9\% & 25,7\% & 71,1\% & 3,3\% \\ \hline
 \begin{figure}
 \begin{center}
 \caption{Přehled velkých modelů}
-\subfigure[(acetylmethoxyl)trifluorsilan]{\includegraphics[width=5cm]{struktura_cis.png} \label{obr_h4sio4_MO_s1_1}}
-\subfigure[]{\includegraphics[width=5cm]{srtuktura_bez_naboje.png}\label{obr_h4sio4_MO_s1_20}}
-\subfigure[]{\includegraphics[width=5cm]{struktura_puvodni.png}\label{obr_h4sio4_MO_s1_24}}
-\subfigure[]{\includegraphics[width=5cm]{struktura_trans.png}\label{obr_h4sio4_MO_s1_24}}
+\subfigure[]{\includegraphics[width=6cm]{struktura_cis.png} \label{obr_h4sio4_MO_s1_1}}
+\subfigure[]{\includegraphics[width=6cm]{srtuktura_bez_naboje.png}\label{obr_h4sio4_MO_s1_20}}
+\subfigure[]{\includegraphics[width=6cm]{struktura_puvodni.png}\label{obr_h4sio4_MO_s1_24}}
+\subfigure[]{\includegraphics[width=6cm]{struktura_trans.png}\label{obr_h4sio4_MO_s1_24}}
 \label{prehled_large}
 \end{center}
 \end{figure}
@@ -612,6 +678,24 @@ E & Si-O & 1-2  & 0,091 & 91,63 \% & 8,37 \% & 17,13 \% & 50,11 \% & 32,76 \% \\
 \end{tabular}
 \end{center}
 \label{nbo_large}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Teoretické hodnoty NMR absolutního chemického stínění}
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+ & cis & trans & 5-koordinace & RTG bez naboje & rtg puvodni \\ \hline
+central Si & 542.5774 & 543.8238 & 493.0101 & 549.2568 & 552.6532 \\ \hline
+4-coord. Si & 493.3802 & 489.2752 & 490.9080 & 496.9045 & 493.3730 \\ \hline
+4-coord. Si & 488.7686 & 490.6081 & 487.8704 & 498.3326 & 493.4671 \\ \hline
+4-coord. Si & 491.6274 & 489.4495 & - & 496.4006 & 495.1319 \\ \hline
+4-coord. Si & - & 492.6228 & - & 498.2073 & 493.9529 \\ \hline
+4-coord. Si & - & - & - & 500.8508 & 493.5894 \\ \hline
+4-coord. Si & -  & - & - & 496.5479 & 493.8088 \\ \hline
+\end{tabular}
+\end{center}
+\label{nmr_large}
 \end{table}
 
 

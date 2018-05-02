@@ -1,22 +1,23 @@
 [0] Config.pm:354> INFO - This is Biber 2.7
-[0] Config.pm:357> INFO - Logfile is 'sci-pdflatex.blg'
-[31] biber:303> INFO - === Ne dub 29, 2018, 15:44:22
-[54] Biber.pm:359> INFO - Reading 'sci-pdflatex.bcf'
-[125] Biber.pm:835> INFO - Found 28 citekeys in bib section 0
-[138] Biber.pm:3670> INFO - Processing section 0
-[150] Biber.pm:3840> INFO - Looking for bibtex format file 'example.bib' for section 0
-[155] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
-[167] bibtex.pm:1292> INFO - Found BibTeX data source 'example.bib'
-[170] Utils.pm:164> WARN - Duplicate entry key: 'weinhold2005valency' in file 'example.bib', skipping ...
-[188] Utils.pm:164> WARN - year field '2015 [cit. 2016-05-01]' in entry 'Styskalik2015thesis' is not an integer - this will probably not sort properly.
-[190] Utils.pm:164> WARN - month field 'Mar' in entry 'Edge:a08100' is not an integer - this will probably not sort properly.
-[192] Utils.pm:164> WARN - year field '1996 [cit. 2016-05-01]' in entry 'Munzarova1996thesis' is not an integer - this will probably not sort properly.
-[243] Utils.pm:164> WARN - month field 'Nov' in entry 'PhysRev.136.B864' is not an integer - this will probably not sort properly.
-[270] Utils.pm:164> WARN - month field 'Dec' in entry 'Chipanina2011' is not an integer - this will probably not sort properly.
-[272] Utils.pm:164> WARN - BibTeX subsystem: /tmp/8uWDyD2bzG/example.bib_20265.utf8, line 134, warning: 3 characters of junk seen at toplevel
-[298] UCollate.pm:68> INFO - Overriding locale 'cs-CZ' defaults 'variable = shifted' with 'variable = non-ignorable'
-[298] UCollate.pm:68> INFO - Overriding locale 'cs-CZ' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[298] Biber.pm:3499> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'cs-CZ'
-[317] bbl.pm:608> INFO - Writing 'sci-pdflatex.bbl' with encoding 'UTF-8'
-[324] bbl.pm:712> INFO - Output to sci-pdflatex.bbl
-[324] Biber.pm:109> INFO - WARNINGS: 7
+[1] Config.pm:357> INFO - Logfile is 'sci-pdflatex.blg'
+[40] biber:303> INFO - === St kvě  2, 2018, 09:42:35
+[59] Biber.pm:359> INFO - Reading 'sci-pdflatex.bcf'
+[151] Biber.pm:835> INFO - Found 34 citekeys in bib section 0
+[169] Biber.pm:3670> INFO - Processing section 0
+[187] Biber.pm:3840> INFO - Looking for bibtex format file 'example.bib' for section 0
+[194] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[206] bibtex.pm:1292> INFO - Found BibTeX data source 'example.bib'
+[211] Utils.pm:164> WARN - Duplicate entry key: 'weinhold2005valency' in file 'example.bib', skipping ...
+[235] Utils.pm:164> WARN - year field '2015 [cit. 2016-05-01]' in entry 'Styskalik2015thesis' is not an integer - this will probably not sort properly.
+[238] Utils.pm:164> WARN - month field 'Mar' in entry 'Edge:a08100' is not an integer - this will probably not sort properly.
+[241] Utils.pm:164> WARN - year field '1996 [cit. 2016-05-01]' in entry 'Munzarova1996thesis' is not an integer - this will probably not sort properly.
+[290] Utils.pm:164> WARN - month field 'Nov' in entry 'PhysRev.136.B864' is not an integer - this will probably not sort properly.
+[303] Utils.pm:164> WARN - year field '2006 [cit. 2016-05-28]' in entry 'Standara2006thesis' is not an integer - this will probably not sort properly.
+[332] Utils.pm:164> WARN - month field 'Dec' in entry 'Chipanina2011' is not an integer - this will probably not sort properly.
+[335] Utils.pm:164> WARN - BibTeX subsystem: /tmp/g81s7qfAF6/example.bib_4199.utf8, line 134, warning: 3 characters of junk seen at toplevel
+[371] UCollate.pm:68> INFO - Overriding locale 'cs-CZ' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[371] UCollate.pm:68> INFO - Overriding locale 'cs-CZ' defaults 'variable = shifted' with 'variable = non-ignorable'
+[371] Biber.pm:3499> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'cs-CZ'
+[404] bbl.pm:608> INFO - Writing 'sci-pdflatex.bbl' with encoding 'UTF-8'
+[413] bbl.pm:712> INFO - Output to sci-pdflatex.bbl
+[414] Biber.pm:109> INFO - WARNINGS: 8
