@@ -307,7 +307,7 @@ Ačkoliv nejnovější struktura zahrnuje dvanáctičlenové cykly vzniklé troj
   \end{figure}
 
   \begin{figure}[h!]
-  \caption{Struktura silikofosfátu získaná z RTG,\cite{C4TA06823H};  Legedna: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{yellow} P, \mycircleempty{black}~H. }
+  \caption{Struktura silikofosfátu získaná z RTG, \cite{C4TA06823H};  Legedna: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{yellow} P, \mycircleempty{black}~H. }
     \center
     \includegraphics[width=10cm]{struktura_puvodni.png}
     \label{rtg_koordinace_sest}
@@ -315,13 +315,11 @@ Ačkoliv nejnovější struktura zahrnuje dvanáctičlenové cykly vzniklé troj
 
 \section{Hypervalence p-prvků}
 První kvantitativní popis chemické vazby zavedl Lewis v roce 1916, kdy vazbu považoval za sdílení elektronového páru mezi dvěma atomy. Cílem párování bylo zaplnění valenčí vrsty a dosažení konfigurace vzácného plynu, tvz. oktetové pravidlo. Pro vodík platí dubletové pravidlo, Pravidlo elektronového oktetu říká, že  prvky $p$ skupiny chtějí mít ve své valenční vrstvě právě osm elektronů. Toho lze docílit vytvořením chemické vazby, excitací, nebo ionizací. Spárované elektrony, které se neúčastní vazby, se nazývají volné elektronové páry. Přísná lokalizace elektronů s pomocé vazebných orbitlaů v Lewisovské teorii ovšem nesouhlasila s pozorování pro organické sloučeniny s uhlíkem. Vysvětlení podal L. Pauling pomocí teorie valenčních vazeb a teorii hybridizace \cite{Munzarova1996thesis}.\\
-
 Podle klasické teorie valenční vazby mohou $p$ prvky tvořit čtyři vazby. Z experimentálních pozorování je ale známo, že prvky $p$  tvoří i více než je číslo jejich atomových orbitalů, obvykle pět nebo šest. Příkladem můhou být sloučeniny xenonu, například \ce{XeF6}.
 Sloučeniny, kde se vyskytuje jeden nebo více atomů s více než osmi elektrony (oktet) se nazývají hypervalentní/hyperkoordinované. Konkrétně křemík může vytvářet 4-,5- a 6- koordinované sloučeniny a stát se hypervalentní. Pro vysvětlení hypervalence p-prvků lze použít teorii hybridizace. Obecně se čtykoordinované sloučeniny vyskytují jako tetraedry, hybridizace $sp^3$. Pětikoordinované sloučeniny tvoří trigonální bipyramidu, hybridizace $sp^3d$. A šestikoordinované sloučeniny tvoří oktaedr, hybridizace $sp^3d^2$.\\
-
 Čtyřkoordinovaný křemík splňuje tetraedrické uspořádání. Při zvýšení koordinace na pět by měla být pozorována trigonální bipyramida, $sp^3d$. Výskyt $d$ orbitalu ve vazbě ale způsobuje nárust energie vazby na více než 200 kcal/mol. Z tohoto důvodu se předpokládá, že $d$ orbitaly se podílejí pouze na polarizaci porbitalů. Pentavalentní koordinace by měla být realizována jako $3sp^2$ hybridizace doplněna třícenterní, čtyřelektronovou vazbou $3c-4e$ s p orbitalem. V pětikoordinovaných sloučeninách se ale spíše uvažuje hybridizace $sp^2$ a jedna vazba $3c-4e$ s $p$ orbitalem, právě kvůli energii $d$ orbitalů.\\
 Hypervalentní sloučeniny jsou lepší Lewisovské kyseliny díky $d+$ efektu na centralním křemíku. Důvodem je přesun elektronové hustoty na ligandy skrz nevazebné MO a podpora $3c-4e$ vazby. Rozložení elektronové hustoty molekulu stabilizuje a z tohoto důvodu se v hypervalentních sloučeninách vyskytují jako ligandy prvky s vysokou elektronegativitou. Tento jev dobře popisuje tzv. Bentovo pravidlo:"Elektronegativní prvek dáva přednost vazbe s větším p-charakterem."\cite{hypervalentsiliconmacmillangroup2005}.\\
-Pro křemík v koordinaci šest lze také předpokládat, že význam $d$ orbitalů nebude významný vzhledem k jejich energii. I zde se do vazby zapojí $3c-4e$ vazby\cite{Wagler2014}.\\
+Pro křemík v koordinaci šest lze také předpokládat, že význam $d$ orbitalů nebude významný vzhledem k jejich energii. I zde se do vazby zapojí $3c-4e$ vazby \cite{Wagler2014}.\\
 Další možnost interpretace hypervalence je založena na vysoké iontovosti vazby na křemíku. Obecně iontovost s koordinačním číslem roste.
 Navíc chování vazby Si-ligand silně závisí na samotném ligandu a sterickém a elektronovém uspořádání. Hovoříme o Lewisovské kyselosti křemíkové vazby s elektronegativním atomem. Chování křemíku lze rozdělit na iontové, sigma vazebné a donor interakci \cite{Wagler2014}.\\
 
@@ -399,8 +397,7 @@ Korelační energii lze do výpočtu zahrnout tak, že výsledná vlnová funkce
 \section{Teorie funkcionálu hustoty}
 Systémy studované v této práci mají za cíl modelovat trojrozměrnou silikofosfátovou síť. Skládají se tedy ze silikátových a fosfátových jednotek. z nimž na každou připadá cca. 50 elektronů. Je proto velice důležité zvolit metodu, která bude spojovat vysokou přesnost s vysokou výpočetní efektivností. Současně je našim cílem porozumnění sklonu křemíku k hypervalenci, což indikuje pokud možno fyzikálně průzračnný jednoelektronový model. Všechny tyto požadavky splňuje Kohn-Shamova formulace metody funkcionálu hustoty\footnote{Z matematické analýzy je funkcionál operátor zobrazení z množiny funkcí do množiny obecně komplexních čísel.}\cite{bickelhaupt2007kohn}.\\
 Základní myšlenka teorie funkcionálu hustoty pohlíží na systém elektronů a jader ze zcela jiného úhlu než tradiční $ab inito$ metody kvantové chemie, zahrnující metodu HF-SCF a její nadstavby. Posledně zmíněné metody zahajují popis molekuly od znalosti tzv. extermího potenciálu (nejčastěji daného polohami  a náboji jader) a pokračují přes kontrukci Hamiltoniánu, nalezení energií a vlnových funkcí až k výpočtu výsledné elektronové hustoty.\\
-Základní teorémy metody funkcionálu hustoty (1. a 2. Hohensberg-Kohnův teorém) ukazují, že lze postupovat i opačně. Výsledná elektronová hustota zpětně jednoznačně určuje externí potenciál, a tedy i vlnovou funkci a všechny z ní odvozené měřitelné vlasnosti. Protože je elektronová hustota funkcí pouze tří souřadnic v prostoru (a nevztahuje se narozdíl od vlnové funkce k jednotlivým elektronům), lze metody funkcionálu hustoty využít k výpočtům, které jsou do výpočetní náročnosti srovnatelné s metodou HF-SCF, ale co do přenosti popisu metodu HF-SCF dalece převyšují.
-\cite{jensen2007introduction}
+Základní teorémy metody funkcionálu hustoty (1. a 2. Hohensberg-Kohnův teorém) ukazují, že lze postupovat i opačně. Výsledná elektronová hustota zpětně jednoznačně určuje externí potenciál, a tedy i vlnovou funkci a všechny z ní odvozené měřitelné vlasnosti. Protože je elektronová hustota funkcí pouze tří souřadnic v prostoru (a nevztahuje se narozdíl od vlnové funkce k jednotlivým elektronům), lze metody funkcionálu hustoty využít k výpočtům, které jsou do výpočetní náročnosti srovnatelné s metodou HF-SCF, ale co do přenosti popisu metodu HF-SCF dalece převyšují \cite{jensen2007introduction}.
 
 Moderní DFT metody se začaly objevovat po roce 1964 jako výsledek Hohensberg-Kohnův teorémů. Aplikace v kvantově-chemických výpočtech se datují až od 90. let. Prvním Hohenberg-Kohn teorém (H-K) mluví o základním stavu. "Vnější potenciál  $V_ext$ je až na konstantu jednoznačným funkcionálem $\varrho(\vec{r})$, protože $V_ext$ určuje $\widehat{H}$, je úplný popis mnohačásticového základního stavu jednoznačným funkconálem $\varrho(\vec{r})$."\cite{PhysRev.136.B864} První H-K teorém můžeme schématicky vyjádřit takto:
 \begin{equation}
@@ -528,11 +525,11 @@ byl získán soubour NAME.47, který sloužil jako vstup do programu NBO6.0. Př
 \section{Vypočtené struktury}
 Struktury pro výpočetní část jsou rozděleny podle velikosti, podle stupně koordinace křemíku a podle množství cyklů ve strukturách. Naší snahou při tvorbě modelů bylo co nejlépe modelovat možná koordinační okolí křemíku v amorfních strukturách, pro něž nejsou dostupná přímá strukturní data. Vycházeli jsme z nepřímých strukturních dat: chemických posunů křemíku (stupeň koordinace křemíku) a vibračních spekter (informace o atomech vázaných na křemík). Dále jsme využili přímá strukturní data pro strukturně podobné, avšak krystalické systémy: \cite{C3NJ00721A} \cite{rtg_4_pinkas}. Malé sturktury měly za cíl podrobnou analýzu vazby křemík-uhlík \ref{prehled_male_modely}. (acetoxymethyl)trifluorosilan sloužil pro porovnání s ostatními modely křemíku. Existuje v něm příma vazba na uhlík a zároveň jsou kolem vysoce elektronegativní fluory. Jak bylo zmíněno v kapitole \ref{teorie_hypervalence}, křemík je ochotný navyšovat koordinaci s vysoce elektronegativními ligandy. Zároveň je (acetoxymethyl)trifluorosilan schopen tvořit intramolekulární vazbu s Si-O a tím navýšit koordinaci křemíku na pět. Tyto strukutry jsou experimentálně pozorovány a nazývají se dragonoidy \cite{Chipanina2011}. Modely střední velikosti reprezentovaly širší okolí křemíku \ref{prehled_middle} a už obsahovaly cykly, prozatím bez síťování, které je pro silikofosfáty typiské. \\
 Model \ce{SiCH3(PO4)CH3(SiP2O10)(CH3)4} obsahoval jeden cyklus, volně navázaný fosfát a přímou vazbu křemík-uhlík. Model \ce{Si(P2SiO10(CH3)4)2} už obsahoval dva cykly, které byly pozorovány v silikofosfátových polymerech. Jednalo se o nejmenší model, který už obsahoval dva cykly.\\
-Poslední část, velké modely, se věnovaly jíž pouze hypervaletnímu křemíku. Zde je klíčové zminit, že naše modely byly pouze výseky z rozsáhlých struktur polymerů a chyběla stabilizace okolními atomy. Z tohoto důvodu byla snaha zachování neutrálního náboje pro všechny struktury. Výjimku tvořila původní rentgenová srtuktura křemíku \cite{C3NJ00721A}, která byla připravena jako aniont. Výchozí strukturou byla struktura z rentgenové analýzy \cite{C3NJ00721A} \ref{rtg_6}.
+Poslední část, velké modely, se věnovaly jíž pouze hypervaletnímu křemíku. Zde je klíčové zminit, že naše modely byly pouze výseky z rozsáhlých struktur polymerů a chyběla stabilizace okolními atomy. Z tohoto důvodu byla snaha zachování neutrálního náboje pro všechny struktury. Výjimku tvořila původní rentgenová srtuktura křemíku \cite{C3NJ00721A}, která byla zároveň Výchozí strukturou \ref{rtg_6}.
 \begin{figure}
 \begin{center}
 \includegraphics[width=8cm]{rtg_6.png}
-\caption{ \ce{SiCH3(OCH3)5} Výchozí rentgenové struktury;  Legedna: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C,  \mycircle{yellow} P, \mycircleempty{black}~H}
+\caption{ \ce{SiCH3(OCH3)5}, \cite{C3NJ00721A}, Výchozí rentgenové struktury;  Legedna: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C,  \mycircle{yellow} P, \mycircleempty{black}~H}
 \label{rtg_6}
 \end{center}
 \end{figure}
@@ -541,7 +538,7 @@ V tomto modelu je křemík oblopen šesti fosfáty, které jsou vzájemně zesí
 %\captionsetup[subfigure]{labelformat=empty}
 \begin{center}
 \includegraphics[width=6cm]{rtg_4_kruh_samotne.png}
-\caption{\ce{Si(OCH3)4} Výchozí rentgenové struktury;  Legedna: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircleempty{black}~H}
+\caption{\ce{Si(OCH3)4} \cite{rtg_4_pinkas};  Legedna: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircleempty{black}~H}
 \label{rtg_4}
 \end{center}
 \end{figure}
@@ -553,7 +550,7 @@ Další koordinací, která byla experimentálně pozorována v silikofosfátech
 \begin{figure}
 \begin{center}
 \includegraphics[width=8cm]{rtg_5_koordinace.png}
-\caption{ \ce{SiCH3(OCH3)5} Výchozí rentgenové struktury;  Legedna: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircleempty{black}~H}
+\caption{ \ce{SiCH3(OCH3)5}, \cite{rtg_5}, Výchozí rentgenové struktury;  Legedna: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircleempty{black}~H}
 \label{rtg_5}
 \end{center}
 \end{figure}
