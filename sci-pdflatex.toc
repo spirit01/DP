@@ -22,36 +22,38 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.1}\rmfamily DFT metody v praxi}{15}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.2}\rmfamily Spektroskopick\IeC {\'e} vlasnosti atom\IeC {\r u} a molekul}{16}{subsection.2.2.2}
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}\slshape B\IeC {\'a}ze v kvantov\IeC {\v e} chmemick\IeC {\'y}ch v\IeC {\'y}po\IeC {\v c}tech}{16}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}\slshape P\IeC {\v r}irozen\IeC {\'e} orbitaly (NBO)}{18}{section.2.4}
+\contentsline {section}{\numberline {2.4}\slshape Interpretace kvantov\IeC {\v e} chemick\IeC {\'y}ch v\IeC {\'y}po\IeC {\v c}t\IeC {\r u}}{18}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}\slshape Kvalitativn\IeC {\'\i } koncepty v kvantov\IeC {\'e} chemii}{19}{section.2.5}
+\contentsline {subsection}{\numberline {2.4.1}\rmfamily Tvrdost a m\IeC {\v e}kkost kyselin a b\IeC {\'a}z\IeC {\'\i }}{19}{subsection.2.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.1}\rmfamily Tvrdost a m\IeC {\v e}kkost kyselin a b\IeC {\'a}ze}{19}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.4.2}\rmfamily Mullikenova popula\IeC {\v c}n\IeC {\'\i } anal\IeC {\'y}za}{21}{subsection.2.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.2}\rmfamily Mullikenova popula\IeC {\v c}n\IeC {\'\i } anal\IeC {\'y}za}{20}{subsection.2.5.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.3}\rmfamily Spektroskopick\IeC {\'e} vlasnosti atom\IeC {\r u} a molekul}{20}{subsection.2.5.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}\slshape V\IeC {\'y}po\IeC {\v c}etn\IeC {\'\i } detaily}{21}{section.2.6}
+\contentsline {subsection}{\numberline {2.4.3}\rmfamily P\IeC {\v r}irozen\IeC {\'e} orbitaly (tzv. Natural Bond Orbitals)}{21}{subsection.2.4.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}\bfseries V\IeC {\'y}sledky a diskuze}{22}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}\slshape Struktury}{22}{section.3.1}
+\contentsline {section}{\numberline {3.1}\slshape V\IeC {\'y}po\IeC {\v c}etn\IeC {\'\i } detaily}{22}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}\rmfamily \IeC {\v C}ty\IeC {\v r}koordinovan\IeC {\'y} k\IeC {\v r}em\IeC {\'\i }k jako reaktant}{23}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.1}\rmfamily Popula\IeC {\v c}n\IeC {\'\i } anal\IeC {\'y}za}{23}{subsection.3.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}\rmfamily Mal\IeC {\'e} modely}{23}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}\slshape Vypo\IeC {\v c}ten\IeC {\'e} struktury}{23}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.3}\rmfamily St\IeC {\v r}edn\IeC {\v e} velk\IeC {\'e} modely}{25}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.2.1}\rmfamily Mal\IeC {\'e} modely}{27}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.4}\rmfamily Velk\IeC {\'e} modely}{28}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.2.2}\rmfamily St\IeC {\v r}edn\IeC {\v e} velk\IeC {\'e} modely}{30}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}\slshape Vazby}{28}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.3}\rmfamily Velk\IeC {\'e} modely}{36}{subsection.3.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}\slshape Spektroskopi}{28}{section.3.3}
+\contentsline {section}{\numberline {3.3}\slshape Vazby}{36}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}\bfseries Z\IeC {\'a}v\IeC {\v e}r}{32}{chapter.4}
+\contentsline {section}{\numberline {3.4}\slshape Spektroskopie}{36}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Literatura}{33}{chapter*.10}
+\contentsline {chapter}{\numberline {4}\bfseries Z\IeC {\'a}v\IeC {\v e}r}{40}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}\bfseries P\IeC {\v r}\IeC {\'\i }lohy}{42}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Literatura}{64}{chapter*.10}

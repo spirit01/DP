@@ -121,6 +121,17 @@
 \usepackage{listings} %% Source code highlighting
 \usepackage{braket}
 \usepackage{tikz}
+\renewcommand{\thesubfigure}{\Alph{subfigure}}
+%\usepackage{subcaption}
+\usepackage{graphicx}
+\usetikzlibrary{patterns}
+\DeclareRobustCommand{\legendsquare}[1]{%
+  \tikz[baseline=(a.south)]{\node[#1, inner sep=.8ex, outer sep=0] (a) {};}%
+}
+\usepackage{etoolbox}
+
+\newrobustcmd*{\mycircle}[1]{\tikz{\filldraw[draw=#1,fill=#1] (0,0) circle [radius=0.1cm];}}
+\newrobustcmd*{\mycircleempty}[1]{\tikz{\draw (0,0) circle [radius=0.1cm];}}
 \DeclareUnicodeCharacter{2009}{ }% support older LaTeX versions
 \DeclareUnicodeCharacter{2212}{ }% support older LaTeX versions
 
@@ -154,7 +165,7 @@ Nejčastější formou výskytu křemíku v přírodě jsou křemičitany, slou�
 Silikofosfáty i hlinitokřemičitany jsou charakteristické svojí trojrozměrnou  porézní strukturou. Naše pozornost je v této práci soustředěna na silikofosfáty. Předpokládaná struktura připravených silikofosfátů studovaných v předchozích experimentálních prací je znázorněna na obrázku \ref{si_polymer_cely} \cite{Styskalik2015thesis}. Charakteristickou vlastností struktur silikofosfátů je uspořádání jednotek Si-O-P do cyklů. \\
 Ačkoliv nejnovější struktura zahrnuje dvanáctičlenové cykly vzniklé trojnásobným opakování motivu Si-O-P-O (Pinkas et. aln Inorganic Chemistry), struktury s hypervalentním křemíkem obsahují osmičlenné cykly vzniklé dvojnásobným opakování jednotky Si-O-P-O .
  \begin{figure}[h!]
- \caption{RTG struktura cyklu Si-O-P-O, \cite{C4TA06823H}.}
+ \caption{RTG struktura cyklu Si-O-P-O, \cite{C4TA06823H};  Legedna: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{yellow} P, \mycircleempty{black}~H.}
    \center
    \includegraphics[width=8cm]{rtg_kruh_samostatne.png}
    \label{rtg_cyklus}
@@ -296,7 +307,7 @@ Ačkoliv nejnovější struktura zahrnuje dvanáctičlenové cykly vzniklé troj
   \end{figure}
 
   \begin{figure}[h!]
-  \caption{Struktura silikofosfátu získaná z RTG,\cite{C4TA06823H}. }
+  \caption{Struktura silikofosfátu získaná z RTG,\cite{C4TA06823H};  Legedna: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{yellow} P, \mycircleempty{black}~H. }
     \center
     \includegraphics[width=10cm]{struktura_puvodni.png}
     \label{rtg_koordinace_sest}
@@ -378,7 +389,7 @@ Výsledná vlnová funkce se hledá následujícím způsobem: Na počátku výp
   \Psi_{r_i,R_{\alpha}} = \Psi_{electronic}(r_i,R_{\alpha}) \cdot \Psi_{nuclear}(R_{\alpha})
   \label{B_O_approximace}
 \end{equation}
-Nejnižěí energie se hledá pomocí selfkonzistentní metody (viz. výše).
+Nejnižší energie se hledá pomocí selfkonzistentní metody (viz. výše).
 Nevýhoda HF-SCF přístupu je fakt, že neuvažuje korelaci elektronového pohybu, tj. fakt, že vybraný elektron nevnímá ostatní elektrony v jejich časově zprůměrovaném rozložení, nýbrž že vnímá okamžité polohy ostatních elektronů a přizpůsobuje jim svoji polohu. \\
 
 Korelační energii lze vyjádřit jako rozdíl mezi přesnou nerelativistickou energii a HF limitou tzv. Hartree-Fockovou limitou, což je je energie Slaterova determinant, vyjádřeného v limitě nekonenčné báze. Ačkoliv korelační energie představuje méně než 1\% celkové tzv. energie elektronů, nemůže být zanedbána, pokud požadujeme chemickou přesnost tj. $1-2$ kcal/mol.
@@ -412,13 +423,25 @@ E(\varrho(\vec{r})) = T_s[\varrho(\vec{r})] + J[\varrho(\vec{r})] + \int V_{EX}(
  T_s = -\frac{1}{2} \sum_{i=1}^{N}  \bra{\psi_i}{\nabla^{2}}\ket{\psi_i}
  \label{kineticka_energie_jednoelektronova}
  \end{equation}
- Kinetická energie $T_s$ ale není přesným vyjádřením kinetické energie. Chybějící část je zajištěna $E_{EX}[\varrho(\vec{r})]$, výměnná-korelační energie. $J[\varrho(\vec{r})]$ je přesná Coulombovská repulze. $\int V_{EX}(\vec{r})\varrho(\vec{r})d\vec{r}$ je přesná energie atrakce elektronů jádry.  \cite{parr1994density}
+ Kinetická energie $T_s$ ale není přesným vyjádřením kinetické energie. Chybějící část je zajištěna $E_{EX}[\varrho(\vec{r})]$, výměnná-korelační energie. $J[\varrho(\vec{r})]$ je přesná Coulombovská repulze. $\int V_{EX}(\vec{r})\varrho(\vec{r})d\vec{r}$ je přesná energie atrakce elektronů jádry \cite{parr1994density}.
 
 \subsection{DFT metody v praxi}
 Největším problémem při aplikaci DFT je nalzení vhodného výměně-korelačního potenciálu. V principu přesný KS přístup neříká nic o tom, jak výměně-korelační potenciál nalézt. Existují dva způsoby hledání tohoto parametru. První hledá vhodný $E_{EX}$ z teorie, jedná se o čistý $ab inito$ přístup. Druhý přístup hledá parametry pro $E_{EX}$, které lze určit z experimentálních dat. \\
 První přístup se ozačuje jako Aproximace lokální hustoty(LDA\footnote{LDA = The Local Density Approximations}) a vychází z modelu homogenního elektronového plynu. Jedná se o hypotetický stav, kde se elektorny pohybují na kladném pozadí a celkový náboj je neutrální. Celý prostor se rozdělí na jednotky objemu a elektronová hustota se počítá vždy ve středu tohoto objektu. Celkovou energii najdeme jako součet přes všechny objemy. Tento model je vhodný pro jednoduché kovy, napříkald sodík. S jeho pomocí lze popsat valenční elektorny v kovech. Význam LDA modelu je, že je to jediný systém, pro který známe přesně $E_{EX}$ část. Vylepšením LDA modelu je oddělená práce s elektronovou hustotou elektronů se spinem $\alpha$ a $\beta$, označováno jako LSDA, Local Spin Denstiy Approximation. Nevýhodou je, že obě metody nelze dobře použít pro nehomogenní elektrostatické pole molekul a chemických reakcí.\\
  Druhým přístupem je metoda gradientu hustoty (GGA - Generelazized Gradient Approximation). S pomocí Taylorova rozvoje lze z lokálního hodnoty elektronové hustoty v daném objemu získat gradient hustoty $\nabla \varrho(\vec{r})$, výměnný-korelační funkcionál má obecný tvar. Nejvýznamější funkcionály je Beckeho výměnný funkcionál s jedním parametrem. Dalíš znám yje LYP nebo BLPY. Práce GGA funkcionály vedlyk rozšířením DFT v kvantové chemii. \\
  Třetí významnou skupinou funkcionálu josu hybridní funkcionály. Hybridní funkcionály jsou kobinací čistého DFT přístupu a přesné HF výměny. Nejznámějším funkcionálem je B3LYP, navržen v roce 1994. Funkcionál B3LYP je dodnes považován za univerzální a nejpoužívanější funkcionál. Nachází využití v mnoha chemických aplikaích \cite{koch2000chemist}.
+
+ \subsection{Spektroskopické vlasnosti atomů a molekul}
+ Kvantově-mechanické metody popsané výše lze využít k výpočtu dovolených hladin energie a jim odpovídajících vlnových funkcí. Z vlnových funkcí ale dle postulátů kvantové mechaniky vyplývají všechny pozorovatelné vlasnosti systému, tedy například odpověď na vnější magnetické pole. Externí magnetické pole $\vec{B}_0$ totiž interaguje s orbitalními momenty hybnosti jednotlivých elektronů. Tím se vytváří dostatečné magnetické pole $\delta \vec{B}$ působící na jádro. Přídavné pole $\delta \vec{B}$ odpovídá vnějšímu poli $\vec{B}$ vztahem:
+\begin{equation}
+  \delta \vec{B} = - \sigma \vec{B}_0
+\end{equation}
+kde $\sigma$ je tzv. stínící konstanta (většinou kladá, někdy však záporná) \cite{atkins2010atkins}.
+%#TODO atkins, definice chemického posunu, strana 496
+
+ $B_0$, které je reprezentováno vektorovým potenciálem tohoto pole. V~ideálním případě by neměla mít volba počátku tohoto pole vliv na výsledek. Jedním z~důsledků aproximace v~kvantové chemii je fakt, že volba počátku výrazně ovlivňuje výsledné chemické stínění. Problém se nazývá \uv{Gauge origin problem}. Metoda GIAO (Gauge  Including Atomic Orbitals) řeší problém způsobem, že zahrnuje počátek vektorového potenciálu do atomových orbitalů. Vhodnou bazí pro tyto výpočty je IGLO$-$III \cite{Standara2006thesis} (Individual Gauge for Localized Orbitals) \cite{g09}.
+
+
 \section{Báze v kvantově chmemických výpočtech}
 Základním přístupem pro hledání molekulových orbitalů je metoda MO-LCAO, která je založena na postulátu o úplnosti systému vlastních funkcí.
 Podle postulátu QM o úplných vlastních hodnotách uplných Hermitovských operátorů lze každý molekulový orbital sestrojit jako lineární kombinaci atomových orbitalů, tzv. LCAO\footnote{LCAO - Linear Combination of Atomic Orbitals.}. Jednotlivé molekulové orbitaly jsou hledány jako lineární kombinace atomových orbitalů.
@@ -442,25 +465,28 @@ $N$ je počet primitivních funkcí, $d$ je kontrakčné koeficient, $\alpha$ je
 Úplné vyjádření MP pomocí AO vyžaduje úplný, tj. nekonečně velký systém AO, a rozvinuté AO do STO nebo GTO vyžaduje v principu nekonečně velkou sadu těchto tzv. bázových funkcí.\\
 Nejmenší smyslnuplnou sadou bázových funkcí je ta, která obsahuje jeden STO na každý orbital příslušného atomu, který může být v základním stavu obsazen. Například pro uhlík je touto nejmenší sadou - tzv. minimální bazí množina STO reprezentující orbitaly $\{1s, 2S, 2_x, 2p_y, 2p_z \}$. Pro přesnější popis chování atomů a molekul je výhodné použít rozšířené bázové funkce. Vzhledem k lepšímu matematickému chování GTO jsou STO vyjádřeny jako kombinace $n$ primitivních gaussiánů \cite{lowe2011quantum}.
 Double Zeta (DZ) používá dvoujnásobný počet bázových funkcí než minimální báze. Triple Zeta trojnásobný počet bazí než minimální báze. Další kategorií jsou Split valence báze, příkladem je Poplovy báze 6-31G. Každý nevalenční orbital je šesti a každý valenční orbital je popsán primitivními gaussiány dvěmou skupin - jedním a třemi gaussiany. Nadstavbou ještě bývají polarizační báze, které obsahují funkce pro $d$(pro p prvky) nebo $p$ (pro vodík) orbitaly. Popisují polarizaci elektornového obalu v důsledku působenení ostatních jader atomů. \\
-Speciáním případem je sada bázových funkcí přirozených atommových orbitalů, které jsou lokalizované v jednom centru. Sada bázových funkcí přirozených atomových orbitalů je příkladem zmenšením báze. Přirozené orbitaly jsou takové, které diagonalizují matici hustoty a počet elektronů v orbitalu odpovídá obsazovacímu čísli. NAO v sobě obsahují místní posuny náboje, které se do systému zavádí pomocí variačního přístupu z více základních funkcí. Výhodou NBO přístupu je lepší převod na chemické vlasnosti, jako je například Lewisovskká kyselost. \\
-Poslední zmíněnou možností pro popis elektrů v systému je model psudopotenciálu. Systém s velkým počtem core, vnitřních, elektronů, jsou časové náročné. Často to jsou prvky za třetí periodou. Z pohledu chemické vazby je možno vliv core elektronů považovat za méně důležitý. Stejná situace nastává ve chvíli, kdy je v systému příliš mnoho elektornů. Jednoduše, systém je příliš velký. V obou případech lze použít funkci, ktra bude modelovat chování core elektronů. ECP má čtyři hlavní kroky. Prvním krokem je, že vlnová funkce pro všechny elektrony je vytvořdna s pomocí HF metody. Valenční orbitaly jsou nahrazeny skupinou psudoorbitalů bez nodálních ploch.
+Poslední zmíněnou možností pro popis elektrů v systému je model efektivního jaderného pseudopotenciálu. Jedná se o nahrazení core elektronů celkvovým tzv. pseudopotenciálem. Výpočet pro systém s velkým počtem core, vnitřních, elektronů, je časově náročný a zároveň s rostoucí velikostí jádra stoupá i vliv relativistických efektů. Pro atomy od 5.periody (In, Sn, Sb, I, Xe) už je zahrnutí relativistických efektů nezbytností pro správný popis chování. Pro přesný popis molekul je efektivní jaderný potenciál nezbytný zařadit od 4. periody. \\
+Další uplatnění ECP je pro velké systémy s příliš mnoho elektrony, v našem případě silikofosfáty. Modelované silikofosfáty obsahují velké množství prvků 3. periody a tedy i velké množství elektronů. Právě velký počet elektronů navyšuje výpočetní náročnost systému. Z pohledu studia chemické vazby u silikofosfátů je možno vliv core elektronů na vlasnosti vazeb považovat za méně důležitý a proto lze použít model ECP. Výhodou přístup ECP je fakt, že v sobě zahrnuje i relativistcké efetky na struktury, které ovlivňují délku zkoumaných vazeb a popis je díky němu přesnější.
 
-\section{Přirozené orbitaly (NBO)}
-Přirozené molekulové orbitaly \footnote{NBO - Natural Bond orbital} jsopou odlišným pohledem na chemickou vazbu. Existuje spoustu přístupů k analýze vlnové funkce. Schrödingerova rovnice určuje energii pro každou vlnovou funkci. Vlnová funkce určuje pozici elektronů i jader. Jak je možné určite, zda jsou dva atomy spojené vazbou? Dobrým příkladem parametru, který lze použít pro určení vlasnosti molekul je atomový náboj. Obvyklé metody pro přiřazení náboje elektronu je analýza založená na bázových funkcí, elektrostatické potenciálu nebo vlnové funkci, lokalizovaných orbitalech nebo přirozených orbitalech. \\
-První přístup používá MO a matici hustoty (DS)\footnote{DS - Density Matrix} a Mullikenovu populační analýzu. Čiste matematikcým přístupem je těžké určit správný výsledek. Sada populačních nábojů neodpovídá skutečným multipole moment.
+\section{Interpretace kvantově chemických výpočtů}
+Řešením Schrödingerovy rovnice získáváme hladiny energie a příslušné vlnové funkce. Mnohaelektronová vlnová funkce je však příliš složitým objektem pro obvyklou chemickou interpretaci. Ta vychází z míry kovalence resp. iontovosti jednotlivých vazeb, jejich síly resp. násobnosti nebo asymetrie rozložení náboje, popř. elektrostatickým potenciálem. Pro analýzu charakteru vazeb i rozložení náboje v molekule je v současnosti využívají dvě možná schémata populační analýzy. První z nich je založeno na tzv. kanonických Hartre--Fockových popř. (u metody DFT) Kohn-Shamových orbitalů. Jejich typickým rysem je fakt, že jsou zpravidla delokalizovány přes několik atomových center, tj. odpovídají nikoli dvojici, ale větší skupině atomů spojených vazbou. Jejich charakter se pak analyzuje pomocí Mullikenovy populační analýzy, která je popsána níže. Druhé schéma analýzy vazeb vychází z tzv. přirozených vazebných orbitalů, které jsou taky rozebrány níže. \\
+Populační analýzu, MPA i NBO, lze použít pro analýzu chemických vazeb a následné reaktivity sloučenin. Pokud jsou orbitaly již zapojené do vazby, tak již prostor pro zapojení do další vazby v chemické reakci je minimální. Proto lze z populační analýzy sloučenin určit chemickou reaktivity. Druhým přístupem pro posouzení chemické reaktivity je teorie tvrdých a měkkých kyselin a zásad, která vychází z experimentálních pozorování.
 
-Lepší přístup pro popis náboje je elektrostatický potenciál. Náboj je silně spojen s force field method. Nevazebné interakce josu popsány jako část elektrostatické interakce. Cčsitě matemtický přístup poskytuje metoda AIM\footnote{AIM = Atoms in Molecules}. Elektronová hustota může být vyhodnocena jako normální analytická funkce, která má své minimum, maximum a sedlové body. Hranice mezi dvěma atomy v tři dimenzionálním prostoru prostorem s dvěmi dimenzemi. \\
-Dalším způsobem vyhodnocení jsou Lokalizované Orbitaly (NO).  První řád matice je diagonalizován a jeho vlastní vektory jsou označeny jako přirozené orbitaly. Vlastní hodnoty jsou obsazovací čísla. NO dávájí nejrychlejší konvergenci (Carlson-Keller teorem) a mohou popsat rozložení elektronů v atomech a odvození atomového náboje a vazby.  \cite{jensen2007introduction} \\
- NO jsou teoretickým zjednodušením, které určuje elektronovou hustoty v atomech a  tento přístup odpovídá přístupu Lewisovských struktur. NO byly objeveny v roce 1955 Per-Olov Lödwin, Löwdinův orthogonální algoritmus. NO mohou být vyvořeny z Slaterova determinantu. K-S nemají fyzikální význam a je zde problém s interpretací výsledků. Ale platí, že HF i K-S orbitaly mohou být použity pro tvorbu sady přirozených vazebných orbitalů. Přiozené orbitaly jsou vytvořeny diagonalizací matice hustoty
-(NBO program)
- AOs -> NAOs -> NHOs -> NBOs -> NLMOs -> MOs
 
-Lepší sada orbitalů se nazývá "přirozené" a jsou schopné zahrnout korelaci $\varrho$(r). Přirozené orbitaly mají maximální obsazenost a jsou určené ze samotné vlnové funkce.
+\subsection{Tvrdost a měkkost kyselin a bází}
+Z experimentálních pozorování je známý fakt, že určité kyseliny reagují přednostně s určitým typem bazí. Na základě toho byly kyseliny a báze rozděleny na tzv. tvrdé a měkké.
+ S pomocí analýzy globální tvrdosti/měkkost kyselin a bazí může být predikován produkt reakce a jeho stabilita. Myšlenka HSAB (Hard and Soft Acids and Bases) lze použít i pro odhadnuí tvořit hypervalentní molekuly. HSAB teorie říká, že tvrdá kyselina a~tvrdá báze spolu poskytnou stabilní komplex, naopak slabá kyselina a~slabá báze spolu poskytnou méně stabilní komplex. Z~toho vyplývá, že ze znalosti reakčních podmínek a~příslušné tvrdosti lze predikovat stabilitu vzniklého komplexu. Jeden z~možností kvantitativního určení tvrdosti/měkkosti je určení parametrů $\chi$ \ref{hsab_vypocet_elektronegativita} a~$\eta$ \ref{hsab_vypocet_tvrdost} \cite{hsabclanek}. Způsob, jak výpočítat parametry $\chi$ a~$\eta$ je určeny tzv. Koopmansovým teorém. Tato aproximace nejprve předpokládá, že Hartree-Focků nebo Kohn-Shamův přístup popisuje systém dostatečně. V druhém kroku dochází k zanedbání relaxace elektronů při odevzdání jednoho elektronu z HOMO orbitalu. Díky této aproximace lze parametry $\chi$ a~$\eta$ vypočítat jako rozdíl energii HOMO a LUMO orbitalů. Tento výpočet
+ \begin{equation}
+ \chi = - \left( \frac{\delta E}{\delta N} \right) = \frac{IP + EA}{2} = -\mu
+ \label{hsab_vypocet_elektronegativita}
+ \end{equation}
+ \begin{equation}
+ \eta = \frac{1}{2} \left( \frac{\delta \mu}{\delta N} \right) = \frac{1}{2}\left( \frac{\delta^2 E}{\delta N^2} \right) = \frac{I~- A}{2}
+ \label{hsab_vypocet_tvrdost}
+ \end{equation}
+ $\chi$ je absolutní elektronegativita  \footnote{Elektronegativity byla Paulingem definována pomocí ionizačního potenciálu a~elektronové afinity} , $\mu$ je chemický potenciál, $E$ je energie a~$N$ je počet elektronů \cite{hsabwatoc}. Podle Koopmansova teorému platí $E_{HOMO} = - IP$, $IP$ je ionizační potenciál a~$E_{LUMO} = -EA$, $EA$ je elektronová afinita \cite{kratochvilexcerpta}. $\eta$ je atomová tvrdost \footnote{$\eta = \frac{1}{\sigma}$, $\sigma$ je měkkost atomu} \cite{pearson1986absolute}. Tvrdá kyselina a~báze je charakterizována velkým rozdílem $IP$ a~$IA$, což se projeví jako vysoké hodnoty $\chi$ a~$\eta$. Při znalosti $E_{HOMO}$ a~$E_{LUMO}$ lze predikovat ochotu reakčního centra interagovat s~námi zvoleným reagentem a~zároveň odhadnout stabilitu vzniklého komplexu. Systémy s~velkým rozdílem $E_{HOMO}$ a~$E_{LUMO}$ jsou tvrdší, stabilnější a~méně reaktivní \cite{hsabwatoc}. Hodnoty $\eta$ a $\chi$ byly použity v této práci pro určení tvrdosti a měkkosti silikofosfátových produktů.
 
-\section{Kvalitativní koncepty v kvantové chemii}
-\subsection{Tvrdost a měkkost kyselin a báze}
-Chemickí tvrdost a měkkost má pro experimentální chemii velký význam . S pomocí analýzy tvrdosti/měkkost může být predikován produkt reakce a jeho stabilita. Bylo pozorováno, že reakce dvou tvrdých molekul poskytuje stabilní produkt, stejně to platí i pro reakci dvou měkkých molekul. \\
-Globální tvrdost a měkkost můžou být použity pro celou molekulu. Jednotlivé atomy mají tvrdost a měkkost lokální. Tuto vlastnost lze interpretovat jako lokální náboj. Globální vlastnosti pochází z energie HOMO a LUMO orbitalů. Určení lokálních vlastností je obtížné, protože jsou spojeny s Fukuiho rovnicí. Ty popisují, který atom v molekule přijme nebo ztratí elektron. Chemická interpretace je schopnost nuklefilního nebo elektrofilního útoku. Stejně dobře to popíše externí elektrické pole a polarizace. Toto je přímo spojené s elektronovou hustotou a DFT metodami.
+Globální tvrdost a měkkost uvedená výše může být použita pro celou molekulu. Při podrobnějším pohledu na jednotlivé atomy lze získat tvrdost a měkkost lokální. Tuto vlastnost lze interpretovat jako lokální náboj na jednotlivých atomech. Určení lokálních vlastností je obtížné, protože jsou spojeny s Fukuiho rovnicí. Ty popisují, který atom v molekule přijme nebo ztratí elektron. Chemická interpretace je schopnost nuklefilního nebo elektrofilního útoku. Stejně dobře to popíše externí elektrické pole a polarizace. Toto je přímo spojené s elektronovou hustotou a DFT metodami.
 
 Elektrofilita atomu A v molekule M s N elektrony.
 \begin{equation}
@@ -474,168 +500,143 @@ Radical attack susceptibility of atom A in molecule M with N electrons.
 \begin{equation}
 f_A^0 = \frac{1}{2}[P_(N+1) - P_A(N-1)]
 \end{equation}
-Nalezení obsazovacího čísla na každém atommu je citlivé na výběru baze. Příliš velká baze dává špatné výsledky.\\
 
-Ochotu tvořit hypervalentní molekuly lze odhadnout podle konceptu HSAB (Hard and Sfot Acids and Basics). Kyseliny a~báze mohou být rozděleny na měkké a~tvrdé. HSAB teorie říká, že tvrdá kyselina a~tvrdá báze spolu poskytnou stabilní komplex, naopak slabá kyselina a~slabá báze spolu poskytnou méně stabilní komplex. Z~toho vyplývá, že ze znalosti reakčních podmínek a~příslušné tvrdosti lze predikovat stabilitu vzniklého komplexu. Jeden z~možností kvantitativního určení tvrdosti/měkkosti je určení parametrů $\chi$ \ref{hsab_vypocet_elektronegativita} a~$\eta$ \ref{hsab_vypocet_tvrdost} \cite{hsabclanek}.
-\begin{equation}
-\chi = - \left( \frac{\delta E}{\delta N} \right) = \frac{IP + EA}{2} = -\mu
-\label{hsab_vypocet_elektronegativita}
-\end{equation}
-\begin{equation}
-\eta = \frac{1}{2} \left( \frac{\delta \mu}{\delta N} \right) = \frac{1}{2}\left( \frac{\delta^2 E}{\delta N^2} \right) = \frac{I~- A}{2}
-\label{hsab_vypocet_tvrdost}
-\end{equation}
-$\chi$ je absolutní elektronegativita  \footnote{Elektronegativity byla Paulingem definována pomocí ionizačního potenciálu a~elektronové afinity} , $\mu$ je chemický potenciál, $E$ je energie a~$N$ je počet elektronů \cite{hsabwatoc}. Podle Koopmansova teorému $E_{HOMO} = - IP$, $IP$ je ionizační potenciál a~$E_{LUMO} = -EA$, $EA$ je elektronová afinita \cite{kratochvilexcerpta}. $\eta$ je atomová tvrdost \footnote{$\eta = \frac{1}{\sigma}$, $\sigma$ je měkkost atomu} \cite{pearson1986absolute}. Tvrdá kyselina a~báze je charakterizována velkým rozdílem $IP$ a~$IA$, což se projeví jako vysoké hodnoty $\chi$ a~$\eta$. Při znalosti $E_{HOMO}$ a~$E_{LUMO}$ lze predikovat ochotu reakčního centra interagovat s~námi zvoleným reagentem a~zároveň odhadnout stabilitu vzniklého komplexu. Systémy s~velkým rozdílem $E_{HOMO}$ a~$E_{LUMO}$ jsou tvrdší, stabilnější a~méně reaktivní \cite{hsabwatoc}.
+Přístup lokální tvrdosti a měkkosti je další úroveň pohledu na chemickou reaktivity molekul. Z časových důvodů ale nebyla tato analýzy v této práci provedena a bude předmět dalšího výzkumu v oblasti silikofosfátů.
+
 \subsection{Mullikenova populační analýza}
 
-\subsection{Spektroskopické vlasnosti atomů a molekul}
-DFT metodami lze kromě optimalizací počítat také parametry nukleární magnetické rezonance (NMR). Jedním z~NMR charakteristik molekul je chemické stínění. Do \textit{ab-inito} výpočtu nově vstupuje vnější magnetické pole $B_0$, které je reprezentováno vektorovým potenciálem tohoto pole. V~ideálním případě by neměla mít volba počátku tohoto pole vliv na výsledek. Jedním z~důsledků aproximace v~kvantové chemii je fakt, že volba počátku výrazně ovlivňuje výsledné chemické stínění. Problém se nazývá \uv{Gauge origin problem}. Metoda GIAO (Gauge  Including Atomic Orbitals) řeší problém způsobem, že zahrnuje počátek vektorového potenciálu do atomových orbitalů. Vhodnou bazí pro tyto výpočty je IGLO$-$III (Individual Gauge for Localized Orbitals) \cite{Standara2006thesis} \cite{g09}.
+\subsection{Přirozené orbitaly (tzv. Natural Bond Orbitals)}
+Jedná se o orbitaly přirozené v tom smyslu, že jsou nejvhodnějšími vychozími orbitaly pro započtení elektronové korelace tím, že diagonalizují tzv. jednočásticovou matici hustoty. Lze pracovat s jejich delokalizovanými nebo lokalizovanými variantami. Druhý přístup je mnohem častěji využívaný a je aplikován i v této práci \cite{weinhold2005valency} .
+Přirozené molekulové orbitaly \footnote{NBO - Natural Bond orbitals} jsou užitečné nástrojem analýzy a interpretace vazebných i spektroskopických vlastností molekul. Koncept přirozených orbitalů navrhl v roce 1955 Per-Olov Löwdin jako výsledek tzv. Löwdinova-orthogonalizačního algoritmu pro jednočásticovou matici hustoty. Výsledkem tohot procesu jsou jednak vlastní funkce - tzv. přirozené orbitaly - a jednak příslušné vlastní hodnoty - tzv. obsazovací čísla. Přirozené orbitaly jsou i v praxi hledány pomocí postupné transformace AO -> NAO -> NHO -> NBO -> NLMO, tj. z atomových orbitalů se vytvářejí přirozené atomové orbitaly, z nich prostorově lokalizované přirozené hybridní orbitaly, z nich dále přirozené orbitaly  a konečně přirozené lokalizované orbitaly. Tuto proceduru lze použít jak pro metodu Hartree-Focka a nadstavby na ní založené, tak pro přístup DFT. Kohn-Shamovy orbitaly jsou ideálním východiskem pro transformaci do NBO, mj. proto, že (i přes četná nesprávná tvrzení v literatuře) je fyzikální význam Kohn-Shamových orbitalů hlubší než význam Hartree-Fockových orbitalů.  [ODKAZ?]
 
 
-\section{Výpočetní detaily}
-První podoby modelů silikofosfátů byly tvořeny v programu Avogadro \cite{Avogadro}. Pro získání optimalizovaných struktur byl použt program Gaussian, verze ES64L-G09RevD.01 24-Apr-2013. Všechny výpočty byly prováděny metodou DFT. Výchozí parametr optimalizace pro použité struktury byl funkcionál B3LYP s bazí 6-31G*. Pro malé modely byly ve dvou případech přidány speciální volby Opt=CalcFC a SCF=Vshift. Klíčové slovo Opt=CalcFC zajistí výpočet silových konstant v prvním bodě optimalizace. Narozdíl od běžné volby Opt, kdy je Hessian pouze odhadovaný, při použití klíčového slova CalcFC je Hessian vypočítán jako při frekvenční analýze. Druhé klíčové slovo SCF=VShift[N] pomáhá s konvergencí struktury, protože posune energii orbitalů o N*0,0001 [miliHartrees]. My jsme použili výchozí nastavení N=-1. \\
-Pro střední modely bylo postačující základní nastavení. Pro velké molekuly byly použity dva přístupy. Pro méně přesný model bylo použito klíčové slovo Pseudo=Read. V druhém kroku optimalizace již byl použit zmíněný funkcionál i báze. \\
-Pro získání orbitalů pro Mullikenovu populační analýzu byla použita menší báze 3-21G, funkcionál B3LYP. Pro analýzu NMR parametrů byla použita speciální báze IGLO \cite{iglo} a klíčové slovo nmr \cite{g09}.
- Pro NBO analýzu byl nejprve programem Gaussian vytvořen soubor file.47, který sloužil jako vstup do programu NBO6. Přidáním klíčového slova $PLOT$ do vstupu NBO6 byly ziskány soubory file.31 až file.46. Pro vykreslení přirozených orbitalů byl použit soubor file.37 \cite{doi:10.1002/jcc.23266}.
+
 
 \chapter{Výsledky a diskuze}
-Výpočetní část byla rozdělena do tří částí. První část se zabývá stukturami, druhá část dává podrobnější pohled na vazby ve zvolených strukturách a třetí, poslední, část se zaměřuje na spektroskopii.
-Cílem strukturní části bylo modelovat menší části struktur silikofosfátů metodami DFT. Modely silikofosfátových polemyrů byly rozděleny do tři skupin podle velikosti a kooridnace křemíku. Vazby v modelech silikofosfátů byly analyzovány metodou NBO a Mullikenovou populační analýzou. Poslední část, která se věnuje spektroskopii, dává pohled na NMR parametry křemíku a porovnává je s experimentálně získanými hodnotami.
+Následující část byla rozdělena do čtyř oddílů. První část shrnuje výpočetní detaily. Druhá  část se zabývá vypočtenými strukturami, třetí část dává podrobnější pohled na vazby ve zvolených strukturách a čtvrtá, poslední, část se zaměřuje na chemický posun v NMR.
 
-\section{Struktury}
-Struktury pro teoretickou část jsou rozděleny podle velikosti, podle stupně koordinace křemíku a podle množství cyklů ve strukturách. Zvolené modely byly tvořeny podle experimentální motivace. Snahou bylo co nejlépe modelovat koordinační okolí křemíku. Malé sturktury měly za cíl podrobnou analýzu vazby křemík-uhlík. Jednoduchý model umožňoval detailní pohled na chemickou vazbu.\\
+\section{Výpočetní detaily}
+Modely, pro jejichž prozkoumání jsme se rozhodli, byly na základě konektivity jednotlivých atomů zaneseny do vstupu programu Avogadro. V programu Avogadro byly struktury předoptimalizovány předvolenou molekulovou mechanikou \cite{Avogadro}. Získané struktury byly plně optimalizovány metodou B3LYP \cite{b3lyp} s bazí 6-31G* v programu Gaussian, verze ES64L-G09RevD.01 24-Apr-2013  \cite{g09}. Pro malé modely byly ve dvou případech přidány speciální volby Opt=CalcFC a SCF=Vshift. Klíčové slovo CalcFC zajišťuje výpočet silových konstant v počátečním bodě stejnou metodou a bází, v nichž probíhá samotná optimalizace. Předvolba totiž stanovuje, že původní odhad silových konstant je prováděn pomocí jednoduchého silového pole (tj. klasickou mechanikou). Druhé klíčové slovo SCF=VShift[N] pomáhá s nalezením vlnové funkce v případě systémů s malým energiovým rozdílem mezi energii HOMO a LUMO orbitalů. Na začátku procesu SCF jsou všechny virtuální orbitaly posunuty v energii o N*0,0001 miliHartree nahoru a v závěru výpočtu jsou jejich energie vráceny zpět. My jsme použili výchozí nastavení N=-1. Pro analýzu NMR parametrů byla použita speciální báze IGLO \cite{iglo} a klíčové slovo nmr \cite{g09}. \\
+Pro střední modely bylo postačující základní nastavení. Optimalizace velkých modelů byla již čassově poměrně náročná. Například krystalová struktura bez náboje obsahovala 349 elektronů a bylo potřeba 1309 bázových funkcí pro optimalizace s B3LYP a funkcionálem 6-31G*. Z tohoto důvodu byly vleké modely nejprve předoptimalizované stejnou metodou jako menší modely (B3LYP), ale s využitím kvazirelativistického efektivního jaderné pseudopotenciálu pro implicitní zahrnutí vnitřních elektronů, klíčové slovo Pseudo=Read. Ve druhém kroku optimalizace již byl proveden výpočet se zahrnutím všech elektronů v bázi 6-31G*.\\
+\subsection{Populační analýza}
+Pro získání orbitalů pro Mullikenovu populační analýzu byla použita menší báze 3-21G, funkcionál B3LYP. Populační analýzy založené na rozkladu do bázových funkcá jsou totiž nejužitečnější pro porovnání trendů u distribucí elektronové hustoty s použitím malých nebo středně velkých bází, které obsahuji relativně kontrahované funkce \cite{jensen2007introduction}.
+ Pro NBO analýzu byla použita implementace NBO3 v programu Gaussian, Gaussian NBO Version 3.1; verze Gaussianu AS64L-G09RevD.01 24-Apr-2013. Volbou  \begin{lstlisting}[frame=single]
+ $NBO ARCHIVE FILE=NAME $END
+  \end{lstlisting}
+byl získán soubour NAME.47, který sloužil jako vstup do programu NBO6.0. Přidáním klíčového slova $PLOT$ do NAME.47 a použitím programu NBO6.0 byly ziskány soubory NAME.31 až NAME.46. Pro vykreslení přirozených orbitalů programem NBO6View byl použit soubor NAME.37 \cite{doi:10.1002/jcc.23266}.
 
-Modely střední velikosti reprezentovaly širší okolí křemíku. (acetoxymethyl)trifluorosilan sloužil jako model křemíku, kde se vyskytovala příma vazba na uhlík a zároveň byly kolem vysoce elektronegativní fluory. Jak bylo zmíněno v kapitole \ref{teorie_hypervalence}, křemík je ochotný navyšovat koordinaci s vysoce elektronegativními ligandy. Zároveň je (acetoxymethyl)trifluorosilan schopen tvořit intramolekulární vazbu s Si-O a tím navbýšit koordinaci křemíku na pět. Tyto strukutry jsou experimentálně pozorovány a nazývají se dragonoidy \cite{Chipanina2011}. Další dva střední modely už obsahovaly cykly, prozatím ale malé. \\
-Model middle1 \ce{SiCH3(PO4)CH3(SiP2O10)(CH3)4} obsahoval jeden cyklus, volně navázaný fosfát a přímou vazbu křemík-uhlík. Model middle2 \ce{Si(P2SiO10(CH3)4)2} už obsahoval dva cykly, které byly pozorovány v silikofosfátových polymerech. Jednalo se o nejmenší model, který už obsahoval dva cykly.\\
-
-Největším problémem se ukázaly velké struktury, kde nalezení vhodného modelu trvalo nejdelší dobu. Nalezení vhodného modelu se stalo klíčovým problémem této práce.  Výchozí strukturou byla struktura z rentgenové analýzy \cite{C3NJ00721A}, kde se křemík vyskytoval v koordinaci šest. Z tohoto modelu vycházely všechny ostatní struktury se šestikoordinovaným křemíkem. V experimentálních struktruách silikofosfátů se krom fosfátových skupiny vyskytovaly tak různé acetylové skupiny. Právě přítomnost acetylových skupin měla vliv na chování křemíku. Acetylové skupiny  se v okolí křemíku vždy vyskytovaly po dvou a toto bylo dodrženo i v modleových strukturách. Zvolila jsem dvě možnosti umístění acetylových skupin, poloha cis a trans(obrázek). První návrh byl velice podobný původní krystalové struktuře, včetně přítomnost osmi cyklů. To se ukázalo jako problematické a pro různé modely bylo nutno dělat rozdílná uvolnění cyklů. Zde je klíčové zminit, že naše modely byly pouze výseky z rozsáhlých struktur a chyběla stabilizace okolní hmotou. Pro všechny modelové struktury bylo nutno povolít napětí mezi cykly. Původní krystalová struktura obsahovala šest cyklů. Mnou upravené struktury obsahovaly cykly dva (cis) nebo čyři(trans). Další koordinací, která byla pozorována byl křemík v koordinaci pět. Tento typ nebyl příliš častý, ale řadí se mezi experimentálně pozorované. Proto jsem také pětikoordinovaný křemík zařadila do analýzy. Výchozí stukturou byla sloučnina \cite{rtg_5}. V případě pětikoordinované struktury byla snaha kompenzovat náboj a dosáhnout náboje nula, stejně jako u předchozích struktur. Z důvodu symetrie nebylo možné náboj v molekule vhodně umístit a proto byl zvolen náboj -1, nikoli 0.
+\section{Vypočtené struktury}
+Struktury pro výpočetní část jsou rozděleny podle velikosti, podle stupně koordinace křemíku a podle množství cyklů ve strukturách. Naší snahou při tvorbě modelů bylo co nejlépe modelovat možná koordinační okolí křemíku v amorfních strukturách, pro něž nejsou dostupná přímá strukturní data. Vycházeli jsme z nepřímých strukturních dat: chemických posunů křemíku (stupeň koordinace křemíku) a vibračních spekter (informace o atomech vázaných na křemík). Dále jsme využili přímá strukturní data pro strukturně podobné, avšak krystalické systémy: \cite{C3NJ00721A} \cite{rtg_4_pinkas}. Malé sturktury měly za cíl podrobnou analýzu vazby křemík-uhlík \ref{prehled_male_modely}. (acetoxymethyl)trifluorosilan sloužil pro porovnání s ostatními modely křemíku. Existuje v něm příma vazba na uhlík a zároveň jsou kolem vysoce elektronegativní fluory. Jak bylo zmíněno v kapitole \ref{teorie_hypervalence}, křemík je ochotný navyšovat koordinaci s vysoce elektronegativními ligandy. Zároveň je (acetoxymethyl)trifluorosilan schopen tvořit intramolekulární vazbu s Si-O a tím navýšit koordinaci křemíku na pět. Tyto strukutry jsou experimentálně pozorovány a nazývají se dragonoidy \cite{Chipanina2011}. Modely střední velikosti reprezentovaly širší okolí křemíku \ref{prehled_middle} a už obsahovaly cykly, prozatím bez síťování, které je pro silikofosfáty typiské. \\
+Model \ce{SiCH3(PO4)CH3(SiP2O10)(CH3)4} obsahoval jeden cyklus, volně navázaný fosfát a přímou vazbu křemík-uhlík. Model \ce{Si(P2SiO10(CH3)4)2} už obsahoval dva cykly, které byly pozorovány v silikofosfátových polymerech. Jednalo se o nejmenší model, který už obsahoval dva cykly.\\
+Poslední část, velké modely, se věnovaly jíž pouze hypervaletnímu křemíku. Zde je klíčové zminit, že naše modely byly pouze výseky z rozsáhlých struktur polymerů a chyběla stabilizace okolními atomy. Z tohoto důvodu byla snaha zachování neutrálního náboje pro všechny struktury. Výjimku tvořila původní rentgenová srtuktura křemíku \cite{C3NJ00721A}, která byla připravena jako aniont. Výchozí strukturou byla struktura z rentgenové analýzy \cite{C3NJ00721A} \ref{rtg_6}.
 \begin{figure}
 \begin{center}
-\subfigure[\ce{SiCH3(OCH3)3}]{\includegraphics[width=5cm]{acetylmethyltrifluor.png} \label{acetylfluro}}
-\subfigure[\ce{Si(OCH3)4}]{\includegraphics[width=5cm]{rtg_4_kruh_samotne.png}\label{rtg_6}}
-\subfigure[\ce{SiCH3(OCH3)5}]{\includegraphics[width=5cm]{rtg_5_koordinace.png}\label{rtg_56}}
-\subfigure[\ce{SiCH3(OCH3)5}]{\includegraphics[width=5cm]{rtg_6.png}\label{rtg_55}}
-\caption{Přehled reálných struktur.}
-\label{prehled_real_structures}
+\includegraphics[width=8cm]{rtg_6.png}
+\caption{ \ce{SiCH3(OCH3)5} Výchozí rentgenové struktury;  Legedna: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C,  \mycircle{yellow} P, \mycircleempty{black}~H}
+\label{rtg_6}
 \end{center}
 \end{figure}
-\subsection{Čtyřkoordinovaný křemík jako reaktant}
-Na základě experimentální práce Aleše Stýskalíka jsem se zabývala křemíkem v koordinaci čtyři, který sloužil jako výchozí reaktant pro přípravu silikofosfátových polymerů.
+V tomto modelu je křemík oblopen šesti fosfáty, které jsou vzájemně zesíťované přes další čtyřkoordinované křemíky. Přítomnost osmičlenného cyklu v silikofosfátech byla potvrzena rentgenovou strukturou \cite{rtg_4} a dále podle ní byly vytvářeny cykly v dalších modelech.
+\begin{figure}
+%\captionsetup[subfigure]{labelformat=empty}
+\begin{center}
+\includegraphics[width=6cm]{rtg_4_kruh_samotne.png}
+\caption{\ce{Si(OCH3)4} Výchozí rentgenové struktury;  Legedna: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircleempty{black}~H}
+\label{rtg_4}
+\end{center}
+\end{figure}
+Z tohoto modelu vycházely všechny ostatní velké struktury se šestikoordinovaným křemíkem. V experimentálních strukturách silikofosfátů byly pozorovány krom fosfátových skupiny tak různé acetátové skupiny. Právě přítomnost acetátových skupin měla vliv na chování křemíku a jeho sklon k hypervalenci. Acetátové skupiny se v okolí struktruáchkřemíku vždy vyskytovaly po dvou a tento jev byl dodržen i v modelových strukturách. Zvolila jsem dvě možnosti umístění acetátových skupin. První případě se acetylové skupiny vůči sobě vyskytovaly v poloze trans \ref{prehled_large}, ve druhém případě se vysvytovaly v poloze cis \ref{prehled_large}.
+Při modelování silikofosfátů s acetátovými skupinami v polohách cis a trans jsme vycházeli z uspořádání v původní rentgenové struktuře. Naší snahou bylo zachování původních šesti cyklů. Proto v prvním kole optimalizace bylo ponecháno šest cyklů a dvě fosfátové skupiny nahrazeny acetátovými. Tento model měl problém s vazebným úhlem na atomech 50-11-52 a torzním úhlu na atomech 52 - 11 - 50 - 51 a 50 - 11 - 52 - 54. Jako řešení situace jsme zvolili odstranění dvou cyklů a uvolnění napětí. Počet dva byl zvolen z důvodu zachování symetrie. Uvolněná struktura silikofosfátu s acetáty v poloze trans byla opět optimalizována, tentokrát s pseudopotenciálem z důvodu velikosti struktury. Výsledek z druhé řásti optimalizace s pseudopotenciálem a potom B3LYP/6-31G*. \\
+Pro model silikofosfátu s acetátem v poloze cis byla situace obdobná. Výchozí strukturou byl původní model z rtg, kde byl fosfát nahrazen acetylem. Toto uspořádání opět vedlo k přílišnému napětí na cyklech a z tohoto důvodu byla provedena stejná operace, jako pro model s acetátem v poloze trans. V modelu silikofofátu s acetátem v poloze trans byly odstraněny nejprve dva cykly a následně ještě jeden, protože struktura stále vykazovala špatné torzní úhly. Výsledná struktura silikofosfátu s acetátem v poloze trans obsahovala pouze tři kruhy s acetáty v ekvatoriální rovině a jeden volný fosfát, také v ekvatoriální rovině.
+Pro strukturu s acetátem v poloze cis bylo nutno odstranit celkově čtyři cykly a výsledný počet cyklů v molekule byl dva. Acetáty byly umístěné v ekvatoriální rovině stejně jako volný fosfát. \\
+Další koordinací, která byla experimentálně pozorována v silikofosfátech byl křemík v koordinaci pět. Tento typ nebyl příliš častý, ale jeho přítomnost je známá z IR. Proto jsem také pětikoordinovaný křemík zařadila do analýzy. První návrh struktury silikofosfátu v koordinaci pět byl získán od prof. Pinkase (soukromé sdělení), Ústav Anorganické chemie, MU. Tento model obsahoval křemík v koordinaci pět a celkový počet cyklů byl pět. Toto uspořádání vedlo k špatnému úhlu na atomech 1 - 5 - 9 a větší části špatných torzních úhlů, příkladem může být špatný torní úhel na atomech 3 - 1 - 5 - 9.  Vzhledem k lichému počtu cyklů ve struktuře pětikoordinovaného křemíku byla otázka odstranění cyklů složitější a to především díky snaze zachovat symetrii v systému. Byly zvoleny dva přístupy. První model obsahoval tři cykly a volný fosfát, zde byl špatný vazebný úhel na atomech 1 - 3 - 8. Druhý model obsahoval pouze dva cykly a jeden fosfát, zde došlo k chybě ve vazebném úhlu na atomech 1 - 2 - 7. Nalezení správné struktury s křemíkem v koordinaci pět pomohla rentgenová struktura v článku \cite{rtg_5} \ref{rtg_5}.
+\begin{figure}
+\begin{center}
+\includegraphics[width=8cm]{rtg_5_koordinace.png}
+\caption{ \ce{SiCH3(OCH3)5} Výchozí rentgenové struktury;  Legedna: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircleempty{black}~H}
+\label{rtg_5}
+\end{center}
+\end{figure}
+Další model pětikoordinovaného křemáku byl inspirován touto rentgenovou strukturou a fosfát byl nahrazen vodíkem. Jako správné řešení se nakonec ukázalo snížení náboje z nuly na -1. Původní snaha zachování neutrálního náboje modelových struktur silikofosfátů vycházela z předpokaldu, že samotné amorfní struktury jsou neutrální. V případě pětikoordinovaného křemíku a ale náboj způsobil nerovnoměrnosti v systému. Snížení náboje o jedna vedlo k získání správné struktury, kde se nacházely dvy cykly a jeden volný fosfát.
+
+
+
 
 \subsection{Malé modely}
 Malé modely podávají podrobnější pohled na charakter vazby Si-C. Obrázky struktur jsou uveden na obrázku \ref{prehled_male_modely}. Pro strukturu \ce{SiCH3(OCH3)5} \ref{si_ch3_och3_5} bylo nutno použit klíčové slovo Opt=CalcFC. Pro sturkturu \ce{Si(OCH3)6} \ref{si_och3_6} byl použit parametr SCF=Vshift. Pro NBO analýzu byly brány HOMO orbitaly. Přehled výsledků z analýzy NBO je uveden v tabulce \ref{nbo_small}.
+
 \begin{figure}
-\begin{center}
+\centering
 \subfigure[\ce{SiCH3(OCH3)3}]{\includegraphics[width=5cm]{si_ch3_och3.png} \label{si_ch3_och3}}
 \subfigure[\ce{Si(OCH3)4}]{\includegraphics[width=5cm]{si_och3_4.png}\label{si_och3_4}}
 \subfigure[\ce{SiCH3(OCH3)5}]{\includegraphics[width=5cm]{si_ch3_och3_5.png}\label{si_ch3_och3_5}}
 \subfigure[\ce{Si(OCH3)6}]{\includegraphics[width=5cm]{si_och3_6.png}\label{si_och3_6}}
-\subfigure[\ce{SiCl4}]{\includegraphics[width=3cm]{si_cl4.png}\label{si_cl4}}
-\caption{Přehled malých struktur.}
+\subfigure[\ce{SiCl4}]{\includegraphics[width=3cm]{si_cl_4.png}\label{si_cl4}}
+\caption{Přehled malých struktur; Legedna: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{green} Cl, \mycircleempty{black}~H}
 \label{prehled_male_modely}
-
-\end{center}
 \end{figure}
+
 \begin{table}[htbp]
-\caption{Výsledky NBO pro malé modely}
+\caption{HSAB analýza malých molekul}
 \begin{center}
-\begin{tabular}{|l|l|l|r|r|r|r|r|r|}
+\begin{tabular}{|l|r|r|r|r|}
 \hline
- &  & vazby & \multicolumn{1}{l|}{Obs.čislo} & \multicolumn{1}{l|}{Si} & \multicolumn{1}{l|}{X} & \multicolumn{1}{l|}{Si(s)} & \multicolumn{1}{l|}{Si(p)} & \multicolumn{1}{l|}{Si(d)} \\ \hline
-A & Si-O & 1-2  & 0,066 & 88,3\% & 11,7\% & 23,9\% & 51,9\% & 24,2\% \\ \hline
- &  & 1-3 & 0,111 & 86,5\% & 13,5\% & 23,2\% & 73,3\% & 3,5\% \\ \hline
- &  & 1-3 & 0,092 & 97,1\% & 2,9\% & 0,2\% & 56,7\% & 43,3\% \\ \hline
- &  & 1-4 & 0,065 & 88,5\% & 11,5\% & 23,6\% & 50,2\% & 26,2\% \\ \hline
- & Si-C & 1-17 & 0,073 & 75,5\% & 24,5\% & 29,3\% & 68,9\% & 1,8\% \\ \hline
-B & Si-O &1-2,3,4,5  & 0,104 & 86,1\% & 13,9\% & 25,0\% & 71,4\% & 3,6\% \\ \hline
-C & Si-O & 1-2  & 0,100 & 92,1\% & 7,9\% & 16,0\% & 50,0\% & 33,9\% \\ \hline
- &  & 1-3 & 0,104 & 91,9\% & 8,1\% & 15,0\% & 50,6\% & 34,4\% \\ \hline
- &  & 1-4 & 0,096 & 91,9\% & 8,1\% & 16,5\% & 50,4\% & 33,1\% \\ \hline
- &  & 1-5 & 0,095 & 91,9\% & 8,1\% & 16,4\% & 50,6\% & 33,0\% \\ \hline
- &  & 1-6 & 0,103 & 92,1\% & 7,9\% & 16,1\% & 50,1\% & 33,8\% \\ \hline
- D& Si-C & 1-27 & 0,068 & 84,6\% & 15,4\% & 22,8\% & 51,2\% & 26,1\% \\ \hline
-E & Si-O &Si-2,3,4,5,6,7  & 0,098 & 91,8\% & 8,2\% & 16,7\% & 50,0\% & 33,3\% \\ \hline
-F & Si-Cl & 1-2  & 0,125 & 77,9\% & 22,1\% & 24,9\% & 50,0\% & 25,1\% \\ \hline
- &  & 1-3 & 0,125 & 77,9\% & 22,1\% & 24,9\% & 50,0\% & 25,1\% \\ \hline
- &  & 1-4 & 0,125 & 77,9\% & 22,1\% & 24,9\% & 50,0\% & 25,1\% \\ \hline
- &  & 1-5 & 0,125 & 77,9\% & 22,1\% & 24,9\% & 50,0\% & 25,1\% \\ \hline
+ & \multicolumn{1}{l|}{EH} & \multicolumn{1}{l|}{EL} & \multicolumn{1}{l|}{X} & \multicolumn{1}{l|}{n} \\ \hline
+si\_och3\_4 & -7,389 & 1,442 & 2,974 & 4,416 \\ \hline
+si\_och3\_6 & 3,112 & 9,625 & -6,369 & 3,256 \\ \hline
+si\_ch3\_och3\_3 & 3,089 & 10,089 & -6,589 & 3,500 \\ \hline
+si\_ch3\_och3\_5 & 3,089 & 10,089 & -6,589 & 3,500 \\ \hline
 \end{tabular}
 \end{center}
-\label{nbo_small}
+\label{hsab_small}
 \end{table}
-\begin{table}[htbp]
-\caption{Výsledky MPA pro model \ce{SiCH3(OCH3)3} \ref{si_ch3_och3}}
-\begin{center}
-\begin{tabular}{|l|r|r|l|l|r|r|r|}
-\hline
- & \multicolumn{1}{l|}{1S} & \multicolumn{1}{l|}{2S} & 3S & 4S & \multicolumn{1}{l|}{Suma2} & \multicolumn{1}{l|}{prekryv} & \multicolumn{1}{l|}{procento} \\ \hline
-Si & -0,024 & 0,156 & \multicolumn{1}{r|}{-0,004} & \multicolumn{1}{r|}{-0,863} & 0,77 & -0,06 & 71,0\% \\ \hline
-O & -0,059 & -0,043 & \multicolumn{1}{r|}{0,442} &  & 0,20 & -0,04 & 16,4\% \\ \hline
-O & -0,062 & 0,044 & \multicolumn{1}{r|}{0,474} &  & 0,23 & 0,02 & 24,9\% \\ \hline
-O & -0,059 & 0,042 & \multicolumn{1}{r|}{0,442} &  & 0,20 & 0,02 & 21,8\% \\ \hline
-C & -0,024 & 0,007 & \multicolumn{1}{r|}{0,419} &  & 0,18 & 0,00 & 17,7\% \\ \hline
- & \multicolumn{1}{l|}{2PX} & \multicolumn{1}{l|}{3PX} & 4PX &  & \multicolumn{1}{l|}{Suma2} & \multicolumn{1}{l|}{prekryv} & \multicolumn{1}{l|}{procento} \\ \hline
-Si & 0,001 & -0,002 & \multicolumn{1}{r|}{-0,007} &  & 0,00 & 0,00 & 0,0\% \\ \hline
-O & 0,017 & -0,010 &  &  & 0,00 & 0,00 & 0,0\% \\ \hline
-O & 0,000 & -0,002 &  &  & 0,00 & 0,00 & 0,0\% \\ \hline
-O & -0,017 & 0,009 &  &  & 0,00 & 0,00 & 0,0\% \\ \hline
-C & -0,118 & -0,339 &  &  & 0,13 & 0,04 & 17,1\% \\ \hline
- & \multicolumn{1}{l|}{2PY} & \multicolumn{1}{l|}{3PY} & 4PY &  & \multicolumn{1}{l|}{Suma2} & \multicolumn{1}{l|}{prekryv} & \multicolumn{1}{l|}{procento} \\ \hline
-Si & 0,021 & -0,038 & \multicolumn{1}{r|}{-0,039} &  & 0,00 & 0,00 & 0,5\% \\ \hline
-O & 0,031 & 0,030 &  &  & 0,00 & 0,00 & 0,3\% \\ \hline
-O & -0,032 & -0,021 &  &  & 0,00 & 0,00 & 0,2\% \\ \hline
-O & 0,032 & 0,033 &  &  & 0,00 & 0,00 & 0,3\% \\ \hline
-C & 0,017 & 0,036 &  &  & 0,00 & 0,00 & 0,2\% \\ \hline
- & \multicolumn{1}{l|}{2PZ} & \multicolumn{1}{l|}{3PZ} & 4PZ &  & \multicolumn{1}{l|}{Suma2} & \multicolumn{1}{l|}{prekryv} & \multicolumn{1}{l|}{procento} \\ \hline
-Si & -0,016 & 0,032 & \multicolumn{1}{r|}{-0,044} &  & 0,00 & 0,00 & 0,1\% \\ \hline
-O & 0,075 & 0,117 &  &  & 0,02 & 0,01 & 2,8\% \\ \hline
-O & -0,085 & -0,129 &  &  & 0,02 & 0,01 & 3,5\% \\ \hline
-O & 0,075 & 0,117 &  &  & 0,02 & 0,01 & 2,8\% \\ \hline
-C & 0,071 & 0,178 &  &  & 0,04 & 0,01 & 5,0\% \\ \hline
-\end{tabular}
-\end{center}
-\label{MPA_si_ch3_och3_4}
-\end{table}
+
+Na základě experimentální práce Aleše Stýskalíka jsem se zabývala křemíkem v koordinaci čtyři, který sloužil jako výchozí reaktant pro přípravu silikofosfátových polymerů.
+\begin{figure}
+\centering
+\subfigure[\ce{SiCH3(OCH3)3}]{\includegraphics[width=5cm]{si_cl_oet_3.png} \label{si_cl_oet_3}}
+\subfigure[\ce{Si(OCH3)4}]{\includegraphics[width=3cm]{si_fenyl_f3.png}\label{si_fenyl_f3}}
+\subfigure[\ce{SiCH3(OCH3)5}]{\includegraphics[width=5cm]{si_ch3_oac_3.png}\label{si_ch3_oac_3}}
+\subfigure[\ce{Si(OCH3)6}]{\includegraphics[width=3cm]{si_ch3_och_4.png}\label{si_ch3_och_4}}
+\subfigure[\ce{SiCl4}]{\includegraphics[width=5cm]{si_o_ac_4.png}\label{si_o_ac_4}}
+\subfigure[\ce{SiCl4}]{\includegraphics[width=5cm]{si_ocl_oet_3.png}\label{si_ocl_oet_3}}
+\caption{Přehled malých struktur; Legedna: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{red!50!blue!50} F, \mycircle{green}~Cl, \mycircleempty{black}~H}
+\label{prehled_male_modely}
+\end{figure}
+
 
 \subsection{Středně velké modely}
 Tato část se věňuje nejmenším možným modelům, které již tvoří uvnitř svých struktur cyklus. Jako referenční molekula byl použita \ce{(acetylmethoxyl)trifluorsilan} z článku \cite{Chipanina2011}. Strutktura \ce{(acetylmethoxyl)trifluorsilan} slouží jako model křemíku v koordinaci čtyři, který má ve svém okolí vysoce elektronegativní atomy. To podporuje teoretické předpoklady o hypervalenci křemíku, pokud má ve svém okolí silně elektronegativní prvek.
 \begin{figure}
 \begin{center}
-\subfigure[(acetylmethoxyl)trifluorsilan]{\includegraphics[width=5.5cm]{acetylmethyltrifluor.png} \label{obr_h4sio4_MO_s1_1}}
+\subfigure[(acetylmethoxyl)trifluorsilan]{\includegraphics[width=5.5cm]{acetylmethyltriflurosila.png} \label{obr_h4sio4_MO_s1_1}}
 \subfigure[\ce{SiCH3(PO4(CH3)2)(Si2P2O9(CH3)4)}]{\includegraphics[width=6cm]{si_model_methyl.png}\label{obr_h4sio4_MO_s1_20}}
 \subfigure[\ce{Si(Si2P2O9(CH3)4)2}]{\includegraphics[width=5cm]{si_model_orezany.png}\label{obr_h4sio4_MO_s1_24}}
-\caption{Přehled středně velkých modelů}
+\caption{Přehled středně velkých modelů;  Legedna: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{yellow} P, \mycircle{red!50!blue!50} F, \mycircleempty{black}~H}
 \label{prehled_middle}
 \end{center}
 \end{figure}
 Pro zvolené sloučeniny byla provedena analýza kanonických orbitalů, výsledky jsou uvedeny v tabulce.
+
 \begin{table}[htbp]
-\caption{Výsledky NBO pro středně velké modely}
+\caption{HSAB analýza středních molekul}
 \begin{center}
-\begin{tabular}{|l|l|r|r|r|r|r|r|}
+\begin{tabular}{|l|r|r|r|r|}
 \hline
- & Vazby & \multicolumn{1}{l|}{Obs.číslo} & \multicolumn{1}{l|}{Si} & \multicolumn{1}{l|}{X} & \multicolumn{1}{l|}{Si(s)} & \multicolumn{1}{l|}{Si(p)} & \multicolumn{1}{l|}{Si(d)} \\ \hline
-A  & Si-F & 0,107 & 87,1\% & 12,9\% & 22,5\% & 75,6\% & 2,0\% \\ \hline
- & Si-F & 0,107 & 87,1\% & 13,0\% & 22,7\% & 75,4\% & 1,9\% \\ \hline
- & Si-F & 0,107 & 87,1\% & 13,0\% & 22,7\% & 75,4\% & 1,9\% \\ \hline
- & Si-C & 0,079 & 74,3\% & 25,7\% & 32,2\% & 65,8\% & 2,0\% \\ \hline
- & Si-O & 0,087 & 87,5\% & 12,5\% & 23,8\% & 73,1\% & 3,1\% \\ \hline
-B & Si-O & 0,093 & 87,3\% & 12,7\% & 23,0\% & 73,5\% & 3,6\% \\ \hline
- & Si-O & 0,094 & 87,5\% & 12,5\% & 22,6\% & 73,9\% & 3,4\% \\ \hline
- & Si-C & 0,065 & 74,1\% & 25,9\% & 30,7\% & 67,7\% & 1,6\% \\ \hline
-C & Si-O & 0,086 & 87,1\% & 12,9\% & 25,7\% & 71,1\% & 3,3\% \\ \hline
- & Si-O & 0,104 & 87,4\% & 12,6\% & 23,9\% & 72,5\% & 3,6\% \\ \hline
- & Si-O & 0,098 & 87,2\% & 12,8\% & 24,6\% & 71,9\% & 3,5\% \\ \hline
- & Si-O & 0,092 & 86,8\% & 13,2\% & 25,8\% & 70,8\% & 3,4\% \\ \hline
+ & \multicolumn{1}{l|}{EH} & \multicolumn{1}{l|}{EL} & \multicolumn{1}{l|}{X} & \multicolumn{1}{l|}{n} \\ \hline
+acetylmethyltrifluorsilan & -7,825 & -0,066 & 3,946 & 3,880 \\ \hline
+si\_model4\_methyl & -7,802 & 0,494 & 3,654 & 4,148 \\ \hline
+si\_model\_4\_orezany & -8,101 & -0,059 & 4,080 & 4,021 \\ \hline
 \end{tabular}
 \end{center}
-\label{nbo_middle}
+\label{hsab_middle}
 \end{table}
+
 
 \subsection{Velké modely}
 \begin{figure}
 \begin{center}
-\caption{Přehled velkých modelů}
+\caption{Přehled velkých modelů;  Legedna: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{yellow} P, \mycircleempty{black}~H}
 \subfigure[]{\includegraphics[width=6cm]{struktura_cis.png} \label{obr_h4sio4_MO_s1_1}}
 \subfigure[]{\includegraphics[width=6cm]{srtuktura_bez_naboje.png}\label{obr_h4sio4_MO_s1_20}}
 \subfigure[]{\includegraphics[width=6cm]{struktura_puvodni.png}\label{obr_h4sio4_MO_s1_24}}
@@ -643,7 +644,269 @@ C & Si-O & 0,086 & 87,1\% & 12,9\% & 25,7\% & 71,1\% & 3,3\% \\ \hline
 \label{prehled_large}
 \end{center}
 \end{figure}
+
 \begin{table}[htbp]
+\caption{HSAB analýza}
+\begin{center}
+\begin{tabular}{|l|r|r|r|r|}
+\hline
+ & \multicolumn{1}{l|}{EH} & \multicolumn{1}{l|}{EL} & \multicolumn{1}{l|}{X} & \multicolumn{1}{l|}{n} \\ \hline
+struktura bez naboje & -7,318 & 0,176 & 3,571 & 3,747 \\ \hline
+struktura\_cis & -7,351 & -1,392 & 4,372 & 2,980 \\ \hline
+struktura\_trans & -7,240 & -1,538 & 4,389 & 2,851 \\ \hline
+strutkura\_puvodni\_methyl & -2,521 & 5,120 & -1,299 & 3,820 \\ \hline
+struktura\_5\_MM & -4,546 & 3,276 & 0,635 & 3,911 \\ \hline
+\end{tabular}
+\end{center}
+\label{hsab_large}
+\end{table}
+
+
+
+
+
+\section{Vazby}
+\begin{table}[htbp]
+\caption{Analýza sich3och3}
+\begin{center}
+\begin{tabular}{|l|r|r|r|r|r|r|r|r|}
+\hline
+ & 20 & \multicolumn{1}{l|}{} & 33 & \multicolumn{1}{l|}{} & 34 & \multicolumn{1}{l|}{} & 35 & \multicolumn{1}{l|}{} \\ \hline
+ & \multicolumn{1}{l|}{S} &  \\
+Si & 11,8\% & 0,2\% & 11,8\% & 9,7\% & 0,2\% & 3,0\% & 3,2\% & 5,4\% \\ \hline
+O & 2,3\% & 9,1\% & 2,3\% & 17,4\% & 0,4\% & 26,0\% & 26,5\% & 34,0\% \\ \hline
+O & 2,5\% & 8,0\% & 2,5\% & 19,7\% & 0,8\% & 16,7\% & 17,5\% & 20,7\% \\ \hline
+O & 2,2\% & 9,0\% & 2,2\% & 16,5\% & 0,4\% & 24,3\% & 24,7\% & 17,1\% \\ \hline
+C & 1,7\% & 4,9\% & 1,7\% & 2,5\% & 0,1\% & 1,5\% & 1,6\% & 1,5\% \\ \hline
+\end{tabular}
+\end{center}
+\label{si_ch3_och3_MPA}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Analýza sich3och35}
+\begin{center}
+\begin{tabular}{|l|r|r|}
+\hline
+ & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{P} \\ \hline
+Si & 0,2\% & 0,5\% \\ \hline
+O & 1,7\% & 0,1\% \\ \hline
+O & 1,3\% & 0,1\% \\ \hline
+O & 0,2\% & 0,1\% \\ \hline
+O & 0,9\% & 0,1\% \\ \hline
+O & 2,5\% & 0,4\% \\ \hline
+C & 58,9\% & 0,1\% \\ \hline
+\end{tabular}
+\end{center}
+\label{si_ch3_och3_5_MPA}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Analýza sioch36}
+\begin{center}
+\begin{tabular}{|l|r|r|}
+\hline
+ & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{P} \\ \hline
+Si & 2,0\% & 0,0\% \\ \hline
+O & 0,1\% & 0,1\% \\ \hline
+O & 0,1\% & 0,1\% \\ \hline
+O & 0,1\% & 0,1\% \\ \hline
+O & 0,1\% & 0,1\% \\ \hline
+O & 0,1\% & 0,1\% \\ \hline
+C & 0,1\% & 0,1\% \\ \hline
+\end{tabular}
+\end{center}
+\label{si_och3_6_MPA}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Analýza sioch34}
+\begin{center}
+\begin{tabular}{|l|r|r|r|r|r|r|r|r|}
+\hline
+ & 22 &  \\ \hline
+ & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{P} \\ \hline
+Si & 11,10 \% & 0,0\% & 0,0\% & 12,3\% & 0,0\% & 12,3\% & 0,0\% & 2,7\% \\ \hline
+O & 2,50 \% & 5,4\% & 1,7\% & 9,4\% & 3,8\% & 9,3\% & 0,2\% & 15,4\% \\ \hline
+O & 2,50 \% & 5,4\% & 3,8\% & 9,3\% & 1,7\% & 9,4\% & 0,2\% & 15,4\% \\ \hline
+O & 2,50 \% & 5,4\% & 1,7\% & 9,4\% & 3,8\% & 9,3\% & 0,2\% & 15,4\% \\ \hline
+C & 2,50 \% & 5,4\% & 3,8\% & 9,3\% & 1,7\% & 9,4\% & 0,2\% & 15,4\% \\ \hline
+\end{tabular}
+\end{center}
+\label{si_och3_4_MPA}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Analýza acetylmethyltrifluorsilan}
+\begin{center}
+\begin{tabular}{|l|r|r|r|r|r|r|r|r|}
+\hline
+ & 22 &  \\ \hline
+ & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{P} \\ \hline
+\textbf{Si} & 17,9\% & 0,2\% & 0,3\% & 8,9\% & 0,0\% & 6,9\% & 0,9\% & 7,5\% \\ \hline
+\textbf{F} & 4,3\% & 9,0\% & 3,4\% & 22,2\% & 0,0\% & 6,7\% & 1,9\% & 13,6\% \\ \hline
+\textbf{F} & 5,4\% & 9,9\% & 1,5\% & 12,6\% & 3,3\% & 19,6\% & 0,1\% & 6,8\% \\ \hline
+\textbf{F} & 5,4\% & 9,9\% & 1,5\% & 12,6\% & 3,3\% & 19,6\% & 0,1\% & 6,8\% \\ \hline
+\textbf{C} & 2,6\% & 4,9\% & 0,9\% & 0,9\% & 0,0\% & 0,5\% & 0,7\% & 1,8\% \\ \hline
+\end{tabular}
+\end{center}
+\label{acetylmethyltrifluorsilan_MPA}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Analýza model methyl}
+\begin{center}
+\begin{tabular}{|l|r|r|r|r|r|r|r|r|}
+\hline
+ & 61 & \multicolumn{1}{l|}{} & 68 & \multicolumn{1}{l|}{} & 70 & \multicolumn{1}{l|}{} & 106 & \multicolumn{1}{l|}{} \\ \hline
+ & \multicolumn{1}{l|}{S} &  \\
+SI  & 4,2\% & 0,1\% & 4,3\% & 0,4\% & 3,9\% & 0,5\% & 0,9\% & 1,2\% \\ \hline
+O & 0,0\% & 2,2\% & 0,2\% & 2,4\% & 0,1\% & 11,4\% & 0,6\% & 3,3\% \\ \hline
+O & 0,1\% & 1,5\% & 0,1\% & 5,5\% & 0,2\% & 2,7\% & 0,0\% & 12,9\% \\ \hline
+O & 0,0\% & 2,1\% & 0,2\% & 6,6\% & 0,8\% & 0,6\% & 0,0\% & 13,4\% \\ \hline
+C & 19,7\% & 5,8\% & 6,7\% & 14,9\% & 1,8\% & 15,2\% & 3,0\% & 31,6\% \\ \hline
+\end{tabular}
+\end{center}
+\label{si_model_methyl_MPA}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Analýza model orezany}
+\begin{center}
+\begin{tabular}{|l|r|r|r|r|r|r|r|r|}
+\hline
+ & 61 & \multicolumn{1}{l|}{} & 68 & \multicolumn{1}{l|}{} & 70 & \multicolumn{1}{l|}{} & 106 & \multicolumn{1}{l|}{} \\ \hline
+ & \multicolumn{1}{l|}{S} &  \\
+SI  & 0,0\% & 0,00 \% & 2,8\% & 0,01 \% & 0,0\% & 0,05 \% & 0,0\% & 0,05 \% \\ \hline
+O & 0,0\% & 0,00 \% & 13,4\% & 0,49 \% & 2,5\% & 0,09 \% & 0,1\% & 1,14 \% \\ \hline
+O & 0,0\% & 0,00 \% & 10,1\% & 0,28 \% & 0,8\% & 0,02 \% & 0,2\% & 0,36 \% \\ \hline
+O & 0,0\% & 0,00 \% & 7,9\% & 0,25 \% & 0,3\% & 0,02 \% & 0,0\% & 0,04 \% \\ \hline
+O & 0,0\% & 0,00 \% & 6,9\% & 0,19 \% & 0,5\% & 0,02 \% & 0,0\% & 0,07 \% \\ \hline
+\end{tabular}
+\end{center}
+\label{si_model_orezany_MPA}
+\end{table}
+
+
+\begin{table}[htbp]
+\caption{Výsledky NBO pro malé modely}
+\begin{center}
+  \begin{tabular}{|l|l|l|r|r|r|r|r|r|}
+  \hline
+   &  & vazby & \multicolumn{1}{l|}{O.Č} & \multicolumn{1}{l|}{Si} & \multicolumn{1}{l|}{X} & \multicolumn{1}{l|}{Si(s)} & \multicolumn{1}{l|}{Si(p)} & \multicolumn{1}{l|}{Si(d)} \\ \hline
+  A & Si-O & 1-2  & 0,066 & 88,3\% & 11,7\% & 23,9\% & 51,9\% & 24,2\% \\ \hline
+   &  & 1-3 & 0,111 & 86,5\% & 13,5\% & 23,2\% & 73,3\% & 3,5\% \\ \hline
+   &  & 1-3 & 0,092 & 97,1\% & 2,9\% & 0,2\% & 56,7\% & 43,3\% \\ \hline
+   &  & 1-4 & 0,065 & 88,5\% & 11,5\% & 23,6\% & 50,2\% & 26,2\% \\ \hline
+   & Si-C & 1-17 & 0,073 & 75,5\% & 24,5\% & 29,3\% & 68,9\% & 1,8\% \\ \hline
+  B & Si-O &  & 0,104 & 86,1\% & 13,9\% & 25,0\% & 71,4\% & 3,6\% \\ \hline
+  C & Si-O & 1-2  & 0,100 & 92,1\% & 7,9\% & 16,0\% & 50,0\% & 33,9\% \\ \hline
+   &  & 1-3 & 0,104 & 91,9\% & 8,1\% & 15,0\% & 50,6\% & 34,4\% \\ \hline
+   &  & 1-4 & 0,096 & 91,9\% & 8,1\% & 16,5\% & 50,4\% & 33,1\% \\ \hline
+   &  & 1-5 & 0,095 & 91,9\% & 8,1\% & 16,4\% & 50,6\% & 33,0\% \\ \hline
+   &  & 1-6 & 0,103 & 92,1\% & 7,9\% & 16,1\% & 50,1\% & 33,8\% \\ \hline
+   & Si-C & 1-27 & 0,068 & 84,6\% & 15,4\% & 22,8\% & 51,2\% & 26,1\% \\ \hline
+  D & Si-O &  & 0,098 & 91,8\% & 8,2\% & 16,7\% & 50,0\% & 33,3\% \\ \hline
+  E & Si-Cl & 1-2  & 0,141 & 74,0\% & 26,0\% & 25,0\% & 72,4\% & 2,6\% \\ \hline
+   &  & 1-3 & 0,141 & 74,0\% & 26,0\% & 25,0\% & 72,4\% & 2,6\% \\ \hline
+   &  & 1-4 & 0,141 & 74,0\% & 26,0\% & 25,0\% & 72,4\% & 2,6\% \\ \hline
+   &  & 1-5 & 0,141 & 74,0\% & 26,0\% & 25,0\% & 72,4\% & 2,6\% \\ \hline
+  \end{tabular}
+\end{center}
+\label{nbo_small}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Analýza struktura bez naboje}
+\begin{center}
+\begin{tabular}{|l|r|r|}
+\hline
+ & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{P} \\ \hline
+Si & 9,6\% & 0,01 \% \\ \hline
+O & 3,2\% & 0,35 \% \\ \hline
+O & 7,5\% & 2,35 \% \\ \hline
+O & 3,7\% & 0,36 \% \\ \hline
+O & 3,4\% & 0,19 \% \\ \hline
+O & 6,7\% & 2,05 \% \\ \hline
+O & 3,4\% & 0,37 \% \\ \hline
+\end{tabular}
+\end{center}
+\label{struktura_bez_naboje_MPA}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Analýza struktura C cis}
+\begin{center}
+\begin{tabular}{|l|r|r|}
+\hline
+ & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{P} \\ \hline
+Si & 3,1\% & 0,92 \% \\ \hline
+O & 0,0\% & 7,59 \% \\ \hline
+O & 0,3\% & 0,25 \% \\ \hline
+O & 0,9\% & 0,58 \% \\ \hline
+O & 0,5\% & 0,08 \% \\ \hline
+O & 0,1\% & 18,81 \% \\ \hline
+O & 0,5\% & 0,19 \% \\ \hline
+\end{tabular}
+\end{center}
+\label{struktura_C_cis_MPA}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Analýza struktura 5}
+\begin{center}
+\begin{tabular}{|l|r|r|}
+\hline
+ & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{P} \\ \hline
+Si & 23,9\% & 1,44 \% \\ \hline
+O & 4,8\% & 0,88 \% \\ \hline
+O & 10,5\% & 0,88 \% \\ \hline
+O & 8,1\% & 0,56 \% \\ \hline
+O & 15,9\% & 2,22 \% \\ \hline
+O & 3,0\% & 0,97 \% \\ \hline
+\end{tabular}
+\end{center}
+\label{struktura_5_MPA}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Analýza struktura trans}
+\begin{center}
+\begin{tabular}{|l|r|r|}
+\hline
+ & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{P} \\ \hline
+Si & 0,5\% & 4,04 \% \\ \hline
+O & 0,9\% & 0,33 \% \\ \hline
+O & 0,1\% & 8,38 \% \\ \hline
+O & 0,1\% & 0,17 \% \\ \hline
+O & 0,0\% & 20,85 \% \\ \hline
+O & 1,4\% & 0,65 \% \\ \hline
+O & 0,7\% & 0,15 \% \\ \hline
+\end{tabular}
+\end{center}
+\label{struktura_C_trans_MPA}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Analýza struktura puvodni}
+\begin{center}
+\begin{tabular}{|l|r|r|}
+\hline
+ & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{P} \\ \hline
+Si & 8,8\% & 0,00 \% \\ \hline
+O & 3,5\% & 0,36 \% \\ \hline
+O & 4,7\% & 0,65 \% \\ \hline
+O & 4,1\% & 0,51 \% \\ \hline
+O & 4,1\% & 0,42 \% \\ \hline
+O & 3,9\% & 0,49 \% \\ \hline
+O & 3,9\% & 0,37 \% \\ \hline
+\end{tabular}
+\end{center}
+\label{struktura_puvodni_MPA}
+\end{table}
+
+
+\begin{table}
 \caption{Výsledky NBO pro velké modely}
 \begin{center}
 \begin{tabular}{|l|l|l|r|r|r|r|r|r|}
@@ -680,29 +943,26 @@ E & Si-O & 1-2  & 0,091 & 91,63 \% & 8,37 \% & 17,13 \% & 50,11 \% & 32,76 \% \\
 \label{nbo_large}
 \end{table}
 
+
+\section{Spektroskopie}
+ Poslední část, která se věnuje spektroskopii, dává pohled na NMR parametry křemíku a porovnává je s experimentálně získanými hodnotami.
 \begin{table}[htbp]
-\caption{Teoretické hodnoty NMR absolutního chemického stínění}
+\caption{Teoretické hodnoty NMR absolutního chemického stínění \cite{1316862}}
 \begin{center}
-\begin{tabular}{|l|l|l|l|l|l|}
+\begin{tabular}{|l|l|r|l|r|r|r|}
 \hline
- & cis & trans & 5-koordinace & RTG bez naboje & rtg puvodni \\ \hline
-central Si & 542.5774 & 543.8238 & 493.0101 & 549.2568 & 552.6532 \\ \hline
-4-coord. Si & 493.3802 & 489.2752 & 490.9080 & 496.9045 & 493.3730 \\ \hline
-4-coord. Si & 488.7686 & 490.6081 & 487.8704 & 498.3326 & 493.4671 \\ \hline
-4-coord. Si & 491.6274 & 489.4495 & - & 496.4006 & 495.1319 \\ \hline
-4-coord. Si & - & 492.6228 & - & 498.2073 & 493.9529 \\ \hline
-4-coord. Si & - & - & - & 500.8508 & 493.5894 \\ \hline
-4-coord. Si & -  & - & - & 496.5479 & 493.8088 \\ \hline
+ & \_C\_cis & \multicolumn{1}{l|}{\_C\_trans} &\_5\_MM & \multicolumn{1}{l|}{\_bez\_naboje} & \multicolumn{1}{l|}{\_puvodni} & \multicolumn{1}{l|}{exp [ppm]} \\ \hline
+central Si & \multicolumn{1}{r|}{-210,45} & -211,70 & \multicolumn{1}{r|}{-160,89} & -217,13 & -220,53 & -101 \\ \hline
+4 Si & \multicolumn{1}{r|}{-161,26} & -157,15 & \multicolumn{1}{r|}{-158,78} & -164,78 & -161,25 & -212 \\ \hline
+4. Si & \multicolumn{1}{r|}{-156,64} & -158,48 & \multicolumn{1}{r|}{-155,75} & -166,21 & -161,34 & -212 \\ \hline
+4. Si & \multicolumn{1}{r|}{-159,50} & -157,32 &  & -164,28 & -163,01 & -212 \\ \hline
+4 Si &  & -160,50 &  & -166,08 & -161,83 & -212 \\ \hline
+4 Si &  & \multicolumn{1}{l|}{} &  & -168,73 & -161,46 & -212 \\ \hline
+4 Si &  & \multicolumn{1}{l|}{} &  & -164,42 & -161,68 & -212 \\ \hline
 \end{tabular}
 \end{center}
-\label{nmr_large}
+\label{nmr}
 \end{table}
-
-
-
-\section{Vazby}
-
-\section{Spektroskopi}
 
 
 
@@ -717,6 +977,795 @@ central Si & 542.5774 & 543.8238 & 493.0101 & 549.2568 & 552.6532 \\ \hline
 
 \chapter{Závěr}
 
+\chapter{Přílohy}
+ \begin{lstlisting}[frame=single, caption={\ce{SiCl4} },label=DescriptiveLabel]
+OPT SICL4
+
+0 1
+Si        -0.32396        3.43338        0.90767
+Cl         1.16108        2.80375       -0.42740
+Cl        -0.07911        5.47302        1.31275
+Cl        -0.16812        2.34436        2.68922
+Cl        -2.20970        3.11238        0.05612
+ \end{lstlisting}
+
+ \begin{lstlisting}[frame=single, caption={\ce{Si(OCH3)4} },label=DescriptiveLabel]
+OPT SIOCH3_4
+
+0 1
+ Si      0.0001220      0.0000330      0.0000360
+  O      0.9170270      0.9044730      1.0243390
+  O      0.9045540     -0.9169850     -1.0241690
+  O     -0.9169260     -0.9043800      1.0242150
+  O     -0.9042640      0.9169760     -1.0243770
+  C      1.8778790      1.8450600      0.5596310
+  H      1.4099290      2.6347680     -0.0420880
+  H      2.6540760      1.3617650     -0.0474960
+  H      2.3497270      2.3024850      1.4340000
+  C      1.8448590     -1.8780970     -0.5596900
+  H      2.6347300     -1.4104800      0.0420870
+  H      2.3021420     -2.3499610     -1.4341310
+  H      1.3614230     -2.6542840      0.0473570
+  C     -1.8780710     -1.8445900      0.5598200
+  H     -1.4105520     -2.6345220     -0.0419640
+  H     -2.6542740     -1.3611590     -0.0472200
+  H     -2.3499580     -2.3018450      1.4342710
+  C     -1.8450990      1.8775380     -0.5598210
+  H     -2.6326470      1.4101160      0.0451500
+  H     -2.3054470      2.3464870     -1.4342270
+  H     -1.3614000      2.6560330      0.0440520
+
+ \end{lstlisting}
+
+ \begin{lstlisting}[frame=single, caption={\ce{Si(OCH3)6} },label=DescriptiveLabel]
+ OPT SIOCH3_6
+
+ -2 1
+ Si     -0.0001880      0.0000000      0.0000090
+  O      1.4538820     -0.0278540      1.1035540
+  O     -0.7031070      1.2729320      1.1039290
+  O     -1.4540600      0.0280270     -1.1036250
+  O     -0.7499510     -1.2457500      1.1036400
+  O      0.7026500     -1.2730110     -1.1038840
+  O      0.7500560      1.2455900     -1.1036770
+  C      2.7508630     -0.0641930      0.6602600
+  H      3.3016190     -0.9676240      1.0255720
+  H      3.3499640      0.8087170      1.0236480
+  H      2.8467780     -0.0681630     -0.4391250
+  C      1.4321320      2.3493480     -0.6604130
+  H      2.4905780      2.3720690     -1.0239340
+  H      1.4821360      2.4316360      0.4389390
+  H      0.9784850      3.3052110     -1.0258190
+  C     -1.3199560      2.4145750      0.6605540
+  H     -0.8125060      3.3432400      1.0251720
+  H     -2.3751730      2.4972860      1.0246650
+  H     -1.3652600      2.4993680     -0.4387210
+  C      1.3205370     -2.4139360     -0.6601620
+  H      2.3764850     -2.4950820     -1.0224450
+  H      0.8149260     -3.3430640     -1.0263000
+  H      1.3639910     -2.4993900      0.4391410
+  C     -1.4317480     -2.3497660      0.6602990
+  H     -0.9773230     -3.3055130      1.0249030
+  H     -1.4825150     -2.4315010     -0.4390370
+  H     -2.4898720     -2.3731820      1.0246890
+  C     -2.7511880      0.0640150     -0.6605110
+  H     -3.3021340      0.9671760     -1.0261440
+  H     -2.8472450      0.0682580      0.4388330
+  H     -3.3499040     -0.8091620     -1.0238230
+
+ \end{lstlisting}
+
+ \begin{lstlisting}[frame=single, caption={\ce{Si(CH3)(OCH3)3} },label=DescriptiveLabel]
+ OPT SI_CH3_OCH3_3
+
+ 0 1
+ Si     -0.0057900     -0.2751690      0.0944170
+  O     -1.2911890     -0.3591420     -0.9414090
+  O      0.0325080      1.1726200      0.9029860
+  O      1.2749640     -0.4304530     -0.9393850
+  C     -2.6461530     -0.3563460     -0.5224090
+  H     -2.8864580     -1.2452270      0.0771810
+  H     -3.2763080     -0.3652830     -1.4169750
+  H     -2.8916000      0.5378680      0.0666150
+  C      0.0522530      2.4336310      0.2432010
+  H     -0.7569640      2.5164460     -0.4930990
+  H      1.0070220      2.5977960     -0.2722630
+  H     -0.0773580      3.2139310      0.9993730
+  C      2.6301240     -0.4198320     -0.5209890
+  H      2.8739190      0.4804210      0.0594790
+  H      3.2603990     -0.4367540     -1.4153590
+  H      2.8717970     -1.3021910      0.0877180
+  C     -0.0413080     -1.5913670      1.4184800
+  H     -0.9148470     -1.4785800      2.0699270
+  H      0.8479150     -1.5354740      2.0561060
+  H     -0.0762280     -2.5913100      0.9722250
+
+ \end{lstlisting}
+
+ \begin{lstlisting}[frame=single, caption={\ce{Si(CH3)(OCH3)5} },label=DescriptiveLabel]
+ OPT SI_CH3_OCH3_5
+
+ -2 1
+ Si     -0.0442910      0.0299880      0.3906550
+  O      1.6041320      0.8332250      0.1274860
+  O     -0.3652860      0.0717310     -1.4254310
+  O     -0.7702510      1.7063270      0.5429350
+  O     -1.6958350     -0.7314170      0.6046580
+  O      0.7580360     -1.6250470      0.1881440
+  C      0.0771810     -2.7009530     -0.3247260
+  H     -0.4981070     -2.4638600     -1.2411800
+  H     -0.6550120     -3.1548100      0.3804970
+  H      0.7908670     -3.5193770     -0.5991090
+  C      2.8065160      0.2156100      0.3406820
+  H      2.8917480     -0.2922580      1.3265450
+  H      3.6395890      0.9634720      0.3099380
+  H      3.0638650     -0.5634160     -0.4100500
+  C     -2.7940790     -0.3743540     -0.1399660
+  H     -2.9533160      0.7213250     -0.1810280
+  H     -3.7224510     -0.8156570      0.3030120
+  H     -2.7565740     -0.7208350     -1.1953230
+  C     -0.5214160      2.7152290     -0.3578540
+  H     -1.0802780      3.6397660     -0.0663580
+  H     -0.8330540      2.4721790     -1.3940140
+  H      0.5494230      3.0011340     -0.4148180
+  C      0.6471330     -0.0054570     -2.3502550
+  H      1.3733840     -0.8156500     -2.1420580
+  H      1.2471360      0.9255920     -2.4457310
+  H      0.2268160     -0.2111810     -3.3665430
+  C      0.1878820     -0.0741790      2.3500210
+  H      1.2238000      0.1114870      2.6809740
+  H     -0.1030720     -1.0649380      2.7320130
+  H     -0.4503550      0.6732800      2.8443090
+
+ \end{lstlisting}
+
+ \begin{lstlisting}[frame=single, caption={\ce{(acetoxymethyl)trifluorsilan} },label=DescriptiveLabel]
+ OPT (acetoxymethyl)trifluorsilan
+
+ 0 1
+ Si      1.5476220     -0.0237980     -0.0000050
+  F      2.6611460      1.1164950     -0.0000540
+  F      1.7693370     -0.9318850     -1.2880250
+  F      1.7694020     -0.9318360      1.2880380
+  C     -0.1329760      0.7872310      0.0000220
+  C     -2.4159310      0.1609480      0.0000880
+  C     -3.3600660     -1.0149960     -0.0000380
+  O     -1.1192530     -0.2636240      0.0000620
+  H     -0.2639860      1.4308430     -0.8781320
+  H     -0.2639460      1.4308690      0.8781640
+  O     -2.7218560      1.3296290     -0.0000400
+  H     -3.1831360     -1.6387100     -0.8822120
+  H     -4.3885770     -0.6532110     -0.0001400
+  H     -3.1833180     -1.6387350      0.8821540
+
+ \end{lstlisting}
+
+ \begin{lstlisting}[frame=single, caption={\ce{SiCH3(PO4(CH3)2)(Si2P2O9(CH3)4)} },label=DescriptiveLabel]
+ OPT SI_MODEL_METHYL
+
+ 0 1
+  Si     -0.9758930      0.0284210      1.3741960
+   O     -2.4238170      0.3478030      0.6459820
+   O     -0.4184220     -1.4046450      0.7582720
+   O      0.1333570      1.2170810      1.0080060
+   P     -3.3158730     -0.2569700     -0.5710170
+   P      1.0022380     -2.1311530      0.5576000
+   P      0.5621920      2.1509530     -0.2374980
+   O     -4.4707220     -1.0569590      0.1933760
+   O     -2.5705910     -1.0778100     -1.5441030
+   O     -4.0929150      1.0252800     -1.1196410
+   O      0.6340770     -3.4347250     -0.2647990
+   O      1.7381410     -1.1869930     -0.5232710
+   O      1.0384430      3.5025750      0.4600690
+   O      1.9171110      1.4723490     -0.7539450
+   O     -0.4686470      2.3573250     -1.2676760
+  Si      2.8049090      0.0894500     -0.5253140
+   O      3.6169060      0.2899460      0.8621350
+   O      3.8262100     -0.0954370     -1.7757460
+   C      3.4490420     -0.2974070     -3.1390010
+   C      4.5394510     -0.6371940      1.4564310
+   H      4.3673360     -0.3511670     -3.7284260
+   H      2.8373890      0.5358180     -3.5020310
+   H      3.9982770     -1.5086480      1.8328640
+   H      5.0264310     -0.1176510      2.2851700
+   C     -0.0912250     -3.3749110     -1.5200120
+   C      2.0262930      3.5065940      1.5098530
+   H      2.2888550      4.5529050      1.6706960
+   H      2.9116510      2.9374610      1.2144760
+   H      1.6019220      3.0827640      2.4244600
+   H     -0.3755280     -4.4041960     -1.7413260
+   H      0.5715120     -2.9954210     -2.3028770
+   H     -0.9771350     -2.7411250     -1.4338510
+   O      1.7622930     -2.3780730      1.7969580
+   C     -3.5395650      1.8020300     -2.2147890
+   H     -4.2755770      2.5810700     -2.4181280
+   H     -3.4152840      1.1622540     -3.0918180
+   H     -2.5816870      2.2381810     -1.9267070
+   H      2.8931430     -1.2345460     -3.2553670
+   H      5.3015040     -0.9423520      0.7312180
+   C     -1.1670530     -0.0245770      3.2110820
+   H     -1.8746090     -0.8089100      3.4994290
+   H     -1.5322610      0.9320840      3.5986460
+   H     -0.2042060     -0.2488710      3.6819270
+   C     -5.3646170     -0.4076350      1.1132060
+   H     -6.0197710     -1.1888300      1.5016910
+   H     -5.9552700      0.3538150      0.5971980
+   H     -4.8066070      0.0495980      1.9365650
+
+
+ \end{lstlisting}
+
+ \begin{lstlisting}[frame=single, caption={\ce{Si(Si2P2O9(CH3)4)2} },label=DescriptiveLabel]
+ OPT SI_MODEL_OREZANY
+
+ 0 1
+  Si     -0.0023710      0.1265980     -0.5618250
+   O      1.2313240      0.8615780     -1.3594930
+   O      0.5844040     -1.0177330      0.4518040
+   O     -0.7896750      1.2290460      0.3523440
+   O     -0.9668030     -0.5145000     -1.7114130
+   P      1.6309690     -2.2484760      0.4463770
+   P      2.3928100      1.8748180     -0.8864420
+   P     -1.6635300      1.2638940      1.7195320
+   P     -2.5416530     -0.8023330     -1.9672770
+   O      3.0009180     -1.5450690      0.8800290
+   O      1.6658470     -3.0162750     -0.8126510
+   O      3.2175900      1.0125170      0.1788880
+   O      1.9583790      3.1815980     -0.3588080
+   O      3.2568450      1.8787300     -2.2313300
+   O     -1.2912000      2.6658770      2.3509650
+   O     -3.1457020      1.4553180      1.1483990
+   O     -2.5869360     -2.3602180     -2.2709000
+   O     -3.1506140     -0.6593750     -0.4827420
+   O     -3.1698200      0.0302280     -3.0029720
+  Si     -4.1574870      0.4049440      0.3368150
+  Si      4.0966380     -0.3954270      0.3680110
+   O     -5.0704720     -0.4804230      1.3454460
+   O     -5.0573800      1.3591110     -0.5988030
+   C     -6.0290330      0.9641870     -1.5758920
+   C     -4.6141110     -1.5259140      2.2115710
+   O      5.1771050     -0.1440720      1.5477270
+   O      4.9057510     -0.8300650     -0.9553530
+   C      4.4485480     -1.4628260     -2.1594710
+   C      4.9162040      0.5088720      2.7902640
+   H     -6.6091700      1.8543980     -1.8289610
+   H     -6.7050150      0.2023290     -1.1720880
+   H      4.2900350     -0.1200050      3.4338020
+   H      4.4218000      1.4737320      2.6343320
+   H      4.0134730     -0.7118540     -2.8260660
+   H      3.7096660     -2.2403990     -1.9459510
+   H     -3.7610230     -1.1967770      2.8131890
+   H     -4.3275460     -2.4064950      1.6257640
+   C     -1.1557110      3.8682130      1.5498680
+   C     -1.9007050     -3.3396540     -1.4591790
+   H     -2.2038540     -4.3111140     -1.8505870
+   H     -2.2096350     -3.2514340     -0.4130090
+   H     -0.8179380     -3.2222560     -1.5492780
+   H     -1.0288830      4.6805850      2.2656690
+   H     -2.0601190      4.0321790      0.9576800
+   H     -0.2764240      3.7855460      0.9066400
+   O     -1.4699330      0.1100480      2.6195620
+   O      1.1984580     -3.0860660      1.7200990
+   C      0.9615170     -2.4636790      3.0083530
+   H      0.6411110     -3.2714130      3.6668800
+   H      0.1816570     -1.7019390      2.9277400
+   H      1.8912330     -2.0275390      3.3848630
+   C      4.1978670      2.9495810     -2.4686110
+   H      4.4232610      2.9194040     -3.5349280
+   H      5.1116250      2.7785330     -1.8916190
+   H      3.7554590      3.9117880     -2.2011020
+   H     -5.5201390      0.5900330     -2.4676340
+   H      5.3228860     -1.9095670     -2.6382570
+   H      5.8780800      0.6718210      3.2816800
+   H     -5.4465300     -1.7884200      2.8685670
+
+ \end{lstlisting}
+
+
+  \begin{lstlisting}[frame=single, caption={struktura koordinace 5},label=DescriptiveLabel]
+  OPT STRUKTURA_5_KOORDINACE
+
+  -1 1
+   Si      0.1060880     -0.1323080      1.0375270
+    O      1.5812970     -1.0976720      0.9967660
+    O      0.8974450      1.1240830      0.1688940
+    O     -1.4165630      0.7576620      0.9394990
+    O     -0.6552630     -1.3997120      0.0999750
+    O      0.0229970     -0.0776790      2.6855410
+    P      2.3564980     -2.3519490      0.4722700
+    P      2.2269690      1.9772360      0.2755320
+    P     -2.1096190      2.0277490      0.3627980
+    P     -2.1452450     -1.9360200      0.0266770
+    O      3.6707810     -1.7043880     -0.2463190
+    O      3.4776350      0.9812400      0.2257760
+    O     -3.6426970      1.5033340      0.2028160
+    O     -2.9965540     -0.9029920     -0.8705620
+   Si      4.0555520     -0.2021450     -0.7780110
+   Si     -4.2433870      0.1691170     -0.5698060
+    O      2.7547630     -3.3666980      1.4714960
+    O      2.3423360      2.4397160      1.8129550
+    O     -2.0097180      3.2994300      1.1181510
+    O     -2.8194110     -2.3356030      1.2840640
+    O      1.5297350     -2.9105480     -0.7944340
+    O      2.2723240      3.0744080     -0.7257780
+    O     -1.6921580      2.1504180     -1.1989060
+    O     -1.8688940     -3.1402730     -1.0193110
+    H      0.5973640     -2.6169910     -0.7313210
+    O      3.4719850     -0.0414510     -2.2987840
+    O      5.6860290     -0.0341030     -0.6943040
+    O     -4.8922530      0.5115670     -2.0304860
+    O     -5.4636920     -0.4526200      0.3064560
+    C      3.6740590      1.1071460     -3.1249710
+    H      3.2180050      0.8938780     -4.0964060
+    H      4.7447550      1.2999890     -3.2716820
+    H      3.2017280      1.9912910     -2.6852800
+    C      6.6006900     -1.1007480     -0.9118620
+    H      7.5927530     -0.7573280     -0.6016910
+    H      6.6426240     -1.3786210     -1.9736040
+    H      6.3274260     -1.9850090     -0.3259560
+    C     -0.9849770      3.3107900     -1.6773210
+    H      0.0860700      3.2086990     -1.4896040
+    H     -1.3635080      4.2155590     -1.1940220
+    H     -1.1729450      3.3571590     -2.7538780
+    C     -2.9263860     -4.0733420     -1.2662770
+    H     -2.4914580     -4.8847540     -1.8535360
+    H     -3.7322580     -3.5983060     -1.8380380
+    H     -3.3245040     -4.4647010     -0.3252780
+    C     -4.1337720      0.8029070     -3.1996090
+    H     -3.6537510      1.7841190     -3.1197100
+    H     -4.8254030      0.8072490     -4.0481970
+    H     -3.3592180      0.0467850     -3.3704670
+    C      1.4798560      3.5121350      2.2509330
+    C      0.9413100     -0.6499850      3.6071830
+    H      0.4787970     -0.5857820      4.5985100
+    H      1.8840520     -0.0904060      3.6163660
+    H      1.1623230     -1.6960460      3.3772890
+    H      0.4247060      3.2699000      2.0910820
+    H      1.7314910      4.4345160      1.7187700
+    H      1.6728370      3.6308940      3.3186740
+    C     -5.4960610     -0.5265130      1.7357500
+    H     -6.5126110     -0.8157020      2.0201440
+    H     -5.2624300      0.4468630      2.1811820
+    H     -4.7807210     -1.2730840      2.0905780
+
+  \end{lstlisting}
+
+  \begin{lstlisting}[frame=single, caption={puvodni struktura bez naboje} ,label=DescriptiveLabel]
+  OPT STRUKTURA_BEZ_NABOJE
+
+  0 1
+ Si      0.0120350      0.0358270      0.0242600
+  O      1.3047860     -0.7167400     -0.9094090
+  O      1.2485030      0.9175880      1.0755690
+  O      0.0071770      1.3837080     -1.1071560
+  O     -1.2699190      0.7984460      0.9646070
+  O     -1.2249010     -0.8580940     -1.0153060
+  O      0.0265720     -1.2984910      1.1771360
+  P      2.7873600     -0.5273230     -1.3538350
+  P      1.7316220      2.3267180      1.3744360
+  P     -0.8884670      2.5068120     -1.7298840
+  P     -2.7482530      0.8146240      1.4394840
+  P     -1.8660670     -2.2318230     -1.0598940
+  P      0.8838660     -2.5167300      1.6671940
+  O      3.0143970      1.0469100     -1.6140040
+  O      2.7757900      2.8798480      0.3584280
+  O      0.5915060      3.3905520      1.4984390
+  O     -1.2170490      3.5245010     -0.4936090
+  O     -2.3386720      1.8913420     -1.9850670
+  O     -3.6700160      0.8363760      0.1164220
+  O     -3.0982940     -0.6563060      2.0010980
+  O     -2.5657370     -2.6821870      0.2695220
+  O     -0.8954760     -3.4052900     -1.4218810
+  O      1.1205810     -3.4334500      0.3515580
+  O      2.3725480     -1.9837840      1.9375890
+  O      3.6974500     -0.7323310     -0.0345080
+  O      3.2133600     -1.3625320     -2.4995560
+  O      2.4825190      2.3287790      2.7684150
+  O     -0.3068290      3.1700670     -2.9126320
+  O     -3.0753890      1.8766920      2.4177360
+  O     -2.9273170     -2.1615930     -2.2269270
+  O      0.3041640     -3.2345990      2.8195630
+  O      5.1670170      2.0769390     -0.2488950
+  O      3.8041170      3.5545990     -2.0383720
+  O     -1.2506920      5.2972690      1.5518090
+  O     -4.6422270      3.0630540     -1.0853360
+  O     -4.6859290      0.7190670     -2.3155330
+  O     -5.0430560     -2.0296240      0.6259080
+  O     -3.7160060     -3.1653580      2.6583920
+  O     -0.3341860     -5.6260400      0.0509660
+  O      1.2380300     -4.8667120     -1.9655080
+  O      4.2084820     -3.3521720      0.5525290
+  O      4.9672570     -1.3967780      2.2006730
+ Si      3.7282780      2.3675690     -0.9468970
+ Si     -0.3300940      4.4438130      0.5328210
+ Si     -3.8335430      1.6720710     -1.3067550
+ Si     -3.6385010     -2.1079060      1.4439110
+ Si      0.3267810     -4.3661380     -0.7265680
+ Si      3.8270990     -1.8957470      1.1485080
+  C      6.3104920      1.5577630     -0.9571930
+  H      5.9927770      0.7674480     -1.6485700
+  H      6.7523930      2.3702700     -1.5457670
+  C      7.3026950      1.0083430      0.0520270
+  H      7.6079390      1.7898850      0.7556380
+  H      8.1962520      0.6380110     -0.4634100
+  H      6.8569040      0.1822790      0.6147940
+  C      3.0040820      3.7334910     -3.2416780
+  H      1.9792410      3.3954270     -3.0702490
+  H      2.9794500      4.8138510     -3.4084760
+  C      3.6412040      3.0149100     -4.4188370
+  H      4.6695270      3.3580250     -4.5786190
+  H      3.0633370      3.2188950     -5.3277450
+  H      3.6496090      1.9317910     -4.2595110
+  O      0.6627470      5.3929070     -0.3283310
+  C      2.4586360      6.8986130     -0.8701680
+  H      1.8923420      7.2833950     -1.7243110
+  C     -1.7938140      4.9137330      2.8385340
+  H     -0.9590790      4.8128390      3.5434280
+  H     -2.2960040      3.9464490      2.7539720
+  C     -2.7498950      5.9997650      3.2971450
+  H     -2.2410150      6.9667450      3.3706900
+  H     -3.1574850      5.7437580      4.2815920
+  H     -3.5845720      6.1024480      2.5959370
+  C     -4.5614290      4.0146320     -0.0085710
+  H     -3.6720650      4.6357860     -0.1564860
+  H     -4.4497700      3.4820120      0.9420540
+  C     -5.8220840      4.8624570     -0.0176390
+  H     -5.9307150      5.3847210     -0.9738100
+  H     -5.7776230      5.6103950      0.7828150
+  H     -6.7096420      4.2404810      0.1387270
+  C     -4.4902350      0.6538080     -3.7387030
+  H     -3.6038240      0.0427280     -3.9403650
+  H     -4.3066860      1.6565530     -4.1425550
+  C     -5.7297590      0.0487980     -4.3754280
+  H     -5.9253700     -0.9500810     -3.9701600
+  H     -5.5946340     -0.0364560     -5.4598040
+  H     -6.6084500      0.6725600     -4.1823090
+  C     -6.2296990     -1.3410600      1.0682870
+  H     -6.6944010     -1.9251220      1.8717620
+  H     -5.9521410     -0.3600090      1.4698740
+  C     -7.1701430     -1.1848650     -0.1130840
+  H     -8.0807240     -0.6609150      0.1991920
+  H     -7.4574360     -2.1647200     -0.5101660
+  H     -6.6875050     -0.6083690     -0.9082410
+  C     -2.8427450     -3.2774350      3.8147970
+  H     -1.8223630     -3.4746580      3.4772710
+  H     -2.8534480     -2.3188940      4.3454510
+  C     -3.3670740     -4.3956950      4.6959460
+  H     -4.3913540     -4.1915600      5.0262050
+  H     -2.7290250     -4.4970660      5.5810400
+  H     -3.3598160     -5.3486340      4.1568050
+  C     -0.9107340     -6.7960420     -0.5478090
+  H     -0.2853000     -7.1261630     -1.3856390
+  H     -1.9030420     -6.5393820     -0.9429610
+  C     -1.0221020     -7.8808630      0.5092600
+  H     -0.0321970     -8.1420760      0.8959660
+  H     -1.4793660     -8.7801880      0.0808470
+  H     -1.6389120     -7.5389290      1.3460670
+  C      1.5475740     -4.1746530     -3.2023000
+  H      0.6180410     -3.7698580     -3.6192890
+  H      2.2181770     -3.3392170     -2.9865510
+  C      2.1799760     -5.1668470     -4.1610840
+  H      3.1067440     -5.5742460     -3.7443960
+  H      2.4196390     -4.6651380     -5.1053640
+  H      1.5008030     -6.0001230     -4.3724500
+  C      5.1120720     -3.6494420     -0.5278450
+  H      4.8607040     -3.0236150     -1.3908280
+  H      6.1362030     -3.4164020     -0.2090160
+  C      4.9785840     -5.1233430     -0.8695450
+  H      5.2267860     -5.7457240     -0.0035320
+  H      5.6578150     -5.3821420     -1.6904090
+  H      3.9525870     -5.3495090     -1.1765250
+  C      4.8990510     -0.2464690      3.0556490
+  H      3.9771620     -0.2953550      3.6482510
+  H      4.8675410      0.6608970      2.4414840
+  C      6.1153950     -0.2422120      3.9662190
+  H      6.1438400     -1.1516250      4.5748820
+  H      6.0841760      0.6256560      4.6351620
+  H      7.0381220     -0.1917810      3.3791190
+  C      1.5147850      6.4174500      0.2169750
+  H      0.8858260      7.2350530      0.5879060
+  H      3.0962540      7.7023980     -0.4841340
+  H      2.0831450      6.0134330      1.0650410
+  H      3.0967390      6.0783450     -1.2121890
+  C      1.7992780      1.8037780      3.9385130
+  H      0.9083750      2.4005890      4.1499160
+  H      2.5131340      1.8909750      4.7568880
+  H      1.5284300      0.7586450      3.7743100
+  C     -3.8956540     -3.2199840     -2.4286560
+  H     -4.4259910     -2.9570540     -3.3432190
+  H     -4.5863060     -3.2496430     -1.5841470
+  H     -3.3866170     -4.1793890     -2.5578170
+
+  \end{lstlisting}
+
+  \begin{lstlisting}[frame=single, caption={puvodni struktura C cis} ,label=DescriptiveLabel]
+  OPT STRUKTURA_C_CIS
+
+  0 1
+   Si      0.4362750     -0.3308130      0.1798660
+    O      0.0302110      1.4468910      0.7261310
+    O     -0.8564990     -0.0851840     -0.9735320
+    O      1.7846080     -0.3744530      1.2821930
+    O     -0.6146920     -1.0436500      1.3726750
+    O      1.6144150      0.6336900     -0.9892260
+    O      0.8847720     -1.7877540     -0.6288930
+    C     -0.3438780      2.0694820      1.7462750
+    C      2.1261230      0.4547880     -2.1168400
+    C      1.4460740     -0.1836080     -3.2746040
+    C      0.1437130      1.8089160      3.1263220
+    H      0.1330580      0.7345630      3.3131440
+    H     -0.4661440      2.3412640      3.8549450
+    H      1.1944900      2.1250230      3.1698980
+    O     -1.1423970      3.0922300      1.5849480
+    O      3.3558730      0.8717880     -2.3015790
+    P     -1.8581550      0.8733550     -1.6896390
+    P     -2.1537160     -0.8810520      1.7000150
+    P      1.1394150     -3.3042950     -0.3141620
+    P      3.1847420      0.2572400      1.6064990
+    O     -2.3569670      1.9699320     -0.6241930
+    O     -3.1768000     -0.0354590     -1.8132940
+    O     -1.4188810      1.4575590     -2.9784610
+    O      3.9974000     -0.8958370      2.3558520
+    O      4.0607640      0.3011950      0.2398030
+    O      3.1507920      1.5794480      2.2877420
+    O      1.8693300     -3.6936310     -1.7037000
+    O      1.8625800     -3.6820430      0.9259450
+    O     -2.9628540     -1.5079350      0.4757860
+    O     -2.5522520      0.4936190      2.1082600
+   Si     -3.9291290     -1.1344810     -0.8109850
+   Si      4.3329560      1.3821040     -0.9707700
+   Si     -2.0676360      3.3779690      0.1680340
+    O     -5.3261160     -0.5300350     -0.2355970
+    O     -4.2248350     -2.4817130     -1.6730560
+    O     -1.2080000      4.4596480     -0.6715700
+    O     -3.4830900      3.9756990      0.6855210
+    O      3.9269550      2.9239010     -0.7340590
+    O      5.8713020      1.2271510     -1.4640700
+    C     -3.2757870     -3.1504890     -2.5107140
+    C     -6.4428220     -0.1892290     -1.0585370
+    C     -1.4548990      4.8532830     -2.0302510
+    C     -4.5039280      3.2083100      1.3424620
+    C      4.4478990      3.8109950      0.2696730
+    C      6.6504170      0.0279030     -1.4497830
+    H      6.3830590     -0.6085400     -2.3006320
+    H      6.5030490     -0.5281290     -0.5186480
+    H      5.5347860      3.9038070      0.1704730
+    H      4.1833280      3.4413070      1.2631890
+    H      2.0814950     -0.1423500     -4.1590900
+    H      0.4893380      0.3250900     -3.4470630
+    H     -5.3332800      3.8893260      1.5471930
+    H     -4.1289850      2.7853660      2.2785850
+    H     -1.4666020      3.9799650     -2.6893850
+    H     -0.6411420      5.5208710     -2.3220650
+    H     -6.7922250     -1.0600210     -1.6237990
+    H     -6.1841610      0.6157000     -1.7565350
+    H     -2.3855900     -3.4446420     -1.9447500
+    H     -2.9787990     -2.5067960     -3.3462170
+    H      1.2280720     -1.2231410     -3.0064460
+    O     -2.4310020     -2.0397870      2.7810730
+    O     -0.2884920     -4.0561990     -0.4702960
+    C     -1.8387150     -1.9197020      4.0848920
+    H     -2.2601130     -2.7259420      4.6873340
+    H     -2.0902250     -0.9542090      4.5348850
+    H     -0.7521140     -2.0363440      4.0198160
+    C     -0.9103980     -4.6776960      0.6731820
+    H     -1.5848650     -5.4399090      0.2767870
+    H     -1.4827170     -3.9400780      1.2399400
+    H     -0.1566580     -5.1371200      1.3167040
+    C      3.3434860     -1.8341050      3.2376550
+    H      4.1487010     -2.4078190      3.7000480
+    H      2.6905660     -2.4915460      2.6602710
+    H      2.7851710     -1.3076660      4.0196210
+    C      2.3129820     -5.0478520     -1.8712030
+    H      2.8722290     -5.0766000     -2.8083250
+    H      1.4555660     -5.7266400     -1.9352560
+    H      2.9615330     -5.3473950     -1.0422170
+    H     -7.2437530      0.1541510     -0.3989960
+    H     -4.8454950      2.3891910      0.7023420
+    H      3.9887110      4.7870780      0.0988820
+    H      7.6999750      0.3183380     -1.5382370
+    H     -3.7652420     -4.0447310     -2.9050930
+    H     -2.4044580      5.3944290     -2.1044270
+
+  \end{lstlisting}
+
+  \begin{lstlisting}[frame=single, caption={puvodni struktura C trans },label=DescriptiveLabel]
+  OPT STRUKTURA_C_TRANS
+
+  0 1
+   Si      0.1568620      0.0982880     -0.4546840
+    O     -1.3858890     -0.0173790     -1.2768970
+    O     -0.3952950     -1.3151690      0.6399790
+    O      1.6543810      0.2513780      0.4670240
+    O      0.5816890      1.4511660     -1.6650310
+    O     -0.5550920      1.2242170      0.7165680
+    O      0.8678080     -1.0493540     -1.5450430
+    P     -2.7196520     -0.8175830     -1.3999680
+    P     -1.5614130      2.4311220      0.6006710
+    P      1.5991580     -2.4289430     -1.5513710
+    P      3.1575710      0.5538690      0.1400790
+    C     -0.4911750     -1.8030960      1.7766270
+    C      1.1168160      2.5701510     -1.5429810
+    O     -2.8614740     -1.8238840     -2.4689240
+    O      2.4652110     -2.7355600     -2.7095090
+    O      3.5246940      0.7921840     -1.2810010
+    O     -1.3775150      3.3864190     -0.5206460
+    O     -3.0523280     -1.4172600      0.0875580
+    O     -3.8310160      0.3473290     -1.4758010
+    O     -3.0346810      1.7728760      0.6776300
+   Si     -4.2709810      1.5404840     -0.4030280
+    O     -5.5155180      1.0761000      0.5493300
+    O     -4.7174780      2.8446060     -1.2603230
+    C     -6.8440280      0.8962360      0.0549760
+    H     -7.4810840      0.6455980      0.9072710
+    H     -6.8847240      0.0775730     -0.6733780
+    C     -4.0819080      3.3580460     -2.4379070
+    H     -3.9519420      2.5655430     -3.1827420
+    H     -3.1099430      3.7855500     -2.1798310
+   Si     -2.8613170     -2.7890720      0.9651670
+    O     -1.5276080     -2.5541570      2.0522850
+    O     -4.1505110     -2.9825080      1.9321820
+    C     -4.8705630     -1.9516350      2.6152870
+    H     -5.0445180     -1.0866570      1.9676180
+    H     -4.3193470     -1.6345360      3.5082770
+    O      2.3989500     -2.5130800     -0.1252060
+    O      3.9863780     -0.5947040      0.8758450
+   Si      3.8841800     -2.2433030      0.5209140
+    O      3.4932430      1.8594190      1.0534360
+   Si      2.9221630      3.3281230      0.5346430
+    O      1.5450890      3.0122770     -0.3922010
+    O      3.9902590      4.1448810     -0.3736060
+    O      5.1609740     -2.6986570     -0.3649740
+    O      3.8702300     -3.0512760      1.9399110
+    C      5.2331590      3.6780950     -0.9225550
+    H      5.5411230      4.4027560     -1.6799600
+    H      5.1110330      2.6919880     -1.3776890
+    C      5.5585970     -2.1731050     -1.6455000
+    H      5.6199210     -1.0806660     -1.6126190
+    H      4.8353460     -2.4710640     -2.4081360
+    C      4.9833830     -3.0947720      2.8342050
+    H      5.8673780     -3.5100060      2.3386400
+    H      4.7075330     -3.7397940      3.6724430
+    C      0.5272200     -1.6233640      2.8512710
+    H      0.9053030     -0.5994870      2.8206430
+    H      1.3742560     -2.2866450      2.6315300
+    H      0.1134810     -1.8768470      3.8277250
+    C      1.2031660      3.4833650     -2.7173080
+    H      2.1513140      4.0263560     -2.7029680
+    H      0.3858230      4.2068130     -2.6083180
+    H      1.0760720      2.9258250     -3.6451230
+    O      2.3967930      4.1564720      1.8176540
+    O     -1.4421630      3.1733550      2.0212940
+    O     -2.5037560     -4.1488260      0.1746090
+    O      0.4004360     -3.4653990     -1.2702190
+    C     -3.2605790     -4.7033860     -0.9189600
+    C      0.6784730     -4.8715240     -1.3640650
+    H      1.4342270     -5.1659420     -0.6269970
+    H      1.0237220     -5.1272260     -2.3693510
+    H     -0.2608670     -5.3783540     -1.1418880
+    C     -1.6169880      2.4590950      3.2520580
+    H     -1.5203120      3.1958520      4.0515040
+    H     -2.6102140      2.0008760      3.2924490
+    H     -0.8435050      1.6929060      3.3629410
+    C      1.4930470      5.2697650      1.7928560
+    H      0.5621890      5.0014240      1.2850080
+    H      1.9575300      6.1315050      1.3009770
+    H     -2.7733910     -5.6399930     -1.1986650
+    H     -3.2562860     -4.0117130     -1.7647800
+    H      5.2181540     -2.0938720      3.2155740
+    H      6.5435780     -2.5906160     -1.8677800
+    H     -5.8291390     -2.3749400      2.9255210
+    H      1.2739670      5.5282440      2.8309780
+    H      5.9955110      3.6342350     -0.1381040
+    H     -7.2153150      1.8141500     -0.4127620
+    H     -4.2864410     -4.9188870     -0.6010600
+    H     -4.7363320      4.1328280     -2.8456680
+
+  \end{lstlisting}
+
+  \begin{lstlisting}[frame=single, caption={puvodni struktura puvodni methyl },label=DescriptiveLabel]
+  OPT STRUKTURA_PUVODNI_NABOJ
+
+  -2 1
+   Si     -0.0021910     -0.0174300      0.0639600
+    O      0.0281760      1.3840390      1.1669940
+    O      1.3350740      0.6902980     -0.9055820
+    O      1.1754680     -0.8555940      1.1167540
+    O     -0.0347840     -1.4301790     -1.0437860
+    O     -1.3499300     -0.7187500      1.0182230
+    O     -1.1804520      0.8093470     -1.0027600
+    P      0.9014680      2.5256720      1.7543130
+    P      2.8194830      0.5701970     -1.3118250
+    P      1.7595410     -2.2300950      1.5311010
+    P     -0.9113250     -2.6074850     -1.5409110
+    P     -2.8359550     -0.5054530      1.3955710
+    P     -1.6575410      2.1638910     -1.5812310
+    O      2.3796310      1.9516450      2.0510090
+    O      3.7246960      0.7493770      0.0244780
+    O      3.1409340     -0.9679210     -1.6647870
+    O      2.4410230     -2.8673180      0.1870420
+    O      0.5524000     -3.2675720      1.7382700
+    O     -1.2569080     -3.5393990     -0.2531580
+    O     -2.3776400     -2.0594380     -1.8996230
+    O     -3.7300250     -0.8101060      0.0742920
+    O     -3.1134290      1.0690380      1.5751230
+    O     -2.5482810      2.8635640     -0.4065800
+    O     -0.4197990      3.1904180     -1.6320800
+    O      1.2341400      3.5218000      0.5089970
+    O      0.3360370      3.2220510      2.9315640
+    O      3.2669710      1.4732610     -2.4053840
+    O      2.6706410     -2.2220220      2.6974450
+    O     -0.3279740     -3.3905660     -2.6621160
+    O     -3.3172510     -1.2778940      2.5703220
+    O     -2.3652850      2.1176200     -2.8811470
+    O      4.3412270      3.2831630      0.8014680
+    O      4.9405710      1.2351610      2.3466030
+    O      3.6518160     -3.5084060     -2.1259680
+    O      0.2596330     -5.6722900      0.4455540
+    O     -1.5474350     -4.8218720      2.0959020
+    O     -4.5442720     -3.2701230     -0.7315010
+    O     -4.8768550     -1.2569260     -2.3141240
+    O     -5.0668930      2.1549190      0.0164770
+    O     -3.8094050      3.6155720      1.8314150
+    O     -0.5452710      5.3942180     -0.0238840
+    O      1.4714530      5.0172600     -1.7195840
+   Si      3.8327670      1.8111900      1.2947250
+   Si      3.5412980     -2.3928050     -0.9336820
+   Si     -0.4706540     -4.3109150      0.9805540
+   Si     -3.8598210     -1.8635540     -1.1941820
+   Si     -3.6200550      2.4047350      0.7508980
+   Si      0.4287340      4.2611240     -0.7098090
+    O      4.9960350     -2.2967760     -0.1748760
+    C      6.1365280     -1.7148640     -0.7872820
+    H      6.9868760     -1.8567430     -0.1116910
+    H      5.9909140     -0.6409210     -0.9496340
+    H      6.3679680     -2.1960250     -1.7475680
+    C      2.8954280     -3.4733110     -3.3454680
+    H      3.1869160     -4.3553630     -3.9265620
+    H      3.1389320     -2.5716180     -3.9187580
+    H      1.8186850     -3.4965350     -3.1533500
+    C      0.9554180     -5.8480820     -0.7884340
+    H      1.9443080     -5.3806030     -0.7435320
+    H      0.4002030     -5.4160460     -1.6264920
+    H      1.0757050     -6.9266740     -0.9423870
+    C     -1.8244510     -4.1549210      3.3342210
+    H     -0.8979190     -3.9659440      3.8871290
+    H     -2.4596750     -4.8274640      3.9217340
+    H     -2.3457590     -3.2078270      3.1669690
+    C     -4.5760680     -3.8242580      0.5819500
+    H     -3.6957770     -4.4501810      0.7525100
+    H     -5.4790480     -4.4419890      0.6572110
+    H     -4.6031260     -3.0457620      1.3512630
+    C     -6.1702250      1.5358300      0.6623330
+    H     -7.0173150      1.5595990     -0.0314820
+    H     -6.4513750      2.0728760      1.5782310
+    H     -5.9484110      0.4921850      0.9093490
+    C     -2.7629350      4.0831510      2.6965840
+    H     -3.2328570      4.7153120      3.4580360
+    H     -2.0320300      4.6688320      2.1325850
+    H     -2.2352890      3.2571780      3.1793450
+    C     -4.6359760     -0.0595730     -3.0620340
+    H     -3.6083230     -0.0039940     -3.4276210
+    H     -4.8240300      0.8224660     -2.4434540
+    H     -5.3280310     -0.0646540     -3.9117320
+    C     -1.5033860      6.1254650     -0.7747200
+    H     -1.9580760      6.8639850     -0.1057280
+    H     -2.2900570      5.4661260     -1.1575590
+    H     -1.0339230      6.6559140     -1.6146420
+    C      1.9570330      4.4758780     -2.9540350
+    H      1.1351250      4.3590240     -3.6700380
+    H      2.4442520      3.5072400     -2.8105580
+    H      2.6794630      5.1953640     -3.3562830
+    C      5.0853980      3.5624790     -0.3765010
+    H      4.9427380      4.6220330     -0.6137970
+    H      4.7428200      2.9604510     -1.2242870
+    H      6.1571230      3.3825590     -0.2075860
+    C      4.8670700     -0.0372140      3.0013270
+    H      5.6633460     -0.0571570      3.7540440
+    H      5.0150990     -0.8519110      2.2872220
+    H      3.8991050     -0.1876690      3.4837840
+
+  \end{lstlisting}
 
 {\csname captions\languagename\endcsname %% Temporarily override
 %% the BibLaTeX localization with the original babel definitions.
