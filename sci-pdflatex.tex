@@ -425,7 +425,7 @@ E(\varrho(\vec{r})) = T_s[\varrho(\vec{r})] + J[\varrho(\vec{r})] + \int V_{EX}(
  \label{kineticka_energie_jednoelektronova}
  \end{equation}
  Kinetická energie $T_s$ ale není přesným vyjádřením kinetické energie. Chybějící část je zajištěna $E_{EX}[\varrho(\vec{r})]$, výměnná-korelační energie. $J[\varrho(\vec{r})]$ je přesná Coulombovská repulze. $\int V_{EX}(\vec{r})\varrho(\vec{r})d\vec{r}$ je přesná energie atrakce elektronů jádry \cite{parr1994density}.
-
+%#TODO dodělat úvod k DFT
 \subsection{DFT metody v praxi}
 Největším problémem při aplikaci DFT je nalezení vhodného výměně-korelačního potenciálu. V principu přesný K-S přístup neříká nic o tom, jak výměně-korelační potenciál nalézt. Existují dva způsoby hledání tohoto parametru. První hledá vhodný $E_{EX}$ z teorie, jedná se o čistý $ab inito$ přístup. Druhý přístup hledá parametry pro $E_{EX}$, které lze určit z experimentálních dat.
 
@@ -436,19 +436,27 @@ První přístup se ozačuje jako aproximace lokální hustoty(LDA)\footnote{LDA
   E_{XC}^{GGA} = \int \varrho(\vec{r})f(\varrho, \nabla_{\varrho})d\vec{r}
   \label{gga}
 \end{equation}
- Nejvýznamějším funkcionál je Beckeho výměnný funkcionál (B88) s jedním parametrem. Dalším známým nkcionálem je LYP \cite{lyp} nebo BLYP \cite{blyp}. Práce GGA funkcionály vedly k rozšíření DFT v kvantové chemii.
+ Nejvýznamějším funkcionál je Beckeho výměnný funkcionál (B88) s jedním parametrem. Dalším známým GGA funkcionálem je LYP \cite{lyp} nebo BLYP \cite{blyp}. Práce v oblasti GGA funkcionálů vedly k rozšíření DFT i v kvantové chemii.
 
- Třetí významnou skupinou funkcionálu josu hybridní funkcionály. Hybridní funkcionály jsou kombinací čistého DFT přístupu a přesné HF výměny. Nejznámějším funkcionálem je B3LYP, navržen v roce 1994. Funkcionál B3LYP je dodnes považován za univerzální a nejpoužívanější funkcionál. Nachází využití v mnoha chemických aplikacích \cite{koch2000chemist}.
+ Třetí významnou a v kvantové chemii nejpoužívanější skupinou funkcionálů jsou hybridní funkcionály. Hybridní funkcionály jsou kombinací čistého DFT přístupu a přesné HF výměny. Část výměně-korelační energie vypočítáme s K-S orbitalů a druhou část s předchozích funkcionálů.
+\begin{equation}
+  E_{XC} = E_{X}^{exact} + E_C^{K-S}
+\end{equation}
+Nejznámějším funkcionálem je B3LYP \cite{b3lyp}, navržen v roce 1994.
+\begin{equation}
+  E_{XC}^{B3LYP} = (1-a)E_{X}^{LSD} + a \cdot E_{XC}^{\lambda = 0} + b \cdot E_{X}^{B88} + c \cdot E_{C}^{LYP} + (1-c)E_{C}^{LSD}.
+\end{equation}
+$\lambda$ je .Funkcionál B3LYP je dodnes považován za univerzální a nejpoužívanější funkcionál. Nachází využití v mnoha chemických aplikacích \cite{koch2000chemist}.
 
  \subsection{Spektroskopické vlastnosti atomů a molekul}
- Kvantově-mechanické metody popsané výše lze využít k výpočtu dovolených hladin energie a jim odpovídajících vlnových funkcí. Z vlnových funkcí ale dle postulátů kvantové mechaniky vyplývají všechny pozorovatelné vlastnosti systému, tedy například odpověď na vnější magnetické pole. Externí magnetické pole $\vec{B}_0$ totiž interaguje s orbitalními momenty hybnosti jednotlivých elektronů. Tím se vytváří dostatečné magnetické pole $\delta \vec{B}$ působící na jádro. Přídavné pole $\delta \vec{B}$ odpovídá vnějšímu poli $\vec{B}$ vztahem:
+ Chemický posun v NMR je jednou z nejdůležitějších magnetických vlastností chemických látek. Kvantově-mechanické metody popsané výše lze využít k výpočtu dovolených hladin energie a jim odpovídajících vlnových funkcí. Z vlnových funkcí ale dle postulátů kvantové mechaniky vyplývají všechny pozorovatelné vlastnosti systému, tedy například odpověď na vnější magnetické pole. Externí magnetické pole $\vec{B}_0$ totiž interaguje s orbitalními momenty hybnosti jednotlivých elektronů. Tím se vytváří dostatečné magnetické pole $\delta \vec{B}$ působící na jádro. Přídavné pole $\delta \vec{B}$ odpovídá vnějšímu poli $\vec{B}$ vztahem:
 \begin{equation}
   \delta \vec{B} = - \sigma \vec{B}_0,
 \end{equation}
 kde $\sigma$ je tzv. stínící konstanta (většinou kladá, někdy však záporná) \cite{atkins2010atkins}.
 %#TODO atkins, definice chemického posunu, strana 496
 
- $B_0$, které je reprezentováno vektorovým potenciálem tohoto pole. V~ideálním případě by neměla mít volba počátku tohoto pole vliv na výsledek. Jedním z~důsledků aproximace v~kvantové chemii je fakt, že volba počátku výrazně ovlivňuje výsledné chemické stínění. Problém se nazývá \uv{Gauge origin problem}. Metoda GIAO (Gauge  Including Atomic Orbitals) řeší problém způsobem, že zahrnuje počátek vektorového potenciálu do atomových orbitalů. Vhodnou bazí pro tyto výpočty je IGLO$-$III \cite{Standara2006thesis} (Individual Gauge for Localized Orbitals) \cite{g09}.
+ $B_0$, které je reprezentováno vektorovým potenciálem tohoto pole. V~ideálním případě by neměla mít volba počátku tohoto pole vliv na výsledek. Jedním z~důsledků aproximace v~kvantové chemii je fakt, že volba počátku výrazně ovlivňuje výsledné chemické stínění. Problém se nazývá \uv{Gauge origin problem}. Metoda GIAO \cite{giao} (Gauge  Including Atomic Orbitals) řeší problém způsobem, že zahrnuje počátek vektorového potenciálu do atomových orbitalů nebo do lokalizovaných molekulových orbitalů (IGLO)\footnote{IGLO - \textit{giao}}. Vhodnou bazí pro tyto výpočty je IGLO$-$III \cite{Standara2006thesis} (Individual Gauge for Localized Orbitals) \cite{g09}.
 
 \section{Báze v kvantově chmemických výpočtech}
 Základním přístupem pro hledání molekulových orbitalů je metoda MO-LCAO \footnote{MO-LCAO - \textit{Molecular Orbital – Linear Combination of Atomic Orbitals}}, která je založena na postulátu o úplnosti systému vlastních funkcí. Podle postulátu QM o úplných vlastních hodnotách uplných Hermitovských operátorů lze každý molekulový orbital sestrojit jako lineární kombinaci atomových orbitalů, tzv. LCAO\footnote{LCAO - \textit{Linear Combination of Atomic Orbitals.}}. Jednotlivé molekulové orbitaly jsou hledány jako lineární kombinace atomových orbitalů.
@@ -1047,13 +1055,13 @@ E & Si-O & 1-2  & 0,091 & 91,63 \% & 8,37 \% & 17,13 \% & 50,11 \% & 32,76 \% \\
 \begin{tabular}{|l|l|r|l|r|r|r|}
 \hline
 \label{nmr} & \textbf{Q} & \textbf{R} &\textbf{S} & \textbf{P} & \textbf{O} & {exp \footnote{Experimentální hodnoty jsou ze článku \cite{1316862}} [ppm]} \\ \hline
-central Si & \multicolumn{1}{r|}{-210,45} & -211,70 & \multicolumn{1}{r|}{-160,89} & -217,13 & -220,53 & -101 \\ \hline
-4 Si & \multicolumn{1}{r|}{-161,26} & -157,15 & \multicolumn{1}{r|}{-158,78} & -164,78 & -161,25 & -212 \\ \hline
-4. Si & \multicolumn{1}{r|}{-156,64} & -158,48 & \multicolumn{1}{r|}{-155,75} & -166,21 & -161,34 & -212 \\ \hline
-4. Si & \multicolumn{1}{r|}{-159,50} & -157,32 &  & -164,28 & -163,01 & -212 \\ \hline
+central Si & -210,45 & -211,70 & -160,48 & -217,13 & -220,53 & -101 \\ \hline
+4 Si & -161,26 & -157,15 &-158,26 & -164,78 & -161,25 & -212 \\ \hline
+4. Si & -156,64 & -158,48 & -155,75 & -166,21 & -161,34 & -212 \\ \hline
+4. Si & -159,50 & -157,32 &  & -164,28 & -163,01 & -212 \\ \hline
 4 Si &  & -160,50 &  & -166,08 & -161,83 & -212 \\ \hline
-4 Si &  & \multicolumn{1}{l|}{} &  & -168,73 & -161,46 & -212 \\ \hline
-4 Si &  & \multicolumn{1}{l|}{} &  & -164,42 & -161,68 & -212 \\ \hline
+4 Si &  & - &  & -168,73 & -161,46 & -212 \\ \hline
+4 Si &  & - &  & -164,42 & -161,68 & -212 \\ \hline
 \end{tabular}
 \end{center}
 \end{minipage}
