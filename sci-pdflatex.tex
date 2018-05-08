@@ -174,15 +174,13 @@ Obrázek \ref{si_polymer_cely} znázorňuje předpokládanou strukturu silikofos
   \node at (-4,1) { \chemfig{
                   HO% 2
         -[:330,,2]P% 1
-                     (
-           -[:270,,,1]OH% 4
+                     (-[:270,,,1]OH% 4
                      )
-                     (
-                =[:30]O% 5
-                     )
+                     (=[:30]O)% 5
+                     %\arrow ([:70]K))
        -[:210,,,2]HO% 3
-    }};
-    \node at (-2,3){\chemfig{
+  }};
+    \node at (-2,3)(angle=70){\chemfig{
                    R% 2
             -[:270]Si% 1
                       (
@@ -196,6 +194,7 @@ Obrázek \ref{si_polymer_cely} znázorňuje předpokládanou strukturu silikofos
             -[:210]O% 3
         -[:150,,,1]P% 8
     }};
+\node at (-2,2){\schemestart \arrow \schemestop};
   \node at (4,1.5)  {\small \chemfig{
                   HO% 2
         -[:330,,2]P% 1
