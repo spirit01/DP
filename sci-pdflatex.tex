@@ -171,6 +171,7 @@ Obrázek \ref{si_polymer_cely} znázorňuje předpokládanou strukturu silikofos
 \begin{figure}
   \begin{center}
   \begin{tikzpicture}[thick,scale=0.6, every node/.style={scale=0.6}]
+
   \node at (-4,1) { \chemfig{
                   HO% 2
         -[:330,,2]P% 1
@@ -194,7 +195,7 @@ Obrázek \ref{si_polymer_cely} znázorňuje předpokládanou strukturu silikofos
             -[:210]O% 3
         -[:150,,,1]P% 8
     }};
-\node at (-2,2){\schemestart \arrow \schemestop};
+  \draw[-stealth] (-2.65,2.2) -- (-2.2,3.3);
   \node at (4,1.5)  {\small \chemfig{
                   HO% 2
         -[:330,,2]P% 1
@@ -206,6 +207,9 @@ Obrázek \ref{si_polymer_cely} znázorňuje předpokládanou strukturu silikofos
                      )
        -[:210,,,2]HO% 3 \schemestop
     }};
+  \draw[-stealth] (5.3,2.6) -- (5.8,3.3);
+  \draw[-stealth] (7.4,2.4) -- (6.2,3.3);
+
   \node at (6,3)  {\chemfig{
                    R% 2
             -[:270]Si% 1 \schemestop
@@ -235,6 +239,9 @@ Obrázek \ref{si_polymer_cely} znázorňuje předpokládanou strukturu silikofos
     \end{center}
   \begin{center}
     \begin{tikzpicture}[thick,scale=0.6, every node/.style={scale=0.6}]
+      \draw[-stealth] (-2.9,2) -- (-2.2,2.8);
+      \draw[-stealth] (5.55,2.45) -- (5.8,2.8);
+
     \node at (-4.5,1) { \chemfig{
            O% 2
     =[:210]P% 1

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bcf:controlfile version="3.3" bltxversion="3.7" xmlns:bcf="https://sourceforge.net/projects/biblatex">
+<bcf:controlfile version="3.2" bltxversion="3.6" xmlns:bcf="https://sourceforge.net/projects/biblatex">
   <!-- BIBER OPTIONS -->
   <bcf:options component="biber" type="global">
     <bcf:option type="singlevalued">
@@ -369,7 +369,7 @@
     <bcf:option datatype="boolean">spacecolon</bcf:option>
     <bcf:option datatype="boolean">pagetotal</bcf:option>
     <bcf:option datatype="boolean">shortnumeration</bcf:option>
-    <bcf:option datatype="boolean">thesisinfoinnotes</bcf:option>
+    <bcf:option datatype="boolean">thesisinfolast</bcf:option>
     <bcf:option datatype="integer">mincrossrefs</bcf:option>
     <bcf:option datatype="integer">minxrefs</bcf:option>
     <bcf:option datatype="integer">maxnames</bcf:option>
@@ -431,7 +431,6 @@
     <bcf:option datatype="xml">labelalphatemplate</bcf:option>
     <bcf:option datatype="xml">translit</bcf:option>
     <bcf:option datatype="xml">sortexclusion</bcf:option>
-    <bcf:option datatype="xml">sortinclusion</bcf:option>
     <bcf:option datatype="xml">labelnamespec</bcf:option>
     <bcf:option datatype="xml">labeltitlespec</bcf:option>
     <bcf:option datatype="xml">labeldatespec</bcf:option>
@@ -895,7 +894,7 @@
       <bcf:field fieldtype="field" datatype="entrykey">xref</bcf:field>
       <bcf:field fieldtype="field" datatype="date" skip_output="true">date</bcf:field>
       <bcf:field fieldtype="field" datatype="datepart" nullok="true">endyear</bcf:field>
-      <bcf:field fieldtype="field" datatype="datepart" nullok="true">year</bcf:field>
+      <bcf:field fieldtype="field" datatype="datepart">year</bcf:field>
       <bcf:field fieldtype="field" datatype="datepart">month</bcf:field>
       <bcf:field fieldtype="field" datatype="datepart">day</bcf:field>
       <bcf:field fieldtype="field" datatype="datepart">hour</bcf:field>
@@ -912,7 +911,7 @@
       <bcf:field fieldtype="field" datatype="datepart">endseason</bcf:field>
       <bcf:field fieldtype="field" datatype="date" skip_output="true">eventdate</bcf:field>
       <bcf:field fieldtype="field" datatype="datepart" nullok="true">eventendyear</bcf:field>
-      <bcf:field fieldtype="field" datatype="datepart" nullok="true">eventyear</bcf:field>
+      <bcf:field fieldtype="field" datatype="datepart">eventyear</bcf:field>
       <bcf:field fieldtype="field" datatype="datepart">eventmonth</bcf:field>
       <bcf:field fieldtype="field" datatype="datepart">eventday</bcf:field>
       <bcf:field fieldtype="field" datatype="datepart">eventhour</bcf:field>
@@ -929,7 +928,7 @@
       <bcf:field fieldtype="field" datatype="datepart">eventendseason</bcf:field>
       <bcf:field fieldtype="field" datatype="date" skip_output="true">origdate</bcf:field>
       <bcf:field fieldtype="field" datatype="datepart" nullok="true">origendyear</bcf:field>
-      <bcf:field fieldtype="field" datatype="datepart" nullok="true">origyear</bcf:field>
+      <bcf:field fieldtype="field" datatype="datepart">origyear</bcf:field>
       <bcf:field fieldtype="field" datatype="datepart">origmonth</bcf:field>
       <bcf:field fieldtype="field" datatype="datepart">origday</bcf:field>
       <bcf:field fieldtype="field" datatype="datepart">orighour</bcf:field>
@@ -946,7 +945,7 @@
       <bcf:field fieldtype="field" datatype="datepart">origendseason</bcf:field>
       <bcf:field fieldtype="field" datatype="date" skip_output="true">urldate</bcf:field>
       <bcf:field fieldtype="field" datatype="datepart" nullok="true">urlendyear</bcf:field>
-      <bcf:field fieldtype="field" datatype="datepart" nullok="true">urlyear</bcf:field>
+      <bcf:field fieldtype="field" datatype="datepart">urlyear</bcf:field>
       <bcf:field fieldtype="field" datatype="datepart">urlmonth</bcf:field>
       <bcf:field fieldtype="field" datatype="datepart">urlday</bcf:field>
       <bcf:field fieldtype="field" datatype="datepart">urlhour</bcf:field>
@@ -2178,40 +2177,42 @@
     <bcf:citekey order="48">jensen2007introduction</bcf:citekey>
     <bcf:citekey order="49">koch2000chemist</bcf:citekey>
     <bcf:citekey order="50">parr1994density</bcf:citekey>
-    <bcf:citekey order="51">koch2000chemist</bcf:citekey>
-    <bcf:citekey order="52">atkins2010atkins</bcf:citekey>
-    <bcf:citekey order="53">Standara2006thesis</bcf:citekey>
-    <bcf:citekey order="54">g09</bcf:citekey>
-    <bcf:citekey order="55">jensen2007introduction</bcf:citekey>
-    <bcf:citekey order="56">lowe2011quantum</bcf:citekey>
-    <bcf:citekey order="57">hsabclanek</bcf:citekey>
-    <bcf:citekey order="58">hsabwatoc</bcf:citekey>
-    <bcf:citekey order="59">kratochvilexcerpta</bcf:citekey>
-    <bcf:citekey order="60">pearson1986absolute</bcf:citekey>
-    <bcf:citekey order="61">hsabwatoc</bcf:citekey>
-    <bcf:citekey order="62">weinhold2005valency</bcf:citekey>
-    <bcf:citekey order="63">Avogadro</bcf:citekey>
-    <bcf:citekey order="64">b3lyp</bcf:citekey>
-    <bcf:citekey order="65">g09</bcf:citekey>
-    <bcf:citekey order="66">iglo</bcf:citekey>
+    <bcf:citekey order="51">lyp</bcf:citekey>
+    <bcf:citekey order="52">blyp</bcf:citekey>
+    <bcf:citekey order="53">koch2000chemist</bcf:citekey>
+    <bcf:citekey order="54">atkins2010atkins</bcf:citekey>
+    <bcf:citekey order="55">Standara2006thesis</bcf:citekey>
+    <bcf:citekey order="56">g09</bcf:citekey>
+    <bcf:citekey order="57">jensen2007introduction</bcf:citekey>
+    <bcf:citekey order="58">lowe2011quantum</bcf:citekey>
+    <bcf:citekey order="59">hsabclanek</bcf:citekey>
+    <bcf:citekey order="60">hsabwatoc</bcf:citekey>
+    <bcf:citekey order="61">kratochvilexcerpta</bcf:citekey>
+    <bcf:citekey order="62">pearson1986absolute</bcf:citekey>
+    <bcf:citekey order="63">hsabwatoc</bcf:citekey>
+    <bcf:citekey order="64">weinhold2005valency</bcf:citekey>
+    <bcf:citekey order="65">Avogadro</bcf:citekey>
+    <bcf:citekey order="66">b3lyp</bcf:citekey>
     <bcf:citekey order="67">g09</bcf:citekey>
-    <bcf:citekey order="68">jensen2007introduction</bcf:citekey>
-    <bcf:citekey order="69">doi:10.1002/jcc.23266</bcf:citekey>
-    <bcf:citekey order="70">C3NJ00721A</bcf:citekey>
-    <bcf:citekey order="71">rtg_4_pinkas</bcf:citekey>
-    <bcf:citekey order="72">Chipanina2011</bcf:citekey>
-    <bcf:citekey order="73">C3NJ00721A</bcf:citekey>
-    <bcf:citekey order="74">rtg_4_pinkas</bcf:citekey>
-    <bcf:citekey order="75">rtg_4_pinkas</bcf:citekey>
+    <bcf:citekey order="68">iglo</bcf:citekey>
+    <bcf:citekey order="69">g09</bcf:citekey>
+    <bcf:citekey order="70">jensen2007introduction</bcf:citekey>
+    <bcf:citekey order="71">doi:10.1002/jcc.23266</bcf:citekey>
+    <bcf:citekey order="72">C3NJ00721A</bcf:citekey>
+    <bcf:citekey order="73">rtg_4_pinkas</bcf:citekey>
+    <bcf:citekey order="74">Chipanina2011</bcf:citekey>
+    <bcf:citekey order="75">C3NJ00721A</bcf:citekey>
     <bcf:citekey order="76">rtg_4_pinkas</bcf:citekey>
-    <bcf:citekey order="77">rtg_5</bcf:citekey>
-    <bcf:citekey order="78">rtg_5</bcf:citekey>
+    <bcf:citekey order="77">rtg_4_pinkas</bcf:citekey>
+    <bcf:citekey order="78">rtg_4_pinkas</bcf:citekey>
     <bcf:citekey order="79">rtg_5</bcf:citekey>
-    <bcf:citekey order="80">Styskalik2015thesis</bcf:citekey>
-    <bcf:citekey order="81">1316862</bcf:citekey>
-    <bcf:citekey order="82">1316862</bcf:citekey>
+    <bcf:citekey order="80">rtg_5</bcf:citekey>
+    <bcf:citekey order="81">rtg_5</bcf:citekey>
+    <bcf:citekey order="82">Styskalik2015thesis</bcf:citekey>
     <bcf:citekey order="83">1316862</bcf:citekey>
     <bcf:citekey order="84">1316862</bcf:citekey>
+    <bcf:citekey order="85">1316862</bcf:citekey>
+    <bcf:citekey order="86">1316862</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global/" type="entry" sortscheme="none" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>
