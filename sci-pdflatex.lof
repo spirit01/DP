@@ -4,13 +4,13 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {4\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Struktura cyklu 4-\IeC {\v c}lenn\IeC {\'e}ho kruhu z \cite {C4TA06823H}; Legedna: \mycircle {brown} Si, \mycircle {red}~O, \mycircle {orange}~C, \mycircle {yellow} P, \mycircleempty {black}~H.}}{2}{figure.1.1}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Struktura cyklu 4-\IeC {\v c}lenn\IeC {\'e}ho kruhu z \cite {C4TA06823H}; Legenda: \mycircle {brown} Si, \mycircle {red}~O, \mycircle {orange}~C, \mycircle {yellow} P, \mycircleempty {black}~H.}}{2}{figure.1.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Koordina\IeC {\v c}n\IeC {\'\i } okol\IeC {\'\i } k\IeC {\v r}em\IeC {\'\i }ku v silikofosf\IeC {\'a}tech \cite {C4TA06823H}.}}{3}{figure.1.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1.3}{\ignorespaces Silikofosf\IeC {\'a}tov\IeC {\'a} s\IeC {\'\i }\IeC {\v t}, \cite {Styskalik2015thesis}.}}{4}{figure.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Struktura silikofosf\IeC {\'a}tu z\IeC {\'\i }skan\IeC {\'a} z RTG, \cite {C4TA06823H}; Legedna: \mycircle {brown} Si, \mycircle {red}~O, \mycircle {orange}~C, \mycircle {yellow} P, \mycircleempty {black}~H. }}{4}{figure.1.4}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Struktura silikofosf\IeC {\'a}tu z\IeC {\'\i }skan\IeC {\'a} z RTG, \cite {C4TA06823H}; Legenda: \mycircle {brown} Si, \mycircle {red}~O, \mycircle {orange}~C, \mycircle {yellow} P, \mycircleempty {black}~H. }}{4}{figure.1.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1.5}{\ignorespaces P\IeC {\v r}ehled koordinaci k\IeC {\v r}em\IeC {\'\i }ku.}}{5}{figure.1.5}
 \defcounter {refsection}{0}\relax 
@@ -38,9 +38,9 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {4\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces V\IeC {\'y}choz\IeC {\'\i } rentgenov\IeC {\'a} struktura \cite {rtg_4_pinkas}; Legedna: \mycircle {brown} Si, \mycircle {red} O, \mycircle {orange} C, \mycircleempty {black}~H}}{26}{figure.3.1}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Struktura \ce {[(Ph2Si{O2P(O)OSiMe3})2]} z\IeC {\'\i }skan\IeC {\'a} pomoc\IeC {\'\i } rentgenov\IeC {\'e} krystalografie v pr\IeC {\'a}ci \cite {rtg_4_pinkas}; Legenda: \mycircle {brown} Si, \mycircle {red} O, \mycircle {orange} C, \mycircleempty {black}~H}}{26}{figure.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces V\IeC {\'y}choz\IeC {\'\i } rentgenov\IeC {\'e} struktury \cite {rtg_5}; Legedna: \mycircle {brown} Si, \mycircle {red} O, \mycircle {orange} C, \mycircleempty {black}~H}}{27}{figure.3.2}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces \cite {rtg_5}; Legenda: \mycircle {brown} Si, \mycircle {red} O, \mycircle {orange} C, \mycircleempty {black}~H}}{27}{figure.3.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {}{\ignorespaces {\ce {SiCH3(OCH3)3}, \textbf {A}}}}{28}{figure.3.3}
 \defcounter {refsection}{0}\relax 
@@ -66,69 +66,49 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {}{\ignorespaces {\ce {Si(OCl)(OC2H5)3}, \textbf {L}}}}{28}{figure.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces P\IeC {\v r}ehled mal\IeC {\'y}ch struktur; Legedna: \mycircle {brown} Si, \mycircle {red} O, \mycircle {orange} C, \mycircle {green} Cl, \mycircle {red!50!blue!50} F, \mycircleempty {black}~H}}{29}{figure.3.3}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Si 0,05492}}}{28}{subfigure.3.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces P\IeC {\v r}ehled reaktant\IeC {\r u}; Legedna: \mycircle {brown} Si, \mycircle {red} O, \mycircle {orange} C, \mycircle {red!50!blue!50} F, \mycircle {green}~Cl, \mycircleempty {black}~H}}{30}{figure.3.4}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Si 0,10858}}}{28}{subfigure.3.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces P\IeC {\v r}ehled st\IeC {\v r}edn\IeC {\v e} velk\IeC {\'y}ch model\IeC {\r u}]; Legedna: \mycircle {brown} Si, \mycircle {red} O, \mycircle {orange} C, \mycircle {yellow} P, \mycircleempty {black}~H}}{31}{figure.3.5}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Si 0,09214}}}{28}{subfigure.3.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {}{\ignorespaces {\ce {SiCH3(PO4(CH3)2)(Si2P2O9(CH3)4)}, \textbf {M}}}}{31}{figure.3.5}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Si 0,10523}}}{28}{subfigure.3.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {}{\ignorespaces {\ce {Si(Si2P2O9(CH3)4)2}, \textbf {N}}}}{31}{figure.3.5}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Si 0,09585}}}{28}{subfigure.3.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces P\IeC {\v r}ehled velk\IeC {\'y}ch model\IeC {\r u}; Legedna: \mycircle {brown} Si, \mycircle {red} O, \mycircle {orange} C, \mycircle {yellow} P, \mycircleempty {black}~H}}{32}{figure.3.6}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Si 0,12800}}}{28}{subfigure.3.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {}{\ignorespaces { \textbf {O}}}}{32}{subfigure.3.7.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Si 0,10069}}}{28}{subfigure.3.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {}{\ignorespaces { \textbf {P}}}}{32}{subfigure.3.7.2}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Si 0,10258}}}{28}{subfigure.3.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {}{\ignorespaces { \textbf {Q}}}}{32}{subfigure.3.8.3}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces P\IeC {\v r}ehled mal\IeC {\'y}ch struktur; Legenda: \mycircle {brown} Si, \mycircle {red} O, \mycircle {orange} C, \mycircle {green} Cl, \mycircle {red!50!blue!50} F, \mycircleempty {black}~H}}{29}{figure.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {}{\ignorespaces { \textbf {R}}}}{32}{subfigure.3.8.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces P\IeC {\v r}ehled reaktant\IeC {\r u}; Legenda: \mycircle {brown} Si, \mycircle {red} O, \mycircle {orange} C, \mycircle {red!50!blue!50} F, \mycircle {green}~Cl, \mycircleempty {black}~H}}{31}{figure.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {}{\ignorespaces { \textbf {S}}}}{32}{subfigure.3.8.3}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces P\IeC {\v r}ehled NBO pro \ce {Si(CH3)(OAC)3}; Legenda: \mycircle {black!50!white!50} Si, \mycircle {red} O, \mycircle {black} C, \mycircle {yellow} P, \mycircleempty {black}~H}}{32}{figure.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Si 0,05492}}}{32}{subfigure.3.9.4}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces P\IeC {\v r}ehled NBO pro \ce {Si(OAC)4}; Legenda: \mycircle {black!50!white!50} Si, \mycircle {red} O, \mycircle {black} C, \mycircle {yellow} P, \mycircleempty {black}~H}}{33}{figure.3.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Si 0,10858}}}{32}{subfigure.3.9.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\ce {SiCH3(PO4(CH3)2)(Si2P2O9(CH3)4)}, \textbf {M}}}}{34}{figure.3.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Si 0,09214}}}{32}{subfigure.3.9.4}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {\ce {Si(Si2P2O9(CH3)4)2}, \textbf {N}}}}{34}{figure.3.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Si 0,10523}}}{32}{subfigure.3.9.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces { \textbf {O}}}}{34}{subfigure.3.9.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Si 0,09585}}}{32}{subfigure.3.10.4}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces { \textbf {P}}}}{34}{subfigure.3.9.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Si 0,12800}}}{32}{subfigure.3.10.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces { \textbf {Q}}}}{34}{subfigure.3.10.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Si 0,10069}}}{32}{subfigure.3.10.4}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces { \textbf {R}}}}{34}{subfigure.3.10.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Si 0,10258}}}{32}{subfigure.3.10.4}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces { \textbf {S}}}}{34}{subfigure.3.10.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {MO 75 }}}{32}{subfigure.3.11.4}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces P\IeC {\v r}ehled st\IeC {\v r}edn\IeC {\v e} velk\IeC {\'y}ch model\IeC {\r u}]; Legenda: \mycircle {brown} Si, \mycircle {red} O, \mycircle {orange} C, \mycircle {yellow} P, \mycircleempty {black}~H}}{35}{figure.3.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {MO 74}}}{32}{subfigure.3.11.4}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces P\IeC {\v r}ehled velk\IeC {\'y}ch model\IeC {\r u}; Legenda: \mycircle {brown} Si, \mycircle {red} O, \mycircle {orange} C, \mycircle {yellow} P, \mycircleempty {black}~H}}{36}{figure.3.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {MO 77}}}{32}{subfigure.3.11.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {MO 76}}}{32}{subfigure.3.11.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {MO 62 }}}{32}{subfigure.3.12.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {MO 63}}}{32}{subfigure.3.12.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {MO 64}}}{32}{subfigure.3.12.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {MO 65}}}{32}{subfigure.3.12.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces P\IeC {\v r}ehled velk\IeC {\'y}ch model\IeC {\r u}; Legedna: \mycircle {brown} Si, \mycircle {red} O, \mycircle {orange} C, \mycircle {yellow} P, \mycircleempty {black}~H}}{33}{figure.3.7}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.8}{\ignorespaces P\IeC {\v r}ehled NBO pro \ce {Si(CH3)(OAC)3}; Legedna: \mycircle {black!50!white!50} Si, \mycircle {red} O, \mycircle {black} C, \mycircle {yellow} P, \mycircleempty {black}~H}}{43}{figure.3.8}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.9}{\ignorespaces P\IeC {\v r}ehled NBO pro \ce {Si(OAC)4}; Legedna: \mycircle {black!50!white!50} Si, \mycircle {red} O, \mycircle {black} C, \mycircle {yellow} P, \mycircleempty {black}~H}}{44}{figure.3.9}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.10}{\ignorespaces P\IeC {\v r}ehled MPA \ce {Si(OAC)4}; Legedna: \mycircle {brown} Si, \mycircle {red} O, \mycircle {orange} C, \mycircle {yellow} P, \mycircleempty {black}~H}}{45}{figure.3.10}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.11}{\ignorespaces P\IeC {\v r}ehled MPA \ce {Si(CH3)(OAC)3}; Legedna: \mycircle {brown} Si, \mycircle {red} O, \mycircle {orange} C, \mycircle {yellow} P, \mycircleempty {black}~H}}{46}{figure.3.11}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces P\IeC {\v r}ehled velk\IeC {\'y}ch model\IeC {\r u}; Legenda: \mycircle {brown} Si, \mycircle {red} O, \mycircle {orange} C, \mycircle {yellow} P, \mycircleempty {black}~H}}{40}{figure.3.9}
 \defcounter {refsection}{0}\relax 
 \addvspace {4\p@ }
 \defcounter {refsection}{0}\relax 

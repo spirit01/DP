@@ -1,4 +1,4 @@
- struktura%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% I, the copyright holder of this work, release this work into the
 %% public domain. This applies worldwide. In some countries this may
 %% not be legally possible; if so: I grant anyone the right to use
@@ -121,6 +121,7 @@
 \usepackage{listings} %% Source code highlighting
 \usepackage{braket}
 \usepackage{tikz}
+\usepackage{verbatim}
 \renewcommand{\thesubfigure}{}
 %\usepackage{subcaption}
 \usepackage{graphicx}
@@ -149,6 +150,7 @@
   commentstyle    = \itshape\color{magenta}}
 \usepackage{floatrow} %% Putting captions above tables
 \floatsetup[table]{capposition=top}
+
 \begin{document}
 
 
@@ -165,7 +167,7 @@ Nejčastější formou výskytu křemíku v přírodě jsou křemičitany, slou�
 
 Silikofosfáty i hlinitokřemičitany jsou charakteristické svojí trojrozměrnou  porézní strukturou. Naše pozornost je v této práci soustředěna na silikofosfáty. Předpokládaná struktura připravených silikofosfátů studovaných v předchozích experimentálních pracích je znázorněna na obrázku \ref{si_polymer_cely} \cite{Styskalik2015thesis}. Charakteristickou vlastností struktur silikofosfátů je uspořádání jednotek Si-O-P do cyklů. Ačkoliv nejnovější struktura zahrnuje dvanáctičlenové cykly vzniklé trojnásobným opakování motivu Si-O-P-O (Pinkas et. aln Inorganic Chemistry), struktury s hypervalentním křemíkem obsahující osmičlenné cykly vzniklé dvojnásobným opakováním jednotky Si-O-P-O.
 \begin{figure}
-\caption{Struktura cyklu 4-členného kruhu z \cite{C4TA06823H};  Legedna: \mycircle{brown} Si, \mycircle{red}~O, \mycircle{orange}~C, \mycircle{yellow} P, \mycircleempty{black}~H.}
+\caption{Struktura cyklu 4-členného kruhu z \cite{C4TA06823H};  Legenda: \mycircle{brown} Si, \mycircle{red}~O, \mycircle{orange}~C, \mycircle{yellow} P, \mycircleempty{black}~H.}
  \center \includegraphics[width=6cm]{rtg_kruh_samostatne.png} \label{rtg_cyklus} \end{figure}
 Obrázek \ref{si_polymer_cely} znázorňuje předpokládanou strukturu silikofosfátového xerogelu se třemi druhy křemíkových center (koordinace čtyřmi fosfáty, šesti fosfáty, anebo čtyřmi fosfáty a dvěma organickými estery současně) a osmičlennými cykly Si-O-P.  Konkrétní podoba osmičlenného cyklu byla ověřena metodou RTG \ref{rtg_cyklus}, \cite{C4TA06823H}. Stupeň koordinace křemíku a~současně velikost pórů se ukázala být silně závislá na typu prekurzoru. Pokud byl ve výchozích sloučeninách jeden z fosfátů nahrazen methylovou skupinou přímo vázanou na křemík, ve výsledném xerogelu se nevyskytovaly oktaedricky koordinované křemíky a velikost pórů byla větší. Konkrétní podobu okolí křemíku je ukázáno ve schématu níže \ref{si_polymer_cely}. Podoba koordinačního okolí \ref{koordinacni_okolo} byla získána kombinací NMR dat a IR dat \cite{C4TA06823H} \cite{Styskalik2015thesis}.
 \begin{figure}
@@ -310,7 +312,7 @@ Silikofosfátové cykly jsou pak dále organizovány do vyšších struktur mikr
 \label{si_polymer_cely}\end{figure}
 
 \begin{figure}
-\caption{Struktura silikofosfátu získaná z RTG, \cite{C4TA06823H};  Legedna: \mycircle{brown} Si, \mycircle{red}~O, \mycircle{orange}~C, \mycircle{yellow} P, \mycircleempty{black}~H. }
+\caption{Struktura silikofosfátu získaná z RTG, \cite{C4TA06823H};  Legenda: \mycircle{brown} Si, \mycircle{red}~O, \mycircle{orange}~C, \mycircle{yellow} P, \mycircleempty{black}~H. }
 \center \includegraphics[width=8cm]{struktura_puvodni.png} \label{rtg_koordinace_sest} \end{figure}
 
 \section{Hypervalence $p$-prvků}
@@ -560,7 +562,7 @@ Poslední část, velké modely, se věnovala již pouze hypervaletnímu křemí
 %\begin{figure}
 %\begin{center}
 %\includegraphics[width=8cm]{rtg_6.png}
-%\caption{Výchozí rentgenová struktura \cite{C3NJ00721A};  Legedna: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C,  \mycircle{yellow} P, \mycircleempty{black}~H}
+%\caption{Výchozí rentgenová struktura \cite{C3NJ00721A};  Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C,  \mycircle{yellow} P, \mycircleempty{black}~H}
 %\label{rtg_6}
 %\end{center}
 %\end{figure}
@@ -568,7 +570,7 @@ V tomto modelu je křemík oblopen šesti fosfáty, které jsou vzájemně zesí
 \begin{figure}
 \begin{center}
 \includegraphics[width=6cm]{rtg_4_kruh_samotne.png}
-\caption{Výchozí rentgenová struktura \cite{rtg_4_pinkas};  Legedna: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircleempty{black}~H}
+\caption{Struktura \ce{[(Ph2Si{O2P(O)OSiMe3})2]} získaná pomocí rentgenové krystalografie v práci \cite{rtg_4_pinkas};  Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircleempty{black}~H}
 \label{rtg_4}
 \end{center}
 \end{figure}
@@ -580,150 +582,88 @@ Další koordinace křemíku, která byla experimentálně pozorována v silikof
 \begin{figure}
 \begin{center}
 \includegraphics[width=8cm]{rtg_5_koordinace.png}
-\caption{Výchozí rentgenové struktury \cite{rtg_5};  Legedna: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircleempty{black}~H}
+\caption{ \cite{rtg_5};  Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircleempty{black}~H}
 \label{rtg_5}
 \end{center}
 \end{figure}
 Další model pětikoordinovaného křemíku byl inspirován touto rentgenovou strukturou a fosfát byl nahrazen vodíkem. Pro tento model byla udělána výjimka a celkov7 náboj byl snížen z 0 na -1, což se nakonec ukázalo jako vhodné řešení. Původní snaha zachování neutrálního náboje modelových struktur silikofosfátů vycházela z předpokaldu, že samotné amorfní struktury jsou neutrální. V případě pětikoordinovaného křemíku a ale náboj způsobil nerovnoměrnosti v systému. Snížení náboje o jedna vedlo k získání správné struktury s vodíkem, kde se nacházely dvy cykly a jeden volný fosfát. Ve výsledné strukturře byl dočasný vodík nahrazen fosfátem, aby se obnovila původní podoba struktury.
 
-\subsection{Malé modely}
+\section{Malé modely}
 Malé modely podávají podrobnější pohled na charakter vazby Si-C a lze je rozdělit na dvě části. Prní část se věnuje modelovým strukturám, které slouží pro podrobnější analýzu chemické vazby. Druhá část se věnuje výchozím reaktantům, které slouží pro přípravu silikofosfátových polymerů. Obrázky struktur jsou uveden na obrázku \ref{prehled_male_modely}. Pro strukturu \ce{SiCH3(OCH3)5} \ref{prehled_male_modely}, \textbf{C} bylo nutno použit klíčové slovo Opt=CalcFC. Pro sturkturu \ce{Si(OCH3)6} \ref{prehled_male_modely},  \textbf{D} byl použit parametr SCF=Vshift. Model \ce{SiCl4} \ref{prehled_male_modely}, \textbf{E} slouží jako případ sloučeniny, kde křemík není schopen navyšovat koordinaci. Naopak (acetylmethoxyl)trifluorsilan \ref{prehled_male_modely}, \textbf{F} je zde použit jako model, kde je křemík ochoten zvyšovat koordinaci na pět. V tabulce \ref{hsab_small} je shrnutí HSAB analýzy pro malé modely.
 
 \begin{figure}
 \centering
-\subfigure[\ce{SiCH3(OCH3)3}, \textbf{A}]{\includegraphics[width=5cm]{si_ch3_och3.png} \label{si_ch3_och3}}
+\subfigure[\ce{SiCH3(OCH3)3}, \textbf{A}]{\includegraphics[width=6cm]{si_ch3_och3.png} \label{si_ch3_och3}}
 \subfigure[\ce{Si(OCH3)4}, \textbf{B}]{\includegraphics[width=5cm]{si_och3_4.png}\label{si_och3_4}}
-\subfigure[\ce{SiCH3(OCH3)5},  \textbf{C}]{\includegraphics[width=5cm]{si_ch3_och3_5.png}\label{si_ch3_och3_5}}
+\subfigure[\ce{SiCH3(OCH3)5},  \textbf{C}]{\includegraphics[width=4cm]{si_ch3_och3_5.png}\label{si_ch3_och3_5}}
 \subfigure[\ce{Si(OCH3)6},  \textbf{D}]{\includegraphics[width=5cm]{si_och3_6.png}\label{si_och3_6}}
 \subfigure[\ce{SiCl4},  \textbf{E}]{\includegraphics[width=3cm]{si_cl_4.png}\label{si_cl4}}
 \subfigure[(acetylmethoxyl)trifluorsilan, \textbf{F}]{\includegraphics[width=5.5cm]{acetylmethyltriflurosila.png} \label{acetylmethylfluorsilan}}
-\caption{Přehled malých struktur; Legedna: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{green} Cl, \mycircle{red!50!blue!50} F, \mycircleempty{black}~H}
+\caption{Přehled malých struktur; Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{green} Cl, \mycircle{red!50!blue!50} F, \mycircleempty{black}~H}
 \label{prehled_male_modely}
 \end{figure}
 
 \begin{table}[htbp]
-
 \begin{minipage}{\textwidth}
 \caption{HSAB analýza malých molekul}
 \begin{center}
-\begin{tabular}{|l|r|r|r|r|}
+\begin{tabular}{|l|c|c|c|c|}
 \hline
 \label{hsab_small}& E$_{\ce{H}}$\footnote{HOMO $-$ \textit{Highest Occupied Molecular Orbital}} [eV] & E$_{\ce{L}}$\footnote{LUMO$ - $\textit{Lowest Unoccupied Molecular Orbital}} [eV]& $\chi$ [eV] & $\eta$ [eV] \\ \hline
-\ce{SiCH3(OCH3)3}, \textbf{A} & 3,089 & 10,089 & -6,589 & 3,500 \\ \hline
+\ce{SiCH3(OCH3)3}, \textbf{A}& -7,362 & 1,699 & 2,831 & 4,531 \\ \hline
 \ce{Si(OCH3)4}, \textbf{B} & -7,389 & 1,442 & 2,974 & 4,416 \\ \hline
 \ce{SiCH3(OCH3)5},  \textbf{C} & 3,089 & 10,089 & -6,589 & 3,500 \\ \hline
 \ce{Si(OCH3)6},  \textbf{D} & 3,112 & 9,625 & -6,369 & 3,256 \\ \hline
-\ce{SiCl4},  \textbf{E} & -9,770 & -2,221 & 5,995 & 3,774 \\ \hline
+\ce{SiCl4},  \textbf{E} & -9,338 & -1,385 & 5,361 & 3,976 \\ \hline
 (acetylmethoxyl)trifluorsilan, \textbf{F} & -7,825 & -0,066 & 3,946 & 3,880 \\ \hline
 \end{tabular}
 \end{center}
 \end{minipage}
 \end{table}
 
-Na základě experimentální práce Aleše Stýskalíka \cite{Styskalik2015thesis} jsem se zabývala křemíkem v koordinaci čtyři, který sloužil jako výchozí reaktant pro přípravu silikofosfátových polymerů.
-\begin{figure}
-\centering
-\subfigure[\ce{Si(OC2H5)4}, \textbf{G}]{\includegraphics[width=5cm]{si_o_et_4.png} \label{si_oet_4}}
-\subfigure[\ce{SiF3(C6H5)},  \textbf{H}]{\includegraphics[width=3cm]{si_fenyl_f3.png}\label{si_fenyl_f3}}
-\subfigure[\ce{SiCH3(OCOCH3)3},  \textbf{I}]{\includegraphics[width=5cm]{si_ch3_oac_3.png}\label{si_ch3_oac_3}}
-\subfigure[\ce{SiCH3(OH)3},  \textbf{J}]{\includegraphics[width=3cm]{si_ch3_och_4.png}\label{si_ch3_och_4}}
-\subfigure[\ce{Si(OCOCH3)4},  \textbf{K}]{\includegraphics[width=5cm]{si_o_ac_4.png}\label{si_o_ac_4}}
-\subfigure[\ce{Si(OCl)(OC2H5)3},  \textbf{L}]{\includegraphics[width=5cm]{si_ocl_oet_3.png}\label{si_ocl_oet_3}}
-\caption{Přehled reaktantů; Legedna: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{red!50!blue!50} F, \mycircle{green}~Cl, \mycircleempty{black}~H}
-\label{prehled_male_modely}
-\end{figure}
-
-
-\subsection{Středně velké modely}
-Tato část se věňuje nejmenším možným modelům, které již tvoří uvnitř svých struktur cyklus. Přehled struktur je ukázán na obrázku \ref{prehled_middle} Středně velké modely obsahují křemík v koordinaci čtyři a snaží se zachytiti tvorbu cyklů, které vznikají v silikofosfátech. V tabulce \ref{hsab_middle} lze vidět výsledky pro HSAB analýzu.
-\begin{figure}
-\begin{center}
-\subfigure[\ce{SiCH3(PO4(CH3)2)(Si2P2O9(CH3)4)},  \textbf{M}]{\includegraphics[width=6cm]{si_model_methyl.png}\label{obr_h4sio4_MO_s1_20}}
-\subfigure[\ce{Si(Si2P2O9(CH3)4)2}, \textbf{N}]{\includegraphics[width=5cm]{si_model_orezany.png}\label{obr_h4sio4_MO_s1_24}}
-\caption{Přehled středně velkých modelů];  Legedna: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{yellow} P, \mycircleempty{black}~H}
-\label{prehled_middle}
-\end{center}
-\end{figure}
-
-\begin{table}[htbp]
-\begin{minipage}{\textwidth}
-\caption{HSAB analýza středních molekul}
-\begin{center}
-\begin{tabular}{|l|r|r|r|r|}
-\hline
-\label{hsab_middle}& E$_{\ce{H}}$\footnote{HOMO $-$ \textit{Highest Occupied Molecular Orbital}} [eV] & E$_{\ce{L}}$\footnote{LUMO$ - $\textit{Lowest Unoccupied Molecular Orbital}} [eV]& $\chi$ [eV] & $\eta$ [eV] \\ \hline
-\textbf{M} & -7,802 & 0,494 & 3,654 & 4,148 \\ \hline
-\textbf{N} & -8,101 & -0,059 & 4,080 & 4,021 \\ \hline
-\end{tabular}
-\end{center}
-\end{minipage}
-\end{table}
-
-
-\subsection{Velké modely}
-Velké modely mají za cíl modelovat vybrané části ze silikofosfátů. Ve svých strukturách už obsahují dva a více cyklů a všechny obsahují křemík v koordinaci šest. Pro velké struktury byla provedena HSAB analýza a výsledky jsou uvedeny v tabulce \ref{hsab_large}. Přehled struktur pro analýzu je uveden na obrázku \ref{prehled_large}.
-\begin{figure}
-\begin{center}
-\caption{Přehled velkých modelů;  Legedna: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{yellow} P, \mycircleempty{black}~H}
-\subfigure[ \textbf{O}]{\includegraphics[width=6cm]{struktura_puvodni.png}\label{struktura_puvodni}}
-\subfigure[ \textbf{P}]{\includegraphics[width=6cm]{srtuktura_bez_naboje.png}\label{struktura_bez_naboje}}
-\label{prehled_large}
-\end{center}
-\end{figure}
-
-\begin{figure}
-\begin{center}
-\caption{Přehled velkých modelů;  Legedna: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{yellow} P, \mycircleempty{black}~H}
-\subfigure[ \textbf{Q}]{\includegraphics[width=6cm]{struktura_cis.png} \label{struktura_cis}}
-\subfigure[ \textbf{R}]{\includegraphics[width=6cm]{struktura_trans.png}\label{struktura_trans}}
-\subfigure[ \textbf{S}]{\includegraphics[width=6cm]{strukutra_5_opravena.png}\label{struktura_5}}
-\label{prehled_largeI}
-\end{center}
-\end{figure}
-
-\begin{table}[htbp]
-\begin{minipage}{\textwidth}
-\caption{HSAB analýza velkých molekul}
-\begin{center}
-\begin{tabular}{|l|r|r|r|r|}
-\hline
-\label{hsab_large} & E$_{\ce{H}}$\footnote{HOMO $-$ \textit{Highest Occupied Molecular Orbital}} [eV] & E$_{\ce{L}}$\footnote{LUMO$ - $\textit{Lowest Unoccupied Molecular Orbital}} [eV]& $\chi$ [eV] & $\eta$ [eV] \\ \hline
-\textbf{O} & -7,318 & 0,176 & 3,571 & 3,747 \\ \hline
-\textbf{P} & -7,351 & -1,392 & 4,372 & 2,980 \\ \hline
-\textbf{R} & -7,240 & -1,538 & 4,389 & 2,851 \\ \hline
-\textbf{Q} & -2,521 & 5,120 & -1,299 & 3,820 \\ \hline
-\textbf{S} & -4,573 & 3,433 & 0,570 & 4,003 \\ \hline
-\end{tabular}
-\end{center}
-\end{minipage}
-\end{table}
-
-
-
-
-
-\section{Vazby}
-\renewcommand{\thesubfigure}{(\alph{subfigure})}
-Vlastnosti chemických vazeb v silikofosfátech byly modelovány metodou NBO a Mullikenovou populační analýzu. Mullikenova populační analýza(MPA) byla provedena dvěma zůsoby. Pro velké struktury byl počítán orbital LUMO. Pro malé a střední modely byla provedena analýza zdrcadlových orbitalů. \\
-
-
 \begin{table}[htbp]\begin{minipage}{\textwidth}
 \caption{MPA analýza \ce{SiCH3(OCH3)3}, \textbf{A}, výsledky jsou uvedeny v [\%].}
 \begin{center}
-\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+\begin{tabular}{|l|c|c|c|c|c|}
 \hline
- MO &  \multicolumn{2}{c|}{20} &  \multicolumn{2}{c|}{33} &  \multicolumn{2}{c|}{34} &  \multicolumn{2}{c|}{35} \\ \hline
-\label{si_ch3_och3_MPA} Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.} & s & p & s & p & s & p & s & p \\ \hline
-(1)Si & 11,8  & 0,2  & 11,8  & 9,7  & 0,2  & 3,0  & 3,2  & 5,4  \\ \hline
-(2)O & 2,3  & 9,1  & 2,3  & 17,4  & 0,4  & 26,0  & 26,5  & 34,0  \\ \hline
-(3)O & 2,5  & 8,0  & 2,5  & 19,7  & 0,8  & 16,7  & 17,5  & 20,7  \\ \hline
-(4)O & 2,2  & 9,0  & 2,2  & 16,5  & 0,4  & 24,3  & 24,7  & 17,1  \\ \hline
-(5)C & 1,7  & 4,9  & 1,7  & 2,5  & 0,1  & 1,5  & 1,6  & 1,5  \\ \hline
+ \label{si_ch3_och3_MPA}&  & 20 & 33 & 34 & 35 \\ \hline
+(1)Si & s & 11,8 & 11,8 & 0,2 & 3,2 \\ \hline
+ & p & 0,2 & 9,7 & 3,0 & 5,4 \\ \hline
+(2)O & s & 2,3 & 2,3 & 0,4 & 26,5 \\ \hline
+ & p & 9,1 & 17,4 & 26,0 & 34,0 \\ \hline
+(3)O & s & 2,5 & 2,5 & 0,8 & 17,5 \\ \hline
+ & p & 8,0 & 19,7 & 16,7 & 20,7 \\ \hline
+(4)O & s & 2,2 & 2,2 & 0,4 & 24,7 \\ \hline
+ & p & 9,0 & 16,5 & 24,3 & 17,1 \\ \hline
+(5)C & s & 1,7 & 1,7 & 0,1 & 1,6 \\ \hline
+ & p & 4,9 & 2,5 & 1,5 & 1,5 \\ \hline
 \end{tabular}
 \end{center}
 \end{minipage}
 \end{table}
 
+\begin{table}[htbp] \begin{minipage}{\textwidth}
+\caption{MPA analýza vybraných MO orbitalů \ce{Si(OCH3)4}, \textbf{B}, výsledky jsou uvedeny v [\%].}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|}
+\hline
+ \label{si_och3_4_MPA} &  & 22 & 23 & 34 & 35 & 36 & 37 \\ \hline
+(1)Si & s  & 11,1\% & 0,0\% & 4,6\% & 0,0\% & 0,0\% & 0,0\% \\ \hline
+ & p & 0,0\% & 5,1\% & 0,0\% & 12,3\% & 12,3\% & 2,7\% \\ \hline
+(2)O& s  & 2,5\% & 0,0\% & 3,1\% & 1,7\% & 3,8\% & 0,2\% \\ \hline
+ & p & 5,4\% & 6,5\% & 9,0\% & 9,4\% & 9,3\% & 15,4\% \\ \hline
+(3)O & s  & 2,5\% & 0,0\% & 3,1\% & 3,8\% & 1,7\% & 0,2\% \\ \hline
+ & p & 5,4\% & 3,3\% & 4,5\% & 9,3\% & 9,4\% & 15,4\% \\ \hline
+(4)O & s  & 2,5\% & 0,0\% & 3,1\% & 1,7\% & 3,8\% & 0,2\% \\ \hline
+ & p & 5,4\% & 3,3\% & 4,5\% & 9,4\% & 9,3\% & 15,4\% \\ \hline
+(5)O & s  & 2,5\% & 0,0\% & 3,1\% & 3,8\% & 1,7\% & 0,2\% \\ \hline
+ & p & 5,4\% & 3,3\% & 4,5\% & 9,3\% & 9,4\% & 15,4\% \\ \hline
+\end{tabular}
+\end{center}
+\end{minipage}
+\end{table}
+
+%#TODO
 \begin{table}[htbp]
 \begin{minipage}{\textwidth}
 \caption{MPA analýza LUMO orbitalu pro \ce{SiCH3(OCH3)5},  \textbf{C}, výsledky jsou uvedeny v [\%].}
@@ -743,88 +683,48 @@ Vlastnosti chemických vazeb v silikofosfátech byly modelovány metodou NBO a M
 
 \begin{table}[htbp]
   \begin{minipage}{\textwidth}
-\caption{MPA analýza LUMO orbitalu pro \ce{Si(OCH3)6}, \textbf{D}, výsledky jsou uvedeny v [\%].}
-\begin{center}
-\begin{tabular}{|l|c|c|}
+    \begin{center}
+\caption{MPA analýza vybraných MO orbitalů pro \ce{Si(OCH3)6}, \textbf{D}, výsledky jsou uvedeny v [\%].}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
 \hline
- \label{si_och3_6_MPA}  Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.}& \multicolumn{1}{c|}{s} & \multicolumn{1}{c|}{p} \\ \hline
-(1)Si & 2,0  & 0,0  \\ \hline
-(2)O & 0,1  & 0,1  \\ \hline
-(3)O & 0,1  & 0,1  \\ \hline
-(4)O & 0,1  & 0,1  \\ \hline
-(5)O & 0,1  & 0,1  \\ \hline
-(6)O & 0,1  & 0,1  \\ \hline
-(7)C & 0,1  & 0,1  \\ \hline
-\end{tabular}
-\end{center}
-\end{minipage}
-\end{table}
+  \label{si_och3_6_MPA}&  & 30 & 48 & 49 & 50 & 53 & 54 & 55 \\ \hline
+(1)Si & s & 13,4\% & 4,8\% & 0,0\% & 0,0\% & 0,0\% & 0,0\% & 0,0\% \\ \hline
+ & p & 0,0\% & 0,0\% & 4,4\% & 4,4\% & 8,9\% & 4,0\% & 4,0\% \\ \hline
+(2)O & s & 0,6\% & 2,0\% & 0,6\% & 4,5\% & 0,1\% & 0,6\% & 0,0\% \\ \hline
+ & p & 4,7\% & 9,0\% & 3,8\% & 15,4\% & 13,1\% & 4,9\% & 22,2\% \\ \hline
+(3)O & s & 0,6\% & 2,0\% & 2,0\% & 3,0\% & 0,1\% & 0,2\% & 0,4\% \\ \hline
+ & p & 4,7\% & 9,0\% & 8,3\% & 11,0\% & 13,0\% & 16,3\% & 10,7\% \\ \hline
+(4)O & s & 0,6\% & 2,0\% & 0,6\% & 4,5\% & 0,1\% & 0,6\% & 0,0\% \\ \hline
+ & p & 4,5\% & 6,1\% & 2,5\% & 10,4\% & 8,9\% & 3,5\% & 14,9\% \\ \hline
+(5)O & s & 0,6\% & 2,0\% & 5,0\% & 0,1\% & 0,1\% & 0,1\% & 0,5\% \\ \hline
+ & p & 3,5\% & 1,7\% & 4,2\% & 1,4\% & 0,4\% & 12,5\% & 3,5\% \\ \hline
+(6)O & s & 0,6\% & 2,0\% & 2,0\% & 3,0\% & 0,1\% & 0,2\% & 0,4\% \\ \hline
+ & p & 4,6\% & 9,0\% & 8,3\% & 11,0\% & 13,0\% & 16,3\% & 10,7\% \\ \hline
+(7)O & s & 0,6\% & 2,0\% & 5,0\% & 0,1\% & 0,1\% & 0,1\% & 0,5\% \\ \hline
+ & p & 4,7\% & 9,0\% & 16,8\% & 2,5\% & 13,0\% & 19,4\% & 7,6\% \\ \hline
+\end{tabular}\end{center}\end{minipage}\end{table}
+
+
 
 \begin{table}[htbp] \begin{minipage}{\textwidth}
-\caption{MPA analýza \ce{Si(OCH3)4}, \textbf{B}, výsledky jsou uvedeny v [\%].}
+\caption{MPA analýza vybraných MO orbitalů acetylmethyltrifluorsilan, \textbf{F}, výsledky jsou uvedeny v [\%].}
 \begin{center}
-\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+\begin{tabular}{|l|c|c|c|c|c|}
 \hline
-\label{si_och3_4_MPA}MO& \multicolumn{2}{l|}{22} &   \multicolumn{2}{c|}{35} &  \multicolumn{2}{c|}{36} &  \multicolumn{2}{c|}{37} \\ \hline
- Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.}& s & p & s &p & s & p & s & p \\ \hline
-(1)Si & 11,10   & 0,0  & 0,0  & 12,3  & 0,0  & 12,3  & 0,0  & 2,7  \\ \hline
-(2)O & 2,50   & 5,4  & 1,7  & 9,4  & 3,8  & 9,3  & 0,2  & 15,4  \\ \hline
-(3)O & 2,50   & 5,4  & 3,8  & 9,3  & 1,7  & 9,4  & 0,2  & 15,4  \\ \hline
-(4)O & 2,50   & 5,4  & 1,7  & 9,4  & 3,8  & 9,3  & 0,2  & 15,4  \\ \hline
-(5)C & 2,50   & 5,4  & 3,8  & 9,3  & 1,7  & 9,4  & 0,2  & 15,4  \\ \hline
-\end{tabular}
-\end{center}
-\end{minipage}
-\end{table}
-
-\begin{table}[htbp] \begin{minipage}{\textwidth}
-\caption{MPA analýza acetylmethyltrifluorsilan, \textbf{F}, výsledky jsou uvedeny v [\%].}
-\begin{center}
-\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
-\hline
-\label{acetylmethyltrifluorsilan_MPA} MO &   \multicolumn{2}{c|}{22} &  \multicolumn{2}{c|}{25} &   \multicolumn{2}{c|}{26} &  \multicolumn{2}{c|}{27} \\ \hline
-Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.} & s & p & s & p & s & p & s & p \\ \hline
-(1)Si & 17,9  & 0,2  & 0,3  & 8,9  & 0,0  & 6,9  & 0,9  & 7,5  \\ \hline
-(2)F & 4,3  & 9,0  & 3,4  & 22,2  & 0,0  & 6,7  & 1,9  & 13,6  \\ \hline
-(3)F & 5,4  & 9,9  & 1,5  & 12,6  & 3,3  & 19,6  & 0,1  & 6,8  \\ \hline
-(4)F & 5,4  & 9,9  & 1,5  & 12,6  & 3,3  & 19,6  & 0,1  & 6,8  \\ \hline
-(5)C & 2,6  & 4,9  & 0,9  & 0,9  & 0,0  & 0,5  & 0,7  & 1,8  \\ \hline
-\end{tabular}
-\end{center}\end{minipage}
-\end{table}
+ \label{acetylmethyltrifluorsilan_MPA}&  & 22 & 25 & 26 & 27 \\ \hline
+(1)Si & s & 17,9\% & 0,3\% & 6,9\% & 0,9\% \\ \hline
+ & p & 0,2\% & 8,9\% & 0,9\% & 7,5\% \\ \hline
+(2)O & s & 4,3\% & 3,4\% & 6,7\% & 1,9\% \\ \hline
+ & p & 9,0\% & 22,2\% & 1,9\% & 13,6\% \\ \hline
+(3)O & s & 5,4\% & 1,5\% & 19,6\% & 0,1\% \\ \hline
+ & p & 9,9\% & 12,6\% & 0,1\% & 6,8\% \\ \hline
+(4)O & s & 5,4\% & 1,5\% & 19,6\% & 0,1\% \\ \hline
+ & p & 9,9\% & 12,6\% & 0,1\% & 6,8\% \\ \hline
+(5)C & s & 2,6\% & 0,9\% & 0,5\% & 0,7\% \\ \hline
+ & p & 4,9\% & 0,9\% & 0,7\% & 1,8\% \\ \hline
+\end{tabular}\end{center}\end{minipage}\end{table}
 
 
-\begin{table}[htbp]\begin{minipage}{\textwidth}
-\caption{MPA analýza \ce{SiCH3(PO4(CH3)2)(Si2P2O9(CH3)4)}, \textbf{M}, výsledky jsou uvedeny v [\%].}
-\begin{center}
-\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
-\hline
- \label{si_model_methyl_MPA} MO& \multicolumn{2}{c|}{61} &   \multicolumn{2}{c|}{68}  & \multicolumn{2}{c|}{70} &  \multicolumn{2}{c|}{106} \\ \hline
-  Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.}& s & p & s & p & s & p & s & p \\ \hline
-(1)Si  & 4,2  & 0,1  & 4,3  & 0,4  & 3,9  & 0,5  & 0,9  & 1,2  \\ \hline
-(2)O & 0,0  & 2,2  & 0,2  & 2,4  & 0,1  & 11,4  & 0,6  & 3,3  \\ \hline
-(3)O & 0,1  & 1,5  & 0,1  & 5,5  & 0,2  & 2,7  & 0,0  & 12,9  \\ \hline
-(4)O & 0,0  & 2,1  & 0,2  & 6,6  & 0,8  & 0,6  & 0,0  & 13,4  \\ \hline
-(40)C & 19,7  & 5,8  & 6,7  & 14,9  & 1,8  & 15,2  & 3,0  & 31,6  \\ \hline
-\end{tabular}
-\end{center}\end{minipage}\end{table}
-
-\begin{table}[htbp]\begin{minipage}{\textwidth}
-\caption{MPA analýza \ce{Si(Si2P2O9(CH3)4)2}, \textbf{N},výsledky jsou uvedeny v [\%].}
-\begin{center}
-\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
-\hline
- \label{si_model_orezany_MPA} MO &  \multicolumn{2}{c|}{61} &   \multicolumn{2}{c|}{68} &  \multicolumn{2}{c|}{70} &  \multicolumn{2}{c|}{106} \\ \hline
-Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.}  & s & p & s & p & s & p & s & p \\ \hline
-(1)Si  & 0,0  & 0,00   & 2,8  & 0,01   & 0,0  & 0,05   & 0,0  & 0,05   \\ \hline
-(2)O & 0,0  & 0,00   & 13,4  & 0,49   & 2,5  & 0,09   & 0,1  & 1,14   \\ \hline
-(3)O & 0,0  & 0,00   & 10,1  & 0,28   & 0,8  & 0,02   & 0,2  & 0,36   \\ \hline
-(4)O & 0,0  & 0,00   & 7,9  & 0,25   & 0,3  & 0,02   & 0,0  & 0,04   \\ \hline
-(5)O & 0,0  & 0,00   & 6,9  & 0,19   & 0,5  & 0,02   & 0,0  & 0,07   \\ \hline
-\end{tabular}
-\end{center}\end{minipage}
-
-\end{table}
 
 \begin{table}[htbp]
   \begin{minipage}{\textwidth}
@@ -859,6 +759,107 @@ Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.}  & s & p & s & p & 
 \end{minipage}
 \end{table}
 
+
+
+Na základě experimentální práce Aleše Stýskalíka \cite{Styskalik2015thesis} jsem se zabývala křemíkem v koordinaci čtyři, který sloužil jako výchozí reaktant pro přípravu silikofosfátových polymerů.
+\begin{figure}
+\centering
+\subfigure[\ce{Si(OC2H5)4}, \textbf{G}]{\includegraphics[width=5cm]{si_o_et_4.png} \label{si_oet_4}}
+\subfigure[\ce{SiF3(C6H5)},  \textbf{H}]{\includegraphics[width=3cm]{si_fenyl_f3.png}\label{si_fenyl_f3}}
+\subfigure[\ce{SiCH3(OCOCH3)3},  \textbf{I}]{\includegraphics[width=5cm]{si_ch3_oac_3.png}\label{si_ch3_oac_3}}
+\subfigure[\ce{SiCH3(OH)3},  \textbf{J}]{\includegraphics[width=3cm]{si_ch3_och_4.png}\label{si_ch3_och_4}}
+\subfigure[\ce{Si(OCOCH3)4},  \textbf{K}]{\includegraphics[width=5cm]{si_o_ac_4.png}\label{si_o_ac_4}}
+\subfigure[\ce{Si(OCl)(OC2H5)3},  \textbf{L}]{\includegraphics[width=5cm]{si_ocl_oet_3.png}\label{si_ocl_oet_3}}
+\caption{Přehled reaktantů; Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{red!50!blue!50} F, \mycircle{green}~Cl, \mycircleempty{black}~H}
+\label{prehled_male_modely}
+\end{figure}
+
+\renewcommand{\thesubfigure}{(\alph{subfigure})}
+\begin{figure}
+\begin{center}
+\caption{Přehled NBO pro \ce{Si(CH3)(OAC)3};  Legenda: \mycircle{black!50!white!50} Si, \mycircle{red} O, \mycircle{black} C, \mycircle{yellow} P, \mycircleempty{black}~H}
+\subfigure[Si 0,05492]{\includegraphics[width=6cm]{si_ch3_59.png} \label{}}
+\subfigure[Si 0,10858]{\includegraphics[width=6cm]{si_ch3_63.png}\label{}}
+\subfigure[Si 0,09214]{\includegraphics[width=6cm]{si_ch3_64.png}\label{}}
+\subfigure[Si 0,10523]{\includegraphics[width=6cm]{si_ch3_65.png}\label{}}
+\label{prehled_nbo_si_ch3_oac_3}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\caption{Přehled NBO pro \ce{Si(OAC)4};  Legenda: \mycircle{black!50!white!50} Si, \mycircle{red} O, \mycircle{black} C, \mycircle{yellow} P, \mycircleempty{black}~H}
+\subfigure[Si 0,09585]{\includegraphics[width=6cm]{SI_AC_70.png} \label{}}
+\subfigure[Si 0,12800]{\includegraphics[width=6cm]{SI_AC_71.png}\label{}}
+\subfigure[Si 0,10069]{\includegraphics[width=6cm]{SI_AC_72.png}\label{}}
+\subfigure[Si 0,10258]{\includegraphics[width=6cm]{SI_AC_73.png}\label{}}
+\label{prehled_nbo_SI_AC}
+\end{center}
+\end{figure}
+
+\section{Středně velké modely}
+Tato část se věňuje nejmenším možným modelům, které již tvoří uvnitř svých struktur cyklus. Přehled struktur je ukázán na obrázku \ref{prehled_middle} Středně velké modely obsahují křemík v koordinaci čtyři a snaží se zachytiti tvorbu cyklů, které vznikají v silikofosfátech. V tabulce \ref{hsab_middle} lze vidět výsledky pro HSAB analýzu.
+\begin{figure}
+\begin{center}
+\subfigure[\ce{SiCH3(PO4(CH3)2)(Si2P2O9(CH3)4)},  \textbf{M}]{\includegraphics[width=6cm]{si_model_methyl.png}\label{obr_h4sio4_MO_s1_20}}
+\subfigure[\ce{Si(Si2P2O9(CH3)4)2}, \textbf{N}]{\includegraphics[width=5cm]{si_model_orezany.png}\label{obr_h4sio4_MO_s1_24}}
+\caption{Přehled středně velkých modelů];  Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{yellow} P, \mycircleempty{black}~H}
+\label{prehled_middle}
+\end{center}
+\end{figure}
+
+\begin{table}[htbp]
+\begin{minipage}{\textwidth}
+\caption{HSAB analýza středních molekul}
+\begin{center}
+\begin{tabular}{|l|r|r|r|r|}
+\hline
+\label{hsab_middle}& E$_{\ce{H}}$\footnote{HOMO $-$ \textit{Highest Occupied Molecular Orbital}} [eV] & E$_{\ce{L}}$\footnote{LUMO$ - $\textit{Lowest Unoccupied Molecular Orbital}} [eV]& $\chi$ [eV] & $\eta$ [eV] \\ \hline
+\textbf{M} & -7,802 & 0,494 & 3,654 & 4,148 \\ \hline
+\textbf{N} & -8,101 & -0,059 & 4,080 & 4,021 \\ \hline
+\end{tabular}
+\end{center}
+\end{minipage}
+\end{table}
+
+\begin{table}[htbp]\begin{minipage}{\textwidth}
+\caption{MPA analýza vybraných MO orbitalů \ce{SiCH3(PO4(CH3)2)(Si2P2O9(CH3)4)}, \textbf{M}, výsledky jsou uvedeny v [\%].}
+\begin{center}
+  \begin{tabular}{|l|l|r|r|r|r|r|r|r|r|r|}
+  \hline
+     \label{si_model_methyl_MPA_I}  &  & 61 & 68 &69 & 70 & 71 & 72 & 96 & 97 & 106 \\ \hline
+  SI  & s & 3,8  & 4,4 &  0,1  & 3,9  & 0,3  & 0,0  & 0,6  & 1,7  & 1,0  \\ \hline
+   & p & 0,1  & 0,4& 1,6  & 0,5  & 2,4  & 2,0  & 3,2  & 1,3  & 1,2  \\ \hline
+  O & s & 0,0  & 0,2& 0,1  & 0,1  & 2,3  & 0,3  & 0,3  & 4,3  & 0,6  \\ \hline
+   & p & 2,2  & 2,4& 0,2  & 12,4  & 13,0  & 0,4  & 10,6  & 17,8  & 4,5  \\ \hline
+  O & s & 0,1  & 0,1& 2,5  & 0,2  & 0,0  & 0,3  & 0,2  & 1,5  & 0,0  \\ \hline
+   & p & 1,7  & 6,5 &7,2  & 3,4  & 7,1  & 13,8  & 1,4  & 1,3  & 13,4  \\ \hline
+  O & s & 0,0  & 0,2& 1,5  & 0,8  & 0,3  & 0,3  & 0,5  & 0,1  & 0,0  \\ \hline
+   & p & 2,5  & 7,8& 10,5  & 0,8  & 7,6  & 10,0  & 0,2  & 1,6  & 13,7  \\ \hline
+  C & s & 19,7  & 6,7& 0,1  & 1,8  & 0,1  & 0,0  & 0,0  & 0,1  & 3,0  \\ \hline
+   & p & 0,1  & 0,2& 0,1  & 0,3  & 0,1  & 0,1  & 5,0  & 7,3  & 4,4  \\ \hline
+  \end{tabular}
+\end{center}\end{minipage}\end{table}
+
+\begin{table}[htbp]\begin{minipage}{\textwidth}
+\caption{MPA analýza vybraných MO orbitalů \ce{Si(Si2P2O9(CH3)4)2}, \textbf{N},výsledky jsou uvedeny v [ ].}
+\begin{center}
+  \begin{tabular}{|l|c|c|c|c|c|c|c|}
+  \hline
+  \label{si_model_orezany_MPA} &  & 99 & 97 & 95 & 94 & 90 & 68 \\ \hline
+  Si & S  & 0,2  & 0,1  & 0,0  & 0,6  & 48,1  & 2,2  \\ \hline
+   & P & 1,6  & 2,7  & 1,8  & 0,3  & 6,7  & 0,0  \\ \hline
+  O & S  & 0,0  & 0,8  & 0,1  & 0,6  & 0,4  & 0,6  \\ \hline
+   & P & 0,4  & 5,2  & 3,6  & 5,2  & 4,1  & 0,5  \\ \hline
+  O & S  & 0,1  & 3,3  & 0,8  & 2,3  & 1,4  & 1,1  \\ \hline
+   & P & 0,3  & 1,4  & 2,7  & 2,3  & 2,3  & 9,5  \\ \hline
+  O & S  & 0,1  & 2,4  & 0,7  & 1,5  & 1,8  & 0,8  \\ \hline
+   & P & 5,1  & 2,5  & 5,5  & 3,8  & 2,6  & 7,7  \\ \hline
+  O & S  & 4,3  & 1,2  & 2,3  & 2,4  & 1,0  & 0,3  \\ \hline
+   & P & 7,4  & 7,2  & 4,2  & 3,4  & 4,5  & 6,6 \\ \hline
+  \end{tabular}
+\end{center}\end{minipage}\end{table}
+
 \begin{table}[htbp]
   \begin{minipage}{\textwidth}
 \caption{Výsledky NBO analýzy pro středně velké modely, výsledky jsou uvedeny v [\%].}
@@ -878,174 +879,67 @@ Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.}  & s & p & s & p & 
 \end{table}
 
 
-
-
-\begin{table}[htbp] \begin{minipage}{\textwidth}
-\caption{MPA Analýza LUMO orbitalu pro \textbf{P}, původní struktura bez náboje, \ref{struktura_bez_naboje}, výsledky jsou uvedeny v [\%].}
+\section{Velké modely}
+Velké modely mají za cíl modelovat vybrané části ze silikofosfátů. Ve svých strukturách už obsahují dva a více cyklů a všechny obsahují křemík v koordinaci šest. Pro velké struktury byla provedena HSAB analýza a výsledky jsou uvedeny v tabulce \ref{hsab_large}. Přehled struktur pro analýzu je uveden na obrázku \ref{prehled_large}.
+\begin{figure}
 \begin{center}
-\begin{tabular}{|l|c|c|}
-\hline
- \label{struktura_bez_naboje_MPA}Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.}& s & p\\ \hline
-(1)Si & 9,6  & 0,01   \\ \hline
-(2)O & 3,2  & 0,35   \\ \hline
-(3)O & 7,5  & 2,35   \\ \hline
-(4)O & 3,7  & 0,36   \\ \hline
-(5)O & 3,4  & 0,19   \\ \hline
-(6)O & 6,7  & 2,05   \\ \hline
-(7)O & 3,4  & 0,37   \\ \hline
-\end{tabular}
-\end{center}\end{minipage}
-\end{table}
+\caption{Přehled velkých modelů;  Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{yellow} P, \mycircleempty{black}~H}
+\subfigure[ \textbf{O}]{\includegraphics[width=6cm]{struktura_puvodni.png}\label{struktura_puvodni}}
+\subfigure[ \textbf{P}]{\includegraphics[width=6cm]{srtuktura_bez_naboje.png}\label{struktura_bez_naboje}}
+\label{prehled_large}
+\end{center}
+\end{figure}
 
-\begin{table}[htbp]\begin{minipage}{\textwidth}
-\caption{MPA analýza LUMO orbitalu pro \textbf{Q}, acetáty v poloze cis, \ref{struktura_cis}, výsledky jsou uvedeny v [\%].}
+\begin{figure}
 \begin{center}
-\begin{tabular}{|l|c|c|}
-\hline
- \label{struktura_C_cis_MPA}Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.} & s &p \\ \hline
-(1)Si & 3,1  & 0,92   \\ \hline
-(2)O & 0,0  & 7,59   \\ \hline
-(3)O & 0,3  & 0,25   \\ \hline
-(4)O & 0,9  & 0,58   \\ \hline
-(5)O & 0,5  & 0,08   \\ \hline
-(6)O & 0,1  & 18,81   \\ \hline
-(7)O & 0,5  & 0,19   \\ \hline
-\end{tabular}
-\end{center}\end{minipage}
-\end{table}
+\caption{Přehled velkých modelů;  Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{yellow} P, \mycircleempty{black}~H}
+\subfigure[ \textbf{Q}]{\includegraphics[width=6cm]{struktura_cis.png} \label{struktura_cis}}
+\subfigure[ \textbf{R}]{\includegraphics[width=6cm]{struktura_trans.png}\label{struktura_trans}}
+\subfigure[ \textbf{S}]{\includegraphics[width=6cm]{strukutra_5_opravena.png}\label{struktura_5}}
+\label{prehled_largeI}
+\end{center}
+\end{figure}
 
-\begin{table}[htbp]\begin{minipage}{\textwidth}
-\caption{MPA analýza LUMO orbitalu  pro struktura \textbf{S}, pětikoordinovaná struktura, \ref{struktura_5}, výsledky jsou uvedeny v [\%].}
+\begin{table}[htbp]
+\begin{minipage}{\textwidth}
+\caption{HSAB analýza velkých molekul}
 \begin{center}
-\begin{tabular}{|l|c|c|}
+\begin{tabular}{|l|r|r|r|r|}
 \hline
- \label{struktura_5_MPA}Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.}& s & p \\ \hline
- (1)Si & 23,5  & 1,72   \\ \hline
- (2)O & 5,6  & 0,95   \\ \hline
- (3)O & 12,7  & 1,06   \\ \hline
- (4)O & 7,3  & 0,81   \\ \hline
- (5)O & 13,3  & 2,16   \\ \hline
- (6)O & 2,8  & 2,05   \\ \hline
+\label{hsab_large} & E$_{\ce{H}}$\footnote{HOMO $-$ \textit{Highest Occupied Molecular Orbital}} [eV] & E$_{\ce{L}}$\footnote{LUMO$ - $\textit{Lowest Unoccupied Molecular Orbital}} [eV]& $\chi$ [eV] & $\eta$ [eV] \\ \hline
+\textbf{O} & -7,318 & 0,176 & 3,571 & 3,747 \\ \hline
+\textbf{P} & -7,351 & -1,392 & 4,372 & 2,980 \\ \hline
+\textbf{R} & -7,240 & -1,538 & 4,389 & 2,851 \\ \hline
+\textbf{Q} & -2,521 & 5,120 & -1,299 & 3,820 \\ \hline
+\textbf{S} & -4,573 & 3,433 & 0,570 & 4,003 \\ \hline
 \end{tabular}
-\end{center}\end{minipage}
+\end{center}
+\end{minipage}
 \end{table}
-
-\begin{table}[htbp]\begin{minipage}{\textwidth}
-\caption{MPA analýza LUMO orbitalu pro \textbf{R}, acetáty v poloze trans, \ref{struktura_trans}, výsledky jsou uvedeny v [\%]. }
-\begin{center}
-\begin{tabular}{|l|c|c|}
-\hline
- \label{struktura_C_trans_MPA}Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.}& s &p \\ \hline
-(1)Si & 0,5  & 4,04   \\ \hline
-(2)O & 0,9  & 0,33   \\ \hline
-(3)O & 0,1  & 8,38   \\ \hline
-(4)O & 0,1  & 0,17   \\ \hline
-(5)O & 0,0  & 20,85   \\ \hline
-(6)O & 1,4  & 0,65   \\ \hline
-(7)O & 0,7  & 0,15   \\ \hline
-\end{tabular}
-\end{center}\end{minipage}
-\end{table}
-
-\begin{table}[htbp]\begin{minipage}{\textwidth}
-\caption{MPA analýza LUMO orbitalu pro \textbf{O}, původní RTG struktura \ref{struktura_puvodni}, výsledky jsou uvedeny v [\%].}
-\begin{center}
-\begin{tabular}{|l|c|c|}
-\hline
- \label{struktura_puvodni_MPA}Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.}& s & p\\ \hline
-(1)Si & 8,8  & 0,00   \\ \hline
-(2)O & 3,5  & 0,36   \\ \hline
-(3)O & 4,7  & 0,65   \\ \hline
-(4)O & 4,1  & 0,51   \\ \hline
-(5)O & 4,1  & 0,42   \\ \hline
-(6)O & 3,9  & 0,49   \\ \hline
-(7)O & 3,9  & 0,37   \\ \hline
-\end{tabular}
-\end{center}\end{minipage}
-\end{table}
-
 
 \begin{table}
-\caption{Výsledky NBO analýzy pro velké modely, výsledky jsou uvedeny v [\%].}
+\caption{Výsledky NBO analýzy pro velké modely \ref{prehled_large}, výsledky jsou uvedeny v [\%].}
 \begin{minipage}{\textwidth}
 \begin{center}
 \begin{tabular}{|l|l|l|r|r|r|r|r|r|}
 \hline
  \label{nbo_large}&  & Vazba & O.Č\footnote{Obsazovací číslo křemíku} & Si & X\footnote{Procenta druhého atomu ve  vazbě} & Si(s) & Si(p) &Si(d) \\ \hline
-A & Si-O & 1-2  & 0,089 & 91,33   & 8,67   & 17,15   & 49,89   & 32,96   \\ \hline
- &  & 1-3  & 0,105 & 92,66   & 7,34   & 16,06   & 50,23   & 33,72   \\ \hline
- &  & 1-4  & 0,088 & 91,24   & 8,76   & 17,21   & 50,07   & 32,72   \\ \hline
- &  & 1-5  & 0,089 & 91,48   & 8,52   & 16,70   & 50,16   & 33,13   \\ \hline
- &  & 1-6 & 0,104 & 92,53   & 7,47   & 16,29   & 49,80   & 33,91   \\ \hline
- &  & 1-7 & 0,088 & 91,29   & 8,71   & 16,98   & 49,95   & 33,08   \\ \hline
-B & Si-O & 1-3  & 0,175 & 89,18   & 10,82   & 31,84   & 64,07   & 4,08   \\ \hline
- &  & 1-4  & 0,171 & 88,78   & 11,22   & 33,01   & 63,00   & 4,00   \\ \hline
- &  & 1-5  & 0,132 & 88,88   & 11,12   & 16,88   & 79,32   & 3,80   \\ \hline
- &  & 1-7 & 0,127 & 88,94   & 11,06   & 16,73   & 79,55   & 3,72   \\ \hline
-C & Si-O & 1-2  & 0,106 & 90,65   & 9,35   & 22,30   & 52,16   & 25,54   \\ \hline
- &  & 1-4  & 0,113 & 90,69   & 9,31   & 22,02   & 51,83   & 26,15   \\ \hline
- &  & 1-5  & 0,161 & 90,48   & 9,52   & 9,91   & 86,47   & 3,62   \\ \hline
- &  & 1-6 & 0,111 & 90,57   & 9,43   & 21,86   & 52,57   & 25,57   \\ \hline
- &  & 1-7 & 0,104 & 90,19   & 9,43   & 23,30   & 51,81   & 24,89   \\ \hline
-D & Si-O & 1-2  & 0,092 & 91,57   & 8,43   & 16,92   & 50,05   & 33,03   \\ \hline
- &  & 1-3  & 0,094 & 91,82   & 8,18   & 16,49   & 50,05   & 33,46   \\ \hline
- &  & 1-4  & 0,092 & 91,67   & 8,33   & 16,73   & 49,90   & 33,37   \\ \hline
- &  & 1-5  & 0,093 & 91,74   & 8,26   & 16,54   & 49,96   & 33,50   \\ \hline
- &  & 1-6 & 0,093 & 91,73   & 8,27   & 16,72   & 49,96   & 33,32   \\ \hline
- &  & 1-7 & 0,093 & 91,75   & 8,25   & 16,59   & 50,11   & 33,30   \\ \hline
-E & Si-O & 1-2  & 0,091 & 91,63   & 8,37   & 17,13   & 50,11   & 32,76   \\ \hline
- &  & 1-3  & 0,115 & 89,41   & 10,59   & 20,87   & 63,97   & 15,16   \\ \hline
- &  & 1-4  & 0,085 & 91,53   & 8,47   & 17,31   & 50,82   & 31,88   \\ \hline
- &  & 1-5  & 0,113 & 90,01   & 9,99   & 20,02   & 62,64   & 17,34   \\ \hline
- &  & 1-6 & 0,093 & 86,99   & 13,01   & 24,67   & 65,85   & 9,48   \\ \hline
+ \textbf{O} & Si-O & 1-2  & 0,092 & 91,57   & 8,43   & 16,92   & 50,05   & 33,03   \\ \hline
+  &  & 1-3  & 0,094 & 91,82   & 8,18   & 16,49   & 50,05   & 33,46   \\ \hline
+  &  & 1-4  & 0,092 & 91,67   & 8,33   & 16,73   & 49,90   & 33,37   \\ \hline
+  &  & 1-5  & 0,093 & 91,74   & 8,26   & 16,54   & 49,96   & 33,50   \\ \hline
+  &  & 1-6 & 0,093 & 91,73   & 8,27   & 16,72   & 49,96   & 33,32   \\ \hline
+  &  & 1-7 & 0,093 & 91,75   & 8,25   & 16,59   & 50,11   & 33,30   \\ \hline
+  \textbf{P}& Si-O & 1-2  & 0,089 & 91,33   & 8,67   & 17,15   & 49,89   & 32,96   \\ \hline
+   &  & 1-3  & 0,105 & 92,66   & 7,34   & 16,06   & 50,23   & 33,72   \\ \hline
+   &  & 1-4  & 0,088 & 91,24   & 8,76   & 17,21   & 50,07   & 32,72   \\ \hline
+   &  & 1-5  & 0,089 & 91,48   & 8,52   & 16,70   & 50,16   & 33,13   \\ \hline
+   &  & 1-6 & 0,104 & 92,53   & 7,47   & 16,29   & 49,80   & 33,91   \\ \hline
+   &  & 1-7 & 0,088 & 91,29   & 8,71   & 16,98   & 49,95   & 33,08   \\ \hline
 \end{tabular}\end{center}\end{minipage}\end{table}
 
-\begin{figure}
-\begin{center}
-\caption{Přehled NBO pro \ce{Si(CH3)(OAC)3};  Legedna: \mycircle{black!50!white!50} Si, \mycircle{red} O, \mycircle{black} C, \mycircle{yellow} P, \mycircleempty{black}~H}
-\subfigure[Si 0,05492]{\includegraphics[width=6cm]{si_ch3_59.png} \label{}}
-\subfigure[Si 0,10858]{\includegraphics[width=6cm]{si_ch3_63.png}\label{}}
-\subfigure[Si 0,09214]{\includegraphics[width=6cm]{si_ch3_64.png}\label{}}
-\subfigure[Si 0,10523]{\includegraphics[width=6cm]{si_ch3_65.png}\label{}}
-\label{prehled_nbo_si_ch3_oac_3}
-\end{center}
-\end{figure}
 
-\begin{figure}
-\begin{center}
-\caption{Přehled NBO pro \ce{Si(OAC)4};  Legedna: \mycircle{black!50!white!50} Si, \mycircle{red} O, \mycircle{black} C, \mycircle{yellow} P, \mycircleempty{black}~H}
-\subfigure[Si 0,09585]{\includegraphics[width=6cm]{SI_AC_70.png} \label{}}
-\subfigure[Si 0,12800]{\includegraphics[width=6cm]{SI_AC_71.png}\label{}}
-\subfigure[Si 0,10069]{\includegraphics[width=6cm]{SI_AC_72.png}\label{}}
-\subfigure[Si 0,10258]{\includegraphics[width=6cm]{SI_AC_73.png}\label{}}
-\label{prehled_nbo_SI_AC}
-\end{center}
-\end{figure}
-
-\begin{figure}
-\begin{center}
-\caption{Přehled MPA \ce{Si(OAC)4};  Legedna: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{yellow} P, \mycircleempty{black}~H}
-\subfigure[MO 75 ]{\includegraphics[width=6cm]{si_o_oac_4_75.png} \label{}}
-\subfigure[MO 74]{\includegraphics[width=6cm]{si_oac_74.png}\label{}}
-\subfigure[MO 77]{\includegraphics[width=6cm]{si_o_ac_4_77.png}\label{}}
-\subfigure[MO 76]{\includegraphics[width=6cm]{si_o_ac_4_76.png}\label{}}
-\label{prehled_mpa_SI_AC}
-\end{center}
-\end{figure}
-
-\begin{figure}
-\begin{center}
-\caption{Přehled MPA \ce{Si(CH3)(OAC)3};  Legedna: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{yellow} P, \mycircleempty{black}~H}
-\subfigure[MO 62 ]{\includegraphics[width=6cm]{si_ch3_oac3_62.png} \label{}}
-\subfigure[MO 63]{\includegraphics[width=6cm]{si_ch3_oac3_63.png}\label{}}
-\subfigure[MO 64]{\includegraphics[width=6cm]{si_ch3_oac3_64.png}\label{}}
-\subfigure[MO 65]{\includegraphics[width=6cm]{si_ch3_oac3_66.png}\label{}}
-\label{prehled_mpa_SI_AC}
-\end{center}
-\end{figure}
-
-\section{Spektroskopie}
- Poslední část, která se věnuje spektroskopii, dává pohled na NMR parametry křemíku a porovnává je s experimentálně získanými hodnotami. Experimentální hodnoty chemických posunů jsou uvedeny v \cite{1316862}. Hodnoty v tabulce \ref{nmr} jsou přepočítány na strandard, kterým byl tetramethylsilan s hodnotou $\sigma_{TMS}$ = 332,1 ppm.
+Poslední část, která se věnuje spektroskopii, dává pohled na NMR parametry křemíku a porovnává je s experimentálně získanými hodnotami. Experimentální hodnoty chemických posunů jsou uvedeny v \cite{1316862}. Hodnoty v tabulce \ref{nmr} jsou přepočítány na strandard, kterým byl tetramethylsilan s hodnotou $\sigma_{TMS}$ = 332,1 ppm.
 
 \begin{table}[htbp]
 \begin{minipage}{\textwidth}
@@ -1065,6 +959,58 @@ central Si & -210,45 & -211,70 & -160,48 & -217,13 & -220,53 & -101 \\ \hline
 \end{center}
 \end{minipage}
 \end{table}
+
+  \begin{table}
+  \caption{Výsledky NBO analýzy pro velké modely \ref{prehled_largeI}, výsledky jsou uvedeny v [\%].}
+  \begin{minipage}{\textwidth}
+  \begin{center}
+  \begin{tabular}{|l|l|l|r|r|r|r|r|r|}
+  \hline
+   \label{nbo_largeI}&  & Vazba & O.Č\footnote{Obsazovací číslo křemíku} & Si & X\footnote{Procenta druhého atomu ve  vazbě} & Si(s) & Si(p) &Si(d) \\ \hline
+\textbf{Q}& Si-O & 1-3  & 0,175 & 89,18   & 10,82   & 31,84   & 64,07   & 4,08   \\ \hline
+ &  & 1-4  & 0,171 & 88,78   & 11,22   & 33,01   & 63,00   & 4,00   \\ \hline
+ &  & 1-5  & 0,132 & 88,88   & 11,12   & 16,88   & 79,32   & 3,80   \\ \hline
+ &  & 1-7 & 0,127 & 88,94   & 11,06   & 16,73   & 79,55   & 3,72   \\ \hline
+\textbf{R} & Si-O & 1-2  & 0,106 & 90,65   & 9,35   & 22,30   & 52,16   & 25,54   \\ \hline
+ &  & 1-4  & 0,113 & 90,69   & 9,31   & 22,02   & 51,83   & 26,15   \\ \hline
+ &  & 1-5  & 0,161 & 90,48   & 9,52   & 9,91   & 86,47   & 3,62   \\ \hline
+ &  & 1-6 & 0,111 & 90,57   & 9,43   & 21,86   & 52,57   & 25,57   \\ \hline
+ &  & 1-7 & 0,104 & 90,19   & 9,43   & 23,30   & 51,81   & 24,89   \\ \hline
+\textbf{S}& Si-O & 1-2  & 0,091 & 91,63   & 8,37   & 17,13   & 50,11   & 32,76   \\ \hline
+ &  & 1-3  & 0,115 & 89,41   & 10,59   & 20,87   & 63,97   & 15,16   \\ \hline
+ &  & 1-4  & 0,085 & 91,53   & 8,47   & 17,31   & 50,82   & 31,88   \\ \hline
+ &  & 1-5  & 0,113 & 90,01   & 9,99   & 20,02   & 62,64   & 17,34   \\ \hline
+ &  & 1-6 & 0,093 & 86,99   & 13,01   & 24,67   & 65,85   & 9,48   \\ \hline
+\end{tabular}\end{center}\end{minipage}\end{table}
+
+
+
+
+\begin{comment}
+\begin{figure}
+\begin{center}
+\caption{Přehled MPA \ce{Si(OAC)4};  Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{yellow} P, \mycircleempty{black}~H}
+\subfigure[MO 75 ]{\includegraphics[width=6cm]{si_o_oac_4_75.png} \label{}}
+\subfigure[MO 74]{\includegraphics[width=6cm]{si_oac_74.png}\label{}}
+\subfigure[MO 77]{\includegraphics[width=6cm]{si_o_ac_4_77.png}\label{}}
+\subfigure[MO 76]{\includegraphics[width=6cm]{si_o_ac_4_76.png}\label{}}
+\label{prehled_mpa_SI_AC}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\caption{Přehled MPA \ce{Si(CH3)(OAC)3};  Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{yellow} P, \mycircleempty{black}~H}
+\subfigure[MO 62 ]{\includegraphics[width=6cm]{si_ch3_oac3_62.png} \label{}}
+\subfigure[MO 63]{\includegraphics[width=6cm]{si_ch3_oac3_63.png}\label{}}
+\subfigure[MO 64]{\includegraphics[width=6cm]{si_ch3_oac3_64.png}\label{}}
+\subfigure[MO 65]{\includegraphics[width=6cm]{si_ch3_oac3_66.png}\label{}}
+\label{prehled_mpa_SI_AC}
+\end{center}
+\end{figure}
+\end{comment}
+
+
 
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.6)  9 MAY 2018 19:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.6)  12 MAY 2018 18:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1393,6 +1393,12 @@ File: listings.cfg 2015/06/04 1.6 listings configuration
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/braket/braket.sty)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks44
+\verbatim@line=\toks45
+\verbatim@in@stream=\read2
+)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarypatterns.code.tex
 File: tikzlibrarypatterns.code.tex 2008/01/15 v3.0.1a (rcs-revision 1.2)
@@ -1419,13 +1425,13 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@hangindent=\dimen276
 )
 \c@float@type=\count307
-\float@exts=\toks44
+\float@exts=\toks46
 \float@box=\box61
 \@floatcapt=\box62
 Package floatrow Info: Modified float package code loaded on input line 455.
 Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 
-\FR@everyfloat=\toks45
+\FR@everyfloat=\toks47
 \flrow@foot=\insert252
 \FB@wd=\dimen277
 \FBo@wd=\dimen278
@@ -1452,7 +1458,7 @@ Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 \LTright=\skip92
 \LTleft=\skip93
 \LTright=\skip94
-\flrow@types=\toks46
+\flrow@types=\toks48
 )
 (./fithesis/locale/fithesis-czech.def
 File: fithesis/locale/fithesis-czech.def 2017/07/09
@@ -1500,14 +1506,14 @@ Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box64
-\AM@global@opts=\toks47
-\AM@toc@title=\toks48
+\AM@global@opts=\toks49
+\AM@toc@title=\toks50
 \c@AM@survey=\count314
 \AM@templatesizebox=\box65
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2017/07/07 v2.7 Micro-typographical refinements (RS)
-\MT@toks=\toks49
+\MT@toks=\toks51
 \MT@count=\count315
 LaTeX Info: Redefining \textls on input line 789.
 \MT@outer@kern=\dimen283
@@ -1600,7 +1606,7 @@ Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 \TX@target=\dimen287
 \TX@delta=\dimen288
 \TX@cols=\count317
-\TX@ftn=\toks50
+\TX@ftn=\toks52
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tabu/tabu.sty
 Package: tabu 2011/02/26 v2.8 - flexible LaTeX tabulars (FC)
@@ -1627,8 +1633,8 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \abovetabulinesep=\dimen297
 \belowtabulinesep=\dimen298
 \tabustrutrule=\dimen299
-\tabu@thebody=\toks51
-\tabu@footnotes=\toks52
+\tabu@thebody=\toks53
+\tabu@footnotes=\toks54
 \tabu@box=\box67
 \tabu@arstrutbox=\box68
 \tabu@hleads=\box69
@@ -1773,7 +1779,7 @@ Package: csquotes 2017/03/11 v5.2b context-sensitive quotations (JAW)
 \csq@qlevel=\count342
 \csq@maxlvl=\count343
 \csq@tshold=\count344
-\csq@ltx@everypar=\toks53
+\csq@ltx@everypar=\toks55
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2017/03/11 v5.2b csquotes generic definitions (JAW)
@@ -1848,7 +1854,7 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 \bibinitsep=\skip103
 \bibparsep=\skip104
 \bibhang=\skip105
-\blx@bcfin=\read2
+\blx@bcfin=\read3
 \blx@bcfout=\write7
 \c@mincomprange=\count386
 \c@maxcomprange=\count387
@@ -2013,8 +2019,8 @@ Package: changepage 2009/10/20 v1.0c check page and change page layout
 \c@cp@cntr=\count464
 \cp@tempcnt=\count465
 ))
-Package hyperref Info: Option `unicode' set `true' on input line 152.
-Package hyperref Info: Option `unicode' set `true' on input line 152.
+Package hyperref Info: Option `unicode' set `true' on input line 154.
+Package hyperref Info: Option `unicode' set `true' on input line 154.
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/stringenc.sty
 Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
@@ -2082,100 +2088,49 @@ File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
 LaTeX Warning: Label `prehled_male_modely' multiply defined.
 
 
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `sub@' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `sub@' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `sub@' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `sub@' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `sub@' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `sub@' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `sub@' multiply defined.
+
+
 LaTeX Warning: Label `nbo_small' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `sub@' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `sub@' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `sub@' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `sub@' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `sub@' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `sub@' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `sub@' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `sub@' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `sub@' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `sub@' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `sub@' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `sub@' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `sub@' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `sub@' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `sub@' multiply defined.
-
-
-LaTeX Warning: Label `prehled_mpa_SI_AC' multiply defined.
 
 
 LaTeX Warning: Label `DescriptiveLabel' multiply defined.
@@ -2186,28 +2141,28 @@ LaTeX Warning: Label `DescriptiveLabel' multiply defined.
 )
 \openout1 = `sci-pdflatex.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `default' on line 152.
+. Activating mapping `default' on line 154.
 .................................................
  (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -2216,12 +2171,12 @@ LaTeX Font Info:    ... okay on input line 152.
 \scratchbox=\box71
 \nofMPsegments=\count467
 \nofMParguments=\count468
-\everyMPshowfont=\toks54
+\everyMPshowfont=\toks56
 \MPscratchCnt=\count469
 \MPscratchDim=\dimen318
 \MPnumerator=\count470
 \makeMPintoPDFobject=\count471
-\everyMPtoPDFconversion=\toks55
+\everyMPtoPDFconversion=\toks57
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -2253,7 +2208,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-LaTeX Info: Redefining \microtypecontext on input line 152.
+LaTeX Info: Redefining \microtypecontext on input line 154.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2268,7 +2223,7 @@ Package microtype Info: Redefining babel's language switching commands.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-ppl.cfg
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
-Package hyperref Info: Link coloring OFF on input line 152.
+Package hyperref Info: Link coloring OFF on input line 154.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -2278,9 +2233,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count473
 )
-LaTeX Info: Redefining \ref on input line 152.
-LaTeX Info: Redefining \pageref on input line 152.
-LaTeX Info: Redefining \nameref on input line 152.
+LaTeX Info: Redefining \ref on input line 154.
+LaTeX Info: Redefining \pageref on input line 154.
+LaTeX Info: Redefining \nameref on input line 154.
 
 (./sci-pdflatex.out) (./sci-pdflatex.out)
 \@outlinefile=\write8
@@ -2294,8 +2249,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'sci-pdflatex.bbl' found.
  (./sci-pdflatex.bbl)
-Package biblatex Info: Reference section=0 on input line 152.
-Package biblatex Info: Reference segment=0 on input line 152.
+Package biblatex Info: Reference section=0 on input line 154.
+Package biblatex Info: Reference segment=0 on input line 154.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/qpl/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -2308,59 +2263,59 @@ Package microtype Info: Character `029' is missing
  [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<fithesis/logo/mu/fithesis-base-color.pdf, id=129, pagebox=cropbox, 271.0125pt 
+<fithesis/logo/mu/fithesis-base-color.pdf, id=121, pagebox=cropbox, 271.0125pt 
 x 272.01625pt>
 File: fithesis/logo/mu/fithesis-base-color.pdf Graphic file (type pdf)
 <use fithesis/logo/mu/fithesis-base-color.pdf>
 Package pdftex.def Info: fithesis/logo/mu/fithesis-base-color.pdf  used on inpu
-t line 152. on input line 152.
+t line 154. on input line 154.
 Package pdftex.def Info: Requested size: 85.35826pt x 85.67311pt on input line 
-152.
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 152.
+154.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 154.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )<<ot1.cmap>>
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 152
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 154
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )<<oml.cmap>>
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 152
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 154
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )<<oms.cmap>>
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 152
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 154
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )<<omx.cmap>>
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 152.
+(Font)              scaled to size 12.50409pt on input line 154.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 152.
+(Font)              scaled to size 9.37807pt on input line 154.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 152.
+(Font)              scaled to size 7.29405pt on input line 154.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 152.
+(Font)              scaled to size 12.50409pt on input line 154.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 152.
+(Font)              scaled to size 9.37807pt on input line 154.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 152.
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 152
+(Font)              scaled to size 7.29405pt on input line 154.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 154
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1zplm.fd
@@ -2370,26 +2325,26 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zplm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<fithesis/logo/mu/fithesis-sci-color.pdf, id=134, pagebox=cropbox, 297.11pt x 2
+<fithesis/logo/mu/fithesis-sci-color.pdf, id=126, pagebox=cropbox, 297.11pt x 2
 98.11375pt>
 File: fithesis/logo/mu/fithesis-sci-color.pdf Graphic file (type pdf)
 <use fithesis/logo/mu/fithesis-sci-color.pdf>
 Package pdftex.def Info: fithesis/logo/mu/fithesis-sci-color.pdf  used on input
- line 152. on input line 152.
+ line 154. on input line 154.
 Package pdftex.def Info: Requested size: 85.35826pt x 85.64561pt on input line 
-152.
+154.
 
-Overfull \hbox (28.45276pt too wide) in paragraph at lines 152--152
+Overfull \hbox (28.45276pt too wide) in paragraph at lines 154--154
 []$[]$$[]$$[]$ 
  []
 
 
-Underfull \hbox (badness 4132) in paragraph at lines 152--152
+Underfull \hbox (badness 4132) in paragraph at lines 154--154
 \T1/qpl/b/n/24.88 fos-fo-si-li-kát· a je-jich si-li-ká-to-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--152
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
 
  []
 
@@ -2407,7 +2362,7 @@ i-color.pdf>]
 \@left=\skip121
 \@right=\skip122
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--152
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
 
  []
 
@@ -2424,7 +2379,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--152
 \@left=\skip132
 \@right=\skip133
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--152
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
 
  []
 
@@ -2436,7 +2391,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--152
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.152 \begin{document}
+l.154 \begin{document}
                        [5]
 \@A=\skip134
 \@month=\count474
@@ -2460,162 +2415,162 @@ LaTeX Font Warning: Font shape `T1/qpl/m/sl' in size <12> not available
  [9]
 Kapitola 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
 [1
 
 ]
-<rtg_kruh_samostatne.png, id=360, 459.6372pt x 459.6372pt>
+<rtg_kruh_samostatne.png, id=327, 459.6372pt x 459.6372pt>
 File: rtg_kruh_samostatne.png Graphic file (type png)
 <use rtg_kruh_samostatne.png>
-Package pdftex.def Info: rtg_kruh_samostatne.png  used on input line 169. on in
-put line 169.
+Package pdftex.def Info: rtg_kruh_samostatne.png  used on input line 171. on in
+put line 171.
 Package pdftex.def Info: Requested size: 170.71652pt x 170.71535pt on input lin
-e 169.
+e 171.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 209.
+(Font)              scaled to size 11.40997pt on input line 211.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 209.
+(Font)              scaled to size 8.33606pt on input line 211.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 209.
+(Font)              scaled to size 6.25204pt on input line 211.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 209.
+(Font)              scaled to size 11.40997pt on input line 211.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 209.
+(Font)              scaled to size 8.33606pt on input line 211.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 209.
+(Font)              scaled to size 6.25204pt on input line 211.
 
 Underfull \vbox (badness 3118) has occurred while \output is active []
 
  [2 <./rtg_kruh_samostatne.png (PNG copy)>]
-<si_polymer_cely.png, id=378, 948.54375pt x 669.50125pt>
+<si_polymer_cely.png, id=346, 948.54375pt x 669.50125pt>
 File: si_polymer_cely.png Graphic file (type png)
 <use si_polymer_cely.png>
-Package pdftex.def Info: si_polymer_cely.png  used on input line 309. on input 
-line 309.
+Package pdftex.def Info: si_polymer_cely.png  used on input line 311. on input 
+line 311.
 Package pdftex.def Info: Requested size: 284.52756pt x 200.82127pt on input lin
-e 309.
-<struktura_puvodni.png, id=381, 463.9734pt x 497.9403pt>
+e 311.
+<struktura_puvodni.png, id=349, 463.9734pt x 497.9403pt>
 File: struktura_puvodni.png Graphic file (type png)
 <use struktura_puvodni.png>
-Package pdftex.def Info: struktura_puvodni.png  used on input line 314. on inpu
-t line 314.
+Package pdftex.def Info: struktura_puvodni.png  used on input line 316. on inpu
+t line 316.
 Package pdftex.def Info: Requested size: 227.62204pt x 244.2816pt on input line
- 314.
+ 316.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 316.
+(Font)              scaled to size 15.0049pt on input line 318.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 316.
+(Font)              scaled to size 10.42007pt on input line 318.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 316.
+(Font)              scaled to size 15.0049pt on input line 318.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 316.
+(Font)              scaled to size 10.42007pt on input line 318.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 316.
+(hyperref)                removing `math shift' on input line 318.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 316.
+(hyperref)                removing `math shift' on input line 318.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 317--318
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
 
  []
 
 [3] [4 <./si_polymer_cely.png> <./struktura_puvodni.png (PNG copy)>]
-<drawing.pdf, id=393, pagebox=cropbox, 338.82355pt x 80.42232pt>
+<drawing.pdf, id=361, pagebox=cropbox, 338.82355pt x 80.42232pt>
 File: drawing.pdf Graphic file (type pdf)
 <use drawing.pdf>
-Package pdftex.def Info: drawing.pdf  used on input line 324. on input line 324
+Package pdftex.def Info: drawing.pdf  used on input line 326. on input line 326
 .
 Package pdftex.def Info: Requested size: 284.52756pt x 67.53586pt on input line
- 324.
+ 326.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5 <./drawing.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 330--332
+Underfull \hbox (badness 10000) in paragraph at lines 332--334
 
  []
 
-<si_f6.png, id=431, 185.69376pt x 229.85875pt>
+<si_f6.png, id=399, 185.69376pt x 229.85875pt>
 File: si_f6.png Graphic file (type png)
 <use si_f6.png>
-Package pdftex.def Info: si_f6.png  used on input line 338. on input line 338.
+Package pdftex.def Info: si_f6.png  used on input line 340. on input line 340.
 Package pdftex.def Info: Requested size: 56.9055pt x 70.43825pt on input line 3
-38.
-<si_cl_o.png, id=432, 223.83624pt x 240.9pt>
+40.
+<si_cl_o.png, id=400, 223.83624pt x 240.9pt>
 File: si_cl_o.png Graphic file (type png)
 <use si_cl_o.png>
-Package pdftex.def Info: si_cl_o.png  used on input line 339. on input line 339
+Package pdftex.def Info: si_cl_o.png  used on input line 341. on input line 341
 .
 Package pdftex.def Info: Requested size: 85.35826pt x 91.86641pt on input line 
-339.
-<si_o_f.png, id=433, 399.4925pt x 360.34625pt>
+341.
+<si_o_f.png, id=401, 399.4925pt x 360.34625pt>
 File: si_o_f.png Graphic file (type png)
 <use si_o_f.png>
-Package pdftex.def Info: si_o_f.png  used on input line 340. on input line 340.
+Package pdftex.def Info: si_o_f.png  used on input line 342. on input line 342.
 
 Package pdftex.def Info: Requested size: 142.26378pt x 128.32245pt on input lin
-e 340.
-<si_f_n.png, id=434, 210.7875pt x 203.76125pt>
+e 342.
+<si_f_n.png, id=402, 210.7875pt x 203.76125pt>
 File: si_f_n.png Graphic file (type png)
 <use si_f_n.png>
-Package pdftex.def Info: si_f_n.png  used on input line 341. on input line 341.
+Package pdftex.def Info: si_f_n.png  used on input line 343. on input line 343.
 
 Package pdftex.def Info: Requested size: 85.35826pt x 82.51352pt on input line 
-341.
-<si_with_fluor_carbons.png, id=435, 172.645pt x 121.45375pt>
+343.
+<si_with_fluor_carbons.png, id=403, 172.645pt x 121.45375pt>
 File: si_with_fluor_carbons.png Graphic file (type png)
 <use si_with_fluor_carbons.png>
-Package pdftex.def Info: si_with_fluor_carbons.png  used on input line 342. on 
-input line 342.
+Package pdftex.def Info: si_with_fluor_carbons.png  used on input line 344. on 
+input line 344.
 Package pdftex.def Info: Requested size: 142.26378pt x 100.08195pt on input lin
-e 342.
-<si_only_o.png, id=436, 418.56375pt x 270.00874pt>
+e 344.
+<si_only_o.png, id=404, 418.56375pt x 270.00874pt>
 File: si_only_o.png Graphic file (type png)
 <use si_only_o.png>
-Package pdftex.def Info: si_only_o.png  used on input line 343. on input line 3
-43.
+Package pdftex.def Info: si_only_o.png  used on input line 345. on input line 3
+45.
 Package pdftex.def Info: Requested size: 142.26378pt x 91.76878pt on input line
- 343.
-<si_n_o_c.png, id=437, 575.14874pt x 395.4775pt>
+ 345.
+<si_n_o_c.png, id=405, 575.14874pt x 395.4775pt>
 File: si_n_o_c.png Graphic file (type png)
 <use si_n_o_c.png>
-Package pdftex.def Info: si_n_o_c.png  used on input line 344. on input line 34
-4.
+Package pdftex.def Info: si_n_o_c.png  used on input line 346. on input line 34
+6.
 Package pdftex.def Info: Requested size: 142.26378pt x 97.81912pt on input line
- 344.
-<si_fluor_vodik_kyslik.png, id=438, 271.0125pt x 197.73875pt>
+ 346.
+<si_fluor_vodik_kyslik.png, id=406, 271.0125pt x 197.73875pt>
 File: si_fluor_vodik_kyslik.png Graphic file (type png)
 <use si_fluor_vodik_kyslik.png>
-Package pdftex.def Info: si_fluor_vodik_kyslik.png  used on input line 345. on 
-input line 345.
+Package pdftex.def Info: si_fluor_vodik_kyslik.png  used on input line 347. on 
+input line 347.
 Package pdftex.def Info: Requested size: 142.26378pt x 103.80232pt on input lin
-e 345.
-<si_o_n.png, id=439, 307.1475pt x 190.7125pt>
+e 347.
+<si_o_n.png, id=407, 307.1475pt x 190.7125pt>
 File: si_o_n.png Graphic file (type png)
 <use si_o_n.png>
-Package pdftex.def Info: si_o_n.png  used on input line 346. on input line 346.
+Package pdftex.def Info: si_o_n.png  used on input line 348. on input line 348.
 
 Package pdftex.def Info: Requested size: 142.26378pt x 88.33409pt on input line
- 346.
-<si_only_c.png, id=440, 386.44376pt x 274.02374pt>
+ 348.
+<si_only_c.png, id=408, 386.44376pt x 274.02374pt>
 File: si_only_c.png Graphic file (type png)
 <use si_only_c.png>
-Package pdftex.def Info: si_only_c.png  used on input line 347. on input line 3
-47.
+Package pdftex.def Info: si_only_c.png  used on input line 349. on input line 3
+49.
 Package pdftex.def Info: Requested size: 142.26378pt x 100.87708pt on input lin
-e 347.
+e 349.
 
-LaTeX Warning: Float too large for page by 123.90292pt on input line 350.
+LaTeX Warning: Float too large for page by 123.90292pt on input line 352.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--352
+Underfull \hbox (badness 10000) in paragraph at lines 337--354
 
  []
 
@@ -2628,24 +2583,24 @@ luor_carbons.png> <./si_only_o.png> <./si_n_o_c.png> <./si_fluor_vodik_kyslik.p
 ng> <./si_o_n.png> <./si_only_c.png>] [8] [9]
 Kapitola 2.
 [10]
-Overfull \hbox (0.96558pt too wide) in paragraph at lines 379--382
+Overfull \hbox (0.96558pt too wide) in paragraph at lines 381--384
 $\OML/zplm/m/it/12 R[]$ \T1/qpl/m/n/12 (-20) jsou sou-°ad-nice ja-der, $\OT1/zp
 lm/m/n/12 	[](\OML/zplm/m/it/12 r[]\OT1/ppl/m/n/12 , \OML/zplm/m/it/12 R[]\OT1/
 zplm/m/n/12 )$ \T1/qpl/m/n/12 (-20) je elektor-nová vl-nová funkce,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 379--382
+Underfull \hbox (badness 10000) in paragraph at lines 381--384
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 403--405
+Underfull \hbox (badness 10000) in paragraph at lines 405--407
 
  []
 
 [12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 416--417
+Underfull \hbox (badness 10000) in paragraph at lines 418--419
 
  []
 
@@ -2658,7 +2613,7 @@ Overfull \vbox (6.61205pt too high) has occurred while \output is active []
 
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 489--490
+Underfull \hbox (badness 10000) in paragraph at lines 491--492
 
  []
 
@@ -2672,28 +2627,28 @@ Overfull \vbox (2.22215pt too high) has occurred while \output is active []
 
 [19]
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 511.
+(Font)              scaled to size 7.91925pt on input line 513.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 511.
+(Font)              scaled to size 7.91925pt on input line 513.
 
-Underfull \hbox (badness 10000) in paragraph at lines 510--512
+Underfull \hbox (badness 10000) in paragraph at lines 512--514
 
  []
 
 [20]
 
 LaTeX Warning: Reference `Bickelhauptdftreview' on page 21 undefined on input l
-ine 539.
+ine 541.
 
 [21] [22]
 Kapitola 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 545--547
+Underfull \hbox (badness 10000) in paragraph at lines 547--549
 
  []
 
 [23]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 549.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 551.
 
  (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2703,434 +2658,372 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (11.81444pt too wide) in paragraph at lines 555--558
+Overfull \hbox (11.81444pt too wide) in paragraph at lines 557--560
 \T1/qpl/m/n/12 (-20) na-vá-zaný fos-fát a p°í-mou vazbu k°emík-uhlík. Mo-del $[
 ][][][][][][][][][][][][][][][][][][][]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 555--558
+Underfull \hbox (badness 10000) in paragraph at lines 557--560
 
  []
 
 [24]
-<rtg_4_kruh_samotne.png, id=703, 474.0912pt x 443.0151pt>
+<rtg_4_kruh_samotne.png, id=671, 474.0912pt x 443.0151pt>
 File: rtg_4_kruh_samotne.png Graphic file (type png)
 <use rtg_4_kruh_samotne.png>
-Package pdftex.def Info: rtg_4_kruh_samotne.png  used on input line 570. on inp
-ut line 570.
+Package pdftex.def Info: rtg_4_kruh_samotne.png  used on input line 572. on inp
+ut line 572.
 Package pdftex.def Info: Requested size: 170.71652pt x 159.52586pt on input lin
-e 570.
-<rtg_5_koordinace.png, id=712, 290.5254pt x 278.2395pt>
+e 572.
+<rtg_5_koordinace.png, id=680, 290.5254pt x 278.2395pt>
 File: rtg_5_koordinace.png Graphic file (type png)
 <use rtg_5_koordinace.png>
-Package pdftex.def Info: rtg_5_koordinace.png  used on input line 582. on input
- line 582.
+Package pdftex.def Info: rtg_5_koordinace.png  used on input line 584. on input
+ line 584.
 Package pdftex.def Info: Requested size: 227.62204pt x 218.00241pt on input lin
-e 582.
- [25]
-Underfull \vbox (badness 1127) has occurred while \output is active []
-
- [26 <./rtg_4_kruh_samotne.png (PNG copy)>] [27 <./rtg_5_koordinace.png (PNG co
-py)>]
-<si_ch3_och3.png, id=736, 458.9145pt x 388.8126pt>
+e 584.
+ [25] [26 <./rtg_4_kruh_samotne.png (PNG copy)>] [27 <./rtg_5_koordinace.png (P
+NG copy)>]
+<si_ch3_och3.png, id=702, 458.9145pt x 388.8126pt>
 File: si_ch3_och3.png Graphic file (type png)
 <use si_ch3_och3.png>
-Package pdftex.def Info: si_ch3_och3.png  used on input line 594. on input line
- 594.
-Package pdftex.def Info: Requested size: 142.26378pt x 120.53065pt on input lin
-e 594.
-<si_och3_4.png, id=737, 432.1746pt x 453.1329pt>
+Package pdftex.def Info: si_ch3_och3.png  used on input line 596. on input line
+ 596.
+Package pdftex.def Info: Requested size: 170.71652pt x 144.6356pt on input line
+ 596.
+<si_och3_4.png, id=703, 432.1746pt x 453.1329pt>
 File: si_och3_4.png Graphic file (type png)
 <use si_och3_4.png>
-Package pdftex.def Info: si_och3_4.png  used on input line 595. on input line 5
-95.
+Package pdftex.def Info: si_och3_4.png  used on input line 597. on input line 5
+97.
 Package pdftex.def Info: Requested size: 142.26378pt x 149.16095pt on input lin
-e 595.
-<si_ch3_och3_5.png, id=738, 456.0237pt x 442.2924pt>
+e 597.
+<si_ch3_och3_5.png, id=704, 456.0237pt x 442.2924pt>
 File: si_ch3_och3_5.png Graphic file (type png)
 <use si_ch3_och3_5.png>
-Package pdftex.def Info: si_ch3_och3_5.png  used on input line 596. on input li
-ne 596.
-Package pdftex.def Info: Requested size: 142.26378pt x 137.97983pt on input lin
-e 596.
-<si_och3_6.png, id=739, 463.2507pt x 466.1415pt>
+Package pdftex.def Info: si_ch3_och3_5.png  used on input line 598. on input li
+ne 598.
+Package pdftex.def Info: Requested size: 113.81102pt x 110.38385pt on input lin
+e 598.
+<si_och3_6.png, id=705, 463.2507pt x 466.1415pt>
 File: si_och3_6.png Graphic file (type png)
 <use si_och3_6.png>
-Package pdftex.def Info: si_och3_6.png  used on input line 597. on input line 5
-97.
+Package pdftex.def Info: si_och3_6.png  used on input line 599. on input line 5
+99.
 Package pdftex.def Info: Requested size: 142.26378pt x 143.15094pt on input lin
-e 597.
-<si_cl_4.png, id=740, 495.7722pt x 523.2348pt>
+e 599.
+<si_cl_4.png, id=706, 495.7722pt x 523.2348pt>
 File: si_cl_4.png Graphic file (type png)
 <use si_cl_4.png>
-Package pdftex.def Info: si_cl_4.png  used on input line 598. on input line 598
+Package pdftex.def Info: si_cl_4.png  used on input line 600. on input line 600
 .
 Package pdftex.def Info: Requested size: 85.35826pt x 90.08244pt on input line 
-598.
-<acetylmethyltriflurosila.png, id=741, 364.9635pt x 240.6591pt>
+600.
+<acetylmethyltriflurosila.png, id=707, 364.9635pt x 240.6591pt>
 File: acetylmethyltriflurosila.png Graphic file (type png)
 <use acetylmethyltriflurosila.png>
-Package pdftex.def Info: acetylmethyltriflurosila.png  used on input line 599. 
-on input line 599.
+Package pdftex.def Info: acetylmethyltriflurosila.png  used on input line 601. 
+on input line 601.
 Package pdftex.def Info: Requested size: 156.49014pt x 103.19128pt on input lin
-e 599.
+e 601.
 
-Overfull \hbox (14.93571pt too wide) in paragraph at lines 609--619
+Overfull \hbox (14.93571pt too wide) in paragraph at lines 610--620
  [] 
  []
 
-<si_o_et_4.png, id=745, 496.4949pt x 464.6961pt>
+<si_o_et_4.png, id=714, 496.4949pt x 464.6961pt>
 File: si_o_et_4.png Graphic file (type png)
 <use si_o_et_4.png>
-Package pdftex.def Info: si_o_et_4.png  used on input line 626. on input line 6
-26.
+Package pdftex.def Info: si_o_et_4.png  used on input line 767. on input line 7
+67.
 Package pdftex.def Info: Requested size: 142.26378pt x 133.14882pt on input lin
-e 626.
-<si_fenyl_f3.png, id=746, 283.2984pt x 401.0985pt>
+e 767.
+<si_fenyl_f3.png, id=715, 283.2984pt x 401.0985pt>
 File: si_fenyl_f3.png Graphic file (type png)
 <use si_fenyl_f3.png>
-Package pdftex.def Info: si_fenyl_f3.png  used on input line 627. on input line
- 627.
+Package pdftex.def Info: si_fenyl_f3.png  used on input line 768. on input line
+ 768.
 Package pdftex.def Info: Requested size: 85.35826pt x 120.8507pt on input line 
-627.
-<si_ch3_oac_3.png, id=747, 398.9304pt x 325.215pt>
+768.
+<si_ch3_oac_3.png, id=716, 398.9304pt x 325.215pt>
 File: si_ch3_oac_3.png Graphic file (type png)
 <use si_ch3_oac_3.png>
-Package pdftex.def Info: si_ch3_oac_3.png  used on input line 628. on input lin
-e 628.
+Package pdftex.def Info: si_ch3_oac_3.png  used on input line 769. on input lin
+e 769.
 Package pdftex.def Info: Requested size: 142.26378pt x 115.97566pt on input lin
-e 628.
-<si_ch3_och_4.png, id=748, 400.3758pt x 427.1157pt>
+e 769.
+<si_ch3_och_4.png, id=717, 400.3758pt x 427.1157pt>
 File: si_ch3_och_4.png Graphic file (type png)
 <use si_ch3_och_4.png>
-Package pdftex.def Info: si_ch3_och_4.png  used on input line 629. on input lin
-e 629.
+Package pdftex.def Info: si_ch3_och_4.png  used on input line 770. on input lin
+e 770.
 Package pdftex.def Info: Requested size: 85.35826pt x 91.05904pt on input line 
-629.
-<si_o_ac_4.png, id=749, 385.9218pt x 426.393pt>
+770.
+<si_o_ac_4.png, id=718, 385.9218pt x 426.393pt>
 File: si_o_ac_4.png Graphic file (type png)
 <use si_o_ac_4.png>
-Package pdftex.def Info: si_o_ac_4.png  used on input line 630. on input line 6
-30.
+Package pdftex.def Info: si_o_ac_4.png  used on input line 771. on input line 7
+71.
 Package pdftex.def Info: Requested size: 142.26378pt x 157.18388pt on input lin
-e 630.
-<si_ocl_oet_3.png, id=750, 380.1402pt x 420.6114pt>
+e 771.
+<si_ocl_oet_3.png, id=719, 380.1402pt x 420.6114pt>
 File: si_ocl_oet_3.png Graphic file (type png)
 <use si_ocl_oet_3.png>
-Package pdftex.def Info: si_ocl_oet_3.png  used on input line 631. on input lin
-e 631.
+Package pdftex.def Info: si_ocl_oet_3.png  used on input line 772. on input lin
+e 772.
 Package pdftex.def Info: Requested size: 142.26378pt x 157.4144pt on input line
- 631.
-<si_model_methyl.png, id=753, 430.7292pt x 252.2223pt>
-File: si_model_methyl.png Graphic file (type png)
-<use si_model_methyl.png>
-Package pdftex.def Info: si_model_methyl.png  used on input line 641. on input 
-line 641.
-Package pdftex.def Info: Requested size: 170.71652pt x 99.96732pt on input line
- 641.
-
-Underfull \hbox (badness 10000) in paragraph at lines 641--641
-[] $[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$\T1/
-qpl/m/n/10 (+20) ,
- []
-
-<si_model_orezany.png, id=754, 482.0409pt x 355.5684pt>
-File: si_model_orezany.png Graphic file (type png)
-<use si_model_orezany.png>
-Package pdftex.def Info: si_model_orezany.png  used on input line 642. on input
- line 642.
-Package pdftex.def Info: Requested size: 142.26378pt x 104.93517pt on input lin
-e 642.
-[28] [29 <./si_ch3_och3.png (PNG copy)> <./si_och3_4.png (PNG copy)> <./si_ch3_
-och3_5.png (PNG copy)> <./si_och3_6.png (PNG copy)> <./si_cl_4.png (PNG copy)> 
-<./acetylmethyltriflurosila.png (PNG copy)>] [30 <./si_o_et_4.png (PNG copy)> <
-./si_fenyl_f3.png (PNG copy)> <./si_ch3_oac_3.png (PNG copy)> <./si_ch3_och_4.p
-ng (PNG copy)> <./si_o_ac_4.png (PNG copy)> <./si_ocl_oet_3.png (PNG copy)>]
-File: struktura_puvodni.png Graphic file (type png)
-<use struktura_puvodni.png>
-Package pdftex.def Info: struktura_puvodni.png  used on input line 668. on inpu
-t line 668.
-Package pdftex.def Info: Requested size: 170.71652pt x 183.2093pt on input line
- 668.
-<srtuktura_bez_naboje.png, id=785, 506.6127pt x 467.5869pt>
-File: srtuktura_bez_naboje.png Graphic file (type png)
-<use srtuktura_bez_naboje.png>
-Package pdftex.def Info: srtuktura_bez_naboje.png  used on input line 669. on i
-nput line 669.
-Package pdftex.def Info: Requested size: 170.71652pt x 157.56474pt on input lin
-e 669.
-
-[31 <./si_model_methyl.png (PNG copy)> <./si_model_orezany.png (PNG copy)>]
-<struktura_cis.png, id=794, 442.2924pt x 317.2653pt>
-File: struktura_cis.png Graphic file (type png)
-<use struktura_cis.png>
-Package pdftex.def Info: struktura_cis.png  used on input line 677. on input li
-ne 677.
-Package pdftex.def Info: Requested size: 170.71652pt x 122.45976pt on input lin
-e 677.
-<struktura_trans.png, id=795, 416.9979pt x 472.6458pt>
-File: struktura_trans.png Graphic file (type png)
-<use struktura_trans.png>
-Package pdftex.def Info: struktura_trans.png  used on input line 678. on input 
-line 678.
-Package pdftex.def Info: Requested size: 170.71652pt x 193.49754pt on input lin
-e 678.
-<strukutra_5_opravena.png, id=796, 338.9463pt x 498.663pt>
-File: strukutra_5_opravena.png Graphic file (type png)
-<use strukutra_5_opravena.png>
-Package pdftex.def Info: strukutra_5_opravena.png  used on input line 679. on i
-nput line 679.
-Package pdftex.def Info: Requested size: 170.71652pt x 251.16464pt on input lin
-e 679.
-
-Underfull \hbox (badness 10000) in paragraph at lines 707--708
-
- []
-
-
-LaTeX Warning: Float too large for page by 27.09566pt on input line 1001.
-
-<si_ch3_59.png, id=827, 401.5pt x 401.5pt>
+ 772.
+<si_ch3_59.png, id=720, 401.5pt x 401.5pt>
 File: si_ch3_59.png Graphic file (type png)
 <use si_ch3_59.png>
-Package pdftex.def Info: si_ch3_59.png  used on input line 1006. on input line 
-1006.
+Package pdftex.def Info: si_ch3_59.png  used on input line 781. on input line 7
+81.
 Package pdftex.def Info: Requested size: 170.71652pt x 170.71794pt on input lin
-e 1006.
-<si_ch3_63.png, id=828, 401.5pt x 401.5pt>
+e 781.
+<si_ch3_63.png, id=721, 401.5pt x 401.5pt>
 File: si_ch3_63.png Graphic file (type png)
 <use si_ch3_63.png>
-Package pdftex.def Info: si_ch3_63.png  used on input line 1007. on input line 
-1007.
+Package pdftex.def Info: si_ch3_63.png  used on input line 782. on input line 7
+82.
 Package pdftex.def Info: Requested size: 170.71652pt x 170.71794pt on input lin
-e 1007.
-<si_ch3_64.png, id=829, 401.5pt x 401.5pt>
+e 782.
+<si_ch3_64.png, id=722, 401.5pt x 401.5pt>
 File: si_ch3_64.png Graphic file (type png)
 <use si_ch3_64.png>
-Package pdftex.def Info: si_ch3_64.png  used on input line 1008. on input line 
-1008.
+Package pdftex.def Info: si_ch3_64.png  used on input line 783. on input line 7
+83.
 Package pdftex.def Info: Requested size: 170.71652pt x 170.71794pt on input lin
-e 1008.
-<si_ch3_65.png, id=830, 401.5pt x 401.5pt>
+e 783.
+<si_ch3_65.png, id=723, 401.5pt x 401.5pt>
 File: si_ch3_65.png Graphic file (type png)
 <use si_ch3_65.png>
-Package pdftex.def Info: si_ch3_65.png  used on input line 1009. on input line 
-1009.
+Package pdftex.def Info: si_ch3_65.png  used on input line 784. on input line 7
+84.
 Package pdftex.def Info: Requested size: 170.71652pt x 170.71794pt on input lin
-e 1009.
-<SI_AC_70.png, id=831, 401.5pt x 401.5pt>
+e 784.
+<SI_AC_70.png, id=724, 401.5pt x 401.5pt>
 File: SI_AC_70.png Graphic file (type png)
 <use SI_AC_70.png>
-Package pdftex.def Info: SI_AC_70.png  used on input line 1017. on input line 1
-017.
+Package pdftex.def Info: SI_AC_70.png  used on input line 792. on input line 79
+2.
 Package pdftex.def Info: Requested size: 170.71652pt x 170.71794pt on input lin
-e 1017.
-<SI_AC_71.png, id=832, 1003.75pt x 1003.75pt>
+e 792.
+<SI_AC_71.png, id=725, 1003.75pt x 1003.75pt>
 File: SI_AC_71.png Graphic file (type png)
 <use SI_AC_71.png>
-Package pdftex.def Info: SI_AC_71.png  used on input line 1018. on input line 1
-018.
+Package pdftex.def Info: SI_AC_71.png  used on input line 793. on input line 79
+3.
 Package pdftex.def Info: Requested size: 170.71652pt x 170.71182pt on input lin
-e 1018.
-<SI_AC_72.png, id=833, 1003.75pt x 1003.75pt>
+e 793.
+<SI_AC_72.png, id=726, 1003.75pt x 1003.75pt>
 File: SI_AC_72.png Graphic file (type png)
 <use SI_AC_72.png>
-Package pdftex.def Info: SI_AC_72.png  used on input line 1019. on input line 1
-019.
+Package pdftex.def Info: SI_AC_72.png  used on input line 794. on input line 79
+4.
 Package pdftex.def Info: Requested size: 170.71652pt x 170.71182pt on input lin
-e 1019.
-<SI_AC_73.png, id=834, 1003.75pt x 1003.75pt>
+e 794.
+<SI_AC_73.png, id=727, 1003.75pt x 1003.75pt>
 File: SI_AC_73.png Graphic file (type png)
 <use SI_AC_73.png>
-Package pdftex.def Info: SI_AC_73.png  used on input line 1020. on input line 1
-020.
+Package pdftex.def Info: SI_AC_73.png  used on input line 795. on input line 79
+5.
 Package pdftex.def Info: Requested size: 170.71652pt x 170.71182pt on input lin
-e 1020.
-<si_o_oac_4_75.png, id=835, 254.3904pt x 233.4321pt>
-File: si_o_oac_4_75.png Graphic file (type png)
-<use si_o_oac_4_75.png>
-Package pdftex.def Info: si_o_oac_4_75.png  used on input line 1028. on input l
-ine 1028.
-Package pdftex.def Info: Requested size: 170.71652pt x 156.6587pt on input line
- 1028.
-<si_oac_74.png, id=836, 251.4996pt x 244.9953pt>
-File: si_oac_74.png Graphic file (type png)
-<use si_oac_74.png>
-Package pdftex.def Info: si_oac_74.png  used on input line 1029. on input line 
-1029.
-Package pdftex.def Info: Requested size: 170.71652pt x 166.31047pt on input lin
-e 1029.
-<si_o_ac_4_77.png, id=837, 256.5585pt x 242.8272pt>
-File: si_o_ac_4_77.png Graphic file (type png)
-<use si_o_ac_4_77.png>
-Package pdftex.def Info: si_o_ac_4_77.png  used on input line 1030. on input li
-ne 1030.
-Package pdftex.def Info: Requested size: 170.71652pt x 161.5855pt on input line
- 1030.
-<si_o_ac_4_76.png, id=838, 255.1131pt x 242.8272pt>
-File: si_o_ac_4_76.png Graphic file (type png)
-<use si_o_ac_4_76.png>
-Package pdftex.def Info: si_o_ac_4_76.png  used on input line 1031. on input li
-ne 1031.
-Package pdftex.def Info: Requested size: 170.71652pt x 162.497pt on input line 
-1031.
-<si_ch3_oac3_62.png, id=839, 182.1204pt x 182.8431pt>
-File: si_ch3_oac3_62.png Graphic file (type png)
-<use si_ch3_oac3_62.png>
-Package pdftex.def Info: si_ch3_oac3_62.png  used on input line 1039. on input 
-line 1039.
-Package pdftex.def Info: Requested size: 170.71652pt x 171.40381pt on input lin
-e 1039.
-<si_ch3_oac3_63.png, id=840, 202.356pt x 207.4149pt>
-File: si_ch3_oac3_63.png Graphic file (type png)
-<use si_ch3_oac3_63.png>
-Package pdftex.def Info: si_ch3_oac3_63.png  used on input line 1040. on input 
-line 1040.
-Package pdftex.def Info: Requested size: 170.71652pt x 174.99323pt on input lin
-e 1040.
-<si_ch3_oac3_64.png, id=841, 210.3057pt x 198.0198pt>
-File: si_ch3_oac3_64.png Graphic file (type png)
-<use si_ch3_oac3_64.png>
-Package pdftex.def Info: si_ch3_oac3_64.png  used on input line 1041. on input 
-line 1041.
-Package pdftex.def Info: Requested size: 170.71652pt x 160.74867pt on input lin
-e 1041.
-<si_ch3_oac3_66.png, id=842, 216.0873pt x 208.1376pt>
-File: si_ch3_oac3_66.png Graphic file (type png)
-<use si_ch3_oac3_66.png>
-Package pdftex.def Info: si_ch3_oac3_66.png  used on input line 1042. on input 
-line 1042.
-Package pdftex.def Info: Requested size: 170.71652pt x 164.43959pt on input lin
-e 1042.
+e 795.
+<si_model_methyl.png, id=730, 430.7292pt x 252.2223pt>
+File: si_model_methyl.png Graphic file (type png)
+<use si_model_methyl.png>
+Package pdftex.def Info: si_model_methyl.png  used on input line 804. on input 
+line 804.
+Package pdftex.def Info: Requested size: 170.71652pt x 99.96732pt on input line
+ 804.
+<si_model_orezany.png, id=731, 482.0409pt x 355.5684pt>
+File: si_model_orezany.png Graphic file (type png)
+<use si_model_orezany.png>
+Package pdftex.def Info: si_model_orezany.png  used on input line 805. on input
+ line 805.
+Package pdftex.def Info: Requested size: 142.26378pt x 104.93517pt on input lin
+e 805.
+[28] [29 <./si_ch3_och3.png (PNG copy)> <./si_och3_4.png (PNG copy)> <./si_ch3_
+och3_5.png (PNG copy)> <./si_och3_6.png (PNG copy)> <./si_cl_4.png (PNG copy)> 
+<./acetylmethyltriflurosila.png (PNG copy)>] [30] [31 <./si_o_et_4.png (PNG cop
+y)> <./si_fenyl_f3.png (PNG copy)> <./si_ch3_oac_3.png (PNG copy)> <./si_ch3_oc
+h_4.png (PNG copy)> <./si_o_ac_4.png (PNG copy)> <./si_ocl_oet_3.png (PNG copy)
+>] [32 <./si_ch3_59.png (PNG copy)> <./si_ch3_63.png (PNG copy)> <./si_ch3_64.p
+ng (PNG copy)> <./si_ch3_65.png (PNG copy)>] [33 <./SI_AC_70.png (PNG copy)> <.
+/SI_AC_71.png (PNG copy)> <./SI_AC_72.png (PNG copy)> <./SI_AC_73.png (PNG copy
+)>]
+Underfull \hbox (badness 10000) in paragraph at lines 826--826
+[]\T1/qpl/m/n/12 (+20) Tabulka 3.9: []MPA ana-lýza vy-bra-ných MO or-bi-tal·
+ []
 
-Overfull \hbox (22.30591pt too wide) in paragraph at lines 1054--1065
+
+Underfull \hbox (badness 10000) in paragraph at lines 826--826
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$\T1/qpl/
+m/n/12 (+20) , \T1/qpl/b/n/12 M\T1/qpl/m/n/12 (+20) , vý-sledky jsou uve-deny
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 845--845
+[]\T1/qpl/m/n/12 (+20) Tabulka 3.10: []MPA ana-lýza vy-bra-ných MO or-bi-tal·
+ []
+
+File: struktura_puvodni.png Graphic file (type png)
+<use struktura_puvodni.png>
+Package pdftex.def Info: struktura_puvodni.png  used on input line 887. on inpu
+t line 887.
+Package pdftex.def Info: Requested size: 170.71652pt x 183.2093pt on input line
+ 887.
+<srtuktura_bez_naboje.png, id=786, 506.6127pt x 467.5869pt>
+File: srtuktura_bez_naboje.png Graphic file (type png)
+<use srtuktura_bez_naboje.png>
+Package pdftex.def Info: srtuktura_bez_naboje.png  used on input line 888. on i
+nput line 888.
+Package pdftex.def Info: Requested size: 170.71652pt x 157.56474pt on input lin
+e 888.
+<struktura_cis.png, id=787, 442.2924pt x 317.2653pt>
+File: struktura_cis.png Graphic file (type png)
+<use struktura_cis.png>
+Package pdftex.def Info: struktura_cis.png  used on input line 896. on input li
+ne 896.
+Package pdftex.def Info: Requested size: 170.71652pt x 122.45976pt on input lin
+e 896.
+<struktura_trans.png, id=788, 416.9979pt x 472.6458pt>
+File: struktura_trans.png Graphic file (type png)
+<use struktura_trans.png>
+Package pdftex.def Info: struktura_trans.png  used on input line 897. on input 
+line 897.
+Package pdftex.def Info: Requested size: 170.71652pt x 193.49754pt on input lin
+e 897.
+<strukutra_5_opravena.png, id=789, 338.9463pt x 498.663pt>
+File: strukutra_5_opravena.png Graphic file (type png)
+<use strukutra_5_opravena.png>
+Package pdftex.def Info: strukutra_5_opravena.png  used on input line 898. on i
+nput line 898.
+Package pdftex.def Info: Requested size: 170.71652pt x 251.16464pt on input lin
+e 898.
+
+Overfull \hbox (22.30591pt too wide) in paragraph at lines 948--959
  [] 
  []
 
-[32 <./srtuktura_bez_naboje.png (PNG copy)>] [33 <./struktura_cis.png (PNG copy
-)> <./struktura_trans.png (PNG copy)> <./strukutra_5_opravena.png (PNG copy)>]
-[34] [35] [36] [37] [38] [39] [40] [41] [42] [43 <./si_ch3_59.png (PNG copy)> <
-./si_ch3_63.png (PNG copy)> <./si_ch3_64.png (PNG copy)> <./si_ch3_65.png (PNG 
-copy)>] [44 <./SI_AC_70.png (PNG copy)> <./SI_AC_71.png (PNG copy)> <./SI_AC_72
-.png (PNG copy)> <./SI_AC_73.png (PNG copy)>] [45 <./si_o_oac_4_75.png (PNG cop
-y)> <./si_oac_74.png (PNG copy)> <./si_o_ac_4_77.png (PNG copy)> <./si_o_ac_4_7
-6.png (PNG copy)>] [46 <./si_ch3_oac3_62.png (PNG copy)> <./si_ch3_oac3_63.png 
-(PNG copy)> <./si_ch3_oac3_64.png (PNG copy)> <./si_ch3_oac3_66.png (PNG copy)>
-] [47]
+[34] [35 <./si_model_methyl.png (PNG copy)> <./si_model_orezany.png (PNG copy)>
+] [36 <./srtuktura_bez_naboje.png (PNG copy)>] [37] [38] [39] [40 <./struktura_
+cis.png (PNG copy)> <./struktura_trans.png (PNG copy)> <./strukutra_5_opravena.
+png (PNG copy)>] [41]
 Kapitola 4.
 
-Overfull \hbox (26.74248pt too wide) in paragraph at lines 1081--1082
+Overfull \hbox (26.74248pt too wide) in paragraph at lines 1027--1028
 \T1/qpl/m/n/12 (-20) Tato práce vznikla za pod-pory pro-jekt· CE-RIT Scien-ti-f
 ic Cloud (LM2015085)
  []
 
-[48]
+[42] [43]
 Kapitola 5.
-[49] [50]
+[44] [45]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [51]
+ [46]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [52]
-[53]
+ [47]
+[48]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [54]
+ [49]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [55]
-[56]
+ [50]
+[51]
 
 Package biblatex Warning: No driver for entry type 'masterthesis'.
-(biblatex)                Using fallback driver on input line 1345.
+(biblatex)                Using fallback driver on input line 1291.
 
 
-Overfull \hbox (1.09071pt too wide) in paragraph at lines 1345--1345
+Overfull \hbox (1.09071pt too wide) in paragraph at lines 1291--1291
 \T1/qpl/m/n/12 (-20) BIAK, Mi-chal; BAR-NES, Craig E.; PIN-KAS, Jiri. Con-t-rol
  of micro/-
  []
 
 
-Overfull \hbox (7.87964pt too wide) in paragraph at lines 1345--1345
+Overfull \hbox (7.87964pt too wide) in paragraph at lines 1291--1291
 []\T1/qpl/m/n/12 (-20) STÝSKALÍK, Ale². \T1/qpl/m/it/12 Syn-thesis of me-tallo-
 phosphate ma-te-ri-als by nonhyd-
  []
 
 
-Overfull \hbox (51.63351pt too wide) in paragraph at lines 1345--1345
+Overfull \hbox (51.63351pt too wide) in paragraph at lines 1291--1291
 \T1/qpl/m/n/12 (-20) 1971, ro£. 27, £. 3, s. 594^^U601. Do-stupné z DOI: []$\T1
 /lmtt/m/n/12 10 . 1107 / S0567740871002619$[]\T1/qpl/m/n/12 (-20) . 
  []
 
 
-Overfull \hbox (16.63727pt too wide) in paragraph at lines 1345--1345
+Overfull \hbox (16.63727pt too wide) in paragraph at lines 1291--1291
 []\T1/qpl/m/n/12 (-20) WAGLER, Jörg; BÖHME, Uwe; KROKE, Edwin. Higher-Coordinat
 ed
  []
 
-[57]
-LaTeX Font Info:    Try loading font information for OMS+qpl on input line 1345
+[52]
+LaTeX Font Info:    Try loading font information for OMS+qpl on input line 1291
 .
-LaTeX Font Info:    No file OMSqpl.fd. on input line 1345.
+LaTeX Font Info:    No file OMSqpl.fd. on input line 1291.
 
 
 LaTeX Font Warning: Font shape `OMS/qpl/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textperiodcentered' on input line 1345.
+(Font)              for symbol `textperiodcentered' on input line 1291.
 
 
-Overfull \hbox (12.18541pt too wide) in paragraph at lines 1345--1345
+Overfull \hbox (12.18541pt too wide) in paragraph at lines 1291--1291
 \T1/qpl/m/n/12 (-20) REID, Gil-lian; SAN-DER-SON, Ge-orge; WEB-STER, Mi-chael; 
 ZHANG,
  []
 
 
-Overfull \hbox (109.16888pt too wide) in paragraph at lines 1345--1345
+Overfull \hbox (109.16888pt too wide) in paragraph at lines 1291--1291
 \T1/qpl/m/n/12 (-20) (triflu-o-ro-me-thyl)trimethylsilane: mo-lecu-lar structur
 e of tris(dimethylamino)sulfonium
  []
 
-[58]
-Overfull \hbox (0.32057pt too wide) in paragraph at lines 1345--1345
+[53]
+Overfull \hbox (0.32057pt too wide) in paragraph at lines 1291--1291
 []\T1/qpl/m/n/12 (-20) HOHENBERG, P.; KOHN, W. Inho-mo-ge-ne-ous Electron Gas. 
 \T1/qpl/m/it/12 Phys.
  []
 
 
-Overfull \hbox (2.38977pt too wide) in paragraph at lines 1345--1345
+Overfull \hbox (2.38977pt too wide) in paragraph at lines 1291--1291
 []\T1/qpl/m/n/12 (-20) BECKE, A. D. Density-functional exchange-energy ap-pro-x
 i-mation
  []
 
-[59] [60]
-Overfull \hbox (1.04366pt too wide) in paragraph at lines 1345--1345
+[54] [55]
+Overfull \hbox (1.04366pt too wide) in paragraph at lines 1291--1291
 \T1/qpl/m/n/12 (-20) BIAK, Mi-chal; BAR-NES, Craig E.; PIN-KAS, Ji°í. Con-t-rol
  of micro/-
  []
 
 
-Overfull \hbox (50.66696pt too wide) in paragraph at lines 1345--1345
+Overfull \hbox (50.66696pt too wide) in paragraph at lines 1291--1291
 \T1/qpl/m/n/12 (-20) 2440^^U2449. ISSN 1608-3350. Do-stupné z DOI: []$\T1/lmtt/
 m/n/12 10 . 1134 / S107036321112005X$[]\T1/qpl/m/n/12 (-20) . 
  []
 
 
-Overfull \hbox (0.48349pt too wide) in paragraph at lines 1345--1345
+Overfull \hbox (0.48349pt too wide) in paragraph at lines 1291--1291
 []\T1/qpl/m/n/12 (-20) TACKE, Re-inhold; BUR-SCHKA, Chris-tian; RICH-TER, Ingo;
  WAG-
  []
 
-[61] [62]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1351.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1351.
+[56] [57]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1297.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1297.
  (./sci-pdflatex.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1351.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1351.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1297.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1297.
 
 Package rerunfilecheck Info: File `sci-pdflatex.out' has not changed.
-(rerunfilecheck)             Checksum: CF5551684918D69677C73FAB6D6FBBB1;4140.
+(rerunfilecheck)             Checksum: E3CA6743EDBC58AE61E036DBBD2CD263;3999.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -3146,10 +3039,10 @@ Package logreq Info: Writing requests to 'sci-pdflatex.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46332 strings out of 492985
- 842040 string characters out of 6132571
- 1499785 words of memory out of 5000000
- 48378 multiletter control sequences out of 15000+600000
+ 46279 strings out of 492985
+ 841141 string characters out of 6132571
+ 1480994 words of memory out of 5000000
+ 48361 multiletter control sequences out of 15000+600000
  643165 words of font info for 204 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  69i,20n,85p,10374b,3151s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3168,10 +3061,10 @@ lb.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tex-gyre/qplri.pfb></us
 r/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local
 /texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on sci-pdflatex.pdf (73 pages, 3139081 bytes).
+Output written on sci-pdflatex.pdf (68 pages, 3020634 bytes).
 PDF statistics:
- 1468 PDF objects out of 1728 (max. 8388607)
- 1294 compressed objects within 13 object streams
- 545 named destinations out of 1000 (max. 500000)
- 32265 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 1370 PDF objects out of 1440 (max. 8388607)
+ 1213 compressed objects within 13 object streams
+ 515 named destinations out of 1000 (max. 500000)
+ 32209 words of extra memory for PDF output out of 35830 (max. 10000000)
 
