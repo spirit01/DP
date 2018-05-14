@@ -44,12 +44,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}\slshape Mal\IeC {\'e} modely}{28}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}\slshape St\IeC {\v r}edn\IeC {\v e} velk\IeC {\'e} modely}{34}{section.3.4}
+\contentsline {section}{\numberline {3.4}\slshape St\IeC {\v r}edn\IeC {\v e} velk\IeC {\'e} modely}{35}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}\slshape Velk\IeC {\'e} modely}{34}{section.3.5}
+\contentsline {section}{\numberline {3.5}\slshape Velk\IeC {\'e} modely}{35}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}\bfseries Z\IeC {\'a}v\IeC {\v e}r}{42}{chapter.4}
+\contentsline {chapter}{\numberline {4}\bfseries Z\IeC {\'a}v\IeC {\v e}r}{45}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}\bfseries P\IeC {\v r}\IeC {\'\i }lohy}{44}{chapter.5}
+\contentsline {chapter}{\numberline {5}\bfseries P\IeC {\v r}\IeC {\'\i }lohy}{46}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Literatura}{52}{chapter*.10}
+\contentsline {chapter}{Literatura}{54}{chapter*.10}
