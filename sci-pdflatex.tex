@@ -8,15 +8,15 @@
 
 \documentclass[
 digital, %% This option enables the default options for the
- %% digital version of a document. Replace with `printed`
- %% to enable the default options for the printed version
- %% of a document.
+%% digital version of a document. Replace with `printed`
+%% to enable the default options for the printed version
+%% of a document.
 table,   %% Causes the coloring of tables. Replace with `notable`
- %% to restore plain tables.
+%% to restore plain tables.
 lof,     %% Prints the List of Figures. Replace with `nolof` to
- %% hide the List of Figures.
+%% hide the List of Figures.
 lot,     %% Prints the List of Tables. Replace with `nolot` to
- %% hide the List of Tables.
+%% hide the List of Tables.
 %% More options are listed in the user guide at
 %% <http://mirrors.ctan.org/macros/latex/contrib/fithesis/guide/mu/sci.pdf>.
 oneside,
@@ -26,8 +26,8 @@ oneside,
 \usepackage[T1,T2A]{fontenc}  %% to use the Cyrillic fonts with Russian texts.
 \usepackage[
 main=czech,  %% By using `czech` or `english` as the main locale
-      %% instead of `slovak`, you can typeset the thesis
-      %% in either Czech or English, respectively.
+%% instead of `slovak`, you can typeset the thesis
+%% in either Czech or English, respectively.
 english, german, russian, czech, slovak %% The additional keys allow
 ]{babel}        %% foreign texts to be typeset as follows:
 %%
@@ -89,18 +89,18 @@ TeXkeywordsCs = {klíčové slovo 1, klíčové slovo 2, \ldots},
 },
 abstract      = {This is the abstract of my thesis, which can
 
-           span multiple paragraphs.},
+span multiple paragraphs.},
 abstractEn    = {This is the English abstract of my thesis, which can
 
-           span multiple paragraphs.},
+span multiple paragraphs.},
 extra = {
 abstractCs   = {This is the Czech abstract of my thesis, which can
 
-            span multiple paragraphs.},
+span multiple paragraphs.},
 },
 thanks        = {These are the acknowledgements for my thesis, which can
 
-           span multiple paragraphs.},
+span multiple paragraphs.},
 bib           = example.bib,
 %% Uncomment the following line (by removing the % symbol at
 %% the beginning) and replace `assignment.pdf` with the
@@ -122,6 +122,8 @@ bib           = example.bib,
 \usepackage{braket}
 \usepackage{tikz}
 \usepackage{verbatim}
+\usepackage{footmisc}
+
 \renewcommand{\thesubfigure}{}
 %\usepackage{subcaption}
 \usepackage{graphicx}
@@ -175,66 +177,66 @@ Obrázek \ref{si_polymer_cely} znázorňuje předpokládanou strukturu silikofos
 \begin{tikzpicture}[thick,scale=0.6, every node/.style={scale=0.6}]
 
 \node at (-4,1) { \chemfig{
-        HO% 2
+HO% 2
 -[:330,,2]P% 1
-           (-[:270,,,1]OH% 4
-           )
-           (=[:30]O)% 5
-           %\arrow ([:70]K))
+(-[:270,,,1]OH% 4
+)
+(=[:30]O)% 5
+%\arrow ([:70]K))
 -[:210,,,2]HO% 3
 }};
 \node at (-2,3)(angle=70){\chemfig{
-         R% 2
-  -[:270]Si% 1
-            (
-           <:O% 4
-      -[,,,1]P% 7
-            )
-            (
-      <[:300]O% 5
-  -[:270,,,1]P% 6
-            )
-  -[:210]O% 3
+R% 2
+-[:270]Si% 1
+(
+<:O% 4
+-[,,,1]P% 7
+)
+(
+<[:300]O% 5
+-[:270,,,1]P% 6
+)
+-[:210]O% 3
 -[:150,,,1]P% 8
 }};
 \draw[-stealth] (-2.65,2.2) -- (-2.2,3.3);
 \node at (4,1.5)  {\small \chemfig{
-        HO% 2
+HO% 2
 -[:330,,2]P% 1
-           (
- -[:270,,,1]OH% 4
-           )
-           (
-      =[:30]O% 5
-           )
+(
+-[:270,,,1]OH% 4
+)
+(
+=[:30]O% 5
+)
 -[:210,,,2]HO% 3 \schemestop
 }};
 \draw[-stealth] (5.3,2.6) -- (5.8,3.3);
 \draw[-stealth] (7.4,2.4) -- (6.2,3.3);
 
 \node at (6,3)  {\chemfig{
-         R% 2
-  -[:270]Si% 1 \schemestop
-            (
-           <:O% 4
-      -[,,,1]P% 7
-            )
-            (
-      <[:300]O% 5
-  -[:270,,,1]P% 6
-            )
-  -[:210]O% 3
+R% 2
+-[:270]Si% 1 \schemestop
+(
+<:O% 4
+-[,,,1]P% 7
+)
+(
+<[:300]O% 5
+-[:270,,,1]P% 6
+)
+-[:210]O% 3
 -[:150,,,1]P% 8
 }};
 \node at (9,1.5) { \chemfig{
-    O% 2
+O% 2
 =[:330]P% 1
-       (
+(
 -[:270,,,1]OH% 3
-       )
-       (
+)
+(
 -[:60,,,1]OH% 5
-       )
+)
 -[,,,1]OH% 4
 }};
 \end{tikzpicture}
@@ -245,59 +247,59 @@ Obrázek \ref{si_polymer_cely} znázorňuje předpokládanou strukturu silikofos
 \draw[-stealth] (5.55,2.45) -- (5.8,2.8);
 
 \node at (-4.5,1) { \chemfig{
- O% 2
+O% 2
 =[:210]P% 1
-    (
+(
 -[:210]O% 4
 -[:240,,,1]Si% 7
-    )
-    (
+)
+(
 -[:270]O% 5
 -[:330,,,1]Si% 8
-    )
+)
 -[:120]O% 3
 -[:150]R% 6
 }};
 \node at (-2,3){\chemfig{
-     O% 2
+O% 2
 -[:270,,1]Si% 1
-        (
+(
 -[:180,,,1]O% 3
-        )
-        (
+)
+(
 <:[:30,,,1]O% 5
-      )
-        (
-  -[,,,1]O% 5
-        )
+)
+(
+-[,,,1]O% 5
+)
 -[:270,,,1]O% 4
 }};
 \node at (4,1.5)  {\chemfig{
- O% 2
+O% 2
 =[:210]P% 1
-    (
+(
 -[:210]O% 4
 -[:240,,,1]Si% 7
-    )
-    (
+)
+(
 -[:270]O% 5
 -[:330,,,1]Si% 8
-    )
+)
 -[:120]O% 3
 -[:150]R% 6
 }};
 \node at (6,3) {\chemfig{
-     O% 2
+O% 2
 -[:270,,1]Si% 1
-        (
+(
 -[:180,,,1]O% 3
-        )
-        (
+)
+(
 <:[:30,,,1]O% 5
-      )
-        (
-  -[,,,1]O% 5
-        )
+)
+(
+-[,,,1]O% 5
+)
 -[:270,,,1]O% 4
 }};
 \end{tikzpicture}
@@ -558,7 +560,7 @@ Struktury pro výpočetní část jsou rozděleny podle velikosti, podle stupně
 Modely střední velikosti reprezentovaly širší okolí křemíku \ref{prehled_middle} a už obsahovaly cykly, prozatím bez síťování, které je pro silikofosfáty typické. \\
 Model \ce{SiCH3(PO4)CH3(SiP2O10)(CH3)4} obsahoval jeden cyklus, volně navázaný fosfát a přímou vazbu křemík-uhlík. Model \ce{Si(P2SiO10(CH3)4)2} už obsahoval dva cykly, které byly pozorovány v silikofosfátových polymerech. Jednalo se o nejmenší model, který už obsahoval dva cykly.\\
 
-Poslední část, velké modely, se věnovala již pouze hypervaletnímu křemíku. Zde je klíčové zmínit, že naše modely byly pouze výseky z rozsáhlých struktur polymerů a chyběla stabilizace okolními atomy. Z tohoto důvodu byla snaha zachování neutrálního náboje pro všechny struktury. Výjimku tvořila původní rentgenová srtuktura křemíku \cite{C3NJ00721A}, \textbf{O}, která byla zároveň výchozí strukturou \ref{prehled_large}, \textbf{O}.
+Poslední část, velké modely, se věnovala již pouze hypervaletnímu křemíku. Zde je klíčové zmínit, že naše modely byly pouze výseky z rozsáhlých struktur polymerů a chyběla stabilizace okolními atomy. Z tohoto důvodu byla snaha zachování neutrálního náboje pro všechny struktury. Výjimku tvořila původní rentgenová srtuktura křemíku \textbf{O}, ze článku\cite{C3NJ00721A},  která byla zároveň výchozí strukturou pro všechny velké modely křemíku v koordinaci šest \ref{prehled_large}.
 %\begin{figure}
 %\begin{center}
 %\includegraphics[width=8cm]{rtg_6.png}
@@ -566,7 +568,7 @@ Poslední část, velké modely, se věnovala již pouze hypervaletnímu křemí
 %\label{rtg_6}
 %\end{center}
 %\end{figure}
-V tomto modelu je křemík oblopen šesti fosfáty, které jsou vzájemně zesíťované přes další čtyřkoordinované křemíky. Přítomnost osmičlenného cyklu v silikofosfátech byla potvrzena rentgenovou strukturou \cite{rtg_4_pinkas} a dále podle ní byly vytvářeny cykly v dalších modelech.
+V modelu \textbf{O} je křemík obklopen šesti fosfáty, které jsou vzájemně zesíťované přes další čtyřkoordinované křemíky. Přítomnost osmičlenného cyklu v silikofosfátech byla potvrzena rentgenovou strukturou \ref{4} ve článku \cite{rtg_4_pinkas}. Sloužila jako motiv pro vytváření cyklů v silikofofátových polymerech.
 \begin{figure}
 \begin{center}
 \includegraphics[width=6cm]{rtg_4_kruh_samotne.png}
@@ -574,7 +576,7 @@ V tomto modelu je křemík oblopen šesti fosfáty, které jsou vzájemně zesí
 \label{rtg_4}
 \end{center}
 \end{figure}
-Z tohoto modelu vycházely všechny ostatní velké struktury se šestikoordinovaným křemíkem. V experimentálních strukturách silikofosfátů byly pozorovány krom fosfátových skupiny také různé acetátové skupiny. Právě přítomnost acetátových skupin měla vliv na chování křemíku a jeho sklon k hypervalenci. Acetátové skupiny se  v okolí křemíku vždy vyskytovaly po dvou a tento jev byl dodržen i v modelových strukturách. Zvolila jsem dvě možnosti umístění acetátových skupin. V prvním případě se acetylové skupiny vůči sobě vyskytovaly v poloze trans \ref{prehled_largeI},  \textbf{R}, ve druhém případě se vysvytovaly v poloze cis \ref{prehled_largeI},  \textbf{Q}.
+V experimentálních strukturách silikofosfátů byly pozorovány krom fosfátových skupiny také různé acetátové skupiny. Právě přítomnost acetátových skupin měla vliv na chování křemíku a jeho sklon k hypervalenci. Acetátové skupiny se  v okolí křemíku vždy vyskytovaly po dvou a tento jev byl dodržen i v modelových strukturách. Zvolila jsem dvě možnosti umístění acetátových skupin. V prvním případě se acetylové skupiny vůči sobě vyskytovaly v poloze trans \ref{prehled_largeI},  \textbf{R}, ve druhém případě se vysvytovaly v poloze cis \ref{prehled_largeI},  \textbf{Q}.
 Při modelování silikofosfátů s acetátovými skupinami v polohách cis a trans jsme vycházeli z uspořádání v původní rentgenové struktuře. Naší snahou bylo zachování původních šesti cyklů. Proto v prvním kole optimalizace bylo ponecháno šest cyklů a dvě fosfátové skupiny nahrazeny acetátovými. Tento model měl problém s vazebným úhlem na atomech 50-11-52 a torzním úhlu na atomech 52 - 11 - 50 - 51 a 50 - 11 - 52 - 54. Jako řešení situace jsme zvolili odstranění dvou cyklů a uvolnění napětí na jednotlivých cyklech. Počet cyklů dva byl zvolen z důvodu zachování symetrie. Uvolněná struktura silikofosfátu s acetáty v poloze trans byla opět optimalizována, tentokrát s pseudopotenciálem z důvodu velikosti struktury. Ve druhém kroku byla provedena optimalizace již s B3LYP/6-31G*. \\
 Pro model silikofosfátu s acetátem v poloze cis byla situace obdobná. Výchozí strukturou byl původní model z rtg \ref{prehled_large}, \textbf{O}, kde bylz dva fosfátz nahrazenz acetylz. Toto uspořádání opět vedlo k přílišnému napětí na cyklech a z tohoto důvodu byla provedena stejná operace, jako pro model s acetátem v poloze trans. V modelu silikofofátu s acetátem v poloze cis byly odstraněny nejprve dva cykly a následně ještě jeden, protože struktura stále vykazovala špatné torzní úhly.
 Pro strukturu s acetátem v poloze cis bylo nutno odstranit celkově čtyři cykly a výsledný počet cyklů v molekule byl dva. Acetáty byly umístěné v ekvatoriální rovině stejně jako volný fosfát. \\
@@ -628,10 +630,9 @@ Malé modely podávají podrobnější pohled na charakter vazby Si-C a lze je r
 \begin{tabular}{|l|c|c|c|c|c|c|c|}
 \hline
 \label{nbo_small} &  Vazba & O.Č\footnote{Obsazovací číslo křemíku} & Si & X\footnote{Procenta druhého atomu ve  vazbě} & Si(s) & Si(p) &Si(d) \\ \hline
-\textbf{A} & (1)Si - (2)O  & 0,066 & 88,3  & 11,7  & 23,9  & 51,9  & 24,2  \\ \hline
-&  (1)Si - (3)O & 0,111 & 86,5  & 13,5  & 23,2  & 73,3  & 3,5  \\ \hline
-&  (1)Si - (3)O & 0,092 & 97,1  & 2,9  & 0,2  & 56,7  & 43,3  \\ \hline
-&  (1)Si - (4)O & 0,065 & 88,5  & 11,5  & 23,6  & 50,2  & 26,2  \\ \hline
+\textbf{A} & (1)Si - O\footnote{ Obsazovací čísla jsou stejná pro vazby (1)Si - (2)O (1)Si - (4)O}  & 0,066 & 88,4  & 11,6  & 23,8  & 51,1  & 25,2  \\ \hline
+&  (1)Si - (3)O\footnote{v priprave} & 0,111 & 86,5  & 13,5  & 23,2  & 73,3  & 3,5  \\ \hline
+&  (1)Si - (3)O\footnote{v priprave} & 0,092 & 97,1  & 2,9  & 0,2  & 56,7  & 43,3  \\ \hline
 & (1)Si - (17)C & 0,073 & 75,5  & 24,5  & 29,3  & 68,9  & 1,8  \\ \hline
 \textbf{B} & (1)Si - O\footnote{Obsazovací čísla jsou stejná pro vazby (1)Si-(2)O, (1)Si - (3)O, (1)Si - (4)O a (1)Si - (5)O.}  & 0,104 & 86,1  & 13,9  & 25,0  & 71,4  & 3,6  \\ \hline
 \textbf{C} & (1)Si - (2)O  & 0,100 & 92,1  & 7,9  & 16,0  & 50,0  & 33,9  \\ \hline
@@ -700,23 +701,23 @@ Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.}\label{si_och3_4_MPA
 \begin{minipage}{\textwidth}
 \caption{MPA analýza LUMO orbitalu pro \ce{SiCH3(OCH3)5^{2-}},  \textbf{C}, výsledky jsou uvedeny v [\%].}
 \begin{center}
- \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|}
 \hline
 \label{si_ch3_och3_5_MPA}Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.}  &  & 28 & 45 & 46 & 47 & 48 & 51 & 52 & 55 \\ \hline
 (1)Si & s & 13,2  & 2,1  & 1,1  & 0,0  & 0,2  & 0,0  & 0,0  & 0,3  \\ \hline
- & p & 0,4  & 2,2  & 4,9  & 2,9  & 2,7  & 1,8  & 1,1  & 2,3  \\ \hline
+& p & 0,4  & 2,2  & 4,9  & 2,9  & 2,7  & 1,8  & 1,1  & 2,3  \\ \hline
 (2)O & s & 0,3  & 2,9  & 0,6  & 2,0  & 0,5  & 0,1  & 0,0  & 0,0  \\ \hline
- & p & 5,8  & 15,0  & 7,8  & 4,7  & 17,4  & 13,3  & 9,5  & 8,2  \\ \hline
+& p & 5,8  & 15,0  & 7,8  & 4,7  & 17,4  & 13,3  & 9,5  & 8,2  \\ \hline
 (3)O & s & 0,5  & 0,1  & 7,0  & 0,1  & 0,7  & 0,0  & 0,0  & 0,2  \\ \hline
- & p & 7,0  & 0,2  & 26,8  & 13,8  & 1,1  & 43,8  & 0,6  & 0,6  \\ \hline
+& p & 7,0  & 0,2  & 26,8  & 13,8  & 1,1  & 43,8  & 0,6  & 0,6  \\ \hline
 (4)O & s & 0,4  & 2,1  & 0,2  & 1,6  & 2,1  & 0,0  & 0,2  & 0,0  \\ \hline
- & p & 4,3  & 6,6  & 2,2  & 21,2  & 12,8  & 9,0  & 1,9  & 8,8  \\ \hline
+& p & 4,3  & 6,6  & 2,2  & 21,2  & 12,8  & 9,0  & 1,9  & 8,8  \\ \hline
 (5)O & s & 0,4  & 1,9  & 0,1  & 1,6  & 2,1  & 0,1  & 0,0  & 0,2  \\ \hline
- & p & 4,2  & 4,1  & 4,5  & 4,8  & 32,5  & 0,6  & 27,9  & 26,6  \\ \hline
+& p & 4,2  & 4,1  & 4,5  & 4,8  & 32,5  & 0,6  & 27,9  & 26,6  \\ \hline
 (6)O & s & 0,4  & 3,7  & 1,3  & 1,3  & 0,7  & 0,0  & 0,1  & 0,2  \\ \hline
- & p & 4,8  & 8,9  & 12,2  & 19,9  & 3,5  & 17,7  & 42,2  & 22,3  \\ \hline
+& p & 4,8  & 8,9  & 12,2  & 19,9  & 3,5  & 17,7  & 42,2  & 22,3  \\ \hline
 (7)C & s & 0,2  & 1,1  & 0,3  & 0,0  & 0,0  & 0,3  & 0,3  & 0,1  \\ \hline
- & p & 3,1  & 2,0  & 0,8  & 1,2  & 0,5  & 0,1  & 0,5  & 0,4  \\ \hline
+& p & 3,1  & 2,0  & 0,8  & 1,2  & 0,5  & 0,1  & 0,5  & 0,4  \\ \hline
 \end{tabular}\end{center}\end{minipage}
 \end{table}
 
@@ -744,22 +745,22 @@ Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.}  \label{si_och3_6_M
 \end{tabular}\end{center}\end{minipage}\end{table}
 
 \begin{table}[htbp] \begin{minipage}{\textwidth}
-  \begin{center}
-  \caption{MPA analýza vybraných MO orbitalů acetylmethyltrifluorsilan, \textbf{E}, výsledky jsou uvedeny v [\%].}
-  \begin{tabular}{|l|l|r|r|r|r|}
-  \hline
-  Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.} \label{si_cl4} &  & 30 & 31 & 32 & 33 \\ \hline
-  Si & s & 42,5  & 0,0  & 0,0  & 0,0  \\ \hline
-   & p & 0,0  & 18,5  & 18,5  & 18,5  \\ \hline
-  Cl & s & 12,0  & 0,3  & 3,5  & 7,2  \\ \hline
-   & p & 5,5  & 5,7  & 12,8  & 20,7  \\ \hline
-  Cl & s & 12,0  & 8,9  & 2,0  & 0,1  \\ \hline
-   & p & 5,5  & 24,5  & 9,5  & 5,2  \\ \hline
-  Cl & s & 12,0  & 0,0  & 3,6  & 7,4  \\ \hline
-   & p & 5,5  & 5,1  & 12,8  & 21,2  \\ \hline
-  Cl & s & 12,0  & 5,5  & 5,5  & 0,0  \\ \hline
-   & p & 5,5  & 16,9  & 17,0  & 5,1  \\ \hline
-  \end{tabular}\end{center}\end{minipage}\end{table}
+\begin{center}
+\caption{MPA analýza vybraných MO orbitalů acetylmethyltrifluorsilan, \textbf{E}, výsledky jsou uvedeny v [\%].}
+\begin{tabular}{|l|l|r|r|r|r|}
+\hline
+Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.} \label{si_cl4} &  & 30 & 31 & 32 & 33 \\ \hline
+(1)Si & s & 42,5  & 0,0  & 0,0  & 0,0  \\ \hline
+& p & 0,0  & 18,5  & 18,5  & 18,5  \\ \hline
+(2)Cl & s & 12,0  & 0,3  & 3,5  & 7,2  \\ \hline
+& p & 5,5  & 5,7  & 12,8  & 20,7  \\ \hline
+(3)Cl & s & 12,0  & 8,9  & 2,0  & 0,1  \\ \hline
+& p & 5,5  & 24,5  & 9,5  & 5,2  \\ \hline
+(4)Cl & s & 12,0  & 0,0  & 3,6  & 7,4  \\ \hline
+& p & 5,5  & 5,1  & 12,8  & 21,2  \\ \hline
+(5)Cl & s & 12,0  & 5,5  & 5,5  & 0,0  \\ \hline
+& p & 5,5  & 16,9  & 17,0  & 5,1  \\ \hline
+\end{tabular}\end{center}\end{minipage}\end{table}
 
 
 \begin{table}[htbp] \begin{minipage}{\textwidth}
@@ -780,35 +781,48 @@ Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.}\label{acetylmethylt
 & p & 4,9  & 0,9  & 0,7  & 1,8  \\ \hline
 \end{tabular}\end{center}\end{minipage}\end{table}
 
-
-
-
-
+\subsection{Reaktanty}
 Na základě experimentální práce Aleše Stýskalíka \cite{Styskalik2015thesis} jsem se zabývala křemíkem v koordinaci čtyři, který sloužil jako výchozí reaktant pro přípravu silikofosfátových polymerů.
 \begin{figure}
 \centering
-\subfigure[\ce{Si(OC2H5)4}, \textbf{G}]{\includegraphics[width=5cm]{si_o_et_4.png} \label{si_oet_4}}
+\subfigure[\ce{Si(OC2H5)4}, \textbf{G}]{\includegraphics[width=6cm]{si_o_et_4.png} \label{si_oet_4}}
 \subfigure[\ce{SiF3(C6H5)},  \textbf{H}]{\includegraphics[width=3cm]{si_fenyl_f3.png}\label{si_fenyl_f3}}
-\subfigure[\ce{SiCH3(OCOCH3)3},  \textbf{I}]{\includegraphics[width=5cm]{si_ch3_oac_3.png}\label{si_ch3_oac_3}}
-\subfigure[\ce{SiH(OCOCH3)3},  \textbf{J}]{\includegraphics[width=3cm]{si_h_oac_3.png}\label{si_h_oac_3}}
-\subfigure[\ce{Si(OCOCH3)4},  \textbf{K}]{\includegraphics[width=5cm]{si_o_ac_4.png}\label{si_o_ac_4}}
-\subfigure[\ce{Si(OCl)(OC2H5)3},  \textbf{L}]{\includegraphics[width=5cm]{si_ocl_oet_3.png}\label{si_ocl_oet_3}}
+\subfigure[\ce{Si(OCl)(OC2H5)3},  \textbf{I}]{\includegraphics[width=5cm]{si_ocl_oet_3.png}\label{si_ocl_oet_3}}
 \caption{Přehled reaktantů; Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{red!50!blue!50} F, \mycircle{green}~Cl, \mycircleempty{black}~H}
 \label{prehled_male_modely}
 \end{figure}
-\begin{comment}
+
 \begin{figure}
 \centering
-\subfigure[\ce{SiCH3(OCOCH3)3},  \textbf{I}]{\includegraphics[width=5cm]{si_ch3_oac_3.png}\label{si_ch3_oac_3}}
-\subfigure[\ce{SiCH3(OH)3},  \textbf{J}]{\includegraphics[width=3cm]{si_ch3_och_4.png}\label{si_ch3_och_4}}
-\subfigure[\ce{Si(OCOCH3)4},  \textbf{K}]{\includegraphics[width=5cm]{si_o_ac_4.png}\label{si_o_ac_4}}
+\subfigure[\ce{Si(OCOCH3)4},  \textbf{J}]{\includegraphics[width=5cm]{si_o_ac_4.png}\label{si_o_ac_4}}
+\subfigure[\ce{SiH(OCOCH3)3},  \textbf{K}]{\includegraphics[width=5cm]{si_h_oac_3.png}\label{si_h_oac_3}}
+\subfigure[\ce{SiCH3(OCOCH3)3},  \textbf{L}]{\includegraphics[width=5cm]{si_ch3_oac_3.png}\label{si_ch3_oac_3}}
 \caption{Přehled reaktantů; Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{red!50!blue!50} F, \mycircle{green}~Cl, \mycircleempty{black}~H}
 \label{prehled_male_modely}
 \end{figure}
-\end{comment}
-%#TODO - přidání HSAB pro reaktanty
 
+\begin{table}[htbp]\begin{minipage}{\textwidth}
+\begin{center}\caption{HSAB analýza malých molekul, výsledky jsou uvedeny v [eV].}\begin{tabular}{|l|r|r|r|r|}
+\hline
+\label{hsab_small}& E$_{\ce{H}}$\footnote{HOMO $-$ \textit{Highest Occupied Molecular Orbital}}  & E$_{\ce{L}}$\footnote{LUMO$ - $\textit{Lowest Unoccupied Molecular Orbital}} & $\chi$  & $\eta$  \\ \hline
+\textbf{G} & -7,181 & 1,662 & 2,760 & 4,422 \\ \hline
+\textbf{H} & -7,299 & -1,023 & 4,161 & 3,138 \\ \hline
+\textbf{I} & -7,536 & -2,085 & 4,811 & 2,725 \\ \hline
+\end{tabular}
+\end{center}\end{minipage}
+\end{table}
 
+\begin{table}[htbp]\begin{minipage}{\textwidth}
+\begin{center}\caption{HSAB analýza malých molekul, výsledky jsou uvedeny v [eV].}
+\begin{tabular}{|l|r|r|r|r|}
+\hline
+\label{hsab_small_porovnani}& E$_{\ce{H}}$\footnote{HOMO $-$ \textit{Highest Occupied Molecular Orbital}}  & E$_{\ce{L}}$\footnote{LUMO$ - $\textit{Lowest Unoccupied Molecular Orbital}} & $\chi$  & $\eta$  \\ \hline
+\textbf{J} & -7,669 & -0,642 & 4,155 & 3,513 \\ \hline
+\textbf{K} & -7,605 & -0,313 & 3,959 & 3,646 \\ \hline
+\textbf{L} & -7,463 & -0,158 & 3,811 & 3,652 \\ \hline
+\end{tabular}
+\end{center}\end{minipage}
+\end{table}
 
 \renewcommand{\thesubfigure}{(\alph{subfigure})}
 \begin{figure}
