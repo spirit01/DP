@@ -43,8 +43,8 @@
       \strng{fullhash}{12de2bb4e6147988aa44d51be59149d9}
       \strng{authornamehash}{12de2bb4e6147988aa44d51be59149d9}
       \strng{authorfullhash}{12de2bb4e6147988aa44d51be59149d9}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinit}{7}
+      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0002-7863}
@@ -72,8 +72,8 @@
       \strng{fullhash}{3d7069496625708004929bd54676e8f0}
       \strng{authornamehash}{3d7069496625708004929bd54676e8f0}
       \strng{authorfullhash}{3d7069496625708004929bd54676e8f0}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{8}
+      \field{sortinithash}{2f1b0e69e7617f99664f1cd00bb9603c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Quantum Chemical Calculations of EPR Parameters for Transition Metal Complexes}
@@ -115,8 +115,8 @@
       \strng{fullhash}{ad2436b60ff972719009e19e4e223532}
       \strng{authornamehash}{ad2436b60ff972719009e19e4e223532}
       \strng{authorfullhash}{ad2436b60ff972719009e19e4e223532}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{9}
+      \field{sortinithash}{2999ebab86052e6d71b434385f8b4ed2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{2}
@@ -167,8 +167,8 @@
       \strng{fullhash}{69e7f6b98c38c2e2085d51bad0cfc48c}
       \strng{authornamehash}{69e7f6b98c38c2e2085d51bad0cfc48c}
       \strng{authorfullhash}{69e7f6b98c38c2e2085d51bad0cfc48c}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{14}
@@ -209,8 +209,8 @@
       \strng{authorfullhash}{3699b0477c1a3600e5f3e968f7c3b274}
       \strng{supervisornamehash}{fdc3e87c17bd650850f75577067c5689}
       \strng{supervisorfullhash}{fdc3e87c17bd650850f75577067c5689}
-      \field{sortinit}{5}
-      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Synthesis of metallophosphate materials by nonhydrolytic methods [online]}
@@ -237,8 +237,8 @@
       \strng{fullhash}{9a104bd7c0afc7b367bd99ea46a1f31a}
       \strng{authornamehash}{9a104bd7c0afc7b367bd99ea46a1f31a}
       \strng{authorfullhash}{9a104bd7c0afc7b367bd99ea46a1f31a}
-      \field{sortinit}{6}
-      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Acta Crystallographica Section B}
@@ -280,8 +280,8 @@
       \strng{authorfullhash}{37761883a33ccdd50247d503ff011af7}
       \strng{supervisornamehash}{ed9167bf8d89391ffc5bc8b68da2c9d5}
       \strng{supervisorfullhash}{ed9167bf8d89391ffc5bc8b68da2c9d5}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Didaktika kvalitativní teorie MO a pojem hypervalence}
@@ -381,8 +381,8 @@
       \strng{fullhash}{d93e976889648dc3ea2ab5382a9cb7bb}
       \strng{authornamehash}{d93e976889648dc3ea2ab5382a9cb7bb}
       \strng{authorfullhash}{d93e976889648dc3ea2ab5382a9cb7bb}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{3}
+      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{number}{sv. 2}
@@ -420,8 +420,8 @@
       \strng{fullhash}{40de841aaf864ea00a45877cf8534943}
       \strng{authornamehash}{40de841aaf864ea00a45877cf8534943}
       \strng{authorfullhash}{40de841aaf864ea00a45877cf8534943}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{3}
+      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0959-9436}
@@ -484,8 +484,8 @@
       \strng{fullhash}{24070af4f3d201aab2486299d862416c}
       \strng{authornamehash}{24070af4f3d201aab2486299d862416c}
       \strng{authorfullhash}{24070af4f3d201aab2486299d862416c}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{3}
+      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{7}
@@ -529,8 +529,8 @@
       \strng{fullhash}{bea89515acf4250ea515b222a4be0543}
       \strng{authornamehash}{bea89515acf4250ea515b222a4be0543}
       \strng{authorfullhash}{bea89515acf4250ea515b222a4be0543}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{3}
+      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0040-4020}
@@ -669,8 +669,8 @@
       \strng{fullhash}{6cfb5a34a6aa234c4c0aca46b84f9103}
       \strng{authornamehash}{6cfb5a34a6aa234c4c0aca46b84f9103}
       \strng{authorfullhash}{6cfb5a34a6aa234c4c0aca46b84f9103}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{11}
@@ -701,8 +701,8 @@
       \strng{fullhash}{a0870b2c5b278f9e9ea99b89032887ef}
       \strng{authornamehash}{a0870b2c5b278f9e9ea99b89032887ef}
       \strng{authorfullhash}{a0870b2c5b278f9e9ea99b89032887ef}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{0-582-38210-6}
@@ -732,8 +732,8 @@
       \strng{fullhash}{c969d90a67b7ac8f3049cb031b943391}
       \strng{authornamehash}{c969d90a67b7ac8f3049cb031b943391}
       \strng{authorfullhash}{c969d90a67b7ac8f3049cb031b943391}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Reviews in Computational Chemistry, Volume 15}
@@ -757,8 +757,8 @@
       \strng{fullhash}{ce65cfd17c0d94a586e65a9d32663b3c}
       \strng{authornamehash}{ce65cfd17c0d94a586e65a9d32663b3c}
       \strng{authorfullhash}{ce65cfd17c0d94a586e65a9d32663b3c}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9780470058046}
@@ -891,8 +891,8 @@
       \strng{fullhash}{8f15e0d12f1047364a4065ac291c14ad}
       \strng{authornamehash}{8f15e0d12f1047364a4065ac291c14ad}
       \strng{authorfullhash}{8f15e0d12f1047364a4065ac291c14ad}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{2}
@@ -925,8 +925,8 @@
       \strng{fullhash}{f04db823c6c7db2b69da352743d93876}
       \strng{authornamehash}{f04db823c6c7db2b69da352743d93876}
       \strng{authorfullhash}{f04db823c6c7db2b69da352743d93876}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{6}
@@ -971,8 +971,8 @@
       \strng{fullhash}{ef42b04965a8e9f08d4db57f967e72c2}
       \strng{authornamehash}{ef42b04965a8e9f08d4db57f967e72c2}
       \strng{authorfullhash}{ef42b04965a8e9f08d4db57f967e72c2}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Journal of Physical Chemistry}
@@ -1014,8 +1014,8 @@
       \strng{fullhash}{f40a1a8ff16ce173598b23817fc6a10d}
       \strng{authornamehash}{f40a1a8ff16ce173598b23817fc6a10d}
       \strng{authorfullhash}{f40a1a8ff16ce173598b23817fc6a10d}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9780199543373}
@@ -1052,8 +1052,8 @@
       \strng{fullhash}{c07e8461cd313586b0c790211c6204ed}
       \strng{authornamehash}{c07e8461cd313586b0c790211c6204ed}
       \strng{authorfullhash}{c07e8461cd313586b0c790211c6204ed}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Journal of Physical Chemistry}
@@ -1533,8 +1533,8 @@
       \strng{fullhash}{dc8f27de6db7259309a9edf53ea31642}
       \strng{authornamehash}{dc8f27de6db7259309a9edf53ea31642}
       \strng{authorfullhash}{dc8f27de6db7259309a9edf53ea31642}
-      \field{sortinit}{5}
-      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{sortinit}{6}
+      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of the American Chemical Society}
@@ -1579,8 +1579,8 @@
       \strng{fullhash}{488a10db840fe98e51e239647be4b595}
       \strng{editornamehash}{488a10db840fe98e51e239647be4b595}
       \strng{editorfullhash}{488a10db840fe98e51e239647be4b595}
-      \field{sortinit}{5}
-      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{sortinit}{6}
+      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
       \field{title}{The HSAB concept can be developed into an universal scheme based on quantum chemistry}
@@ -1607,8 +1607,8 @@
       \strng{fullhash}{b76e08ac48cd9d6d1466de66d949bf00}
       \strng{authornamehash}{b76e08ac48cd9d6d1466de66d949bf00}
       \strng{authorfullhash}{b76e08ac48cd9d6d1466de66d949bf00}
-      \field{sortinit}{5}
-      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{sortinit}{6}
+      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{1.}
@@ -1634,8 +1634,8 @@
       \strng{fullhash}{d1384cd0f58c4a459ba97adb8091f64d}
       \strng{authornamehash}{d1384cd0f58c4a459ba97adb8091f64d}
       \strng{authorfullhash}{d1384cd0f58c4a459ba97adb8091f64d}
-      \field{sortinit}{5}
-      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{sortinit}{6}
+      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the National Academy of Sciences}
@@ -1666,8 +1666,8 @@
       \strng{fullhash}{6167d106c91ac44f2672ec52e082a8b3}
       \strng{authornamehash}{6167d106c91ac44f2672ec52e082a8b3}
       \strng{authorfullhash}{6167d106c91ac44f2672ec52e082a8b3}
-      \field{sortinit}{5}
-      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{sortinit}{6}
+      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9780521831284}
@@ -1733,6 +1733,219 @@
       \verb http://dx.doi.org/10.1186/1758-2946-4-17
       \endverb
     \endentry
+    \entry{Mercury}{article}{}
+      \name{author}{8}{}{%
+        {{hash=372c49d300b75329dee98760bb56e141}{%
+           family={MACRAE},
+           familyi={M\bibinitperiod},
+           given={Clare\bibnamedelima F.},
+           giveni={C\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=cfbae33c2a0ef4a6cab95d3f13ab9805}{%
+           family={EDGINGTON},
+           familyi={E\bibinitperiod},
+           given={Paul\bibnamedelima R.},
+           giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=2cdf744e34fb334983e1b7bb67727b53}{%
+           family={MCCABE},
+           familyi={M\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c45601b1e4411373d1e94a8c23b54ff7}{%
+           family={PIDCOCK},
+           familyi={P\bibinitperiod},
+           given={Elna},
+           giveni={E\bibinitperiod}}}%
+        {{hash=1de545106137a01e666e93bbf4fdfb1b}{%
+           family={SHIELDS},
+           familyi={S\bibinitperiod},
+           given={Greg\bibnamedelima P.},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=4bae2a0c5c2ef77d75cd1bf4f529d463}{%
+           family={TAYLOR},
+           familyi={T\bibinitperiod},
+           given={Robin},
+           giveni={R\bibinitperiod}}}%
+        {{hash=90ff572c26a696d51fbdcd1d327c2bcf}{%
+           family={TOWLER},
+           familyi={T\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=db613926b669d03c2074c64cc52a8cb1}{%
+           family={VAN\bibnamedelimb DE\bibnamedelima STREEK},
+           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Jacco},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{1a6d753d7f618d45214979d4a784b756}
+      \strng{fullhash}{1a6d753d7f618d45214979d4a784b756}
+      \strng{authornamehash}{1a6d753d7f618d45214979d4a784b756}
+      \strng{authorfullhash}{1a6d753d7f618d45214979d4a784b756}
+      \field{sortinit}{6}
+      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Applied Crystallography}
+      \field{month}{6}
+      \field{number}{3}
+      \field{title}{{{\it Mercury}: visualization and analysis of crystal structures}}
+      \field{volume}{39}
+      \field{year}{2006}
+      \field{pages}{453\bibrangedash 457}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1107/S002188980600731X
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1107/S002188980600731X
+      \endverb
+    \endentry
+    \entry{uff_force_filed}{article}{}
+      \name{author}{5}{}{%
+        {{hash=a41834f66d12d1148c1d1d9db6ff983f}{%
+           family={Rappe},
+           familyi={R\bibinitperiod},
+           given={A.\bibnamedelimi K.},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=d7c9fa5842dc9cdf03df031acd9e3096}{%
+           family={Casewit},
+           familyi={C\bibinitperiod},
+           given={C.\bibnamedelimi J.},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=2354a791533fe30c5feebf68fef36487}{%
+           family={Colwell},
+           familyi={C\bibinitperiod},
+           given={K.\bibnamedelimi S.},
+           giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=c3f66b8902c9b1881e536e7d18ca4986}{%
+           family={Goddard},
+           familyi={G\bibinitperiod},
+           given={W.\bibnamedelimi A.},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=e4f60de7ddbd478a7630c031aa2e7f38}{%
+           family={Skiff},
+           familyi={S\bibinitperiod},
+           given={W.\bibnamedelimi M.},
+           giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{f4a9c2721af5b30461bde42aa5568725}
+      \strng{fullhash}{f4a9c2721af5b30461bde42aa5568725}
+      \strng{authornamehash}{f4a9c2721af5b30461bde42aa5568725}
+      \strng{authorfullhash}{f4a9c2721af5b30461bde42aa5568725}
+      \field{sortinit}{6}
+      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Chemical Society}
+      \field{number}{25}
+      \field{title}{UFF, a full periodic table force field for molecular mechanics and molecular dynamics simulations}
+      \field{volume}{114}
+      \field{year}{1992}
+      \field{pages}{10024\bibrangedash 10035}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1021/ja00051a040
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1021/ja00051a040
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1021/ja00051a040
+      \endverb
+    \endentry
+    \entry{ditchfield1971self}{article}{}
+      \name{author}{3}{}{%
+        {{hash=f1ecdb61d02f2ee3f89336a30e50d3dc}{%
+           family={Ditchfield},
+           familyi={D\bibinitperiod},
+           given={RHWJ},
+           giveni={R\bibinitperiod}}}%
+        {{hash=071c8d2dc67c7f51608a4c6461931602}{%
+           family={Hehre},
+           familyi={H\bibinitperiod},
+           given={W\bibnamedelima J\_},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=684056e7aebad32dc1b915099f9c6c96}{%
+           family={Pople},
+           familyi={P\bibinitperiod},
+           given={John\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{8812735e38295f186ad2e2c33dd7f2f5}
+      \strng{fullhash}{8812735e38295f186ad2e2c33dd7f2f5}
+      \strng{authornamehash}{8812735e38295f186ad2e2c33dd7f2f5}
+      \strng{authorfullhash}{8812735e38295f186ad2e2c33dd7f2f5}
+      \field{sortinit}{7}
+      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Chemical Physics}
+      \field{number}{2}
+      \field{title}{Self-consistent molecular-orbital methods. IX. An extended Gaussian-type basis for molecular-orbital studies of organic molecules}
+      \field{volume}{54}
+      \field{year}{1971}
+      \field{pages}{724\bibrangedash 728}
+      \range{pages}{5}
+    \endentry
+    \entry{francl1982self}{article}{}
+      \name{author}{7}{}{%
+        {{hash=f3ea3b11c2ff235b13ecd92eb56ef72f}{%
+           family={Francl},
+           familyi={F\bibinitperiod},
+           given={Michelle\bibnamedelima M},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=f5ca1821a894e48a934ae3d4b14b10a9}{%
+           family={Pietro},
+           familyi={P\bibinitperiod},
+           given={William\bibnamedelima J},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=17132a7c51dcf2a3e1ef9f256889cf37}{%
+           family={Hehre},
+           familyi={H\bibinitperiod},
+           given={Warren\bibnamedelima J},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=bd83b914bcaa582b3be7b8b698988711}{%
+           family={Binkley},
+           familyi={B\bibinitperiod},
+           given={J\bibnamedelima Stephen},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=8a0f498912915aeeb73f5d07e27ee85f}{%
+           family={Gordon},
+           familyi={G\bibinitperiod},
+           given={Mark\bibnamedelima S},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=bd88f0e67a777e74137f3008f7737252}{%
+           family={DeFrees},
+           familyi={D\bibinitperiod},
+           given={Douglas\bibnamedelima J},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=684056e7aebad32dc1b915099f9c6c96}{%
+           family={Pople},
+           familyi={P\bibinitperiod},
+           given={John\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{c74c99f357ad415c9c003bdcee0936d7}
+      \strng{fullhash}{c74c99f357ad415c9c003bdcee0936d7}
+      \strng{authornamehash}{c74c99f357ad415c9c003bdcee0936d7}
+      \strng{authorfullhash}{c74c99f357ad415c9c003bdcee0936d7}
+      \field{sortinit}{7}
+      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Chemical Physics}
+      \field{number}{7}
+      \field{title}{Self-consistent molecular orbital methods. XXIII. A polarization-type basis set for second-row elements}
+      \field{volume}{77}
+      \field{year}{1982}
+      \field{pages}{3654\bibrangedash 3665}
+      \range{pages}{12}
+    \endentry
     \entry{iglo}{book}{}
       \name{author}{3}{}{%
         {{hash=24d9624fac050d1b5971052aa55963a3}{%
@@ -1755,8 +1968,8 @@
       \strng{fullhash}{b74e5802b412fd34a6d8530edfd68f3a}
       \strng{authornamehash}{b74e5802b412fd34a6d8530edfd68f3a}
       \strng{authorfullhash}{b74e5802b412fd34a6d8530edfd68f3a}
-      \field{sortinit}{6}
-      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
+      \field{sortinit}{7}
+      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{N M R Basic Princ. Prog.}
@@ -1766,6 +1979,43 @@
       \field{year}{1991}
       \field{pages}{65\bibrangedash 262}
       \range{pages}{198}
+    \endentry
+    \entry{binkley1980self}{article}{}
+      \name{author}{3}{}{%
+        {{hash=bd83b914bcaa582b3be7b8b698988711}{%
+           family={Binkley},
+           familyi={B\bibinitperiod},
+           given={J\bibnamedelima Stephen},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=684056e7aebad32dc1b915099f9c6c96}{%
+           family={Pople},
+           familyi={P\bibinitperiod},
+           given={John\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=17132a7c51dcf2a3e1ef9f256889cf37}{%
+           family={Hehre},
+           familyi={H\bibinitperiod},
+           given={Warren\bibnamedelima J},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACS Publications}%
+      }
+      \strng{namehash}{ef39088a0e6f0c724b753cb4529dc6d0}
+      \strng{fullhash}{ef39088a0e6f0c724b753cb4529dc6d0}
+      \strng{authornamehash}{ef39088a0e6f0c724b753cb4529dc6d0}
+      \strng{authorfullhash}{ef39088a0e6f0c724b753cb4529dc6d0}
+      \field{sortinit}{7}
+      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Chemical Society}
+      \field{number}{3}
+      \field{title}{Self-consistent molecular orbital methods. 21. Small split-valence basis sets for first-row elements}
+      \field{volume}{102}
+      \field{year}{1980}
+      \field{pages}{939\bibrangedash 947}
+      \range{pages}{9}
     \endentry
     \entry{doi:10.1002/jcc.23266}{article}{}
       \name{author}{3}{}{%
@@ -1789,8 +2039,8 @@
       \strng{fullhash}{73c4936eda75938bd42ea6524110ad21}
       \strng{authornamehash}{73c4936eda75938bd42ea6524110ad21}
       \strng{authorfullhash}{73c4936eda75938bd42ea6524110ad21}
-      \field{sortinit}{6}
-      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
+      \field{sortinit}{7}
+      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computational Chemistry}
@@ -1847,8 +2097,8 @@
       \strng{fullhash}{8d7bdb457191adf4dd00c50bddd9fef7}
       \strng{authornamehash}{8d7bdb457191adf4dd00c50bddd9fef7}
       \strng{authorfullhash}{8d7bdb457191adf4dd00c50bddd9fef7}
-      \field{sortinit}{6}
-      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
+      \field{sortinit}{8}
+      \field{sortinithash}{2f1b0e69e7617f99664f1cd00bb9603c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2050-7488}
@@ -1889,8 +2139,8 @@
       \strng{fullhash}{792bb120aa47eb7c1c33edc22e68600d}
       \strng{authornamehash}{792bb120aa47eb7c1c33edc22e68600d}
       \strng{authorfullhash}{792bb120aa47eb7c1c33edc22e68600d}
-      \field{sortinit}{6}
-      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
+      \field{sortinit}{8}
+      \field{sortinithash}{2f1b0e69e7617f99664f1cd00bb9603c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1608-3350}
@@ -1941,8 +2191,8 @@
       \strng{fullhash}{87b7c94e6e5f56baf1074cf434f7e782}
       \strng{authornamehash}{87b7c94e6e5f56baf1074cf434f7e782}
       \strng{authorfullhash}{87b7c94e6e5f56baf1074cf434f7e782}
-      \field{sortinit}{7}
-      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
+      \field{sortinit}{8}
+      \field{sortinithash}{2f1b0e69e7617f99664f1cd00bb9603c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of the American Chemical Society}
@@ -1990,8 +2240,8 @@
       \strng{fullhash}{1e69d89f1502ceb0782015b4f510fbd7}
       \strng{authornamehash}{1e69d89f1502ceb0782015b4f510fbd7}
       \strng{authorfullhash}{1e69d89f1502ceb0782015b4f510fbd7}
-      \field{sortinit}{7}
-      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
+      \field{sortinit}{9}
+      \field{sortinithash}{2999ebab86052e6d71b434385f8b4ed2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2046-2069}

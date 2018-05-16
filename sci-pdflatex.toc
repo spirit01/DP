@@ -30,7 +30,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4.1}\rmfamily Tvrdost a m\IeC {\v e}kkost kyselin a b\IeC {\'a}z\IeC {\'\i }}{19}{subsection.2.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}\rmfamily Mullikenova popula\IeC {\v c}n\IeC {\'\i } anal\IeC {\'y}za}{21}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.2}\rmfamily Mullikenova popula\IeC {\v c}n\IeC {\'\i } anal\IeC {\'y}za (MPA)}{21}{subsection.2.4.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4.3}\rmfamily P\IeC {\v r}irozen\IeC {\'e} orbitaly (tzv. Natural Bond Orbitals)}{21}{subsection.2.4.3}
 \defcounter {refsection}{0}\relax 
@@ -40,18 +40,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.1}\rmfamily Popula\IeC {\v c}n\IeC {\'\i } anal\IeC {\'y}za}{24}{subsection.3.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}\slshape Vypo\IeC {\v c}ten\IeC {\'e} struktury}{24}{section.3.2}
+\contentsline {section}{\numberline {3.2}\slshape Vypo\IeC {\v c}ten\IeC {\'e} struktury}{25}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}\slshape Mal\IeC {\'e} modely}{28}{section.3.3}
+\contentsline {section}{\numberline {3.3}\slshape Mal\IeC {\'e} modely}{25}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}\rmfamily Reaktanty}{37}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.1}\rmfamily Reaktanty}{30}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}\slshape St\IeC {\v r}edn\IeC {\v e} velk\IeC {\'e} modely}{37}{section.3.4}
+\contentsline {section}{\numberline {3.4}\slshape St\IeC {\v r}edn\IeC {\v e} velk\IeC {\'e} modely}{30}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}\slshape Velk\IeC {\'e} modely}{45}{section.3.5}
+\contentsline {section}{\numberline {3.5}\slshape Velk\IeC {\'e} modely}{44}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}\bfseries Z\IeC {\'a}v\IeC {\v e}r}{49}{chapter.4}
+\contentsline {chapter}{\numberline {4}\bfseries Z\IeC {\'a}v\IeC {\v e}r}{52}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}\bfseries P\IeC {\v r}\IeC {\'\i }lohy}{50}{chapter.5}
+\contentsline {chapter}{\numberline {5}\bfseries P\IeC {\v r}\IeC {\'\i }lohy}{53}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Literatura}{58}{chapter*.10}
+\contentsline {chapter}{Literatura}{61}{chapter*.10}

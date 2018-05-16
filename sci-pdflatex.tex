@@ -531,7 +531,11 @@ f_A^0 = \frac{1}{2}[P_A(N+1) - P_A(N-1)],
 
 Přístup lokální tvrdosti a měkkosti je další úroveň pohledu na chemickou reaktivity molekul. Z časových důvodů ale nebyla tato analýzy v této práci provedena a bude předmět dalšího výzkumu v oblasti silikofosfátů.
 
-\subsection{Mullikenova populační analýza}
+\subsection{Mullikenova populační analýza (MPA)}
+MPA analýza slouží k analýzy vlnové funkce $\psi$. Pomocí MPA lze popsat charakter a vlastnosti chemických vazeb, například zapojení příslušných atomových orbitalů do celkového molekulové orbitalu. Náboj elektronu je rovnocenně rozdělen mezi atomy, kde se nachází. Pokud je MO rozdělen do více AO, tak je výsledný molekulový orbital tvořen jako lineární kombinace AO s příslušným koeficientem. Výsledný náboj na jednotlivých atomech je potom určen z rozdílu jádra a elektronové hustoty \cite{lowe2011quantum}.
+
+
+Jedna z nevýhody MPA analýzy je silná závislost na velikosti báze. Pokud je zvolená báze přiliš velká, tak jsou i orbitaly příliš velké, dochází k silnému míchání a zkreslujícím hodnotám.
 
 \subsection{Přirozené orbitaly (tzv. Natural Bond Orbitals)}
 Jedná se o přirozené orbitaly v tom smyslu, že jsou nejvhodnějšími vychozími orbitaly pro započtení elektronové korelace tím, že diagonalizují tzv. jednočásticovou matici hustoty. Lze pracovat s jejich delokalizovanými nebo lokalizovanými variantami. Druhý přístup je mnohem častěji využívaný a je aplikován i v této práci \cite{weinhold2005valency}.
@@ -546,64 +550,75 @@ tj. z atomových orbitalů se vytvářejí přirozené atomové orbitaly, z nich
 Následující část byla rozdělena do čtyř oddílů. První část shrnuje výpočetní detaily pro jednotlivé struktury. Druhá  část se zabývá vypočtenými strukturami, třetí část dává podrobnější pohled na vazby ve zvolených strukturách a čtvrtá, poslední, část se zaměřuje na chemický posun v NMR.
 
 \section{Výpočetní detaily}
-Modely, pro jejichž prozkoumání jsme se rozhodli, byly na základě konektivity jednotlivých atomů zaneseny do vstupu pro program Avogadro \cite{Avogadro}. V programu Avogadro byly struktury předoptimalizovány předvolenou molekulovou mechanikou. Získané struktury byly plně optimalizovány metodou B3LYP \cite{b3lyp} s bazí 6-31G* v programu Gaussian, verze ES64L-G09RevD.01 24-Apr-2013  \cite{g09}. Pro malé modely byly ve dvou případech přidány speciální volby Opt=CalcFC a SCF=Vshift. Klíčové slovo CalcFC zajišťuje výpočet silových konstant v počátečním bodě stejnou metodou a bází, v nichž probíhá samotná optimalizace. Předvolba totiž stanovuje, že původní odhad silových konstant je prováděn pomocí jednoduchého silového pole (tj. klasickou mechanikou). Druhé klíčové slovo SCF=VShift[N] pomáhá s nalezením vlnové funkce v případě systémů s malým energiovým rozdílem mezi energii HOMO a LUMO orbitalů. Na začátku procesu SCF jsou všechny virtuální orbitaly posunuty v energii o N*0,0001 miliHartree nahoru a v závěru výpočtu jsou jejich energie vráceny zpět. My jsme použili výchozí nastavení N=-1. Pro analýzu NMR parametrů byla použita speciální báze IGLO \cite{iglo} a klíčové slovo nmr \cite{g09}. \\
-Pro střední modely bylo postačující základní nastavení. Optimalizace velkých modelů byla již čassově poměrně náročná. Například krystalová struktura bez náboje obsahovala 349 elektronů a bylo potřeba 1309 bázových funkcí pro optimalizace s B3LYP a funkcionálem 6-31G*. Z tohoto důvodu byly vleké modely nejprve předoptimalizované stejnou metodou jako menší modely (B3LYP), ale s využitím kvazirelativistického efektivního jaderné pseudopotenciálu pro implicitní zahrnutí vnitřních elektronů, klíčové slovo Pseudo=Read. Ve druhém kroku optimalizace již byl proveden výpočet se zahrnutím všech elektronů v bázi 6-31G*.\\
+Modely, pro jejichž prozkoumání jsme se rozhodli, byly na základě konektivity jednotlivých atomů zaneseny do vstupu pro program Avogadro \cite{Avogadro}. V případě použití struktur z rentgenové strukturní analýzy byly struktury nejprve zobrazeny v programu Mercury 3.3 \cite{Mercury} a až poté byl použit program Avogadro.
+
+ V programu Avogadro byly struktury předoptimalizovány molekulovou mechanikou s použitím silového pole UFF \cite{uff_force_filed}. Získané struktury byly plně optimalizovány metodou B3LYP \cite{b3lyp} v bázi 6-31G* \footnote{Tato báze se skládá z tzv. split valence báze \cite{ditchfield1971self} ke které je přidána jedna sada polarizačních funkcí typu $d$ \cite{francl1982self}.} v programu Gaussian09, Rev D.01. \cite{g09}. Pro malé modely byly ve dvou případech přidány speciální volby Opt=CalcFC a SCF=Vshift. Klíčové slovo CalcFC zajišťuje výpočet silových konstant v počátečním bodě stejnou metodou a bází, v nichž probíhá samotná optimalizace. Předvolba totiž stanovuje, že původní odhad silových konstant je prováděn pomocí jednoduchého silového pole (tj. klasickou mechanikou). Druhé klíčové slovo SCF=VShift[N] pomáhá s nalezením vlnové funkce v případě systémů s malým energiovým rozdílem mezi energii HOMO a LUMO orbitalů. Na začátku procesu SCF jsou všechny virtuální orbitaly posunuty v energii o N*0,0001 miliHartree nahoru a v závěru výpočtu jsou jejich energie vráceny zpět. My jsme použili výchozí nastavení N=-1. Pro analýzu NMR parametrů byla použita speciální báze IGLO \cite{iglo} a klíčové slovo nmr \cite{g09}. \\
+Pro střední modely bylo postačující základní nastavení. Optimalizace velkých modelů byla již čassově poměrně náročná. Například krystalová struktura bez náboje obsahovala 349 elektronů a bylo potřeba 1309 bázových funkcí pro optimalizace s funkcionálem B3LYP a bází 6-31G*. Z tohoto důvodu byly velké modely nejprve předoptimalizované stejnou metodou jako menší modely (B3LYP), ale s využitím kvazirelativistického efektivního jaderného pseudopotenciálu pro implicitní zahrnutí vnitřních elektronů, klíčové slovo Pseudo=Read. Ve druhém kroku optimalizace již byl proveden výpočet se zahrnutím všech elektronů v bázi 6-31G*.\\
 \subsection{Populační analýza}
-Pro získání orbitalů pro Mullikenovu populační analýzu byla použita menší báze 3-21G, funkcionál B3LYP. Populační analýzy založené na rozkladu do bázových funkcá jsou totiž nejužitečnější pro porovnání trendů u distribucí elektronové hustoty s použitím malých nebo středně velkých bází, které obsahuji relativně kontrahované funkce \cite{jensen2007introduction}.
-Pro NBO analýzu byla použita implementace NBO3 v programu Gaussian, Gaussian NBO Version 3.1; verze Gaussianu AS64L-G09RevD.01 24-Apr-2013. Volbou  \begin{lstlisting}[frame=single]
+Populační analýzy založené na bázových funkcích jsou nejužitečnější pro porovnávání trendů u elektronových distribucí  vpřípadě použití malých nebo středně velkých bází, které obsahují pouze relativně kontrahované funkce \cite{jensen2007introduction}.
+Pro získání orbitalů pro Mullikenovu populační analýzu byla použita menší báze 3-21G \cite{binkley1980self}, funkcionál B3LYP. Populační analýzy založené na rozkladu do bázových funkcá jsou totiž nejužitečnější pro porovnání trendů u distribucí elektronové hustoty s použitím malých nebo středně velkých bází, které obsahuji relativně kontrahované funkce \cite{jensen2007introduction}. Pro některé molekuly bylo nutno použít vice MO než je počet
+jejich vazeb na křemíku kvůli dalokalizaci MO. Zapojení orbitalů typu $p$ je dáno
+přibližně 4-četnou osou symetrie. Proto pro MPA byly
+vybrány takové vazebné orbitaly, ve kterých podíl křemíku a alespoň
+jednoho z přímo vázaných ligandů je více než 0,1. Vzhledem k charakteru
+MPA nebylo možné použít orbitaly LUMO. \\
+
+Pro NBO analýzu byla použita implementace NBO3 v programu Gaussian, Gaussian NBO Version 3.1; verze Gaussianu G09,RevD.01. Volbou \begin{lstlisting}[frame=single]
 $NBO ARCHIVE FILE=NAME $END
 \end{lstlisting}
-byl získán soubour NAME.47, který sloužil jako vstup do programu NBO6.0. Přidáním klíčového slova $PLOT$ do NAME.47 a použitím programu NBO6.0 byly ziskány soubory NAME.31 až NAME.46. Pro vykreslení přirozených orbitalů programem NBO6View byl použit soubor NAME.37 \cite{doi:10.1002/jcc.23266}.
+byl získán soubour NAME.47, který sloužil jako vstup do programu NBO6.0. Přidáním klíčového slova $PLOT$ do souboru NAME.47 a použitím programu NBO6.0 byly ziskány soubory NAME.31 až NAME.46. Pro vykreslení přirozených orbitalů programem NBO6View byl použit soubor NAME.37 \cite{doi:10.1002/jcc.23266}.
+
+K analýze NBO byly použity protivazebné orbitaly (BD*) a to především díky tomu, že právě tyto orbitaly hrají roli při navyšování koordinace křemíku.
 
 \section{Vypočtené struktury}\label{vypoctene_struktury}
-Struktury pro výpočetní část jsou rozděleny podle velikosti, podle stupně koordinace křemíku a podle množství cyklů ve strukturách. Naší snahou při tvorbě modelů bylo co nejlépe modelovat možná koordinační okolí křemíku v amorfních strukturách, pro něž nejsou dostupná přímá strukturní data. Vycházeli jsme z nepřímých strukturních dat: chemických posunů křemíku (stupeň koordinace křemíku) a vibračních spekter (informace o atomech vázaných na křemík). Dále jsme využili přímá strukturní data pro strukturně podobné, avšak krystalické systémy: \cite{C3NJ00721A} \cite{rtg_4_pinkas}. Malé struktury měly za cíl podrobnou analýzu vazby křemík-uhlík \ref{prehled_male_modely}. (acetoxymethyl)trifluorosilan sloužil pro porovnání s ostatními modely křemíku. Existuje v něm přímá vazba na uhlík a zároveň jsou kolem vysoce elektronegativní fluory. Jak bylo zmíněno v kapitole \ref{teorie_hypervalence}, křemík je ochotný navyšovat koordinaci s vysoce elektronegativními ligandy. Zároveň je (acetoxymethyl)trifluorosilan schopen tvořit intramolekulární vazbu s Si-O a tím navýšit koordinaci křemíku na pět. Tyto  struktury jsou experimentálně pozorovány a nazývají se dragonoidy \cite{Chipanina2011}. Významnou částí malých modelů byly i výchozí sloučeniny, které slouží pro přípravu silikofosfátových polymerů.\\
-Modely střední velikosti reprezentovaly širší okolí křemíku \ref{prehled_middle} a už obsahovaly cykly, prozatím bez síťování, které je pro silikofosfáty typické. \\
-Model \ce{SiCH3(PO4)CH3(SiP2O10)(CH3)4} obsahoval jeden cyklus, volně navázaný fosfát a přímou vazbu křemík-uhlík. Model \ce{Si(P2SiO10(CH3)4)2} už obsahoval dva cykly, které byly pozorovány v silikofosfátových polymerech. Jednalo se o nejmenší model, který už obsahoval dva cykly.\\
-
-Poslední část, velké modely, se věnovala již pouze hypervaletnímu křemíku. Zde je klíčové zmínit, že naše modely byly pouze výseky z rozsáhlých struktur polymerů a chyběla stabilizace okolními atomy. Z tohoto důvodu byla snaha zachování neutrálního náboje pro všechny struktury. Výjimku tvořila původní rentgenová srtuktura křemíku \textbf{O}, ze článku\cite{C3NJ00721A},  která byla zároveň výchozí strukturou pro všechny velké modely křemíku v koordinaci šest \ref{prehled_large}.
-%\begin{figure}
-%\begin{center}
-%\includegraphics[width=8cm]{rtg_6.png}
-%\caption{Výchozí rentgenová struktura \cite{C3NJ00721A};  Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C,  \mycircle{yellow} P, \mycircleempty{black}~H}
-%\label{rtg_6}
-%\end{center}
-%\end{figure}
-V modelu \textbf{O} je křemík obklopen šesti fosfáty, které jsou vzájemně zesíťované přes další čtyřkoordinované křemíky. Přítomnost osmičlenného cyklu v silikofosfátech byla potvrzena rentgenovou strukturou \ref{4} ve článku \cite{rtg_4_pinkas}. Sloužila jako motiv pro vytváření cyklů v silikofofátových polymerech.
-\begin{figure}
-\begin{center}
-\includegraphics[width=6cm]{rtg_4_kruh_samotne.png}
-\caption{Struktura \ce{[(Ph2Si{O2P(O)OSiMe3})2]} získaná pomocí rentgenové krystalografie v práci \cite{rtg_4_pinkas};  Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircleempty{black}~H}
-\label{rtg_4}
-\end{center}
-\end{figure}
-V experimentálních strukturách silikofosfátů byly pozorovány krom fosfátových skupiny také různé acetátové skupiny. Právě přítomnost acetátových skupin měla vliv na chování křemíku a jeho sklon k hypervalenci. Acetátové skupiny se  v okolí křemíku vždy vyskytovaly po dvou a tento jev byl dodržen i v modelových strukturách. Zvolila jsem dvě možnosti umístění acetátových skupin. V prvním případě se acetylové skupiny vůči sobě vyskytovaly v poloze trans \ref{prehled_largeI},  \textbf{R}, ve druhém případě se vysvytovaly v poloze cis \ref{prehled_largeI},  \textbf{Q}.
-Při modelování silikofosfátů s acetátovými skupinami v polohách cis a trans jsme vycházeli z uspořádání v původní rentgenové struktuře. Naší snahou bylo zachování původních šesti cyklů. Proto v prvním kole optimalizace bylo ponecháno šest cyklů a dvě fosfátové skupiny nahrazeny acetátovými. Tento model měl problém s vazebným úhlem na atomech 50-11-52 a torzním úhlu na atomech 52 - 11 - 50 - 51 a 50 - 11 - 52 - 54. Jako řešení situace jsme zvolili odstranění dvou cyklů a uvolnění napětí na jednotlivých cyklech. Počet cyklů dva byl zvolen z důvodu zachování symetrie. Uvolněná struktura silikofosfátu s acetáty v poloze trans byla opět optimalizována, tentokrát s pseudopotenciálem z důvodu velikosti struktury. Ve druhém kroku byla provedena optimalizace již s B3LYP/6-31G*. \\
-Pro model silikofosfátu s acetátem v poloze cis byla situace obdobná. Výchozí strukturou byl původní model z rtg \ref{prehled_large}, \textbf{O}, kde bylz dva fosfátz nahrazenz acetylz. Toto uspořádání opět vedlo k přílišnému napětí na cyklech a z tohoto důvodu byla provedena stejná operace, jako pro model s acetátem v poloze trans. V modelu silikofofátu s acetátem v poloze cis byly odstraněny nejprve dva cykly a následně ještě jeden, protože struktura stále vykazovala špatné torzní úhly.
-Pro strukturu s acetátem v poloze cis bylo nutno odstranit celkově čtyři cykly a výsledný počet cyklů v molekule byl dva. Acetáty byly umístěné v ekvatoriální rovině stejně jako volný fosfát. \\
-Další koordinace křemíku, která byla experimentálně pozorována v silikofosfátech byla s křemík v koordinaci pět \ref{prehled_largeI}, \textbf{S}. Tento typ nebyl příliš častý, ale jeho přítomnost je známá z IR. Y tohoto d;vodu jsem také pětikoordinovaný křemík zařadila do analýzy. První návrh struktury silikofosfátu v koordinaci pět byl získán od prof. Pinkase (soukromé sdělení), Ústav Anorganické chemie, MU. Tento model obsahoval křemík v koordinaci pět a celkový počet cyklů byl pět. Toto uspořádání vedlo k špatnému úhlu na atomech 1 - 5 - 9 a větší části špatných torzních úhlů, příkladem může být špatný torní úhel na atomech 3 - 1 - 5 - 9.  Vzhledem k lichému počtu cyklů ve struktuře pětikoordinovaného křemíku byla otázka odstranění cyklů složitější a to především díky snaze zachovat symetrii v systému. Byly zvoleny dva přístupy. První model obsahoval tři cykly a volný fosfát, zde byl špatný vazebný úhel na atomech 1 - 3 - 8. Druhý model obsahoval pouze dva cykly a jeden fosfát, zde došlo k chybě ve vazebném úhlu na atomech 1 - 2 - 7. Nalezení správné struktury s křemíkem v koordinaci pět pomohla rentgenová struktura $\lambda$-Si-hydroxysilikát\footnote{Původní označení struktury ve článku, odkud byla získána.}\ref{rtg_5} v článku \cite{rtg_5}.
-\begin{figure}\begin{minipage}{\textwidth}
-\begin{center}
-\includegraphics[width=8cm]{rtg_5_koordinace.png}
-\caption{Struktura $\lambda$-Si-hydroxysilikát získaná pomocí rentgenové krystalografie v práci \cite{rtg_5};  Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircleempty{black}~H.}
-\label{rtg_5}
-\end{center}\end{minipage}
-\end{figure}
-Další model pětikoordinovaného křemíku byl inspirován touto rentgenovou strukturou a fosfát byl nahrazen vodíkem. Pro tento model byla udělána výjimka a celkov7 náboj byl snížen z 0 na -1, což se nakonec ukázalo jako vhodné řešení. Původní snaha zachování neutrálního náboje modelových struktur silikofosfátů vycházela z předpokaldu, že samotné amorfní struktury jsou neutrální. V případě pětikoordinovaného křemíku a ale náboj způsobil nerovnoměrnosti v systému. Snížení náboje o jedna vedlo k získání správné struktury s vodíkem, kde se nacházely dvy cykly a jeden volný fosfát. Ve výsledné strukturře byl dočasný vodík nahrazen fosfátem, aby se obnovila původní podoba struktury.
+Struktury pro výpočetní část jsou rozděleny podle velikosti, podle stupně koordinace křemíku a podle množství cyklů ve strukturách. Naší snahou při tvorbě modelů bylo co nejlépe modelovat možná koordinační okolí křemíku v amorfních strukturách, pro něž nejsou dostupná přímá strukturní data. Vycházeli jsme z nepřímých strukturních dat: chemických posunů křemíku (stupeň koordinace křemíku) a vibračních spekter (informace o atomech vázaných na křemík). Dále jsme využili přímá strukturní data pro strukturně podobné, avšak krystalické systémy ze článků \cite{C3NJ00721A} a \cite{rtg_4_pinkas}.
 
 \section{Malé modely}
-Malé modely podávají podrobnější pohled na charakter vazby Si-C a lze je rozdělit na dvě části. Prní část se věnuje modelovým strukturám, které slouží pro podrobnější analýzu chemické vazby. Druhá část se věnuje výchozím reaktantům, které slouží pro přípravu silikofosfátových polymerů. Obrázky struktur jsou uveden na obrázku \ref{prehled_male_modely}. Pro strukturu \ce{SiCH3(OCH3)5^{2-}} \ref{prehled_male_modely}, \textbf{C} bylo nutno použit klíčové slovo Opt=CalcFC. Pro sturkturu \ce{Si(OCH3)6^{2-}} \ref{prehled_male_modely},  \textbf{D} byl použit parametr SCF=Vshift. Model \ce{SiCl4} \ref{prehled_male_modely}, \textbf{E} slouží jako případ sloučeniny, kde křemík není schopen navyšovat koordinaci. Naopak (acetylmethoxyl)trifluorsilan \ref{prehled_male_modely}, \textbf{F} je zde použit jako model, kde je křemík ochoten zvyšovat koordinaci na pět. V tabulce \ref{hsab_small} je shrnutí HSAB analýzy pro malé modely.
+Malé modely umožňují jednoduchý pohled na charakter vazeb mezi křemíkem a kyslíkem, popř. jinými elektronegativními atomy. Tato část je rozdělena na modely těsného okolí křemíku v silikofosfátových polymerech a modely reaktantů, které byly použity v experimentální práci Aleše Stýskalíka.
+
+
+% Mezi malé modely jsme v této studii zařadili následující reaktanty použité v experimentální práce Aleše Stýskalíka: \ce{Si(OC2H5)4}, \ce{SiF3(C6H5)}, \ce{SiCH3(OCOCH3)3}, \ce{Si(OCOCH3)4} a \ce{Si(OCl)(OC2H5)3}. Struktury jsou uvedeny na obrázku
+%Dále jsme provedli výpočty na modelech zjednodušených vůči reaktantům náhradou esterických substituentů methoxy skupina: \ce{SiCH3(OCH3)3}, \ce{Si(OCH3)4}. Pro modelování šestikoordinovaného křemíku v silikofosfátech byly ještě zařazeny struktury \ce{SiCH3(OCOCH3)3} a \ce{Si(OCOCH3)4}.
+%První část tohto odstavce se věnuje zjednodušeným modelům reaktantů. Druhá část se věnuje reaktantům, které slouží pro experimentální přípravu silikofosfátových polymerů.
+ Struktury zkoumané v první části jsou uvedeny na obrázku \ref{prehled_male_modely}. V silikofosfátocých polymerech se vyskytuje křemík v koordinaci čtyři a šesta s vazbami na kyslíky. Model \ce{SiCH3(OCH3)3} \ref{prehled_male_modely}, \textbf{A} představuje strukturu s přímou vazbou Si-C. Toto uspořádání brání křemíku navyšovat koordinaci. Právě ochota křemíku navyšovat koordinaci je jednou z klíčových otázek této práce. Model \ce{Si(OCH3)4} \ref{prehled_male_modely}, \textbf{B} představuje uspořádání křemíku v koordinaci čyři ve kterém je křemík ochoten koordinaci navyšovat. Naopak v modelech \ce{SiCH3(OCH3)5^{2-}} \ref{prehled_male_modely}, \textbf{C} a \ce{Si(OCH3)6^{2-}} \ref{prehled_male_modely}, \textbf{D} se křemmík vyskytuje v koordinaci šest. Při optimalizace geometrie struktury  \ce{SiCH3(OCH3)5^{2-}} \ref{prehled_male_modely}, \textbf{C} bylo nutno použit klíčové slovo Opt=CalcFC a při optimalizace struktury \ce{Si(OCH3)6^{2-}} \ref{prehled_male_modely}, \textbf{D} bylo použito klíčové slovo SCF=Vshift. Poslední dvě strutkury  \ref{prehled_male_modely}, \ce{SiCl4},  \textbf{E} a (acetylmethoxyl)trifluorsilan, \textbf{F}  obsahují křemík, který má jako své ligandy elektronegativní atomy. Model \ce{SiCl4} slouží jako případ sloučeniny, kde křemík není schopen navyšovat koordinaci. Naopak (acetoxymethyl)trifluorosilan je schopen tvořit intramolekulární vazbu s Si-O a tím navýšit koordinaci křemíku na pět. Tyto  struktury jsou experimentálně pozorovány a nazývají se dragonoidy \cite{Chipanina2011}.
 
 \begin{figure}
 \centering
-\subfigure[\ce{SiCH3(OCH3)3}, \textbf{A}]{\includegraphics[width=6cm]{si_ch3_och3.png} \label{si_ch3_och3}}
+\subfigure[\ce{SiCH3(OCH3)3}, \textbf{A}]{\includegraphics[width=5cm]{si_ch3_och3.png} \label{si_ch3_och3}}
 \subfigure[\ce{Si(OCH3)4}, \textbf{B}]{\includegraphics[width=5cm]{si_och3_4.png}\label{si_och3_4}}
-\subfigure[\ce{SiCH3(OCH3)5^{2-}},  \textbf{C}]{\includegraphics[width=4cm]{si_ch3_och3_5.png}\label{si_ch3_och3_5}}
+\subfigure[\ce{SiCH3(OCH3)5^{2-}},  \textbf{C}]{\includegraphics[width=5cm]{si_ch3_och3_5.png}\label{si_ch3_och3_5}}
 \subfigure[\ce{Si(OCH3)6^{2-}},  \textbf{D}]{\includegraphics[width=5cm]{si_och3_6.png}\label{si_och3_6}}
-\subfigure[\ce{SiCl4},  \textbf{E}]{\includegraphics[width=3cm]{si_cl_4.png}\label{si_cl4}}
-\subfigure[(acetylmethoxyl)trifluorsilan, \textbf{F}]{\includegraphics[width=5.5cm]{acetylmethyltriflurosila.png} \label{acetylmethylfluorsilan}}
+\subfigure[\ce{SiCl4},  \textbf{E}]{\includegraphics[width=2cm]{si_cl_4.png}\label{si_cl4}}
+\subfigure[(acetylmethoxyl)trifluorsilan, \textbf{F}]{\includegraphics[width=5cm]{acetylmethyltriflurosila.png} \label{acetylmethylfluorsilan}}
 \caption{Přehled malých struktur; Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{green} Cl, \mycircle{red!50!blue!50}~F, \mycircleempty{black}~H}
 \label{prehled_male_modely}
 \end{figure}
+
+Druhá část této kapitoly je věnována reaktantům, které byly použity v experimentální práci Aleše Stýskalíka pro přípravu silikofosfátových polymerů.
+\begin{figure}
+\centering
+\subfigure[\ce{Si(OC2H5)4}, \textbf{G}]{\includegraphics[width=6cm]{si_o_et_4.png} \label{si_oet_4}}
+\subfigure[\ce{SiF3(C6H5)},  \textbf{H}]{\includegraphics[width=3cm]{si_fenyl_f3.png}\label{si_fenyl_f3}}
+\subfigure[\ce{Si(OCl)(OC2H5)3},  \textbf{I}]{\includegraphics[width=5cm]{si_ocl_oet_3.png}\label{si_ocl_oet_3}}
+\caption{Přehled reaktantů; Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{red!50!blue!50} F, \mycircle{green}~Cl, \mycircleempty{black}~H}
+\label{prehled_male_modely}
+\end{figure}
+
+\begin{figure}
+\centering
+\subfigure[\ce{Si(OCOCH3)4},  \textbf{J}]{\includegraphics[width=5cm]{si_o_ac_4.png}\label{si_o_ac_4}}
+\subfigure[\ce{SiH(OCOCH3)3},  \textbf{K}]{\includegraphics[width=5cm]{si_h_oac_3.png}\label{si_h_oac_3}}
+\subfigure[\ce{SiCH3(OCOCH3)3},  \textbf{L}]{\includegraphics[width=5cm]{si_ch3_oac_3.png}\label{si_ch3_oac_3}}
+\caption{Přehled reaktantů; Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{red!50!blue!50} F, \mycircle{green}~Cl, \mycircleempty{black}~H}
+\label{prehled_male_modely_II}
+\end{figure}
+
+
+Jedno z kritérii pro stabilitu molekul je rozdíl energie orbitalů HOMO a LUMO. Kladná hodnota energie orbitalu HOMO může znamenat méně nestabilní sloučeninu a naopak. Obdobně lze použít i parametr $\eta$, kdy vyšší hodnota $\eta$ znamená vyšší stabilitu sloučiny podle teorie HSAB.
+
+Tyto dvě uspořádání modelují struktury \ref{prehled_male_modely}, \textbf{B} a \textbf{D}. Model \ref{prehled_male_modely}, \textbf{A} představuje sloučeninu, která obsahuje přímou vazmu Si-C, která v silikofosfátech není pozorována. Toto uspořádání brání křemíku navyšovat svoji koordinaci a podle hodnoty $\eta=$ 2,831 se jedná o relativně stabilní molekulu. Oproti tomu struktura  \ref{prehled_male_modely}, \textbf{C} není pozorována a tomu odpovídá i velice nízká hodnota $\eta=$ -6,589. Struktura  \textbf{C} je tedy nestabilní a pravděpodobně nemůže existovat.
+
+ Naopak (acetylmethoxyl)trifluorsilan \ref{prehled_male_modely}, \textbf{F} je sloučenina, kde je křemík ochoten zvyšovat koordinaci na pět.
 
 \begin{table}[htbp]
 \begin{minipage}{\textwidth}
@@ -623,16 +638,18 @@ Malé modely podávají podrobnější pohled na charakter vazby Si-C a lze je r
 \end{minipage}
 \end{table}
 
+Pro všechny malé modely byla provedena NBO analýza. Ta si kladla za cíl lépe popsat vazebné možosti křemíku v různých koordinacích a s různými substituenty. V NBO analýze byly analyzovány protivazebné orbitaly (BD*). Právě dostupnost BD* určuje, zda bude sloučenina křemíku ochotna navyšovat koordinaci. Na základě vysokého podílu křemíku v BD* u molekuly \textbf{A} v tabulce \ref{nbo_small} lze učit, v případě vazebných orbitalů (BD) je velká část vazby lokalizována na kyslíku.
+
 \begin{table}[htbp]
 \begin{minipage}{\textwidth}
 \caption{Výsledky NBO analýzy pro malé modely, výsledky jsou uvedeny v [\%].}
 \begin{center}
 \begin{tabular}{|l|c|c|c|c|c|c|c|}
 \hline
-\label{nbo_small} &  Vazba & O.Č\footnote{Obsazovací číslo křemíku} & Si & X\footnote{Procenta druhého atomu ve  vazbě} & Si(s) & Si(p) &Si(d) \\ \hline
-\textbf{A} & (1)Si - O\footnote{ Obsazovací čísla jsou stejná pro vazby (1)Si - (2)O (1)Si - (4)O}  & 0,066 & 88,4  & 11,6  & 23,8  & 51,1  & 25,2  \\ \hline
-&  (1)Si - (3)O\footnote{v priprave} & 0,111 & 86,5  & 13,5  & 23,2  & 73,3  & 3,5  \\ \hline
-&  (1)Si - (3)O\footnote{v priprave} & 0,092 & 97,1  & 2,9  & 0,2  & 56,7  & 43,3  \\ \hline
+\label{nbo_small} &  Vazba & O.Č\footnote{Obsazovací číslo křemíku.} & Si & X\footnote{Procenta druhého atomu ve  vazbě.} & Si(s) & Si(p) &Si(d) \\ \hline
+\textbf{A} & (1)Si - O\footnote{ Obsazovací čísla jsou stejná pro vazby (1)Si - (2)O (1)Si - (4)O.}  & 0,066 & 88,4  & 11,6  & 23,8  & 51,1  & 25,2  \\ \hline
+&  (1)Si - (3)O\footnote{Lokalizační procedura NBO přiřazuje jednomu atomu (3)O dva vazebné orbitaly.} & 0,111 & 86,5  & 13,5  & 23,2  & 73,3  & 3,5  \\ \hline
+&  (1)Si - (3)O$^d$ & 0,092 & 97,1  & 2,9  & 0,2  & 56,7  & 43,3  \\ \hline
 & (1)Si - (17)C & 0,073 & 75,5  & 24,5  & 29,3  & 68,9  & 1,8  \\ \hline
 \textbf{B} & (1)Si - O\footnote{Obsazovací čísla jsou stejná pro vazby (1)Si-(2)O, (1)Si - (3)O, (1)Si - (4)O a (1)Si - (5)O.}  & 0,104 & 86,1  & 13,9  & 25,0  & 71,4  & 3,6  \\ \hline
 \textbf{C} & (1)Si - (2)O  & 0,100 & 92,1  & 7,9  & 16,0  & 50,0  & 33,9  \\ \hline
@@ -641,7 +658,7 @@ Malé modely podávají podrobnější pohled na charakter vazby Si-C a lze je r
 &  (1)Si - (5)O &0,095 & 91,9  & 8,1  & 16,4  & 50,6  & 33,0  \\ \hline
 &  (1)Si - (6)O & 0,103 & 92,1  & 7,9  & 16,1  & 50,1  & 33,8  \\ \hline
 & (1)Si - (27)C & 0,068 & 84,6  & 15,4  & 22,8  & 51,2  & 26,1  \\ \hline
-\textbf{D} & (1)Si - O\footnote{Obsazovací čísla jsou stejná pro vazby (1)Si - (2)O, (1)Si - (3)O, (1)Si - (4)O, (1)Si - (5)O,(1)Si - (6)O,(1)Si - (7)O }  & 0,098 & 91,8  & 8,2  & 16,7  & 50,0  & 33,3  \\ \hline
+\textbf{D} & (1)Si - O\footnote{Obsazovací čísla jsou stejná pro vazby (1)Si - (2)O, (1)Si - (3)O, (1)Si - (4)O, (1)Si - (5)O,(1)Si - (6)O,(1)Si - (7)O.}  & 0,098 & 91,8  & 8,2  & 16,7  & 50,0  & 33,3  \\ \hline
 \textbf{E} & (1)Si - (2)Cl & 0,141 & 74,0  & 26,0  & 25,0  & 72,4  & 2,6  \\ \hline
 &  (1)Si - (3)Cl& 0,141 & 74,0  & 26,0  & 25,0  & 72,4  & 2,6  \\ \hline
 & (1)Si - (4)Cl & 0,141 & 74,0  & 26,0  & 25,0  & 72,4  & 2,6  \\ \hline
@@ -653,6 +670,8 @@ Malé modely podávají podrobnější pohled na charakter vazby Si-C a lze je r
 \end{center}
 \end{minipage}
 \end{table}
+
+Pro některé molekuly bylo nutno použít vice MO než je počet jejich vazeb kvůli dalokalizaci MO. Zapojení orbitalů typu $p$ je dáno přibližně 4-četnou osou symetrie. Proto byly pro MPA analýzy byly vybrány takové vazebné orbitaly, ve kterých podíl křemíku a alespoň jednoho z přímo vázaných ligandů alespoň 0,1. Vzhledem k charakteru MPA analýzy nebylo možné použít pro analýzy orbitaly LUMO.
 
 \begin{table}[htbp]\begin{minipage}{\textwidth}
 \caption{MPA analýza vybraných MO orbitalů \ce{SiCH3(OCH3)3}, \textbf{A}, výsledky jsou uvedeny v [\%].}
@@ -782,24 +801,8 @@ Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.}\label{acetylmethylt
 \end{tabular}\end{center}\end{minipage}\end{table}
 
 \subsection{Reaktanty}
-Na základě experimentální práce Aleše Stýskalíka \cite{Styskalik2015thesis} jsem se zabývala křemíkem v koordinaci čtyři, který sloužil jako výchozí reaktant pro přípravu silikofosfátových polymerů.
-\begin{figure}
-\centering
-\subfigure[\ce{Si(OC2H5)4}, \textbf{G}]{\includegraphics[width=6cm]{si_o_et_4.png} \label{si_oet_4}}
-\subfigure[\ce{SiF3(C6H5)},  \textbf{H}]{\includegraphics[width=3cm]{si_fenyl_f3.png}\label{si_fenyl_f3}}
-\subfigure[\ce{Si(OCl)(OC2H5)3},  \textbf{I}]{\includegraphics[width=5cm]{si_ocl_oet_3.png}\label{si_ocl_oet_3}}
-\caption{Přehled reaktantů; Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{red!50!blue!50} F, \mycircle{green}~Cl, \mycircleempty{black}~H}
-\label{prehled_male_modely}
-\end{figure}
+Na základě experimentální práce Aleše Stýskalíka \cite{Styskalik2015thesis} jsem se zabývala křemíkem v koordinaci čtyři, který sloužil jako výchozí reaktant pro přípravu silikofosfátových polymerů. První část tvoří reaktanty, které vedou ke vzniku silikofosfátových polymerů v bezvodém prostředí. Druhou skupinou je speciální případ \ce{Si(OCOCH3)4} a jeho modifikací. Zde byla klíčová otázka, kdy je křemík ochoten navýšit koordinaci na šest. Výchozím modelem byl \ce{Si(OCOCH3)4},\ref{prehled_male_modely_II}, \textbf{J} a potom dvě jeho modifikované struktury. V prvním případě byl jeden acetát nahrazen methylem  \ref{prehled_male_modely_II}, \textbf{K}, v druhém případě byl acetát nahrazen přímo vodíkem \ref{prehled_male_modely_II}, \textbf{K}. Pro obě skupiny byly zpracována HSAB analýzy.
 
-\begin{figure}
-\centering
-\subfigure[\ce{Si(OCOCH3)4},  \textbf{J}]{\includegraphics[width=5cm]{si_o_ac_4.png}\label{si_o_ac_4}}
-\subfigure[\ce{SiH(OCOCH3)3},  \textbf{K}]{\includegraphics[width=5cm]{si_h_oac_3.png}\label{si_h_oac_3}}
-\subfigure[\ce{SiCH3(OCOCH3)3},  \textbf{L}]{\includegraphics[width=5cm]{si_ch3_oac_3.png}\label{si_ch3_oac_3}}
-\caption{Přehled reaktantů; Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{red!50!blue!50} F, \mycircle{green}~Cl, \mycircleempty{black}~H}
-\label{prehled_male_modely}
-\end{figure}
 
 \begin{table}[htbp]\begin{minipage}{\textwidth}
 \begin{center}\caption{HSAB analýza malých molekul, výsledky jsou uvedeny v [eV].}\begin{tabular}{|l|r|r|r|r|}
@@ -823,6 +826,8 @@ Na základě experimentální práce Aleše Stýskalíka \cite{Styskalik2015thes
 \end{tabular}
 \end{center}\end{minipage}
 \end{table}
+
+Podrobnější pohled na chemickkou vazbu dávají obrázky NBO orbitalů.
 
 \renewcommand{\thesubfigure}{(\alph{subfigure})}
 \begin{figure}
@@ -848,7 +853,9 @@ Na základě experimentální práce Aleše Stýskalíka \cite{Styskalik2015thes
 \end{figure}
 
 \section{Středně velké modely}
-Tato část se věňuje nejmenším možným modelům, které již tvoří uvnitř svých struktur cyklus. Přehled struktur je ukázán na obrázku \ref{prehled_middle} Středně velké modely obsahují křemík v koordinaci čtyři a snaží se zachytiti tvorbu cyklů, které vznikají v silikofosfátech. V tabulce \ref{hsab_middle} lze vidět výsledky pro HSAB analýzu.
+Modely střední velikosti reprezentovaly širší okolí křemíku \ref{prehled_middle} a už obsahovaly cykly, prozatím bez síťování, které je pro silikofosfáty typické. \\
+Model \ce{SiCH3(PO4)CH3(SiP2O10)(CH3)4} obsahoval jeden cyklus, volně navázaný fosfát a přímou vazbu křemík-uhlík. Model \ce{Si(P2SiO10(CH3)4)2} už obsahoval dva cykly, které byly pozorovány v silikofosfátových polymerech. Jednalo se o nejmenší model, který už obsahoval dva cykly.\\
+Tato část se věňuje nejmenším možným modelům, které již tvoří uvnitř svých struktur cyklus. Přehled struktur je ukázán na obrázku \ref{prehled_middle}. Středně velké modely obsahují křemík v koordinaci čtyři a snaží se zachytiti tvorbu cyklů, které jsou pozorovány v silikofosfátech. V tabulce \ref{hsab_middle} lze vidět výsledky pro HSAB analýzu.
 \begin{figure}
 \begin{center}
 \subfigure[\ce{SiCH3(PO4(CH3)2)(Si2P2O9(CH3)4)},  \textbf{M}]{\includegraphics[width=6cm]{si_model_methyl.png}\label{obr_h4sio4_MO_s1_20}}
@@ -928,11 +935,37 @@ Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.}  \label{si_model_or
 \end{tabular}
 \end{center}\end{minipage}\end{table}
 
-
-
-
 \section{Velké modely}
-Velké modely mají za cíl modelovat vybrané části ze silikofosfátů. Ve svých strukturách už obsahují dva a více cyklů a všechny obsahují křemík v koordinaci šest. Pro velké struktury byla provedena HSAB analýza a výsledky jsou uvedeny v tabulce \ref{hsab_large}. Přehled struktur pro analýzu je uveden na obrázku \ref{prehled_large}.
+Poslední část, velké modely, se věnovala již pouze hypervaletnímu křemíku. Zde je klíčové zmínit, že naše modely byly pouze výseky z rozsáhlých struktur polymerů a chyběla stabilizace okolními atomy. Z tohoto důvodu byla snaha zachování neutrálního náboje pro všechny struktury. Výjimku tvořila původní rentgenová srtuktura křemíku \textbf{O}, ze článku\cite{C3NJ00721A},  která byla zároveň výchozí strukturou pro všechny velké modely křemíku v koordinaci šest \ref{prehled_large}.
+%\begin{figure}
+%\begin{center}
+%\includegraphics[width=8cm]{rtg_6.png}
+%\caption{Výchozí rentgenová struktura \cite{C3NJ00721A};  Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C,  \mycircle{yellow} P, \mycircleempty{black}~H}
+%\label{rtg_6}
+%\end{center}
+%\end{figure}
+V modelu \textbf{O} je křemík obklopen šesti fosfáty, které jsou vzájemně zesíťované přes další čtyřkoordinované křemíky. Přítomnost osmičlenného cyklu v silikofosfátech byla potvrzena rentgenovou strukturou \ref{4} ve článku \cite{rtg_4_pinkas}. Sloužila jako motiv pro vytváření cyklů v silikofofátových polymerech.
+\begin{figure}
+\begin{center}
+\includegraphics[width=6cm]{rtg_4_kruh_samotne.png}
+\caption{Struktura \ce{[(Ph2Si{O2P(O)OSiMe3})2]} získaná pomocí rentgenové krystalografie v práci \cite{rtg_4_pinkas};  Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircleempty{black}~H}
+\label{rtg_4}
+\end{center}
+\end{figure}
+V experimentálních strukturách silikofosfátů byly pozorovány krom fosfátových skupiny také různé acetátové skupiny. Právě přítomnost acetátových skupin měla vliv na chování křemíku a jeho sklon k hypervalenci. Acetátové skupiny se  v okolí křemíku vždy vyskytovaly po dvou a tento jev byl dodržen i v modelových strukturách. Zvolila jsem dvě možnosti umístění acetátových skupin. V prvním případě se acetylové skupiny vůči sobě vyskytovaly v poloze trans \ref{prehled_largeI},  \textbf{R}, ve druhém případě se vysvytovaly v poloze cis \ref{prehled_largeI},  \textbf{Q}.
+Při modelování silikofosfátů s acetátovými skupinami v polohách cis a trans jsme vycházeli z uspořádání v původní rentgenové struktuře. Naší snahou bylo zachování původních šesti cyklů. Proto v prvním kole optimalizace bylo ponecháno šest cyklů a dvě fosfátové skupiny nahrazeny acetátovými. Tento model měl problém s vazebným úhlem na atomech 50-11-52 a torzním úhlu na atomech 52 - 11 - 50 - 51 a 50 - 11 - 52 - 54. Jako řešení situace jsme zvolili odstranění dvou cyklů a uvolnění napětí na jednotlivých cyklech. Počet cyklů dva byl zvolen z důvodu zachování symetrie. Uvolněná struktura silikofosfátu s acetáty v poloze trans byla opět optimalizována, tentokrát s pseudopotenciálem z důvodu velikosti struktury. Ve druhém kroku byla provedena optimalizace již s B3LYP/6-31G*. \\
+Pro model silikofosfátu s acetátem v poloze cis byla situace obdobná. Výchozí strukturou byl původní model z rtg \ref{prehled_large}, \textbf{O}, kde bylz dva fosfátz nahrazenz acetylz. Toto uspořádání opět vedlo k přílišnému napětí na cyklech a z tohoto důvodu byla provedena stejná operace, jako pro model s acetátem v poloze trans. V modelu silikofofátu s acetátem v poloze cis byly odstraněny nejprve dva cykly a následně ještě jeden, protože struktura stále vykazovala špatné torzní úhly.
+Pro strukturu s acetátem v poloze cis bylo nutno odstranit celkově čtyři cykly a výsledný počet cyklů v molekule byl dva. Acetáty byly umístěné v ekvatoriální rovině stejně jako volný fosfát. \\
+Další koordinace křemíku, která byla experimentálně pozorována v silikofosfátech byla s křemík v koordinaci pět \ref{prehled_largeI}, \textbf{S}. Tento typ nebyl příliš častý, ale jeho přítomnost je známá z IR. Y tohoto d;vodu jsem také pětikoordinovaný křemík zařadila do analýzy. První návrh struktury silikofosfátu v koordinaci pět byl získán od prof. Pinkase (soukromé sdělení), Ústav Anorganické chemie, MU. Tento model obsahoval křemík v koordinaci pět a celkový počet cyklů byl pět. Toto uspořádání vedlo k špatnému úhlu na atomech 1 - 5 - 9 a větší části špatných torzních úhlů, příkladem může být špatný torní úhel na atomech 3 - 1 - 5 - 9.  Vzhledem k lichému počtu cyklů ve struktuře pětikoordinovaného křemíku byla otázka odstranění cyklů složitější a to především díky snaze zachovat symetrii v systému. Byly zvoleny dva přístupy. První model obsahoval tři cykly a volný fosfát, zde byl špatný vazebný úhel na atomech 1 - 3 - 8. Druhý model obsahoval pouze dva cykly a jeden fosfát, zde došlo k chybě ve vazebném úhlu na atomech 1 - 2 - 7. Nalezení správné struktury s křemíkem v koordinaci pět pomohla rentgenová struktura $\lambda$-Si-hydroxysilikát\footnote{Původní označení struktury ve článku, odkud byla získána.}\ref{rtg_5} v článku \cite{rtg_5}.
+\begin{figure}\begin{minipage}{\textwidth}
+\begin{center}
+\includegraphics[width=8cm]{rtg_5_koordinace.png}
+\caption{Struktura $\lambda$-Si-hydroxysilikát získaná pomocí rentgenové krystalografie v práci \cite{rtg_5};  Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircleempty{black}~H.}
+\label{rtg_5}
+\end{center}\end{minipage}
+\end{figure}
+Další model pětikoordinovaného křemíku byl inspirován touto rentgenovou strukturou a fosfát byl nahrazen vodíkem. Pro tento model byla udělána výjimka a celkov7 náboj byl snížen z 0 na -1, což se nakonec ukázalo jako vhodné řešení. Původní snaha zachování neutrálního náboje modelových struktur silikofosfátů vycházela z předpokaldu, že samotné amorfní struktury jsou neutrální. V případě pětikoordinovaného křemíku a ale náboj způsobil nerovnoměrnosti v systému. Snížení náboje o jedna vedlo k získání správné struktury s vodíkem, kde se nacházely dvy cykly a jeden volný fosfát. Ve výsledné strukturře byl dočasný vodík nahrazen fosfátem, aby se obnovila původní podoba struktury.
+Velké modely mají za cíl modelovat vybrané části ze silikofosfátů. Ve svých strukturách už obsahují dva a více cyklů a všechny obsahují křemík v koordinaci pět nebo šest. Pro velké struktury byla provedena HSAB analýza a výsledky jsou uvedeny v tabulce \ref{hsab_large}. Přehled struktur pro analýzu je uveden na obrázku \ref{prehled_large}.
 \begin{figure}
 \begin{center}
 \caption{Přehled velkých modelů;  Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{yellow} P, \mycircleempty{black}~H}
@@ -1029,14 +1062,7 @@ central Si & -210,45 & -211,70 & -160,48 & -217,13 & -220,53 & -101 \\ \hline
 4 Si &  & -160,50 &  & -166,08 & -161,83 & -212 \\ \hline
 4 Si &  &  &  & -168,73 & -161,46 & -212 \\ \hline
 4 Si &  &  &  & -164,42 & -161,68 & -212 \\ \hline
-\end{tabular}
-\end{center}
-\end{minipage}
-\end{table}
-
-
-
-
+\end{tabular}\end{center}\end{minipage}\end{table}
 
 
 \begin{comment}
@@ -1066,6 +1092,10 @@ central Si & -210,45 & -211,70 & -160,48 & -217,13 & -220,53 & -101 \\ \hline
 
 
 \chapter{Závěr}
+Cílem práce bylo podat podrobnější pohled na vazebné poměry v silikofosfátových polymerech a zároveň zodpovědět otázku, kdy je křemík ochoten navyšovat svoji koordinace. Prostředkem pro pochopení hypervalence křemíku byly tři úrovně - malé, střední a velké modely.
+
+
+
 Tato práce vznikla za podpory projektů CERIT Scientific Cloud (LM2015085) a~CESNET (LM2015042) financovaných z programu MŠMT Projekty velkých infrastruktur pro VaVaI.
 \newpage
 \chapter{Přílohy}
