@@ -20,21 +20,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}\slshape Teorie funkcion\IeC {\'a}lu hustoty}{13}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}\rmfamily DFT metody v praxi}{15}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.1}\rmfamily DFT metody v~praxi}{15}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}\rmfamily Spektroskopick\IeC {\'e} vlastnosti atom\IeC {\r u} a molekul}{16}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}\rmfamily Spektroskopick\IeC {\'e} vlastnosti atom\IeC {\r u} a~molekul}{16}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}\slshape B\IeC {\'a}ze v kvantov\IeC {\v e} chemick\IeC {\'y}ch v\IeC {\'y}po\IeC {\v c}tech}{17}{section.2.3}
+\contentsline {section}{\numberline {2.3}\slshape B\IeC {\'a}ze v~kvantov\IeC {\v e} chemick\IeC {\'y}ch v\IeC {\'y}po\IeC {\v c}tech}{17}{section.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}\slshape Interpretace kvantov\IeC {\v e}-chemick\IeC {\'y}ch v\IeC {\'y}po\IeC {\v c}t\IeC {\r u}}{19}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}\rmfamily Tvrdost a m\IeC {\v e}kkost kyselin a b\IeC {\'a}z\IeC {\'\i }}{20}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.1}\rmfamily Tvrdost a~m\IeC {\v e}kkost kyselin a~b\IeC {\'a}z\IeC {\'\i }}{20}{subsection.2.4.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4.2}\rmfamily Mullikenova popula\IeC {\v c}n\IeC {\'\i } anal\IeC {\'y}za (MPA)}{21}{subsection.2.4.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4.3}\rmfamily P\IeC {\v r}irozen\IeC {\'e} orbitaly (tzv. Natural Bond Orbitals)}{22}{subsection.2.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}\bfseries V\IeC {\'y}sledky a diskuze}{23}{chapter.3}
+\contentsline {chapter}{\numberline {3}\bfseries V\IeC {\'y}sledky a~diskuze}{23}{chapter.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}\slshape V\IeC {\'y}po\IeC {\v c}etn\IeC {\'\i } detaily}{23}{section.3.1}
 \defcounter {refsection}{0}\relax 
@@ -44,9 +44,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}\slshape Mal\IeC {\'e} modely}{25}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}\rmfamily Reaktanty}{33}{subsection.3.3.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}\slshape St\IeC {\v r}edn\IeC {\v e} velk\IeC {\'e} modely}{36}{section.3.4}
+\contentsline {section}{\numberline {3.4}\slshape St\IeC {\v r}edn\IeC {\v e} velk\IeC {\'e} modely}{39}{section.3.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.5}\slshape Velk\IeC {\'e} modely}{43}{section.3.5}
 \defcounter {refsection}{0}\relax 
