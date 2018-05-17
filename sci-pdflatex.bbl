@@ -43,8 +43,8 @@
       \strng{fullhash}{12de2bb4e6147988aa44d51be59149d9}
       \strng{authornamehash}{12de2bb4e6147988aa44d51be59149d9}
       \strng{authorfullhash}{12de2bb4e6147988aa44d51be59149d9}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinit}{9}
+      \field{sortinithash}{2999ebab86052e6d71b434385f8b4ed2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0002-7863}
@@ -72,8 +72,8 @@
       \strng{fullhash}{3d7069496625708004929bd54676e8f0}
       \strng{authornamehash}{3d7069496625708004929bd54676e8f0}
       \strng{authorfullhash}{3d7069496625708004929bd54676e8f0}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Quantum Chemical Calculations of EPR Parameters for Transition Metal Complexes}
@@ -115,8 +115,8 @@
       \strng{fullhash}{ad2436b60ff972719009e19e4e223532}
       \strng{authornamehash}{ad2436b60ff972719009e19e4e223532}
       \strng{authorfullhash}{ad2436b60ff972719009e19e4e223532}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{2}
@@ -164,8 +164,8 @@
       \strng{fullhash}{8d7bdb457191adf4dd00c50bddd9fef7}
       \strng{authornamehash}{8d7bdb457191adf4dd00c50bddd9fef7}
       \strng{authorfullhash}{8d7bdb457191adf4dd00c50bddd9fef7}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2050-7488}
@@ -198,8 +198,8 @@
       \strng{authorfullhash}{3699b0477c1a3600e5f3e968f7c3b274}
       \strng{supervisornamehash}{fdc3e87c17bd650850f75577067c5689}
       \strng{supervisorfullhash}{fdc3e87c17bd650850f75577067c5689}
-      \field{sortinit}{5}
-      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Synthesis of metallophosphate materials by nonhydrolytic methods [online]}
@@ -226,8 +226,8 @@
       \strng{fullhash}{9a104bd7c0afc7b367bd99ea46a1f31a}
       \strng{authornamehash}{9a104bd7c0afc7b367bd99ea46a1f31a}
       \strng{authorfullhash}{9a104bd7c0afc7b367bd99ea46a1f31a}
-      \field{sortinit}{6}
-      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Acta Crystallographica Section B}
@@ -238,9 +238,6 @@
       \field{year}{1971}
       \field{pages}{594\bibrangedash 601}
       \range{pages}{8}
-      \verb{doi}
-      \verb 10.1107/S0567740871002619
-      \endverb
       \verb{url}
       \verb https://doi.org/10.1107/S0567740871002619
       \endverb
@@ -272,8 +269,8 @@
       \strng{fullhash}{22a5fc04ea2e4a1c7dadbb83f401f976}
       \strng{authornamehash}{22a5fc04ea2e4a1c7dadbb83f401f976}
       \strng{authorfullhash}{22a5fc04ea2e4a1c7dadbb83f401f976}
-      \field{sortinit}{8}
-      \field{sortinithash}{2f1b0e69e7617f99664f1cd00bb9603c}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of the American Chemical Society}
@@ -318,8 +315,8 @@
       \strng{authorfullhash}{37761883a33ccdd50247d503ff011af7}
       \strng{supervisornamehash}{ed9167bf8d89391ffc5bc8b68da2c9d5}
       \strng{supervisorfullhash}{ed9167bf8d89391ffc5bc8b68da2c9d5}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{3}
+      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Didaktika kvalitativní teorie MO a pojem hypervalence}
@@ -338,8 +335,8 @@
       \strng{fullhash}{4947f691f83812d89a48aff2934c0c84}
       \strng{authornamehash}{4947f691f83812d89a48aff2934c0c84}
       \strng{authorfullhash}{4947f691f83812d89a48aff2934c0c84}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{3}
+      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{MacMillan Group Meeting, 20th July, 2005}
@@ -382,8 +379,8 @@
       \strng{authorfullhash}{ee4ad428deb3e08cfc5bc6c1c1f39be8}
       \strng{editornamehash}{e9ee92b4f2384a1aefb1a08690d39549}
       \strng{editorfullhash}{e9ee92b4f2384a1aefb1a08690d39549}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{3}
+      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Functional Molecular Silicon Compounds I: Regular Oxidation States}
@@ -419,8 +416,8 @@
       \strng{fullhash}{d93e976889648dc3ea2ab5382a9cb7bb}
       \strng{authornamehash}{d93e976889648dc3ea2ab5382a9cb7bb}
       \strng{authorfullhash}{d93e976889648dc3ea2ab5382a9cb7bb}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{3}
+      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{number}{sv. 2}
@@ -567,8 +564,8 @@
       \strng{fullhash}{bea89515acf4250ea515b222a4be0543}
       \strng{authornamehash}{bea89515acf4250ea515b222a4be0543}
       \strng{authorfullhash}{bea89515acf4250ea515b222a4be0543}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0040-4020}
@@ -603,8 +600,8 @@
       \strng{fullhash}{5c15973fdac20a45e10a59d1e1246e59}
       \strng{authornamehash}{5c15973fdac20a45e10a59d1e1246e59}
       \strng{authorfullhash}{5c15973fdac20a45e10a59d1e1246e59}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Inorganic Chemistry}
@@ -641,8 +638,8 @@
       \strng{fullhash}{883208dd1353020ce47757755660eaf9}
       \strng{authornamehash}{883208dd1353020ce47757755660eaf9}
       \strng{authorfullhash}{883208dd1353020ce47757755660eaf9}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of the American Chemical Society}
@@ -707,13 +704,13 @@
       \strng{fullhash}{6cfb5a34a6aa234c4c0aca46b84f9103}
       \strng{authornamehash}{6cfb5a34a6aa234c4c0aca46b84f9103}
       \strng{authorfullhash}{6cfb5a34a6aa234c4c0aca46b84f9103}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{11}
       \field{journaltitle}{Chem. Commun.}
-      \field{title}{Different fluoride anion sources and (trifluoromethyl)trimethylsilane: molecular structure of tris(dimethylamino)sulfonium bis(trifluoromethyl)trimethylsiliconate{,} the first isolated pentacoordinate silicon species with five Si-C bonds}
+      \field{title}{Different fluoride anion sources and (trifluoromethyl)trimethylsilane: molecular structure of tris\-(dimethylamino)\-sulfonium bis(trifluoromethyl)trimethylsiliconate{,} the first isolated pentacoordinate silicon species with five Si-C bonds}
       \field{year}{1999}
       \field{pages}{1017\bibrangedash 1018}
       \range{pages}{2}
@@ -770,8 +767,8 @@
       \strng{fullhash}{c969d90a67b7ac8f3049cb031b943391}
       \strng{authornamehash}{c969d90a67b7ac8f3049cb031b943391}
       \strng{authorfullhash}{c969d90a67b7ac8f3049cb031b943391}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Reviews in Computational Chemistry, Volume 15}
@@ -795,8 +792,8 @@
       \strng{fullhash}{ce65cfd17c0d94a586e65a9d32663b3c}
       \strng{authornamehash}{ce65cfd17c0d94a586e65a9d32663b3c}
       \strng{authorfullhash}{ce65cfd17c0d94a586e65a9d32663b3c}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9780470058046}
@@ -826,8 +823,8 @@
       \strng{fullhash}{c3c5d7493992738736b5c70342d8ca5f}
       \strng{authornamehash}{c3c5d7493992738736b5c70342d8ca5f}
       \strng{authorfullhash}{c3c5d7493992738736b5c70342d8ca5f}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{3B}
@@ -865,8 +862,8 @@
       \strng{fullhash}{4156f6a875693785bcf008215d5f7737}
       \strng{authornamehash}{4156f6a875693785bcf008215d5f7737}
       \strng{authorfullhash}{4156f6a875693785bcf008215d5f7737}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{A chemist's guide to density functional theory}
@@ -892,8 +889,8 @@
       \strng{fullhash}{959b5dc140d0cdc7319f694b207f91c2}
       \strng{authornamehash}{959b5dc140d0cdc7319f694b207f91c2}
       \strng{authorfullhash}{959b5dc140d0cdc7319f694b207f91c2}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9780195357738}
@@ -919,8 +916,8 @@
       \strng{fullhash}{f04db823c6c7db2b69da352743d93876}
       \strng{authornamehash}{f04db823c6c7db2b69da352743d93876}
       \strng{authorfullhash}{f04db823c6c7db2b69da352743d93876}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{6}
@@ -963,8 +960,8 @@
       \strng{fullhash}{8f15e0d12f1047364a4065ac291c14ad}
       \strng{authornamehash}{8f15e0d12f1047364a4065ac291c14ad}
       \strng{authorfullhash}{8f15e0d12f1047364a4065ac291c14ad}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{2}
@@ -1086,8 +1083,8 @@
       \strng{fullhash}{f40a1a8ff16ce173598b23817fc6a10d}
       \strng{authornamehash}{f40a1a8ff16ce173598b23817fc6a10d}
       \strng{authorfullhash}{f40a1a8ff16ce173598b23817fc6a10d}
-      \field{sortinit}{5}
-      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{sortinit}{6}
+      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9780199543373}
@@ -1124,8 +1121,8 @@
       \strng{fullhash}{c07e8461cd313586b0c790211c6204ed}
       \strng{authornamehash}{c07e8461cd313586b0c790211c6204ed}
       \strng{authorfullhash}{c07e8461cd313586b0c790211c6204ed}
-      \field{sortinit}{5}
-      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{sortinit}{6}
+      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Journal of Physical Chemistry}
@@ -1169,8 +1166,8 @@
       \strng{authorfullhash}{0522a737575669843049dca96d9fa429}
       \strng{supervisornamehash}{7ad205ccf437ff8ccffffcbe61a5c09e}
       \strng{supervisorfullhash}{7ad205ccf437ff8ccffffcbe61a5c09e}
-      \field{sortinit}{5}
-      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{sortinit}{6}
+      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Výpočet NMR parametrů modifikovaných purinů [online]}
@@ -1554,8 +1551,8 @@
       \strng{fullhash}{40244b6d72100dba36c5c0f77eef728d}
       \strng{authornamehash}{515875380dab94a6e8279401a3e319b6}
       \strng{authorfullhash}{40244b6d72100dba36c5c0f77eef728d}
-      \field{sortinit}{5}
-      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{sortinit}{6}
+      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Gaussian Inc. Wallingford CT}
@@ -1582,8 +1579,8 @@
       \strng{fullhash}{3dcda2df24a9645ac76bff143c621ad2}
       \strng{authornamehash}{3dcda2df24a9645ac76bff143c621ad2}
       \strng{authorfullhash}{3dcda2df24a9645ac76bff143c621ad2}
-      \field{sortinit}{5}
-      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{sortinit}{6}
+      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9780080470788}
@@ -1605,8 +1602,8 @@
       \strng{fullhash}{dc8f27de6db7259309a9edf53ea31642}
       \strng{authornamehash}{dc8f27de6db7259309a9edf53ea31642}
       \strng{authorfullhash}{dc8f27de6db7259309a9edf53ea31642}
-      \field{sortinit}{5}
-      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{sortinit}{6}
+      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of the American Chemical Society}
@@ -1706,8 +1703,8 @@
       \strng{fullhash}{d1384cd0f58c4a459ba97adb8091f64d}
       \strng{authornamehash}{d1384cd0f58c4a459ba97adb8091f64d}
       \strng{authorfullhash}{d1384cd0f58c4a459ba97adb8091f64d}
-      \field{sortinit}{6}
-      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
+      \field{sortinit}{7}
+      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the National Academy of Sciences}
@@ -1738,8 +1735,8 @@
       \strng{fullhash}{6167d106c91ac44f2672ec52e082a8b3}
       \strng{authornamehash}{6167d106c91ac44f2672ec52e082a8b3}
       \strng{authorfullhash}{6167d106c91ac44f2672ec52e082a8b3}
-      \field{sortinit}{6}
-      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
+      \field{sortinit}{7}
+      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9780521831284}
@@ -1769,8 +1766,8 @@
       \strng{fullhash}{cdd83319a5b0762b64ec3f53e134212e}
       \strng{authornamehash}{cdd83319a5b0762b64ec3f53e134212e}
       \strng{authorfullhash}{cdd83319a5b0762b64ec3f53e134212e}
-      \field{sortinit}{6}
-      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
+      \field{sortinit}{7}
+      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Reviews in Computational Chemistry}
@@ -1827,8 +1824,8 @@
       \strng{fullhash}{de0a08dcd50a8601c36173fdc3cddfc4}
       \strng{authornamehash}{de0a08dcd50a8601c36173fdc3cddfc4}
       \strng{authorfullhash}{de0a08dcd50a8601c36173fdc3cddfc4}
-      \field{sortinit}{6}
-      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
+      \field{sortinit}{7}
+      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1758-2946}
@@ -1893,8 +1890,8 @@
       \strng{fullhash}{1a6d753d7f618d45214979d4a784b756}
       \strng{authornamehash}{1a6d753d7f618d45214979d4a784b756}
       \strng{authorfullhash}{1a6d753d7f618d45214979d4a784b756}
-      \field{sortinit}{6}
-      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
+      \field{sortinit}{7}
+      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Applied Crystallography}
@@ -1905,9 +1902,6 @@
       \field{year}{2006}
       \field{pages}{453\bibrangedash 457}
       \range{pages}{5}
-      \verb{doi}
-      \verb 10.1107/S002188980600731X
-      \endverb
       \verb{url}
       \verb http://dx.doi.org/10.1107/S002188980600731X
       \endverb
@@ -1944,8 +1938,8 @@
       \strng{fullhash}{f4a9c2721af5b30461bde42aa5568725}
       \strng{authornamehash}{f4a9c2721af5b30461bde42aa5568725}
       \strng{authorfullhash}{f4a9c2721af5b30461bde42aa5568725}
-      \field{sortinit}{6}
-      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
+      \field{sortinit}{7}
+      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of the American Chemical Society}
@@ -2047,8 +2041,8 @@
       \strng{fullhash}{c74c99f357ad415c9c003bdcee0936d7}
       \strng{authornamehash}{c74c99f357ad415c9c003bdcee0936d7}
       \strng{authorfullhash}{c74c99f357ad415c9c003bdcee0936d7}
-      \field{sortinit}{7}
-      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
+      \field{sortinit}{8}
+      \field{sortinithash}{2f1b0e69e7617f99664f1cd00bb9603c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Journal of Chemical Physics}
@@ -2081,8 +2075,8 @@
       \strng{fullhash}{b74e5802b412fd34a6d8530edfd68f3a}
       \strng{authornamehash}{b74e5802b412fd34a6d8530edfd68f3a}
       \strng{authorfullhash}{b74e5802b412fd34a6d8530edfd68f3a}
-      \field{sortinit}{7}
-      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
+      \field{sortinit}{8}
+      \field{sortinithash}{2f1b0e69e7617f99664f1cd00bb9603c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{N M R Basic Princ. Prog.}
@@ -2118,8 +2112,8 @@
       \strng{fullhash}{ef39088a0e6f0c724b753cb4529dc6d0}
       \strng{authornamehash}{ef39088a0e6f0c724b753cb4529dc6d0}
       \strng{authorfullhash}{ef39088a0e6f0c724b753cb4529dc6d0}
-      \field{sortinit}{7}
-      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
+      \field{sortinit}{8}
+      \field{sortinithash}{2f1b0e69e7617f99664f1cd00bb9603c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of the American Chemical Society}
@@ -2152,8 +2146,8 @@
       \strng{fullhash}{73c4936eda75938bd42ea6524110ad21}
       \strng{authornamehash}{73c4936eda75938bd42ea6524110ad21}
       \strng{authorfullhash}{73c4936eda75938bd42ea6524110ad21}
-      \field{sortinit}{7}
-      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
+      \field{sortinit}{8}
+      \field{sortinithash}{2f1b0e69e7617f99664f1cd00bb9603c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computational Chemistry}
@@ -2205,8 +2199,8 @@
       \strng{fullhash}{792bb120aa47eb7c1c33edc22e68600d}
       \strng{authornamehash}{792bb120aa47eb7c1c33edc22e68600d}
       \strng{authorfullhash}{792bb120aa47eb7c1c33edc22e68600d}
-      \field{sortinit}{8}
-      \field{sortinithash}{2f1b0e69e7617f99664f1cd00bb9603c}
+      \field{sortinit}{9}
+      \field{sortinithash}{2999ebab86052e6d71b434385f8b4ed2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1608-3350}
@@ -2218,9 +2212,6 @@
       \field{year}{2011}
       \field{pages}{2440\bibrangedash 2449}
       \range{pages}{10}
-      \verb{doi}
-      \verb 10.1134/S107036321112005X
-      \endverb
       \verb{url}
       \verb https://doi.org/10.1134/S107036321112005X
       \endverb
@@ -2275,8 +2266,8 @@
       \strng{fullhash}{52628cf509a92c2ce518f432b663340f}
       \strng{authornamehash}{52628cf509a92c2ce518f432b663340f}
       \strng{authorfullhash}{52628cf509a92c2ce518f432b663340f}
-      \field{sortinit}{8}
-      \field{sortinithash}{2f1b0e69e7617f99664f1cd00bb9603c}
+      \field{sortinit}{9}
+      \field{sortinithash}{2999ebab86052e6d71b434385f8b4ed2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Russian Journal of General Chemistry}
@@ -2317,8 +2308,8 @@
       \strng{fullhash}{577a3aa056fde7fd504c985097ad0247}
       \strng{authornamehash}{577a3aa056fde7fd504c985097ad0247}
       \strng{authorfullhash}{577a3aa056fde7fd504c985097ad0247}
-      \field{sortinit}{8}
-      \field{sortinithash}{2f1b0e69e7617f99664f1cd00bb9603c}
+      \field{sortinit}{9}
+      \field{sortinithash}{2999ebab86052e6d71b434385f8b4ed2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Chemical Communications}
@@ -2344,8 +2335,8 @@
       \strng{fullhash}{faabbd7812fe943ca8995aff5e0048b6}
       \strng{authornamehash}{faabbd7812fe943ca8995aff5e0048b6}
       \strng{authorfullhash}{faabbd7812fe943ca8995aff5e0048b6}
-      \field{sortinit}{9}
-      \field{sortinithash}{2999ebab86052e6d71b434385f8b4ed2}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Ústní sdělení}
@@ -2383,8 +2374,8 @@
       \strng{fullhash}{87b7c94e6e5f56baf1074cf434f7e782}
       \strng{authornamehash}{87b7c94e6e5f56baf1074cf434f7e782}
       \strng{authorfullhash}{87b7c94e6e5f56baf1074cf434f7e782}
-      \field{sortinit}{9}
-      \field{sortinithash}{2999ebab86052e6d71b434385f8b4ed2}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of the American Chemical Society}
