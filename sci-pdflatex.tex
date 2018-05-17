@@ -87,9 +87,8 @@ extra = {
 keywordsCs    = {silikofosfáty, hypervalence, DFT, HSAB, NBO, MPA},
 TeXkeywordsCs = {silikofosfáty, hypervalence, DFT, HSAB, NBO, MPA},
 },
-abstract      = {This is the abstract of my thesis, which can
-
-span multiple paragraphs.},
+abstract      = { Práce je zaměřená na studium silikofosfátů. Studované struktury jsou rozděleny podle velikosti na tři části. Malé modely reprezentují blízké okolí křemíku v silikofosfátech a zároveň jsou sem zahrnuty i reaktanty, které byly používány v experimentálních pracích. Střední modely již obsahují cykly a velké modely již reprezentují výsek ze skutečných silikofosfátových polymerů. Strukutury byl studovány na úrovni teorie funkcionálu hustoty. Pro porovnání struktur byla použita teorie tvrdých a měkkých kyselin a bází. Pro pochopení vazebných možností křemíku byla použita teorie přirozených orbitalů a mullikenova populační analýza. Pro velké modely byly zároveň vypočítána spektroskopická data. \\
+Z experimentálních prací vyplývá, že v přítomnosti některých ligandů křemík ztrácí schopnost navyšovat svoji koordinaci. V tomto případě byly na úrovni HSAB porovnány struktury, které vedou k navyšování koordinace a struktury, které nevedou. Druhý parametr byl podle molekulových orbitalů. Z výsledků vyplývá, že pokud je na křemík přímo navázán uhlík, tak se mění rozložení vazebných orbitalů a nedochází k navyšování koordinace.},
 abstractEn    = {This is the English abstract of my thesis, which can
 
 span multiple paragraphs.},
@@ -98,9 +97,7 @@ abstractCs   = {This is the Czech abstract of my thesis, which can
 
 span multiple paragraphs.},
 },
-thanks        = {These are the acknowledgements for my thesis, which can
-
-span multiple paragraphs.},
+thanks        = {Tato práce vznikla za podpory projektů CERIT Scientific Cloud (LM2015085) a~CESNET (LM2015042) financovaných z~programu MŠMT Projekty velkých infrastruktur pro VaVaI.},
 bib           = example.bib,
 %% Uncomment the following line (by removing the % symbol at
 %% the beginning) and replace `assignment.pdf` with the
@@ -444,7 +441,7 @@ Korelační energii lze do výpočtu zahrnout tak, že výsledná vlnová funkce
 
 
 \section{Teorie funkcionálu hustoty}
-Systémy studované v~této práci mají za cíl modelovat trojrozměrnou silikofosfátovou síť. Skládají se tedy ze silikátových a~fosfátových jednotek, z~nichž na každou jednotku připadá cca. 50 elektronů. Je proto velice důležité zvolit metodu, která bude spojovat vysokou přesnost s~vysokou výpočetní efektivností. Současně je našim cílem porozumění sklonu křemíku k~hypervalenci, což indikuje pokud možno fyzikálně průzračný jednoelektronový model. Všechny tyto požadavky splňuje Kohn-Shamova formulace metody funkcionálu hustoty\footnote{Z matematické analýzy je funkcionál operátor zobrazení z~množiny funkcí do množiny obecně komplexních čísel.}\cite{bickelhaupt2007kohn}.
+Systémy studované v~této práci mají za cíl modelovat trojrozměrnou silikofosfátovou síť. Skládají se tedy ze silikátových a~fosfátových jednotek, z~nichž na každou jednotku připadá cca. 50 elektronů. Je proto velice důležité zvolit metodu, která bude spojovat vysokou přesnost s~vysokou výpočetní efektivností. Současně je našim cílem porozumění sklonu křemíku k~hypervalenci, což indikuje pokud možno fyzikálně průzračný jednoelektronový model. Všechny tyto požadavky splňuje Kohn-Shamova formulace metody funkcionálu hustoty\footnote{Z matematické analýzy je funkcionál operátor zobrazení z~množiny funkcí do množiny obecně komplexních čísel.}\cite{Bickelhauptdftreview}.
 
 Základní myšlenka teorie funkcionálu hustoty pohlíží na systém elektronů a~jader ze zcela jiného úhlu než tradiční \textit{ab inito} metody kvantové chemie, zahrnující metodu HF-SCF a~její nadstavby. Posledně zmíněné metody zahajují popis molekuly od znalosti tzv. externího potenciálu (nejčastěji daného polohami a~náboji jader) a~pokračují přes konstrukci Hamiltoniánu, nalezení energií a~vlnových funkcí až k~výpočtu výsledné elektronové hustoty.
 
@@ -503,7 +500,7 @@ Pro lokální pole platí, že:
 \end{equation}
 $\vec{B_{loc}}$ je lokální magnetické pole. $\delta$ je tzv. chemický posun. Ten může být jiný pro stejné prvky s~jiným koordinančím okolí a~je empirickou veličinou. Chemický posun je definován jako rozdíl mezi rezonanční frekvencí jádra a~rezonanční frekvencí standardu \cite{atkins2010atkins}.
 
-Do \textit{ab inito} výpočtu vstupuje $B_0$, které je reprezentováno vektorovým potenciálem tohoto pole. V~ideálním případě by neměla mít volba počátku tohoto pole vliv na výsledek. Jedním z~důsledků aproximace v~kvantové chemii je fakt, že volba počátku výrazně ovlivňuje výsledné chemické stínění. Problém se nazývá \uv{Gauge origin problem}. Metoda GIAO \cite{giao} (Gauge  Including Atomic Orbitals) řeší problém způsobem, že zahrnuje počátek vektorového potenciálu do atomových orbitalů nebo do lokalizovaných molekulových orbitalů (IGLO)\footnote{IGLO - \textit{giao}.}. Vhodnou bazí pro tyto výpočty je IGLO$-$III \cite{Standara2006thesis} (Individual Gauge for Localized Orbitals) \cite{g09}.
+Do \textit{ab inito} výpočtu vstupuje $B_0$, které je reprezentováno vektorovým potenciálem tohoto pole. V~ideálním případě by neměla mít volba počátku tohoto pole vliv na výsledek. Jedním z~důsledků aproximace v~kvantové chemii je fakt, že volba počátku výrazně ovlivňuje výsledné chemické stínění. Problém se nazývá \uv{Gauge origin problem}. Metoda GIAO \cite{doi:10.1021/jp9529127} (Gauge  Including Atomic Orbitals) řeší problém způsobem, že zahrnuje počátek vektorového potenciálu do atomových orbitalů nebo do lokalizovaných molekulových orbitalů (IGLO)\footnote{IGLO - \textit{giao}.}. Vhodnou bazí pro tyto výpočty je IGLO$-$III \cite{Standara2006thesis} (Individual Gauge for Localized Orbitals) \cite{g09}.
 
 \section{Báze v~kvantově chemických výpočtech}
 Základním přístupem pro hledání molekulových orbitalů je metoda MO-LCAO \footnote{MO-LCAO - \textit{Molecular Orbital – Linear Combination of Atomic Orbitals}.}, která je založena na postulátu o~úplnosti systému vlastních funkcí. Podle postulátu QM o~úplných vlastních hodnotách uplných Hermitovských operátorů lze každý molekulový orbital sestrojit jako lineární kombinaci atomových orbitalů, tzv. LCAO\footnote{LCAO - \textit{Linear Combination of Atomic Orbitals.}}. Jednotlivé molekulové orbitaly jsou hledány jako lineární kombinace atomových orbitalů.
@@ -1114,12 +1111,12 @@ Cílem práce bylo podat podrobnější pohled na vazebné poměry v~silikofosf�
 
 
 
-Tato práce vznikla za podpory projektů CERIT Scientific Cloud (LM2015085) a~CESNET (LM2015042) financovaných z~programu MŠMT Projekty velkých infrastruktur pro VaVaI.
+
 \newpage
 
 
 \chapter{Přílohy}
-\begin{table}[H]
+\begin{table}[h]
 \begin{minipage}{\textwidth}
 \caption{MPA analýza LUMO orbitalu pro \ce{SiCH3(OCH3)5^{2-}},  \textbf{C}, výsledky jsou uvedeny v~[\%].}
 \begin{center}
@@ -1143,7 +1140,7 @@ Tato práce vznikla za podpory projektů CERIT Scientific Cloud (LM2015085) a~CE
 \end{tabular}\end{center}\end{minipage}
 \end{table}
 
-\begin{table}[H]
+\begin{table}[h]
 \begin{minipage}{\textwidth}
 \begin{center}
 \caption{MPA analýza vybraných MO orbitalů pro \ce{Si(OCH3)6^{2-}}, \textbf{D}, výsledky jsou uvedeny v~[\%].}
@@ -1166,7 +1163,7 @@ Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.}  \label{si_och3_6_M
 & p & 4,7  & 9,0  & 16,8  & 2,5  & 13,0  & 19,4  & 7,6  \\ \hline
 \end{tabular}\end{center}\end{minipage}\end{table}
 
-\begin{table}[H]
+\begin{table}[h]
 \begin{minipage}{\textwidth}
 \caption{Výsledky NBO analýzy pro modely z~obrázku \ref{prehled_male_modely}, výsledky jsou uvedeny v~[\%].}
 \begin{center}
