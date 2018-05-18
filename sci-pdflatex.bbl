@@ -43,8 +43,8 @@
       \strng{fullhash}{983a65121c35fcb4e31ba7397bda3270}
       \strng{authornamehash}{983a65121c35fcb4e31ba7397bda3270}
       \strng{authorfullhash}{983a65121c35fcb4e31ba7397bda3270}
-      \field{sortinit}{9}
-      \field{sortinithash}{2999ebab86052e6d71b434385f8b4ed2}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0002-7863}
@@ -519,8 +519,8 @@
       \strng{fullhash}{2940c2f1bb959edaee3b6b081c88c8a4}
       \strng{authornamehash}{2940c2f1bb959edaee3b6b081c88c8a4}
       \strng{authorfullhash}{2940c2f1bb959edaee3b6b081c88c8a4}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{7}
@@ -698,8 +698,8 @@
       \strng{fullhash}{528390e27d13e8be4f3043e8ace7f8ad}
       \strng{authornamehash}{528390e27d13e8be4f3043e8ace7f8ad}
       \strng{authorfullhash}{528390e27d13e8be4f3043e8ace7f8ad}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{0-582-38210-6}
@@ -1013,8 +1013,8 @@
       \strng{fullhash}{48cae9c8e6bcff95f75f5d979cdbf0e1}
       \strng{authornamehash}{48cae9c8e6bcff95f75f5d979cdbf0e1}
       \strng{authorfullhash}{48cae9c8e6bcff95f75f5d979cdbf0e1}
-      \field{sortinit}{5}
-      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{sortinit}{6}
+      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Journal of Physical Chemistry}
@@ -1649,8 +1649,8 @@
       \strng{fullhash}{8d92d3c2c229c88480536ce3c60ce3ef}
       \strng{authornamehash}{8d92d3c2c229c88480536ce3c60ce3ef}
       \strng{authorfullhash}{8d92d3c2c229c88480536ce3c60ce3ef}
-      \field{sortinit}{6}
-      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
+      \field{sortinit}{7}
+      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{1.}
@@ -1916,8 +1916,8 @@
       \strng{fullhash}{2443706a83b899fe63c078dcf6132b62}
       \strng{authornamehash}{2443706a83b899fe63c078dcf6132b62}
       \strng{authorfullhash}{2443706a83b899fe63c078dcf6132b62}
-      \field{sortinit}{7}
-      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
+      \field{sortinit}{8}
+      \field{sortinithash}{2f1b0e69e7617f99664f1cd00bb9603c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Journal of Chemical Physics}
@@ -2317,53 +2317,6 @@
       \field{year}{2000}
       \field{pages}{8480\bibrangedash 8485}
       \range{pages}{6}
-    \endentry
-    \entry{1316862}{article}{}
-      \name{author}{6}{}{%
-        {{hash=8d41869cda4cfce887ecbab7b7b47964}{%
-           family={STÝSKALÍK},
-           familyi={S\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=08feb50db06464602d8d6d43c6103163}{%
-           family={ŠKODA},
-           familyi={Š\bibinitperiod},
-           given={D.},
-           giveni={D\bibinitperiod}}}%
-        {{hash=b043c7b14f38ce1b97e902477a568e5c}{%
-           family={MORAVEC},
-           familyi={M\bibinitperiod},
-           given={Z.},
-           giveni={Z\bibinitperiod}}}%
-        {{hash=763c925d889cbbbaafb022f24ac14dff}{%
-           family={ROUPCOVÁ},
-           familyi={R\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod}}}%
-        {{hash=5c901549a4c0f1b514c048fb7cab78ef}{%
-           family={BARNES},
-           familyi={B\bibinitperiod},
-           given={C.\bibnamedelimi E.},
-           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-        {{hash=3d5a71dac7bc5eef007724f055a7fee9}{%
-           family={PINKAS},
-           familyi={P\bibinitperiod},
-           given={J},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{73596bef6213f7f4920b305cf54371bd}
-      \strng{fullhash}{73596bef6213f7f4920b305cf54371bd}
-      \strng{authornamehash}{73596bef6213f7f4920b305cf54371bd}
-      \strng{authorfullhash}{73596bef6213f7f4920b305cf54371bd}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{2046-2069}
-      \field{journaltitle}{RSC Advances}
-      \field{title}{Non-aqueous template-assisted synthesis of mesoporous nanocrystalline silicon orthophosphate}
-      \field{volume}{5}
-      \field{year}{2015}
     \endentry
   \endsortlist
 \endrefsection

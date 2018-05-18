@@ -46,8 +46,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.5}\slshape Velk\IeC {\'e} modely}{44}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}\bfseries Z\IeC {\'a}v\IeC {\v e}r}{53}{chapter.4}
+\contentsline {chapter}{\numberline {4}\bfseries Z\IeC {\'a}v\IeC {\v e}r}{54}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}\bfseries P\IeC {\v r}\IeC {\'\i }lohy}{54}{chapter.5}
+\contentsline {chapter}{\numberline {5}\bfseries P\IeC {\v r}\IeC {\'\i }lohy}{55}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Literatura}{65}{chapter*.11}
+\contentsline {chapter}{Literatura}{66}{chapter*.11}
