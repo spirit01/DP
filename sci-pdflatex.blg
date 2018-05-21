@@ -1,30 +1,30 @@
 [0] Config.pm:354> INFO - This is Biber 2.7
 [0] Config.pm:357> INFO - Logfile is 'sci-pdflatex.blg'
-[27] biber:303> INFO - === Po kvě 21, 2018, 23:22:56
-[45] Biber.pm:359> INFO - Reading 'sci-pdflatex.bcf'
-[119] Biber.pm:835> INFO - Found 51 citekeys in bib section 0
-[133] Biber.pm:3670> INFO - Processing section 0
-[144] Biber.pm:3840> INFO - Looking for bibtex format file 'example.bib' for section 0
-[149] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
-[160] bibtex.pm:1292> INFO - Found BibTeX data source 'example.bib'
-[164] Utils.pm:164> WARN - Duplicate entry key: 'weinhold2005valency' in file 'example.bib', skipping ...
-[166] Utils.pm:164> WARN - Duplicate entry key: 'b3lyp' in file 'example.bib', skipping ...
-[176] Utils.pm:164> WARN - year field '2015 [cit. 2016-05-01]' in entry 'Styskalik2015thesis' is not an integer - this will probably not sort properly.
-[184] Utils.pm:164> WARN - month field 'Mar' in entry 'Edge:a08100' is not an integer - this will probably not sort properly.
-[188] Utils.pm:164> WARN - year field '1996 [cit. 2016-05-01]' in entry 'Munzarova1996thesis' is not an integer - this will probably not sort properly.
-[223] Utils.pm:164> WARN - Name in key 'flyn1969' is empty (probably consecutive 'and'): skipping name
-[234] Utils.pm:164> WARN - month field 'Nov' in entry 'PhysRev.136.B864' is not an integer - this will probably not sort properly.
-[238] Utils.pm:164> WARN - month field 'Sep' in entry 'b88' is not an integer - this will probably not sort properly.
-[240] Utils.pm:164> WARN - month field 'Jan' in entry 'lyp' is not an integer - this will probably not sort properly.
-[241] Utils.pm:164> WARN - month field 'Sep' in entry 'blyp' is not an integer - this will probably not sort properly.
-[249] Utils.pm:164> WARN - year field '2006 [cit. 2016-05-28]' in entry 'Standara2006thesis' is not an integer - this will probably not sort properly.
-[276] Utils.pm:164> WARN - month field 'Jun' in entry 'Mercury' is not an integer - this will probably not sort properly.
-[290] Utils.pm:164> WARN - month field 'Dec' in entry 'Chipanina2011' is not an integer - this will probably not sort properly.
-[299] Utils.pm:164> WARN - BibTeX subsystem: /tmp/IRwt1Ij9je/example.bib_25533.utf8, line 134, warning: 3 characters of junk seen at toplevel
-[299] Utils.pm:164> WARN - BibTeX subsystem: substring 2, warning: empty substring
-[332] UCollate.pm:68> INFO - Overriding locale 'cs-CZ' defaults 'variable = shifted' with 'variable = non-ignorable'
-[332] UCollate.pm:68> INFO - Overriding locale 'cs-CZ' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[332] Biber.pm:3499> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'cs-CZ'
-[363] bbl.pm:608> INFO - Writing 'sci-pdflatex.bbl' with encoding 'UTF-8'
-[374] bbl.pm:712> INFO - Output to sci-pdflatex.bbl
-[374] Biber.pm:109> INFO - WARNINGS: 15
+[32] biber:303> INFO - === Po kvě 21, 2018, 23:29:01
+[49] Biber.pm:359> INFO - Reading 'sci-pdflatex.bcf'
+[124] Biber.pm:835> INFO - Found 51 citekeys in bib section 0
+[137] Biber.pm:3670> INFO - Processing section 0
+[150] Biber.pm:3840> INFO - Looking for bibtex format file 'example.bib' for section 0
+[156] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[167] bibtex.pm:1292> INFO - Found BibTeX data source 'example.bib'
+[169] Utils.pm:164> WARN - Duplicate entry key: 'weinhold2005valency' in file 'example.bib', skipping ...
+[172] Utils.pm:164> WARN - Duplicate entry key: 'b3lyp' in file 'example.bib', skipping ...
+[188] Utils.pm:164> WARN - year field '2015 [cit. 2016-05-01]' in entry 'Styskalik2015thesis' is not an integer - this will probably not sort properly.
+[197] Utils.pm:164> WARN - month field 'Mar' in entry 'Edge:a08100' is not an integer - this will probably not sort properly.
+[202] Utils.pm:164> WARN - year field '1996 [cit. 2016-05-01]' in entry 'Munzarova1996thesis' is not an integer - this will probably not sort properly.
+[251] Utils.pm:164> WARN - Name in key 'flyn1969' is empty (probably consecutive 'and'): skipping name
+[261] Utils.pm:164> WARN - month field 'Nov' in entry 'PhysRev.136.B864' is not an integer - this will probably not sort properly.
+[264] Utils.pm:164> WARN - month field 'Sep' in entry 'b88' is not an integer - this will probably not sort properly.
+[265] Utils.pm:164> WARN - month field 'Jan' in entry 'lyp' is not an integer - this will probably not sort properly.
+[266] Utils.pm:164> WARN - month field 'Sep' in entry 'blyp' is not an integer - this will probably not sort properly.
+[272] Utils.pm:164> WARN - year field '2006 [cit. 2016-05-28]' in entry 'Standara2006thesis' is not an integer - this will probably not sort properly.
+[301] Utils.pm:164> WARN - month field 'Jun' in entry 'Mercury' is not an integer - this will probably not sort properly.
+[313] Utils.pm:164> WARN - month field 'Dec' in entry 'Chipanina2011' is not an integer - this will probably not sort properly.
+[322] Utils.pm:164> WARN - BibTeX subsystem: /tmp/nmkAaTpV4Z/example.bib_25954.utf8, line 134, warning: 3 characters of junk seen at toplevel
+[322] Utils.pm:164> WARN - BibTeX subsystem: substring 2, warning: empty substring
+[357] UCollate.pm:68> INFO - Overriding locale 'cs-CZ' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[357] UCollate.pm:68> INFO - Overriding locale 'cs-CZ' defaults 'variable = shifted' with 'variable = non-ignorable'
+[357] Biber.pm:3499> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'cs-CZ'
+[394] bbl.pm:608> INFO - Writing 'sci-pdflatex.bbl' with encoding 'UTF-8'
+[409] bbl.pm:712> INFO - Output to sci-pdflatex.bbl
+[409] Biber.pm:109> INFO - WARNINGS: 15
