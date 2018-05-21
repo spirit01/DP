@@ -48,6 +48,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}\bfseries Z\IeC {\'a}v\IeC {\v e}r}{56}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}\bfseries P\IeC {\v r}\IeC {\'\i }lohy}{57}{chapter.5}
+\contentsline {chapter}{\numberline {5}\bfseries P\IeC {\v r}\IeC {\'\i }lohy}{58}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Literatura}{68}{chapter*.11}
+\contentsline {chapter}{Literatura}{69}{chapter*.11}
