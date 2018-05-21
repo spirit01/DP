@@ -79,16 +79,19 @@ titleCs       = Studium elektronové struktury fosfosilikátů a~jejich silikát
 TeXtitleCs    = Studium elektronové struktury fosfosilikátů a~jejich silikátových prekurzorů metodou DFT
 ,
 },
-keywords        = {silikofosfáty, hypervalence, DFT, HSAB, NBO, MPA},
-TeXkeywords     = {silikofosfáty, hypervalence, DFT, HSAB, NBO, MPA \ldots},
-keywordsEn      = {silicophospahtes, hypervalency,DFT, HSAB, NBO, MPA , ...},
-TeXkeywordsEn   = {silicophospahtes, hypervalency,DFT, HSAB, NBO, MPA, \ldots},
+keywords        = {silikofosfáty, hypervalence, DFT, HSAB, NBO, MPA, nmr posun},
+TeXkeywords     = {silikofosfáty, hypervalence, DFT, HSAB, NBO, MPA,  nmr posun \ldots},
+keywordsEn      = {silicophospahtes, hypervalency,DFT, HSAB, NBO, MPA, nmr shifts ...},
+TeXkeywordsEn   = {silicophospahtes, hypervalency,DFT, HSAB, NBO, MPA,  nmr shifts, \ldots},
 extra = {
-keywordsCs    = {silikofosfáty, hypervalence, DFT, HSAB, NBO, MPA},
-TeXkeywordsCs = {silikofosfáty, hypervalence, DFT, HSAB, NBO, MPA},
+keywordsCs    = {silikofosfáty, hypervalence, DFT, HSAB, NBO, MPA, nmr posun},
+TeXkeywordsCs = {silikofosfáty, hypervalence, DFT, HSAB, NBO, MPA, nmr posun},
 },
-abstract      = { Práce je zaměřená na studium silikofosfátů. Studované struktury jsou rozděleny podle velikosti na tři části. Malé modely reprezentují blízké okolí křemíku v silikofosfátech a zároveň jsou sem zahrnuty i reaktanty, které byly používány v experimentálních pracích. Střední modely již obsahují cykly a velké modely již reprezentují výsek ze skutečných silikofosfátových polymerů. Strukutury byl studovány na úrovni teorie funkcionálu hustoty. Pro porovnání struktur byla použita teorie tvrdých a měkkých kyselin a bází. Pro pochopení vazebných možností křemíku byla použita teorie přirozených orbitalů a mullikenova populační analýza. Pro velké modely byly zároveň vypočítána spektroskopická data. \\
-Z experimentálních prací vyplývá, že v přítomnosti některých ligandů křemík ztrácí schopnost navyšovat svoji koordinaci. V tomto případě byly na úrovni HSAB porovnány struktury, které vedou k navyšování koordinace a struktury, které nevedou. Druhý parametr byl podle molekulových orbitalů. Z výsledků vyplývá, že pokud je na křemík přímo navázán uhlík, tak se mění rozložení vazebných orbitalů a nedochází k navyšování koordinace.},
+abstract      = {Práce je zaměřená na studium silikofosfátů a reaktantů používaných v jejich přípravě. Studované struktury jsou rozděleny podle velikosti na tři části. Malé modely reprezentují blízké okolí křemíku v silikofosfátech a zároveň jsou sem zahrnuty i reaktanty, které byly používány v experimentálních pracích. Střední modely již obsahují cykly a velké modely reprezentují výsek ze skutečných silikofosfátových polymerů. Strukutury jsou studovány na úrovni teorie funkcionálu hustoty. Pro porovnání struktur je použita teorie tvrdých a měkkých kyselin a bází. Pro pochopení vazebných možností křemíku je použita teorie přirozených orbitalů a mullikenova populační analýza. Pro velké struktury jsou vypočítány hodnoty chemických posunů a jsou porovnány s experimentálnimi hodnotami nmr posunů.
+
+Z experimentálních prací vyplývá, že v přítomnosti některých ligandů křemík ztrácí schopnost navyšovat svoji koordinaci. V tomto případě byly na úrovni HSAB porovnány struktury, které vedou k navyšování koordinace a struktury, u kterých navyšování kordinace není pozorováno. Druhý parametr porovnání je na základě molekulových orbitalů. \\
+
+},
 abstractEn    = {This is the English abstract of my thesis, which can
 
 span multiple paragraphs.},
@@ -344,6 +347,14 @@ Silikofosfátové cykly jsou pak dále organizovány do vyšších struktur mikr
 \begin{figure}
 \caption{Struktura\ce{(Si^{VI}(PO4)6(Si^{IV}O4Et2)6)^{2-}} získaná rentgenovou krystalografií v~práci \cite{C3NJ00721A};  Legenda: \mycircle{brown} Si, \mycircle{red}~O, \mycircle{orange}~C, \mycircle{yellow} P, \mycircleempty{black}~H. }
 \center \includegraphics[width=8cm]{obr_si_kryst_struktura_real.png} \label{rtg_koordinace_sest} \end{figure}
+
+
+\begin{figure}
+\caption{Silikofosfátová síť v~práci \cite{Styskalik2015thesis}.}\includegraphics[width=10cm]{si_polymer_cely.png}
+\label{si_polymer_cely}\end{figure}
+\begin{figure}
+\caption{Struktura\ce{(Si^{VI}(PO4)6(Si^{IV}O4Et2)6)^{2-}} získaná rentgenovou krystalografií v~práci \cite{C3NJ00721A};  Legenda: \mycircle{brown} Si, \mycircle{red}~O, \mycircle{orange}~C, \mycircle{yellow} P, \mycircleempty{black}~H. }
+\center \includegraphics[width=8cm]{schema_fosfat.eps} \label{rtg_koordinace_sest} \end{figure}
 
 \section{Hypervalence $p$-prvků}
 První kvantitativní popis chemické vazby zavedl Lewis v~roce 1916, kdy vazbu považoval za sdílení elektronového páru mezi dvěma atomy. Cílem párování bylo zaplnění valenčí vrsty a~dosažení konfigurace vzácného plynu, tvz. oktetové pravidlo. Pravidlo elektronového oktetu říká, že  prvky $p$ skupiny chtějí mít ve své valenční vrstvě právě osm elektronů. Toho lze docílit vytvořením chemické vazby, excitací nebo ionizací. Spárované elektrony, které se neúčastní vazby, se nazývají volné elektronové páry. Přísná lokalizace elektronů s~pomocí vazebných orbitalů v~Lewisovské teorii ovšem nesouhlasila s~pozorováním pro organické sloučeniny s~uhlíkem. Vysvětlení podal L. Pauling pomocí teorie valenčních vazeb a~teorie hybridizace \cite{Munzarova1996thesis}.\\
@@ -965,6 +976,9 @@ Pro kompenzaci náboje na silikofosfátech byla použita úprava z obrázku \ref
 \label{rtg_4}
 \end{center}
 \end{figure}
+\\
+
+
 V~experimentálních strukturách silikofosfátů byly pozorovány krom fosfátových skupiny také různé acetátové skupiny. Právě přítomnost acetátových skupin měla vliv na chování křemíku a~jeho sklon k~hypervalenci. Acetátové skupiny se  v~okolí křemíku vždy vyskytovaly po dvou a~tento jev byl dodržen i v~modelových strukturách. Zvolila jsem dvě možnosti umístění acetátových skupin. V~prvním případě se acetylové skupiny vůči sobě vyskytovaly v~poloze trans \ref{prehled_largeI},  \textbf{R}, ve druhém případě se vysvytovaly v~poloze cis \ref{prehled_largeI},  \textbf{Q}. Pro všechny struktury byla snaha zachovat náboj 0, protože celková polymerní struktura má náboj neutrální. Kompenzace náboje na křemíku byla prováděna podle schématu na obrázku \ref{koordinacni_okolo}. \\
 \begin{figure}
 \begin{center}
@@ -974,7 +988,10 @@ V~experimentálních strukturách silikofosfátů byly pozorovány krom fosfáto
 \label{prehled_large}
 \end{center}
 \end{figure}
-Při modelování silikofosfátů s~acetátovými skupinami v~polohách cis a~trans jsme vycházeli z~uspořádání v~původní rentgenové struktuře a~náboj byl kompenzován přes dva fosfáty podle schématu na orbázku \ref{koordinacni_okolo}. Naší snahou bylo zachování původních šesti cyklů. Proto v~prvním kole optimalizace bylo ponecháno šest cyklů a~dvě fosfátové skupiny nahrazeny acetátovými. Tento model měl problém s~vazebným úhlem na atomech 50-11-52 a~torzním úhlu na atomech 52 - 11 - 50 - 51 a~50 - 11 - 52 - 54. Jako řešení situace jsme zvolili odstranění dvou cyklů ze struktury. Rozpojení cyklů bylo realizováno odstraněním protilehlých čtyřkoordinovaných křemmíků, které vytvářely cyklus. Díky tomu došlo k~uvolnění napětí na jednotlivých cyklech. Počet cyklů dva byl zvolen z~důvodu zachování symetrie. Uvolněná struktura silikofosfátu s~acetáty v~poloze trans byla opět optimalizována, tentokrát s~pseudopotenciálem z~důvodu velikosti struktury. Ve druhém kroku byla provedena optimalizace již s~B3LYP/6-31G*. \\
+Při modelování silikofosfátů s~acetátovými skupinami v~polohách cis a~trans jsme vycházeli z~uspořádání v~původní rentgenové struktuře a~náboj byl kompenzován pomocí dvou fosfátových jednotek podle schématu na obrázku \ref{koordinacni_okolo}. Naší snahou bylo zachování původních šesti cyklů. Proto v~prvním kole optimalizace struktury s acetáty v poloze trans bylo ponecháno šest cyklů a~dvě fosfátové skupiny nahrazeny acetátovými.
+
+Optimalizace tohoto modelu byla algoritmem ukončena, aniž by dosáhla stacionárního bodu, díky příliš velké hodnotě vazebného úhlu na jednom z atomů kyslík. Úheů 50-11-52 dosahoval hodnoty 180$^\circ$. V literatuře tento úhle dosahuje hodnot 134$^\circ$ až 150$^\circ$, maximální hodnota je 160$^\circ$ \cite{yuan2003si}. Příliš vysokou hodnotu měly i torzní úhly na atomech kyslíku. %52 - 11 - 50 - 51 a~50 - 11 - 52 - 54.
+Jako řešení situace jsme zvolili odstranění dvou cyklů ze struktury. Rozpojení cyklů bylo realizováno odstraněním protilehlých čtyřkoordinovaných křemmíků, které vytvářely cyklus. Díky tomu došlo k~uvolnění napětí na jednotlivých cyklech. Počet cyklů dva byl zvolen z~důvodu zachování symetrie. Uvolněná struktura silikofosfátu s~acetáty v~poloze trans byla opět optimalizována, tentokrát s~pseudopotenciálem z~důvodu velikosti struktury. Ve druhém kroku byla provedena optimalizace již s~B3LYP/6-31G*. \\
 \begin{figure}
 \begin{center}
 \caption{Přehled velkých modelů;  Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{yellow} P, \mycircleempty{black}~H.}
