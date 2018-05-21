@@ -618,6 +618,44 @@
       \verb https://doi.org/10.1021/ic00178a016
       \endverb
     \endentry
+    \entry{flyn1969}{article}{}
+      \name{author}{2}{}{%
+        {{hash=68d52e994e1b2cb3e9e09cf0af203bd2}{%
+           family={FLYNN},
+           familyi={F\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f96164a4d0f5057c198ce46ac2cbbf57}{%
+           family={BOER},
+           familyi={B\bibinitperiod},
+           given={F.\bibnamedelimi P.},
+           giveni={F\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{d07f742fc4d9fbbe28a864742834dbf8}
+      \strng{fullhash}{d07f742fc4d9fbbe28a864742834dbf8}
+      \strng{authornamehash}{d07f742fc4d9fbbe28a864742834dbf8}
+      \strng{authorfullhash}{d07f742fc4d9fbbe28a864742834dbf8}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Chemical Society}
+      \field{number}{21}
+      \field{title}{Structural studies of hexacoordinate silicon. Tris(o-phenylenedioxy) siliconate}
+      \field{volume}{91}
+      \field{year}{1969}
+      \field{pages}{5756\bibrangedash 5761}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1021/ja01049a010
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1021/ja01049a010
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1021/ja01049a010
+      \endverb
+    \endentry
     \entry{A901953G}{article}{}
       \name{author}{7}{}{%
         {{hash=70c43c4ffe6b2e397f591e35592bbb4e}{%

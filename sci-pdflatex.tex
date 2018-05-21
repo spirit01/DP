@@ -87,7 +87,7 @@ extra = {
 keywordsCs    = {silikofosfáty, hypervalence, DFT, HSAB, NBO, MPA, nmr posun},
 TeXkeywordsCs = {silikofosfáty, hypervalence, DFT, HSAB, NBO, MPA, nmr posun},
 },
-abstract      = {Práce je zaměřená na studium silikofosfátů a~reaktantů používaných v~jejich přípravě. Studované struktury jsou rozděleny podle velikosti na tři části. Malé modely reprezentují blízké okolí křemíku v~silikofosfátech a~zároveň jsou sem zahrnuty i reaktanty, které byly používány v~experimentálních pracích. Střední modely již obsahují cykly a~velké modely reprezentují výsek ze skutečných silikofosfátových polymerů. Strukutury jsou studovány na úrovni teorie funkcionálu hustoty. První cíl je porovnat sklon k~hypervalenci na základě teorie HSAB a~to podle hodnot globální tvrdosti $\eta$ a~absolutní elektronegativity $\chi$. Je zde púozorována korelace mezi $\chi$ a~ochotou sloučenin navyšovat koordinaci.
+abstract      = {Práce je zaměřená na studium silikofosfátů a~reaktantů používaných v~jejich přípravě. Studované struktury jsou rozděleny podle velikosti na tři části. Malé modely reprezentují blízké okolí křemíku v~silikofosfátech a~zároveň jsou sem zahrnuty i reaktanty, které byly používány v~experimentálních pracích. Střední modely již obsahují cykly a~velké modely reprezentují výsek ze skutečných silikofosfátových polymerů. Struktury jsou studovány na úrovni teorie funkcionálu hustoty. První cíl je porovnat sklon k~hypervalenci na základě teorie HSAB a~to podle hodnot globální tvrdosti $\eta$ a~absolutní elektronegativity $\chi$. Je zde pozorována korelace mezi $\chi$ a~ochotou sloučenin navyšovat koordinaci.
 
 Další část práce je určich ochotu tvořit hypervalentní sloučeniny na základě složení vazebných a~protivazebných orbitalů. Pomocí Mullikeonovy populační analýzy jsou analyzovány vazebné orbitaly a~podle teorie přirozených orbitalů je určeno složení protivazebných orbitalů. Pro sloučeniny s~nižší hodnotou $\chi$ je pozorováno menší zapojení křemíku do protivazebných orbitalů, které jsou klíčové pro Lewisovskou kyselost.
 
@@ -125,7 +125,6 @@ bib           = example.bib,
 \usepackage{tikz}
 \usepackage{verbatim}
 \usepackage{footmisc}
-
 \renewcommand{\thesubfigure}{}
 %\usepackage{subcaption}
 \usepackage{graphicx}
@@ -169,7 +168,7 @@ CI & Configuration Interaction \\
 DFT & Density Funkcional Theory \\
 ECP & Effective Core Potentials \\
 GGA &  Generalized Gradient Approximation \\
-GTO & Gaussian Type Orbitals \\
+GTO & gaussián Type Orbitals \\
 HF-SCF & Hartree-Fock Self-Consistend Field \\
 HOMO  & Highest Occupied Molecular Orbital \\
 HSAB & Hard and Soft Acids and Bases \\
@@ -195,16 +194,16 @@ Cílem této práce je podat vysvětlení některých experimentálních jevů, 
 Amorfní struktura silikofosfátových xerogelů však neumožňuje jejich přímou strukturní charakterizaci. Důležitou součástí práce bylo navržení vhodných strukturních modelů. Modely navržené v~této práci byly motivovány rentgenovými strukturami analogických periodických struktur z~prací \cite{C3NJ00721A}, \cite{rtg_4_pinkas} anebo příbuznými strukturami, které budou dále popsány. Dále byla využita data z~NMR spektroskopie, z~nichž byly odvozeny informace o~výši koordinace křemíku a~složení ligandů (fosfátové vs. organické estery)\cite{Styskalik2015thesis}. Druhou součástí práce byl podrobnější pohled na chemickou vazbu ve zvolených modelech silikofosfátových polymerů. Pro analýzu chemické vazby byla použita teorie přirozených orbitalů a~Mullikenova populační analýza.
 
 \section{Silikofosfátové polymery}
-Nejčastější formou výskytu křemíku v~přírodě jsou křemičitany, sloučeniny obsahující křemík tetraedricky koordinovaný čtyřmi atomy kyslíku. Existují však i minerály s~vyšší koordinací, např. thaumasit \cite{Edge:a08100}. Vzhledem k~vysokému významu křemíku v~přírodě jsou křemičitany rozsáhle připravovány a~studovány i laboratorně. Oxid křemičitý \ce{SiO2} je po vodě nejvíce studovanou sloučeninou. Díky tomu, že \ce{Si^4+} je velikostně snadno zaměnitelný za \ce{Al^3+} nebo \ce{P^5+}, vznikají pak hlinitokřemičitany, obsahující Si-O-Al (zeolity), nebo fosfokřemičitany, obsahující Si-O-P, tj. silikofosfáty. Obě skupiny sloučenin jsou rozsáhle studovány. Konkrétně silikofosfátové polymery mají zajímavé fyzikální a~chemické vlastnosti. Příkladem je Brønstedovská kyselost nebo vysoká protonová vodivost. Několik z~možných uplatnění silikofosfátových polymerů mohou být konduktory, elektrolyty, optická vlákna a~biokompatibilní materiály.\\
+Nejčastější formou výskytu křemíku v~přírodě jsou křemičitany, sloučeniny obsahující křemík tetraedricky koordinovaný čtyřmi atomy kyslíku. Existují však i minerály s~vyšší koordinací, např. thaumasit~\cite{Edge:a08100}. Vzhledem k~vysokému významu křemíku v~přírodě jsou křemičitany rozsáhle připravovány a~studovány i laboratorně. Oxid křemičitý \ce{SiO2} je po vodě nejvíce studovanou sloučeninou. Díky tomu, že \ce{Si^4+} je velikostně snadno zaměnitelný za \ce{Al^3+} nebo \ce{P^5+}, vznikají pak hlinitokřemičitany, obsahující Si-O-Al (zeolity), nebo fosfokřemičitany, obsahující Si-O-P, tj. silikofosfáty. Konkrétně silikofosfátové polymery mají zajímavé fyzikální a~chemické vlastnosti, které mohou nalézt uplatnění v průmyslu. Příkladem je Brønstedovská kyselost nebo vysoká protonová vodivost. Několik z~možných uplatnění silikofosfátových polymerů mohou být konduktory, elektrolyty  a~optická vlákna.
 
 Silikofosfáty i hlinitokřemičitany jsou charakteristické svojí trojrozměrnou  porézní strukturou. Naše pozornost je v~této práci soustředěna na silikofosfáty. Předpokládaná struktura připravených silikofosfátů studovaných v~předchozích experimentálních pracích Aleše Stýskalíka je znázorněna na obrázku \ref{si_polymer_cely} \cite{Styskalik2015thesis}. Charakteristickou vlastností struktur silikofosfátů je uspořádání jednotek Si-O-P do cyklů, struktury s~hypervalentním křemíkem obsahující osmičlenné cykly vzniklé dvojnásobným opakováním jednotky Si-O-P-O. Již byla ale i experimentálně přípravena struktura s~dvanáctičlennými cykly \cite{velky_cyklus}. Struktura je uvedena na obrázku \ref{velky_cyklus}.
 
 \begin{figure}
-\caption{Struktura s~12-členným kruhem nakreslená autorkou DP v~programu Avogadro na základě dat uvedených v~práci \cite{velky_cyklus}.  Struktura byla upravena tak, aby byla viditelná existence 12-členného cyklu, neboť v~původní prácei chybí konektivita jednoho z~atomů fosforu do cyklu.;  Legenda: \mycircle{brown} Si, \mycircle{red}~O, \mycircle{orange}~C, \mycircle{yellow} P, \mycircleempty{black}~H.}
-\center \includegraphics[width=9cm]{si_velky_kruh.png} \label{velky_cyklus} \end{figure}
+\caption{Struktura s~12-členným kruhem nakreslená autorkou DP v~programu Avogadro na základě dat uvedených v~práci \cite{velky_cyklus}.  Struktura byla upravena tak, aby byla viditelná existence 12-členného cyklu, neboť v~původní práci chybí konektivita jednoho z~atomů fosforu do cyklu.;  Legenda: \mycircle{brown} Si, \mycircle{red}~O, \mycircle{orange}~C, \mycircle{yellow} P, \mycircleempty{black}~H.}
+\center \includegraphics[width=10cm]{si_velky_kruh.png} \label{velky_cyklus} \end{figure}
 
 \begin{figure}
-\caption{Struktura \ce{[(Ph2Si{O2P(O)OSiMe3})2]} získaná pomocí rentgenové krystalografie v~práci \cite{rtg_4_pinkas};  Legenda: \mycircle{brown} Si, \mycircle{red}~O, \mycircle{orange}~C, \mycircle{yellow} P, \mycircleempty{black}~H, \mycircleempty{blue}~N .}
+\caption{Struktura \ce{[(Ph2Si{O2P(O)OSiMe3})2]} získaná pomocí rentgenové krystalografie v~práci \cite{rtg_4_pinkas}; Legenda: \mycircle{brown} Si, \mycircle{red}~O, \mycircle{orange}~C, \mycircle{yellow} P, \mycircleempty{black}~H, \mycircleempty{blue}~N.}
 \center \includegraphics[width=6cm]{rtg_kruh_samostatne.png} \label{rtg_cyklus} \end{figure}
 Obrázek \ref{si_polymer_cely} znázorňuje předpokládanou strukturu silikofosfátového xerogelu se třemi druhy křemíkových center (koordinace čtyřmi fosfáty, šesti fosfáty, anebo čtyřmi fosfáty a~dvěma organickými estery současně) a~osmičlennými cykly Si-O-P.  Konkrétní podoba osmičlenného cyklu byla ověřena metodou RTG viz. obrázek \ref{rtg_cyklus}, \cite{rtg_4_pinkas}. Stupeň koordinace křemíku a~současně velikost pórů se ukázala být silně závislá na typu prekurzoru. Pokud byl ve výchozích sloučeninách jeden z~fosfátů nahrazen methylovou skupinou přímo vázanou na křemík, ve výsledném xerogelu se nevyskytovaly oktaedricky koordinované křemíky a~velikost pórů byla větší. Konkrétní podobu okolí křemíku je ukázáno ve schématu na obrázku \ref{si_polymer_cely}. Podoba koordinačního okolí byla získána pomocí NMR dat z~prací \cite{rtg_4_pinkas} a~\cite{Styskalik2015thesis}. Silikofosfátové cykly jsou pak dále organizovány do vyšších struktur mikroporézního (šířka pórů do 2 nm) až mezoporézního (šířka póru 2-50~nm) skeletu. Potvrzená struktura šestikoordinovaného křemíku je uvedena na obrázku \ref{rtg_koordinace_sest} \cite{C3NJ00721A}. Struktura byla získána metodou rentgenové difrakce. Konkrétní metody příprav slikofosfátových sloučenin jsou uvedeny například v~práci Aleše Stýskalíka \cite{Styskalik2015thesis}.
 
@@ -234,26 +233,37 @@ Navíc chování vazby Si-ligand silně závisí na samotném ligandu a~sterick�
 
 \section{Hypervalence sloučenin křemíku}\label{teorie_hypervalence}
 V~případě čtyřkoordinovaných sloučenin poskytuje křemík do vazeb všechny své valenční elektorny. Ve vyšším koordinačním stupni už může křemík poskytnou pouze prázdné orbitaly a~proto se chová jako Lewisovská kyselina. Obecně mají Lewisovské kyseliny prázdné molekulové orbitaly, které leží dostatečně blízko obsazeným molekulovým orbitalů (MO)\footnote{MO - \textit{Molecular orbital}.} konjugované báze.
+\renewcommand{\thesubfigure}{(\alph{subfigure})}
 \begin{figure}
 \begin{center}
-\subfigure[]{\includegraphics[width=2cm]{si_f6.png}\label{si_f6}}
-\subfigure[]{\includegraphics[width=3cm]{si_cl_o.png}\label{si_cl_o}}
-\subfigure[]{\includegraphics[width=5cm]{si_o_f.png}\label{si_o_f}}
-\subfigure[]{\includegraphics[width=3cm]{si_f_n.png}\label{si_f_n}}
-\subfigure[]{\includegraphics[width=5cm]{si_with_fluor_carbons.png} \label{si_with_fluor_carbons}}
-\subfigure[]{\includegraphics[width=5cm]{si_only_o.png} \label{si_only_o}}
-\subfigure[]{\includegraphics[width=5cm]{si_n_o_c.png}\label{si_n_o_c}}
-\subfigure[]{\includegraphics[width=5cm]{si_fluor_vodik_kyslik.png} \label{si_fluor_vodik_kyslik}}
-\subfigure[]{\includegraphics[width=5cm]{si_o_n.png} \label{si_o_n}}
-\subfigure[]{\includegraphics[width=5cm]{si_only_c.png} \label{si_only_c}}
-\label{shrnuti_struktury_kremik}
+\subfigure[]{\includegraphics{si_f6.eps}\label{si_f6}}
+\subfigure[]{\includegraphics{si_cl_o.eps}\label{si_cl_o}}
+\subfigure[]{\includegraphics{si_o_f.eps}\label{si_o_f}}
+\subfigure[]{\includegraphics{si_f_n.eps}\label{si_f_n}}
+\subfigure[]{\includegraphics{si_with_fluor_carbons.eps} \label{si_with_fluor_carbons}}
+\subfigure[]{\includegraphics{si_only_c.eps} \label{si_only_c}}
+\label{shrnuti_struktury_kremikI}
+\caption{Přehled připravených struktur I s hypervalentním křemíkem.}
 \end{center}
 \end{figure}
+
+\begin{figure}
+\begin{center}
+\subfigure[]{\includegraphics[scale=0.9]{si_only_o.eps} \label{si_only_o}}
+\subfigure[]{\includegraphics[scale=0.7]{si_n_o_c.eps}\label{si_n_o_c}}
+\subfigure[]{\includegraphics{si_fluor_vodik_kyslik.eps} \label{si_fluor_vodik_kyslik}}
+\subfigure[]{\includegraphics{si_o_n.eps} \label{si_o_n}}
+\label{shrnuti_struktury_kremikII}
+\caption{Přehled připravených struktur II s hypervalentním křemíkem.}
+\end{center}
+\end{figure}
+\renewcommand{\thesubfigure}{}
+
 Z~experimentu je známo, že \ce{SiO4} je dostatečnou Lewisovskou kyselinou, aby křemík mohl přímo reagovat s~Lewivoskou bazí. Pokud je jeden z~kyslíku ve struktuře nahrazen uhlíkem, schopnost navyšovat koordinaci je ztracena. Stejný jev pozoroval Aleš Sýskalík a~spol. \cite{Styskalik2015thesis} a~to vedlo k~hypotézi o~snížení Lewisovské kyselosti křemíku při tvorbě přímé vazby Si-C. Naopak pětikoordinovaný křemík je lepší Lewisovskou kyselinou než čtyřkoordinovaný křemík a~hypervalency podporuje. Atomy jako uhlík, dusík, kyslík, fluor nebo chlor podporují navyšování koordinace křemíku \cite{Wagler2014}.\\
 
 Existující, experimentálně připravené hypervalentní sloučeniny s~křemíkem lze rozdělit podle jednotlivých ligandů a~jejich poloze v~periodické tabulce. Křemík je schopen tvořit hypervalentní sloučeniny s~fluorem, příkladem může být struktura  \ce{(SiF6)^{2-}} viz. obrázek \ref{si_f6} \cite{memoriesphysiquelussac}. Tato struktura byla připravena v~19. století a~považuje se za první připravenou sloučeninu křemíku v~koordinaci šest. Pokud budeme postupovat ve skupine halogenů dolů, dalším ligandem by měl být logicky chlor. Sloučenina \ce{SiCl6^{2-}} ale není známá, naopak \ce{GeCl6^{2-}} ano. Schopnost atomu tvořit hypervalentní sloučeniny roste ve skupině dolů. Germanium má tedy vysokou schopnost tvořit hypervalentní sloučeniny. Oproti tomu křemík potřebuje ligand s~výrazně vyšší elektronegativitou. Hypervalentní sloučeniny s~chlorem byly proto připraveny až později, viz. obrázek \ref{si_cl_o} \cite{LAZAREV199716}.
 
-Ve sloučeninách s~křemíkem může být fluor nahrazen dalšími $p$ prvky, například kyslíkem viz. obrázek \ref{si_o_f} \cite{C0DT01115K} nebo kyslíkem a~vodíkem viz. obrázek  \ref{si_fluor_vodik_kyslik} \cite{BOYER19812165}.
+Ve sloučeninách s~křemíkem může být fluor nahrazen dalšími $p$ prvky, například kyslíkem viz. obrázek \ref{si_o_f} \cite{C0DT01115K} nebo kyslíkem a~vodíkem viz. obrázek \ref{si_fluor_vodik_kyslik} \cite{BOYER19812165}.
 Jako ligand společně s~fluorem může být použit i dusík viz. obrázek \ref{si_f_n} \cite{C0DT01115K} nebo uhlík viz. obrázek \ref{si_with_fluor_carbons} \cite{kremikfluorcarbon}. Schopnost křemíku navyšovat koordinaci existuje i ve sloučeninách s~kyslíkem viz. obráázek \ref{si_only_o} \cite{flyn1969}.  Struktura \ce{SiO6} se vyskytuje také v~přírodě v~minerálu thaumasitu \cite{Edge:a08100}. Kyslík může být nahrazen dusíkem  viz. obrázek \ref{si_o_n} \cite{Wagler2014} nebo uhlíkem a~dusíkem viz. obrázek \ref{si_n_o_c} \cite{Wagler2014}. Je zajímavostí, že existují i sloučeniny pouze s~vazbou křemík-uhlík viz. obrázek \ref{si_only_c} \cite{A901953G} \cite{Wagler2014}.
 
 \section{Formulace teoretického problému}
@@ -273,7 +283,7 @@ Současné chápání struktury, reaktivity a~spektroskopického chování láte
 \end{equation}
 Analytická řešení Schrödingerovy rovnice jsou dostupná pouze pro velmi malý okruh jednoduchých modelových Hamiltoniánů, jejiž nejdůležitějšími reprezentaty jsou kvantově-chemický oscilátor, částice v~jámě, atom vodíku a~kation \ce{H2^{+}}. Dokonce ani pro atomu helia, který obsahuje pouze o~jeden elektron více než atom vodíku, není dostupné plně analytické řešení Schrödingerovy rovnice.
 
-Z~tohoto důvodu je ve fyzikálních i chemických aplikacích nutno použít zjednodušení. Základní aproximací, kterou je třeba aplikovat pro všechny molekuly (včetně zmiňovaného iontu \ce{H2^{+}}, pro nejž lze vlnovou funkci elektronu vyjádřit analyticky) je tzv. Born-Oppenheimerova aproximace (B-O) \ref{B_O_approximace}.
+Z~tohoto důvodu je ve fyzikálních i chemických aplikacích nutno použít zjednodušení. Základní aproximací, kterou je třeba aplikovat pro všechny molekuly (včetně zmiňovaného iontu \ce{H2^{+}}, pro nejž lze vlnovou funkci elektronu vyjádřit analyticky) je tzv. Born-Oppenhei\-me\-ro\-va aproximace (B-O) \ref{B_O_approximace}.
 Její podstatou je oddělení pohybu elektronů od pohybu jader a~lze ji dobře vysvětlit na základě termodynamické analogie vratného děje. Je-li například expanze plynu proti vnějšímu tlaku prováděna vratně, pohybuje se píst ve válci tak pomalu, že plyn je stále v~rovnováze s~okolím. Jeho tlak pak závisí pouze na pozici pístu. Podobně se jádra pohybují vzhledem k~elektronům tak pomalu, že elektrony zaujmou pro každé rozmístění jader okamžitě nejvýhodnější rozložení. Proto můžeme energii elektronů považovat za závislou pouze na polohách jader. V~rámci B-O aproximace lze tedy vlnovou funkci zapsat ve tvaru rovnice \ref{B_O_approximace}.
 \begin{equation}
 \Psi_{r_i,R_{\alpha}} = \Psi_{electronic}(r_i,R_{\alpha}) \cdot \Psi_{nuclear}(R_{\alpha}),
@@ -317,7 +327,7 @@ Základní myšlenka teorie funkcionálu hustoty pohlíží na systém elektron�
 
 Základní teorémy metody funkcionálu hustoty (1. a~2. Hohensberg-Kohnův teorém) ukazují, že lze postupovat i opačně. Výsledná elektronová hustota zpětně jednoznačně určuje externí potenciál, a~tedy i vlnovou funkci a~všechny z~ní odvozené měřitelné vlastnosti. Protože je elektronová hustota funkcí pouze tří souřadnic v~prostoru (a~nevztahuje se narozdíl od vlnové funkce k~jednotlivým elektronům), lze metody funkcionálu hustoty využít k~výpočtům, které jsou do výpočetní náročnosti srovnatelné s~metodou HF-SCF, ale co do přesnosti popisu metodu HF-SCF dalece převyšují \cite{jensen2007introduction}.\\
 
-Moderní DFT\footnote{DFT - \textit{Density Functional Theory}.} metody se začaly objevovat po roce 1964 jako výsledek Hohensberg-Kohnova teorému. Aplikace v~kvantově-chemických výpočtech se datují od 90. let. První Hohenberg-Kohnův teorém (H-K) mluví o~základním stavu. "Vnější potenciál $V_ext$ je až na konstantu jednoznačným funkcionálem $\varrho(\vec{r})$, protože $V_ext$ určuje $\widehat{H}$, je úplný popis mnohačásticového základního stavu jednoznačným funkconálem $\varrho(\vec{r})$."\cite{PhysRev.136.B864} První H-K teorém můžeme schématicky vyjádřit takto:
+Moderní DFT\footnote{DFT - \textit{Density Functional Theory}.} metody se začaly objevovat po roce 1964 jako výsledek Hohensberg-Kohnova teorému. Aplikace v~kvantově-chemických výpočtech se datují od 90. let. První Hohenberg-Kohnův teorém (H-K) mluví o~základním stavu: \uv{Vnější potenciál $V_ext$ je až na konstantu jednoznačným funkcionálem $\varrho(\vec{r})$, protože $V_ext$ určuje $\widehat{H}$, je úplný popis mnohačásticového základního stavu jednoznačným funkconálem $\varrho(\vec{r})$}\cite{PhysRev.136.B864}. První H-K teorém můžeme schématicky vyjádřit takto:
 \begin{equation}
 \varrho_0 \Rightarrow \{N, Z_A, R_A\} \Rightarrow \widehat{H} \Rightarrow \Psi_0 \Rightarrow E_0,
 \end{equation}
@@ -325,7 +335,9 @@ Všechny vlastnosti základního stavu mnohaelektronového systému jsou tedy je
 \begin{equation}
 E_0 < E [\tilde{\varrho}] = T[\tilde{\varrho}] + E_{Ne}[\tilde{\varrho}] + E_{ee}[\tilde{\varrho}],
 \end{equation}
-Kde $\tilde{\varrho}(\vec{r})$ je zkušební hustota, splňující vazebné podmínky. Pro výpočetní chemii mají větší význam Kohn-Shamovy (K-S) orbitaly, které byly výsledkem geniální myšlenky o~rozdělení funkcionálu. Základní úlohou v~Kohn-Shamově reprezentaci DFT je, jak nalézt orbitaly popisující stavy elektronů v~neinteragujícím referenčním systému. Jinými slovy, jak definujeme tzv. Shamův potenciál $V_s$ tak, že optimální Slaterův determinat pro neinteragující elektrony v~tomto potenciálu poskytuje stejnou elektronovou hustotu jako reálný systém? Pro řešení tohoto problému je užitečné vyjádřit energii jako funkci hustoty následovně:
+Kde $\tilde{\varrho}(\vec{r})$ je zkušební hustota, splňující vazebné podmínky. Pro výpočetní chemii mají větší význam Kohn-Shamovy (K-S) orbitaly, které byly výsledkem geniální myšlenky o~rozdělení funkcionálu. Základní úlohou v~Kohn-Shamově reprezentaci DFT je, jak nalézt orbitaly popisující stavy elektronů v~neinteragujícím referenčním systému. Jinými slovy, jak definujeme tzv. Shamův potenciál $V_s$ tak, že optimální Slaterův determinat pro neinteragující elektrony v~tomto potenciálu poskytuje stejnou elektronovou hustotu jako reálný systém?
+
+Pro řešení tohoto problému je užitečné vyjádřit energii jako funkci hustoty následovně:
 \cite{jensen2007introduction}\cite{koch2000chemist}.
 \begin{equation}
 %E(\varrho(\vec{r})) = T_s[\varrho(\vec{r})] + J[\varrho(\vec{r})] + \int V_{EX}(\vec{r})\varrho(\vec{r})d\vec{r} + E_{XC}[\varrho(\vec{r})],
@@ -333,14 +345,14 @@ E(\varrho(\vec{r})) = T_s[\varrho(\vec{r})] + J[\varrho(\vec{r})] + E_{Ne}[\varr
 \label{dft}
 \end{equation}
 $T_s[\varrho(\vec{r})]$ je kinetická energie navzájem neinteragujících elektronů, snadno získatelná jako součet přes jednotlivé elektrony, $J[\varrho(\vec{r})]$ je klasická Coulombovská repulze oblaku s~$\varrho$.
-$E_{Ne}[\varrho(\vec{r}]$ je energie atrakce elektronů jádry. Jediný poslední člen rovnice \ref{dft} $E_{XE}[\varrho(\vec{r})] $ - tzv. výměnně-korelační funkcionál není v~současnosti znám a~analytický tvar musí býr aproximován \cite{parr1994density}.
+$E_{Ne}[\varrho(\vec{r}]$ je energie atrakce elektronů jádry. Jediný poslední člen rovnice \ref{dft} $E_{XE}[\varrho(\vec{r})] $ - tzv. výměnně-korelační funkcionál není v~současnosti znám a~analytický tvar musí být aproximován \cite{parr1994density}.
 
 \subsection{DFT metody v~praxi}
-Největším problémem při aplikaci DFT je nalezení vhodného výměně-korelačního potenciálu. V~principu přesný K-S přístup neříká nic o~tom, jak výměně-korelační potenciál nalézt. Existují dva způsoby hledání tohoto parametru. První hledá vhodný $E_{EX}$ z~teorie, jedná se o~čistý $ab inito$ přístup. Druhý přístup hledá parametry pro $E_{EX}$, které lze určit z~experimentálních dat.
+Největším problémem při aplikaci DFT je nalezení vhodného výměně-korelačního potenciálu. V~principu přesný K-S přístup neříká nic o~tom, jak výměně-korelační potenciál nalézt. Existují dva způsoby hledání tohoto parametru. První hledá vhodný $E_{EX}$ z~teorie, jedná se o~čistý \textit{ab inito} přístup. Druhý přístup hledá parametry pro $E_{EX}$, které lze určit z~experimentálních dat.
 
-První přístup se ozačuje jako aproximace lokální hustoty(LDA)\footnote{LDA - \textit{The Local Density Approximations}} a~vychází z~modelu homogenního elektronového plynu. Jedná se o~hypotetický stav, kde se elektorny pohybují na kladném pozadí a~celkový náboj je neutrální. Celý prostor se rozdělí na jednotky objemu a~elektronová hustota se počítá vždy ve středu tohoto objektu. Celkovou energii najdeme jako součet přes všechny objemy. Tento model je vhodný pro jednoduché kovy, napříkald sodík. S~jeho pomocí lze popsat valenční elektorny v~kovech. Význam LDA modelu je, že je to jediný systém, pro který známe přesně $E_{EX}$ část. Vylepšením LDA modelu je oddělení práce s~elektronovou hustotou elektronů se spinem $\alpha$ a~$\beta$, označováno jako LSDA\footnote{LSDA - \textit{Local Spin Denstiy Approximation}}. Nevýhodou je, že obě metody nelze dobře použít pro nehomogenní elektrostatické pole molekul a~pro chemické reakce.
+První přístup se ozačuje jako aproximace lokální hustoty(LDA)\footnote{LDA - \textit{The Local Density Approximations}} a~vychází z~modelu homogenního elektronového plynu. Jedná se o~hypotetický stav, kde se elektrony pohybují na kladném pozadí a~celkový náboj je neutrální. Celý prostor se rozdělí na jednotky objemu a~elektronová hustota se počítá vždy ve středu tohoto objektu. Celkovou energii najdeme jako součet přes všechny objemy. Tento model je vhodný pro jednoduché kovy, například sodík. S~jeho pomocí lze popsat valenční elektrony v~kovech. Význam LDA modelu je, že je to jediný systém, pro který známe přesně $E_{EX}$ část. Vylepšením LDA modelu je oddělení práce s~elektronovou hustotou elektronů se spinem $\alpha$ a~$\beta$, označováno jako LSDA\footnote{LSDA - \textit{Local Spin Denstiy Approximation}}. Nevýhodou je, že obě metody nelze dobře použít pro nehomogenní elektrostatické pole molekul a~pro chemické reakce.
 
-Druhým přístupem je metoda gradientu hustoty (GGA)\footnote{GGA -\textit{Generalized Gradient Approximations}}. S~pomocí Taylorova rozvoje lze z~lokálních hodnoty elektronové hustoty v~daném objemu získat gradient hustoty $\nabla \varrho(\vec{r})$, výměnný-korelační funkcionál má obecný tvar \ref{gga}.
+Druhým přístupem je metoda gradientu hustoty (GGA)\footnote{GGA -\textit{Generalized Gradient Approximations}}. S~pomocí Taylorova rozvoje lze z~lokálních hodnoty elektronové hustoty v~daném objemu získat gradient hustoty $\nabla \varrho(\vec{r})$, výměnný-korelační funkcionál má obecný tvar dle rovnice \ref{gga}.
 \begin{equation}
 E_{XC}^{GGA} = \int \varrho(\vec{r})f(\varrho, \nabla_{\varrho})d\vec{r}
 \label{gga}
@@ -377,7 +389,7 @@ Základním přístupem pro hledání molekulových orbitalů je metoda MO-LCAO 
 \begin{equation}
 \Psi_i = \sum_{v=1}^{K}c_{vi} \cdot \phi_{v}
 \end{equation}
-$\Psi_i$ je $i-$tý molekulový spinoorbital, $\phi_{v}$ je bázová funkce a~$c$ je rozvojový koeficient, získají se výpočtme SCF procedury. Protože jsou však atomové orbitaly pro praktické výpočty příliš složitými matematickými funkcemi (například kvůli složité struktuře radiálních uzlů), nevstupují do výpočtu přímo, ale jsou v~něm rozloženy do sady buď tzv. Slaterových orbitalů (STO), nebo Gaussovských orbitalů (GTO). Samotné STO nemají radiální uzly a~jejich násobení není lineární \ref{STO_orbital} \cite{jensen2007introduction}.
+$\Psi_i$ je $i-$tý molekulový spinoorbital, $\phi_{v}$ je bázová funkce a~$c$ je rozvojový koeficient, lterý se získá se SCF výpočtem procedury. Protože jsou však atomové orbitaly pro praktické výpočty příliš složitými matematickými funkcemi (například kvůli složité struktuře radiálních uzlů), nevstupují do výpočtu přímo, ale jsou v~něm rozloženy do sady buď tzv. Slaterových orbitalů (STO), nebo Gaussovských orbitalů (GTO). Samotné STO nemají radiální uzly a~jejich násobení není lineární \ref{STO_orbital} \cite{jensen2007introduction}.
 \begin{equation}
 \chi_{\zeta, n, l, m}(r, \theta, \varphi) = NY_{l,m} (\theta, \varphi) r^{n-1} e^{-\zeta r},
 \label{STO_orbital}
@@ -393,20 +405,20 @@ $N$ je počet primitivních funkcí, $d$ je kontrakční koeficient, $\alpha$ je
 
 Například pro uhlík je touto nejmenší sadou, tzv. minimální bazí, množina STO reprezentující orbitaly $\{1s, 2S, 2_x, 2p_y, 2p_z \}$. Pro přesnější popis chování atomů a~molekul je výhodné použít rozšířené bázové funkce. Vzhledem k~lepšímu matematickému chování GTO jsou STO vyjádřeny jako kombinace $n$ primitivních gaussiánů \cite{lowe2011quantum}.
 
-Double Zeta (DZ) používá dvoujnásobný počet bázových funkcí než minimální báze. Triple Zeta trojnásobný počet bazí než minimální báze. Další kategorií jsou Split Valence báze, příkladem je Poplova báze 6-31G. Každý nevalenční orbital je šesti primitivními gaussiany a~každý valenční orbital je popsán primitivními gaussiány dvou skupin - jedním a~třemi primitivními gaussiány. Nadstavbou ještě bývají polarizační báze, které obsahují funkce pro $d$ orbitaly (pro $p$ prvky) nebo $p$ orbitaly (pro vodík). Popisují polarizaci elektornového obalu v~důsledku působení ostatních jader atomů. \\
+Double Zeta (DZ) používá dvoujnásobný počet bázových funkcí než minimální báze. Triple Zeta trojnásobný počet bazí než minimální báze. Další kategorií jsou Split Valence báze, příkladem je Poplova báze 6-31G. Každý nevalenční orbital je šesti primitivními gaussiány a~každý valenční orbital je popsán primitivními gaussiány dvou skupin - jedním a~třemi primitivními gaussiány. Nadstavbou ještě bývají polarizační báze, které obsahují funkce pro $d$ orbitaly (pro $p$ prvky) nebo $p$ orbitaly (pro vodík). Popisují polarizaci elektornového obalu v~důsledku působení ostatních jader atomů. \\
 
 Poslední zmíněnou možností pro popis elektrů v~systému je model efektivního jaderného pseudopotenciálu (ECP)\footnote{ECP - \textit{Effective Core Potentials}}. Jedná se o~nahrazení core elektronů celkovým tzv. pseudopotenciálem. Výpočet pro systém s~velkým počtem core, vnitřních, elektronů, je časově náročný a~zároveň s~rostoucí velikostí jádra stoupá i vliv relativistických efektů. Pro atomy od 5.periody (In, Sn, Sb, I, Xe) už je zahrnutí relativistických efektů nezbytností pro správný popis chování. Pro přesný popis molekul je efektivní jaderný potenciál nezbytný zařadit od 4. periody.
 
 Dalším uplatněním ECP je pro velké systémy s~příliš mnoho elektrony, v~našem případě silikofosfáty. Modelované silikofosfáty obsahují velké množství prvků 3. periody a~tedy i velké množství elektronů. Právě velký počet elektronů navyšuje výpočetní náročnost systému. Z~pohledu studia chemické vazby u~silikofosfátů je možno vliv core elektronů na vlasnosti vazeb považovat za méně důležitý a~proto lze použít model ECP. Výhodou přístup ECP je fakt, že v~sobě zahrnuje i relativistcké efekty na struktury, které ovlivňují délku zkoumaných vazeb a~popis je díky němu přesnější.
 
 \section{Interpretace kvantově-chemických výpočtů}
-Řešením Schrödingerovy rovnice získáváme hladiny energie a~příslušné vlnové funkce. Mnohaelektronová vlnová funkce je však příliš složitým objektem pro obvyklou chemickou interpretaci. Ta vychází z~míry kovalence resp. iontovosti jednotlivých vazeb, jejich síly resp. násobnosti nebo asymetrie rozložení náboje, popř. elektrostatickým potenciálem. Pro analýzu charakteru vazeb i rozložení náboje v~molekule je v~současnosti využívají dvě možná schémata populační analýzy. První z~nich je založeno na tzv. kanonických Hartre--Fockových popř. Kohn-Shamových orbitalů (u~metody DFT). Jejich typickým rysem je fakt, že jsou zpravidla delokalizovány přes několik atomových center, tj. odpovídají nikoli dvojici, ale větší skupině atomů spojených vazbou. Jejich charakter se pak analyzuje pomocí Mullikenovy populační analýzy, která je popsána níže. Druhé schéma analýzy vazeb vychází z~tzv. přirozených vazebných orbitalů, které jsou taky rozebrány níže.
+Řešením Schrödingerovy rovnice získáváme hladiny energie a~příslušné vlnové funkce. Mnohaelektronová vlnová funkce je však příliš složitým objektem pro obvyklou chemickou interpretaci. Ta vychází z~míry kovalence resp. iontovosti jednotlivých vazeb, jejich síly resp. násobnosti nebo asymetrie rozložení náboje, popř. elektrostatickým potenciálem. Pro analýzu charakteru vazeb i rozložení náboje v~molekule je v~současnosti využívají dvě možná schémata populační analýzy. První z~nich je založeno na tzv. kanonických Hartre--Fockových popř. Kohn-Shamových orbitalů (u~metody DFT). Jejich typickým rysem je fakt, že jsou zpravidla delokalizovány přes několik atomových center, tj. odpovídají nikoli dvojici, ale větší skupině atomů spojených vazbou. Jejich charakter se pak analyzuje pomocí Mullikenovy populační analýzy, která je popsána níže. Druhé schéma analýzy vazeb vychází z~tzv. přirozených vazebných orbitalů, které jsou rozebrány níže.
 
 Populační analýzu, MPA i NBO, lze použít pro analýzu chemických vazeb a~následné reaktivity sloučenin. Pokud jsou orbitaly již zapojené do vazby, tak již prostor pro zapojení do další vazby v~chemické reakci je minimální. Proto lze z~populační analýzy sloučenin určit chemickou reaktivity. Druhým přístupem pro posouzení chemické reaktivity je teorie tvrdých a~měkkých kyselin a~zásad, která vychází z~experimentálních pozorování.
 
 
 \subsection{Tvrdost a~měkkost kyselin a~bází}
-Z~experimentálního pozorování je známý fakt, že určité kyseliny reagují přednostně s~určitým typem bazí. Na základě toho byly kyseliny a~báze rozděleny na tzv. tvrdé a~měkké. S~pomocí analýzy globální tvrdosti/měkkost kyselin a~bazí může být predikován produkt reakce a~jeho stabilita. Myšlenka HSAB\footnote{HSAB - \textit{Hard and Soft Acids and Bases}} lze použít i pro odhadnuí ochoty tvořit hypervalentní sloučeniny. HSAB teorie říká, že tvrdá kyselina a~tvrdá báze spolu poskytují stabilní komplex, naopak slabá kyselina a~slabá báze spolu poskytují méně stabilní komplex. Z~toho vyplývá, že ze znalosti reakčních podmínek a~příslušné tvrdosti lze predikovat stabilitu vzniklého komplexu. Jedna z~možností kvantitativního určení tvrdosti/měkkosti sloučenin je určení parametrů $\chi$ \ref{hsab_vypocet_elektronegativita} a~$\eta$ \ref{hsab_vypocet_tvrdost} \cite{hsabclanek}. Způsob, jak výpočítat parametry $\chi$ a~$\eta$ je určen tzv. Koopmansovým teorém. Tato aproximace nejprve předpokládá, že Hartree-Fockův přístup nebo Kohn-Shamův přístup popisuje systém dostatečně. V~druhém kroku dochází k~zanedbání relaxace elektronů při odevzdání jednoho elektronu z~LUMO orbitalu. Díky této aproximace lze parametry $\chi$ a~$\eta$ vypočítat jako rozdíl energii HOMO a~LUMO orbitalů pro jednotlivé sloučeniny.
+Z~experimentálního pozorování je známý fakt, že určité kyseliny reagují přednostně s~určitým typem bazí. Na základě toho byly kyseliny a~báze rozděleny na tzv. tvrdé a~měkké. S~pomocí analýzy globální tvrdosti/měkkosti kyselin a~bazí může být predikován produkt reakce a~jeho stabilita. Myšlenka HSAB\footnote{HSAB - \textit{Hard and Soft Acids and Bases}} lze použít i pro odhadnuí ochoty tvořit hypervalentní sloučeniny. HSAB teorie říká, že tvrdá kyselina a~tvrdá báze spolu poskytují stabilní komplex, naopak slabá kyselina a~slabá báze spolu poskytují méně stabilní komplex. Z~toho vyplývá, že ze znalosti reakčních podmínek a~příslušné tvrdosti lze predikovat stabilitu vzniklého komplexu. Jedna z~možností kvantitativního určení tvrdosti/měkkosti sloučenin je určení parametrů $\chi$ \ref{hsab_vypocet_elektronegativita} a~$\eta$ \ref{hsab_vypocet_tvrdost} \cite{hsabclanek}. Způsob, jak výpočítat parametry $\chi$ a~$\eta$ je určen tzv. Koopmansovým teorém. Tato aproximace nejprve předpokládá, že Hartree-Fockův přístup nebo Kohn-Shamův přístup popisuje systém dostatečně. V~druhém kroku dochází k~zanedbání relaxace elektronů při odevzdání jednoho elektronu z~LUMO orbitalu. Díky této aproximace lze parametry $\chi$ a~$\eta$ vypočítat jako rozdíl energii HOMO a~LUMO orbitalů pro jednotlivé sloučeniny.
 \begin{equation}
 \chi = - \left( \frac{\delta E}{\delta N} \right) = \frac{IP + EA}{2} = -\mu,
 \label{hsab_vypocet_elektronegativita}
@@ -454,7 +466,7 @@ Následující část byla rozdělena do tří oddílů, rozdělených podle vel
 \section{Výpočetní detaily}
 Modely, pro jejichž prozkoumání jsme se rozhodli, byly na základě konektivity jednotlivých atomů zaneseny do vstupu pro program Avogadro \cite{Avogadro}. V~případě použití struktur z~rentgenové strukturní analýzy byly struktury nejprve zobrazeny v~programu Mercury 3.3 \cite{Mercury} a~až poté byl použit program Avogadro.
 
-V~programu Avogadro byly struktury předoptimalizovány molekulovou mechanikou s~použitím silového pole UFF \cite{uff_force_filed}. Získané struktury byly plně optimalizovány metodou B3LYP \cite{b3lyp} v~bázi 6-31G* \footnote{Tato báze se skládá z~tzv. split valence báze \cite{ditchfield1971self} ke které je přidána jedna sada polarizačních funkcí typu $d$ \cite{francl1982self}.} v~programu Gaussian09, Rev D.01. \cite{g09}. Pro malé modely byly ve dvou případech přidány speciální volby Opt=CalcFC a~SCF=Vshift. Klíčové slovo CalcFC zajišťuje výpočet silových konstant v~počátečním bodě stejnou metodou a~bází, v~nichž probíhá samotná optimalizace. Předvolba totiž stanovuje, že původní odhad silových konstant je prováděn pomocí jednoduchého silového pole (tj. klasickou mechanikou). Druhé klíčové slovo SCF=VShift[N] pomáhá s~nalezením vlnové funkce v~případě systémů s~malým energiovým rozdílem mezi energii HOMO a~LUMO orbitalů. Na začátku procesu SCF jsou všechny virtuální orbitaly posunuty v~energii o~N*0,0001 miliHartree nahoru a~v~závěru výpočtu jsou jejich energie vráceny zpět. My jsme použili výchozí nastavení N=-1. Pro analýzu NMR parametrů byla použita speciální báze IGLO \cite{iglo} a~klíčové slovo nmr \cite{g09}. \\
+V~programu Avogadro byly struktury předoptimalizovány molekulovou mechanikou s~použitím silového pole UFF \cite{uff_force_filed}. Získané struktury byly plně optimalizovány metodou B3LYP \cite{b3lyp} v~bázi 6-31G*~\footnote{Tato báze se skládá z~tzv. split valence báze \cite{ditchfield1971self} ke které je přidána jedna sada polarizačních funkcí typu $d$ \cite{francl1982self}.} v~programu gaussián09, Rev D.01. \cite{g09}. Pro malé modely byly ve dvou případech přidány speciální volby Opt=CalcFC a~SCF=Vshift. Klíčové slovo CalcFC zajišťuje výpočet silových konstant v~počátečním bodě stejnou metodou a~bází, v~nichž probíhá samotná optimalizace. Předvolba totiž stanovuje, že původní odhad silových konstant je prováděn pomocí jednoduchého silového pole (tj. klasickou mechanikou). Druhé klíčové slovo SCF=VShift[N] pomáhá s~nalezením vlnové funkce v~případě systémů s~malým energiovým rozdílem mezi energii HOMO a~LUMO orbitalů. Na začátku procesu SCF jsou všechny virtuální orbitaly posunuty v~energii o~N*0,0001 miliHartree nahoru a~v~závěru výpočtu jsou jejich energie vráceny zpět. My jsme použili výchozí nastavení N=-1. Pro analýzu NMR parametrů byla použita speciální báze IGLO \cite{iglo} a~klíčové slovo nmr \cite{g09}. \\
 Pro střední modely bylo postačující základní nastavení. Optimalizace velkých modelů byla již čassově poměrně náročná. Například krystalová struktura bez náboje obsahovala 349 elektronů a~bylo potřeba 1309 bázových funkcí pro optimalizace s~funkcionálem B3LYP a~bází 6-31G*. Z~tohoto důvodu byly velké modely nejprve předoptimalizované stejnou metodou jako menší modely (B3LYP), ale s~využitím kvazirelativistického efektivního jaderného pseudopotenciálu pro implicitní zahrnutí vnitřních elektronů, klíčové slovo Pseudo=Read. Ve druhém kroku optimalizace již byl proveden výpočet se zahrnutím všech elektronů v~bázi 6-31G*.\\
 \subsection{Populační analýza}
 Populační analýzy založené na bázových funkcích jsou nejužitečnější pro porovnávání trendů u~elektronových distribucí  vpřípadě použití malých nebo středně velkých bází, které obsahují pouze relativně kontrahované funkce \cite{jensen2007introduction}.
@@ -465,7 +477,7 @@ vybrány takové vazebné orbitaly, ve kterých podíl křemíku a~alespoň
 jednoho z~přímo vázaných ligandů je více než 0,1. Vzhledem k~charakteru
 MPA nebylo možné použít orbitaly LUMO. \\
 
-Pro NBO analýzu byla použita implementace NBO3 v~programu Gaussian, Gaussian NBO Version 3.1; verze Gaussianu G09,RevD.01. Volbou \begin{lstlisting}[frame=single]
+Pro NBO analýzu byla použita implementace NBO3 v~programu gaussián, gaussián NBO Version 3.1; verze gaussiánu G09,RevD.01. Volbou \begin{lstlisting}[frame=single]
 $NBO ARCHIVE FILE=NAME $END
 \end{lstlisting}
 byl získán soubour NAME.47, který sloužil jako vstup do programu NBO6.0. Přidáním klíčového slova $PLOT$ do souboru NAME.47 a~použitím programu NBO6.0 byly ziskány soubory NAME.31 až NAME.46. Pro vykreslení přirozených orbitalů programem NBO6View byl použit soubor NAME.37 \cite{doi:10.1002/jcc.23266}. Při pojmenování orbitalů z~programmu NBO6 bylo používáno číslování tohoto programu.
@@ -478,7 +490,7 @@ Struktury pro výpočetní část jsou rozděleny podle velikosti, podle stupně
 \section{Malé modely}
 Malé modely umožňují jednoduchý pohled na charakter vazeb mezi křemíkem a~kyslíkem, popř. jinými elektronegativními atomy. Tato část je rozdělena na modely těsného okolí křemíku v~silikofosfátových polymerech a~modely reaktantů, které byly použity v~experimentální pracích týkajících se silikofosfátů.
 
-Struktury zkoumané v~první části jsou uvedeny na obrázku \ref{prehled_male_modely}. V~silikofosfátocých polymerech se vyskytuje křemík v~koordinaci čtyři a~šest s~vazbami na kyslíky. Model \ce{SiCH3(OCH3)3} na obrázku \ref{prehled_male_modely}, \textbf{A} představuje strukturu s~přímou vazbou Si-C a~byl zařazen na základě experimentální práce Aleše Sýskalík \cite{Styskalik2015thesis}. Vznikl jako analogie k~modelu \textbf{L}, kde není pozorován nárust koordinace křemíku.  Model \ce{Si(OCH3)4} na obrázku \ref{prehled_male_modely}, \textbf{B} představuje uspořádání křemíku v~koordinaci čyři ve kterém je křemík ochoten koordinaci navyšovat a~je jednodušší analogii struktury \textbf{J}. Naopak modely \ce{SiCH3(OCH3)5^{2-}}, \textbf{C} a~\ce{Si(OCH3)6^{2-}}, \textbf{D} na obrázku \ref{prehled_male_modely} představují těsné okolí křemíku v~silikofosfátech. Při optimalizace geometrie struktury \ce{SiCH3(OCH3)5^{2-}} na obrázku \ref{prehled_male_modely}, \textbf{C} bylo nutno použit klíčové slovo Opt=CalcFC a~při optimalizace struktury \ce{Si(OCH3)6^{2-}}  na obrázku \ref{prehled_male_modely}, \textbf{D} bylo použito klíčové slovo SCF=Vshift.
+Struktury zkoumané v~první části jsou uvedeny na obrázku \ref{prehled_male_modely}. V~silikofosfátocých polymerech se vyskytuje křemík v~koordinaci čtyři a~šest s~vazbami na kyslíky. Model \ce{SiCH3(OCH3)3} na obrázku \ref{prehled_male_modely}, \textbf{A} představuje strukturu s~přímou vazbou Si-C a~byl zařazen na základě experimentální práce Aleše Sýskalíka \cite{Styskalik2015thesis}. Vznikl jako analogie k~modelu \textbf{L}, kde není pozorován nárust koordinace křemíku.  Model \ce{Si(OCH3)4} na obrázku \ref{prehled_male_modely}, \textbf{B} představuje uspořádání křemíku v~koordinaci čyři ve kterém je křemík ochoten koordinaci navyšovat a~je jednodušší analogii struktury \textbf{J}. Naopak modely \ce{SiCH3(OCH3)5^{2-}}, \textbf{C} a~\ce{Si(OCH3)6^{2-}}, \textbf{D} na obrázku \ref{prehled_male_modely} představují těsné okolí křemíku v~silikofosfátech. Při optimalizace geometrie struktury \ce{SiCH3(OCH3)5^{2-}} na obrázku \ref{prehled_male_modely}, \textbf{C} bylo nutno použit klíčové slovo Opt=CalcFC a~při optimalizace struktury \ce{Si(OCH3)6^{2-}}  na obrázku \ref{prehled_male_modely}, \textbf{D} bylo použito klíčové slovo SCF=Vshift.
 Poslední dvě strutkury  \ce{SiCl4},  \textbf{E} a~(acetylmethoxyl)trifluorsilan, \textbf{F} na obrázku \ref{prehled_male_modely} obsahují křemík, který má jako své ligandy elektronegativní atomy. Model \ce{SiCl4} slouží jako případ sloučeniny, kde křemík není schopen navyšovat koordinaci na \ce{SiCl6^{2-}}, ale například byla připravena struktura \ref{si_cl_o}. Důvodem mohou být vysoké repulze difúzních volných elektronových párů chloru. Naopak (acetoxymethyl)trifluorosilan je schopen tvořit intramolekulární vazbu s~Si-O a~tím navýšit koordinaci křemíku na pět. Tyto  struktury jsou experimentálně pozorovány a~nazývají se dragonoidy \cite{Chipanina2011}.\\
 
 \begin{figure}
@@ -565,12 +577,12 @@ Pro šestikoordinované sloučeniny \textbf{C} a~\textbf{D} je podíl křemíku 
 \begin{center}
 \begin{tabular}{|l|c|c|c|c|c|c|c|}
 \hline
-\label{nbo_small} &  Vazba & O.Č\footnote{Obsazovací číslo křemíku.} & Si\footnote{Procentuální příspěvěk křemíku do NBO.} & X\footnote{Procentuální příspěvek atomu vázaného na křemíku do NBO.} & Si(s)\footnote{Rozdělení příspěvku křemíku do orbitálních komponent, součet Si(s) + Si(p) + Si(d) = 100\%.} & Si(p)$^d$ &Si(d)$^d$ \\ \hline
+\label{nbo_small} &  Vazba & O.Č\footnote{Obsazovací číslo křemíku.} & Si\footnote{Procentuální příspěvěk křemíku do NBO.} & X\footnote{Procentuální příspěvek atomu vázaného na křemíku do NBO.} & Si(s)\footnote{Rozdělení příspěvku křemíku do orbitálních komponent, součet Si(s)~+~Si(p)~+~Si(d)~=~100\%.} & Si(p)$^d$ &Si(d)$^d$ \\ \hline
 \textbf{A} & (1)Si - O\footnote{ Obsazovací čísla jsou stejná pro vazby (1)Si - (2)O (1)Si - (4)O.}  & 0,066 & 88,4  & 11,6  & 23,8  & 51,1  & 25,2  \\ \hline
 &  (1)Si - (3)O\footnote{Lokalizační procedura NBO přiřazuje jednomu atomu (3)O dva vazebné orbitaly.} & 0,111 & 86,5  & 13,5  & 23,2  & 73,3  & 3,5  \\ \hline
 &  (1)Si - (3)O$^f$ & 0,092 & 97,1  & 2,9  & 0,2  & 56,7  & 43,3  \\ \hline
 & (1)Si - (17)C & 0,073 & 75,5  & 24,5  & 29,3  & 68,9  & 1,8  \\ \hline
-\textbf{B} & (1)Si - O\footnote{Obsazovací čísla jsou stejná pro vazby (1)Si-(2)O, (1)Si - (3)O, (1)Si - (4)O a~(1)Si~-~(5)O.}  & 0,104 & 86,1  & 13,9  & 25,0  & 71,4  & 3,6  \\ \hline
+\textbf{B} & (1)Si - O\footnote{Obsazovací čísla jsou stejná pro vazby (1)Si - (2)O, (1)Si - (3)O, (1)Si - (4)O a~(1)Si~-~(5)O.}  & 0,104 & 86,1  & 13,9  & 25,0  & 71,4  & 3,6  \\ \hline
 \textbf{E} & (1)Si - (2)Cl & 0,141 & 74,0  & 26,0  & 25,0  & 72,4  & 2,6  \\ \hline
 &  (1)Si - (3)Cl& 0,141 & 74,0  & 26,0  & 25,0  & 72,4  & 2,6  \\ \hline
 & (1)Si - (4)Cl & 0,141 & 74,0  & 26,0  & 25,0  & 72,4  & 2,6  \\ \hline
@@ -588,7 +600,7 @@ Pro šestikoordinované sloučeniny \textbf{C} a~\textbf{D} je podíl křemíku 
 \begin{minipage}{\textwidth}
 \begin{center}
 \begin{tabular}{|l|c|c|c|c|c|c|c|}
-\hline\label{nbo_reaktanty_porovnani}&  Vazba & O.Č\footnote{Obsazovací číslo křemíku.} & Si\footnote{Procentuální příspěvěk křemíku do NBO.} & X\footnote{Procentuální příspěvek atomu vázaného na křemíku do NBO.} & Si(s)\footnote{Rozdělení příspěvku křemíku do orbitálních komponent, součet Si(s) + Si(p) + Si(d) = 100\%.} & Si(p)$^d$ &Si(d)$^d$ \\ \hline
+\hline\label{nbo_reaktanty_porovnani}&  Vazba & O.Č\footnote{Obsazovací číslo křemíku.} & Si\footnote{Procentuální příspěvěk křemíku do NBO.} & X\footnote{Procentuální příspěvek atomu vázaného na křemíku do NBO.} & Si(s)\footnote{Rozdělení příspěvku křemíku do orbitálních komponent, součet Si(s)~+~Si(p)~+~Si(d)~=~100\%.} & Si(p)$^d$ &Si(d)$^d$ \\ \hline
 \textbf{J} & (1)Si-(2)O & 0,096 & 86,3  & 13,7  & 26,0  & 70,9  & 3,1  \\ \hline
 & (1)Si-(3)O & 0,128 & 86,5  & 13,5  & 24,5  & 71,9  & 3,6  \\ \hline
 & (1)Si-(4)O & 0,101 & 86,3  & 13,7  & 25,4  & 71,4  & 3,1  \\ \hline
@@ -649,7 +661,7 @@ Výsledky MPA pro molekulu \textbf{A} jsou uvedeny v~tabulce \ref{si_ch3_och3_MP
 \begin{center}
 \begin{tabular}{|l|c|c|c|c|c|}
 \hline
-Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.} \label{si_ch3_och3_MPA}&  & 20 & 33 & 34 & 35 \\ \hline
+Atomy\footnote{Číslo atomu ve výstupu programu gaussián.} \label{si_ch3_och3_MPA}&  & 20 & 33 & 34 & 35 \\ \hline
 (1)Si & s~& 11,8 & 11,8 & 0,2 & 3,2 \\ \hline
 & p & 0,2 & 9,7 & 3,0 & 5,4 \\ \hline
 (2)O & s~& 2,3 & 2,3 & 0,4 & 26,5 \\ \hline
@@ -670,7 +682,7 @@ Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.} \label{si_ch3_och3_
 \begin{center}
 \begin{tabular}{|l|c|c|c|c|c|c|c|}
 \hline
-Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.}\label{si_och3_4_MPA} &  & 22 & 23 & 34 & 35 & 36 & 37 \\ \hline
+Atomy\footnote{Číslo atomu ve výstupu programu gaussián.}\label{si_och3_4_MPA} &  & 22 & 23 & 34 & 35 & 36 & 37 \\ \hline
 (1)Si & s~& 11,1  & 0,0  & 4,6  & 0,0  & 0,0  & 0,0  \\ \hline
 & p & 0,0  & 5,1  & 0,0  & 12,3  & 12,3  & 2,7  \\ \hline
 (2)O& s~& 2,5  & 0,0  & 3,1  & 1,7  & 3,8  & 0,2  \\ \hline
@@ -691,7 +703,7 @@ Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.}\label{si_och3_4_MPA
 \caption{Mullikenova populační analýza vybraných MO orbitalů pro model \ce{SiCl4}, \textbf{E}, výsledky jsou uvedeny v~[\%].}
 \begin{tabular}{|l|c|c|c|c|c|}
 \hline
-Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.} \label{MP_si_cl4} &  & 30 & 31 & 32 & 33 \\ \hline
+Atomy\footnote{Číslo atomu ve výstupu programu gaussián.} \label{MP_si_cl4} &  & 30 & 31 & 32 & 33 \\ \hline
 (1)Si & s~& 42,5  & 0,0  & 0,0  & 0,0  \\ \hline
 & p & 0,0  & 18,5  & 18,5  & 18,5  \\ \hline
 (2)Cl & s~& 12,0  & 0,3  & 3,5  & 7,2  \\ \hline
@@ -710,7 +722,7 @@ Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.} \label{MP_si_cl4} &
 \begin{center}
 \begin{tabular}{|l|c|c|c|c|c|}
 \hline
-Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.}\label{acetylmethyltrifluorsilan_MPA}&  & 22 & 25 & 26 & 27 \\ \hline
+Atomy\footnote{Číslo atomu ve výstupu programu gaussián.}\label{acetylmethyltrifluorsilan_MPA}&  & 22 & 25 & 26 & 27 \\ \hline
 (1)Si & s~& 17,9  & 0,3  & 6,9  & 0,9  \\ \hline
 & p & 0,2  & 8,9  & 0,9  & 7,5  \\ \hline
 (2)O & s~& 4,3  & 3,4  & 6,7  & 1,9  \\ \hline
@@ -729,9 +741,10 @@ Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.}\label{acetylmethylt
 Modely střední velikosti reprezentovaly širší okolí křemíku \ref{prehled_middle} a~už obsahovaly cykly, prozatím bez síťování, které je pro silikofosfáty typické. \\
 Model \ce{SiCH3(PO4)CH3(SiP2O10)(CH3)4} obsahoval jeden cyklus, volně navázaný fosfát a~přímou vazbu křemík-uhlík. Model \ce{Si(P2SiO10(CH3)4)2} už obsahoval dva cykly, které byly pozorovány v~silikofosfátových polymerech. Jednalo se o~nejmenší model, který už obsahoval dva cykly.\\
 Tato část se věňuje nejmenším možným modelům, které již tvoří uvnitř svých struktur cyklus. Přehled struktur je ukázán na obrázku \ref{prehled_middle}. Středně velké modely obsahují křemík v~koordinaci čtyři a~snaží se zachytiti tvorbu cyklů, které jsou pozorovány v~silikofosfátech.
+\renewcommand{\thesubfigure}{}
 \begin{figure}
 \begin{center}
-\subfigure[\ce{SiCH3(PO4(CH3)2)(Si2P2O9(CH3)4)},  \textbf{M}]{\includegraphics[width=6cm]{si_model_methyl.png}\label{obr_h4sio4_MO_s1_20}}
+\subfigure[\ce{SiCH3(PO4(CH3)2)(Si2P2O9(CH3)4)},~\textbf{M}]{\includegraphics[width=6cm]{si_model_methyl.png}\label{obr_h4sio4_MO_s1_20}}
 \subfigure[\ce{Si(Si2P2O9(CH3)4)2}, \textbf{N}]{\includegraphics[width=5cm]{si_model_orezany.png}\label{obr_h4sio4_MO_s1_24}}
 \caption{Přehled středně velkých modelů];  Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange}~C, \mycircle{yellow} P, \mycircleempty{black}~H.}
 \label{prehled_middle}
@@ -762,7 +775,7 @@ Výsledky analýzy NBO jsou uvedeny v~tabulce \ref{nbo_middle}. Pro strukturu \t
 \caption{Složení a~obsazovací číslo z~NBO analýzy pro modely z~obrázku \ref{prehled_middle}, výsledky jsou uvedeny v~[\%].}
 \begin{tabular}{|l|c|c|c|c|c|c|c|}
 \hline
-\label{nbo_middle} &  Vazba & O.Č\footnote{Obsazovací číslo křemíku.} & Si\footnote{Procentuální příspěvěk křemíku do NBO.} & X\footnote{Procentuální příspěvek atomu vázaného na křemíku do NBO.} & Si(s)\footnote{Rozdělení příspěvku křemíku do orbitálních komponent, součet Si(s) + Si(p) + Si(d) = 100\%.} & Si(p)$^d$ &Si(d)$^d$ \\ \hline
+\label{nbo_middle} &  Vazba & O.Č\footnote{Obsazovací číslo křemíku.} & Si\footnote{Procentuální příspěvěk křemíku do NBO.} & X\footnote{Procentuální příspěvek atomu vázaného na křemíku do NBO.} & Si(s)\footnote{Rozdělení příspěvku křemíku do orbitálních komponent, součet Si(s)~+~Si(p)~+~Si(d)~=~100\%.} & Si(p)$^d$ &Si(d)$^d$ \\ \hline
 \textbf{M} & (1)Si - (2)O & 0,087 & 87,5  & 12,5  & 23,8  & 73,1  & 3,1  \\ \hline
 & (1)Si - (3)O & 0,093 & 87,3  & 12,7  & 23,0  & 73,5  & 3,6  \\ \hline
 &(1)Si - (4)O & 0,094 & 87,5  & 12,5  & 22,6  & 73,9  & 3,4  \\ \hline
@@ -783,7 +796,7 @@ Pro středně velké modely byla provedna MPA. Vzhledem k~existenci cyklů bylo 
 \begin{center}
 \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|}
 \hline
-Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.}   \label{si_model_methyl_MPA_I}  &  & 61 & 68 & 69 & 70 & 71 & 72 & 96 & 97 & 106 \\ \hline
+Atomy\footnote{Číslo atomu ve výstupu programu gaussián.}   \label{si_model_methyl_MPA_I}  &  & 61 & 68 & 69 & 70 & 71 & 72 & 96 & 97 & 106 \\ \hline
 (1)Si  & s~& 3,8  & 4,4 &  0,1  & 3,9  & 0,3  & 0,0  & 0,6  & 1,7  & 1,0  \\ \hline
 & p & 0,1  & 0,4& 1,6  & 0,5  & 2,4  & 2,0  & 3,2  & 1,3  & 1,2  \\ \hline
 (2)O & s~& 0,0  & 0,2& 0,1  & 0,1  & 2,3  & 0,3  & 0,3  & 4,3  & 0,6  \\ \hline
@@ -804,7 +817,7 @@ Výsledky MPA pro strukturu \textbf{N} jsou uvedeny v~tabulce \ref{si_model_orez
 \begin{center}
 \begin{tabular}{|l|c|c|c|c|c|c|c|}
 \hline
-Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.}  \label{si_model_orezany_MPA} &  & 99 & 97 & 95 & 94 & 90 & 68 \\ \hline
+Atomy\footnote{Číslo atomu ve výstupu programu gaussián.}  \label{si_model_orezany_MPA} &  & 99 & 97 & 95 & 94 & 90 & 68 \\ \hline
 (1)Si & S~& 0,2  & 0,1  & 0,0  & 0,6  & 48,1  & 2,2  \\ \hline
 & P & 1,6  & 2,7  & 1,8  & 0,3  & 6,7  & 0,0  \\ \hline
 (2)O & S~& 0,0  & 0,8  & 0,1  & 0,6  & 0,4  & 0,6  \\ \hline
@@ -853,7 +866,7 @@ V~experimentálních strukturách silikofosfátů byly pozorovány krom fosfáto
 
 Při modelování struktur \textbf{Q} a~\textbf{R} bylo snahou zachovat původních šest cyklů. Proto v~prvním kole optimalizace struktury s~acetáty v~poloze trans bylo ponecháno šest cyklů a~dvě fosfátové skupiny nahrazeny acetátovými.
 
-Optimalizace tohoto modelu byla algoritmem ukončena, aniž by dosáhla stacionárního bodu, díky příliš velké hodnotě vazebného úhlu na jednom z~atomů kyslík. Úheů 50-11-52 dosahoval hodnoty 180$^\circ$. V~literatuře tento úhle dosahuje hodnot 134$^\circ$ až 150$^\circ$, maximální hodnota je 160$^\circ$ \cite{yuan2003si}. Příliš vysokou hodnotu měly i torzní úhly na atomech kyslíku. %52 - 11 - 50 - 51 a~50 - 11 - 52 - 54.
+Optimalizace tohoto modelu byla algoritmem ukončena, aniž by dosáhla stacionárního bodu, díky příliš velké hodnotě vazebného úhlu na jednom z~atomů kyslík. Úhel 50-11-52 dosahoval hodnoty 180$^\circ$. V~literatuře tento úhle dosahuje hodnot 134$^\circ$ až 150$^\circ$, maximální hodnota je 160$^\circ$\cite{yuan2003si}. Příliš vysokou hodnotu měly i torzní úhly na atomech kyslíku. %52 - 11 - 50 - 51 a~50 - 11 - 52 - 54.
 Jako řešení situace jsme zvolili odstranění dvou cyklů ze struktury. Rozpojení cyklů bylo realizováno odstraněním protilehlých čtyřkoordinovaných křemmíků, které vytvářely cyklus. Díky tomu došlo k~uvolnění napětí na jednotlivých cyklech. Počet cyklů dva byl zvolen z~důvodu zachování symetrie. Uvolněná struktura silikofosfátu s~acetáty v~poloze trans byla opět optimalizována, tentokrát s~pseudopotenciálem z~důvodu velikosti struktury. Ve druhém kroku byla provedena optimalizace již s~B3LYP/6-31G*. Struktura je schematicky zobrazena na obrázku \ref{schema_fosfat_trans}.\\
 
 \begin{figure}
@@ -869,7 +882,7 @@ Pro model silikofosfátu s~acetáty v~poloze cis byla situace obdobná. Toto usp
 Pro strukturu s~acetátem v~poloze cis bylo nutno odstranit celkově čtyři cykly a~výsledný počet cyklů v~molekule byl dva. Acetáty byly umístěné v~ekvatoriální rovině stejně jako volný fosfát. Struktura je schematicky znázorněna na obrázku \ref{schema_fosfat_cis}. \\
 
 
-Další koordinace křemíku, která byla experimentálně pozorována v~silikofosfátech byla s~křemík v~koordinaci pět \textbf{S} na obrázku \ref{prehled_largeI}.  Z~tohoto důvodu jsem také pětikoordinovaný křemík zařadila do analýzy. První návrh struktury silikofosfátu v~koordinaci pět byla získán z~\cite{pinkas_sdeleni}. Tento model obsahoval křemík v~koordinaci pět a~celkový počet cyklů byl pět. Toto uspořádání vedlo k~špatnému úhlu na atomech 1 - 5 - 9 a~větší části špatných torzních úhlů, příkladem může být špatný torní úhel na atomech 3 - 1 - 5 - 9.  Vzhledem k~lichému počtu cyklů ve struktuře pětikoordinovaného křemíku byla otázka odstranění cyklů složitější a~to především díky snaze zachovat symetrii v~systému. Byly zvoleny dva přístupy. První model obsahoval tři cykly a~volný fosfát, zde byl špatný vazebný úhel na atomech 1 - 3 - 8. Druhý model obsahoval pouze dva cykly a~jeden fosfát, zde došlo k~chybě ve vazebném úhlu na atomech 1 - 2 - 7. Nalezení správné struktury s~křemíkem v~koordinaci pět pomohla rentgenová struktura $\lambda$-Si-hydroxysilikát\footnote{Původní označení struktury ve článku, odkud byla získána.}\ref{rtg_5} v~článku \cite{rtg_5}.
+Další koordinace křemíku, která byla experimentálně pozorována v~silikofosfátech byla s~křemík v~koordinaci pět \textbf{S} na obrázku \ref{prehled_largeI}.  Z~tohoto důvodu jsem také pětikoordinovaný křemík zařadila do analýzy. První návrh struktury silikofosfátu v~koordinaci pět byla získán z~\cite{pinkas_sdeleni}. Tento model obsahoval křemík v~koordinaci pět a~celkový počet cyklů byl pět. Toto uspořádání vedlo k~špatnému úhlu na atomech 1-5-9 a~větší části špatných torzních úhlů, příkladem může být špatný torní úhel na atomech 3-1-5-9.  Vzhledem k~lichému počtu cyklů ve struktuře pětikoordinovaného křemíku byla otázka odstranění cyklů složitější a~to především díky snaze zachovat symetrii v~systému. Byly zvoleny dva přístupy. První model obsahoval tři cykly a~volný fosfát, zde byl špatný vazebný úhel na atomech 1 - 3 - 8. Druhý model obsahoval pouze dva cykly a~jeden fosfát, zde došlo k~chybě ve vazebném úhlu na atomech 1 - 2 - 7. Nalezení správné struktury s~křemíkem v~koordinaci pět pomohla rentgenová struktura $\lambda$-Si-hydroxysilikát\footnote{Původní označení struktury ve článku, odkud byla získána.}\ref{rtg_5} v~článku \cite{rtg_5}.
 \begin{figure}\begin{minipage}{\textwidth}
 \begin{center}
 \includegraphics[width=8cm]{rtg_5_koordinace.png}
@@ -906,7 +919,7 @@ Další model pětikoordinovaného křemíku byl inspirován touto rentgenovou s
 \begin{center}
 \begin{tabular}{|l|c|c|c|c|c|c|c|}
 \hline
-\label{nbo_large}&  Vazba & O.Č\footnote{Obsazovací číslo křemíku.} & Si\footnote{Procentuální příspěvěk křemíku do NBO.} & X\footnote{Procentuální příspěvek atomu vázaného na křemíku do NBO.} & Si(s)\footnote{Rozdělení příspěvku křemíku do orbitálních komponent, součet Si(s) + Si(p) + Si(d) = 100\%.} & Si(p)$^d$ &Si(d)$^d$ \\ \hline
+\label{nbo_large}&  Vazba & O.Č\footnote{Obsazovací číslo křemíku.} & Si\footnote{Procentuální příspěvěk křemíku do NBO.} & X\footnote{Procentuální příspěvek atomu vázaného na křemíku do NBO.} & Si(s)\footnote{Rozdělení příspěvku křemíku do orbitálních komponent, součet Si(s)~+~Si(p)~+~Si(d)~=~100\%.} & Si(p)$^d$ &Si(d)$^d$ \\ \hline
 & (1)Si - (3)O  & 0,094 & 91,82   & 8,18   & 16,49   & 50,05   & 33,46   \\ \hline
 &  (1)Si - (4)O  & 0,092 & 91,67   & 8,33   & 16,73   & 49,90   & 33,37   \\ \hline
 & (1)Si - (5)O & 0,093 & 91,74   & 8,26   & 16,54   & 49,96   & 33,50   \\ \hline
@@ -993,15 +1006,15 @@ experiment & -214,0 & -214,0 & -162,0 & -214,0 & -214,0 \\ \hline \hline
 Cílem práce bylo podat podrobnější pohled na vazebné poměry v~silikofosfátových polymerech. Prostředkem pro pochopení jevů v~silikofosfátech byly tři úrovně - malé, střední a~velké modely. \\
 
 Prvním cílem práce bylo porovnání ochoty křemíku tvořit hypervaletní sloučeniny a~najít parametr, který by pomohl s~porovnáním rozdílných molekul. Jako určující parametr byla zvolena globální tvrdost $\eta$ a~absolutní elektronegativity $\chi$.
-Korelace mezi globální tvrdostí a~ochotou tvořit hypervaletní sloučeniny u~křemíku nebyla pozorována. V~reakcích, které vedou ke vzniku silikofsofátů, se vyskytuje jako druhý reaktant obvykle \ce{PO4^{3-}}, který se řadí mezi tvrdé báze. Globální tvrdost \ce{Si(OAC)3CH3} je vyšší než \ce{Si(OAC)4},takže by měla ochotnější tvořit hypervaletní sloučeniny. Experiment ale ukazuje, že \ce{Si(OAC)3CH3} naopak nevede ke vzniku hypervalentních sloučenin křemíku. Z~tohoto důvodu usuzjeme, že parametr $\eta$ není vhodný pro posouzení sklonu k~hypervalenci.
+Korelace mezi globální tvrdostí a~ochotou tvořit hypervaletní sloučeniny u~křemíku nebyla pozorována. V~reakcích, které vedou ke vzniku silikofsofátů, se vyskytuje jako druhý reaktant obvykle \ce{PO4^{3-}}, který se řadí mezi tvrdé báze. Globální tvrdost \ce{Si(OAC)3CH3} je vyšší než \ce{Si(OAC)4},takže by měla ochotnější tvořit hypervaletní sloučeniny. Experiment ale ukazuje, že \ce{Si(OAC)3CH3} naopak nevede ke vzniku hypervalentních sloučenin křemíku. Z~tohoto důvodu usuzujeme, že parametr $\eta$ není vhodný pro posouzení sklonu k~hypervalenci.
 
 Parametr $\chi$ se ukázal jako vhodnější a~byla zde pozorována korelace mezi hodnotou $\chi$ a~sklonem k~hypervalenci. Sloučeniny s~vyšší absolutní elektronegativitou by měly být ochotnější k~přijetí dalšího elektronového páru. Z~našich výpočtů vyplynulo následující seřazení sloučeniny podle hodnot absolutní elektronegativity: \ce{Si(OAC3)CH3} < \ce{Si(OAC)3H} < \ce{Si(OAC)4}. Toto seřazení odpovídá experimentálnímu pozorování, kdy sloučenina \ce{Si(OAC)4} ochotně navyšuje koordinaci a~sloučenina \ce{Si(OAC3)CH3} nikoliv. Nejvyšší hodnota elektronegativity byla vypočítána pro \ce{SiCl4}. Právě \ce{SiCl4} byla použita v~prvním nehydrolotické kondezační syntéze silikofosfátů s~pozorovaným šestikoordinovaným křemíkem.\\
 
-Druhým cílem práce bylo porovnání ochoty tvořit hypervalentní sloučeniny na základě analýzy vazebných a~protivazebných orbitalů. Lze říci, že sloučeniny s~nižší hodnotou absolutní elektronegativity $\chi$ obsahují vazby s~vyšší průměrnou kovalencí. V~těchto sloučeninách je podíl orbitalů křemíku ve vazebných orbitalech vyšší a~tedy se méně zapojují do složení orbitalů LUMO, který je klíčový pro Lewisovskou kyselost. Tento trend je možno pozorovat jak ve vazebných orbitalech v~MPA, tak v~lokalizovaných protivazebných orbitalech BD* v~NBO.\\
+Druhým cílem práce bylo porovnání ochoty tvořit hypervalentní sloučeniny na základě analýzy vazebných a~protivazebných orbitalů. Lze říci, že sloučeniny s~nižší hodnotou absolutní elektronegativity $\chi$ obsahují vazby s~vyšší průměrnou kovalencí. V~těchto sloučeninách je podíl orbitalů křemíku ve vazebných orbitalech vyšší a~tedy se méně zapojují do složení orbitalů LUMO, který je klíčový pro Lewisovskou kyselost. Tento trend je možno pozorovat jak ve vazebných orbitalech v~Mullikenově populační analýze, tak v~lokalizovaných protivazebných orbitalech BD* v~NBO.\\
 
 Třetím cílem této práce bylo navrhnout modely větší silikofsfátové sítě. Validita navržených struktur byla ověřena pomocí výpočtu chemických posunů pro jednotlivé velké modely. Rozdíl ve vypočteném chemickém posunu mezi pěti a~šetikoordinovaným křemíkem je velmi blízký experimentálním hodnotám.  Šestikoordinovaná struktura byla založena na experimentální struktuře získané rentgenovou krystalografií. Taktéž byly známy experimentální hodnoty chemického posunu pro pětikoordinovaný křemík. Proto předpokládáme, že správný rozdíl mezi vypočtenými chemickými posuny pěti a~šestikoordinovaného křemíku ukazuje, že náš model pětikoordinovaného křemíku byl přiměřeně správný.
 
-Pro modely, kde jsou fosfáty nahrazeny dvojící acetátů v~různých polohách vychází z~našich teoretických hodnot chemických posunů o~15 ppm zápornější, než je pozorován experimentem. Lokální magnetické pole křemíku je tedy v~teorii zeslabeno více než v~experimentu. Toto zeslabení může souviset s~tím, že experimentální struktury s~acetáty jsou méně zesíťované, než navrhované modely. V~tomto směru chceme ve výzkumu pokrčovat a~navrhnout vhodnější modely silikofsofátů s~acetátovými strukturami.
+Pro modely, kde jsou fosfáty nahrazeny dvojící acetátů v~různých polohách vychází z~našich teoretických hodnot chemických posunů o~15 ppm zápornější, než je pozorován experimentem. Lokální magnetické pole křemíku je tedy v~teorii zeslabeno více než v~experimentu. Toto zeslabení může souviset s~tím, že experimentální struktury s~acetáty jsou méně zesíťované, než navrhované modely. V~tomto směru chceme ve výzkumu pokračovat a~navrhnout vhodnější modely silikofsofátů s~acetátovými strukturami.
 
 
 
@@ -1010,14 +1023,14 @@ Pro modely, kde jsou fosfáty nahrazeny dvojící acetátů v~různých polohác
 
 
 \chapter{Přílohy}
-V příloze jsou uvedeny dodatečné tabulky, které mohou poskytnou čtenáři doplňující informace. Zároveň jsou zde uvedeny strukutry, které jsou diskutovány v~části \ref{vypoctene_struktury}, ostatní používané struktury a~jejich vstupy pro program Gaussian i NBO6 jsou uvedeny jako elektronická příloha.
+V příloze jsou uvedeny dodatečné tabulky, které mohou poskytnout čtenáři doplňující informace. Zároveň jsou zde uvedeny struktury, které jsou diskutovány v~části \ref{vypoctene_struktury}, ostatní používané struktury a~jejich vstupy pro program gaussián i NBO6 jsou uvedeny jako elektronická příloha.
 \begin{table}[H]
 \begin{minipage}{\textwidth}
 \caption{Složení a~obsazovací číslo z~NBO analýzy pro model \ce{SiCH3(OCH3)5^{2-}},  \textbf{C} z~obrázku \ref{prehled_male_modely}, výsledky jsou uvedeny v~[\%].}
 \begin{center}
 \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|}
 \hline
-\label{si_ch3_och3_5_MPA}Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.}  &  & 28 & 45 & 46 & 47 & 48 & 51 & 52 & 55 \\ \hline
+\label{si_ch3_och3_5_MPA}Atomy\footnote{Číslo atomu ve výstupu programu gaussián.}  &  & 28 & 45 & 46 & 47 & 48 & 51 & 52 & 55 \\ \hline
 (1)Si & s~& 13,2  & 2,1  & 1,1  & 0,0  & 0,2  & 0,0  & 0,0  & 0,3  \\ \hline
 & p & 0,4  & 2,2  & 4,9  & 2,9  & 2,7  & 1,8  & 1,1  & 2,3  \\ \hline
 (2)O & s~& 0,3  & 2,9  & 0,6  & 2,0  & 0,5  & 0,1  & 0,0  & 0,0  \\ \hline
@@ -1041,7 +1054,7 @@ V příloze jsou uvedeny dodatečné tabulky, které mohou poskytnou čtenáři 
 \caption{Mullikenova populační analýza vybraných MO orbitalů pro model \ce{Si(OCH3)6^{2-}}, \textbf{D}, výsledky jsou uvedeny v~[\%].}
 \begin{tabular}{|l|c|c|c|c|c|c|c|c|}
 \hline
-Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.}  \label{si_och3_6_MPA}&  & 30 & 48 & 49 & 50 & 53 & 54 & 55 \\ \hline
+Atomy\footnote{Číslo atomu ve výstupu programu gaussián.}  \label{si_och3_6_MPA}&  & 30 & 48 & 49 & 50 & 53 & 54 & 55 \\ \hline
 (1)Si & s~& 13,4  & 4,8  & 0,0  & 0,0  & 0,0  & 0,0  & 0,0  \\ \hline
 & p & 0,0  & 0,0  & 4,4  & 4,4  & 8,9  & 4,0  & 4,0  \\ \hline
 (2)O & s~& 0,6  & 2,0  & 0,6  & 4,5  & 0,1  & 0,6  & 0,0  \\ \hline
@@ -1064,7 +1077,7 @@ Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.}  \label{si_och3_6_M
 \begin{center}
 \begin{tabular}{|l|c|c|c|c|c|c|c|}
 \hline
-\label{nbo_small} Vazba & O.Č\footnote{Obsazovací číslo křemíku.} & Si\footnote{Procentuální příspěvěk křemíku do NBO.} & X\footnote{Procentuální příspěvek atomu vázaného na křemíku do NBO.} & Si(s)\footnote{Rozdělení příspěvku křemíku do orbitálních komponent, součet Si(s) + Si(p) + Si(d) = 100\%.} & Si(p)$^d$ &Si(d)$^d$ \\ \hline
+\label{nbo_small} Vazba & O.Č\footnote{Obsazovací číslo křemíku.} & Si\footnote{Procentuální příspěvěk křemíku do NBO.} & X\footnote{Procentuální příspěvek atomu vázaného na křemíku do NBO.} & Si(s)\footnote{Rozdělení příspěvku křemíku do orbitálních komponent, součet Si(s)~+~Si(p)~+~Si(d)~=~100\%.} & Si(p)$^d$ &Si(d)$^d$ \\ \hline
 \textbf{C} & (1)Si - (2)O  & 0,100 & 92,1  & 7,9  & 16,0  & 50,0  & 33,9  \\ \hline
 & (1)Si - (3)O & 0,104 & 91,9  & 8,1  & 15,0  & 50,6  & 34,4  \\ \hline
 &  (1)Si - (4)O& 0,096 & 91,9  & 8,1  & 16,5  & 50,4  & 33,1  \\ \hline
