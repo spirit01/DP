@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.6)  22 MAY 2018 01:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.6)  22 MAY 2018 15:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2036,8 +2036,8 @@ Package: changepage 2009/10/20 v1.0c check page and change page layout
 \c@cp@cntr=\count465
 \cp@tempcnt=\count466
 ))
-Package hyperref Info: Option `unicode' set `true' on input line 160.
-Package hyperref Info: Option `unicode' set `true' on input line 160.
+Package hyperref Info: Option `unicode' set `true' on input line 224.
+Package hyperref Info: Option `unicode' set `true' on input line 224.
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/stringenc.sty
 Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
@@ -2179,28 +2179,28 @@ LaTeX Warning: Label `DescriptiveLabel' multiply defined.
 )
 \openout1 = `sci-pdflatex.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 224.
+LaTeX Font Info:    ... okay on input line 224.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 224.
+LaTeX Font Info:    ... okay on input line 224.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 224.
+LaTeX Font Info:    ... okay on input line 224.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 224.
+LaTeX Font Info:    ... okay on input line 224.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 224.
+LaTeX Font Info:    ... okay on input line 224.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 224.
+LaTeX Font Info:    ... okay on input line 224.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 224.
+LaTeX Font Info:    ... okay on input line 224.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 224.
+LaTeX Font Info:    ... okay on input line 224.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 224.
+LaTeX Font Info:    ... okay on input line 224.
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `default' on line 160.
+. Activating mapping `default' on line 224.
 .................................................
  (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -2246,7 +2246,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-LaTeX Info: Redefining \microtypecontext on input line 160.
+LaTeX Info: Redefining \microtypecontext on input line 224.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2261,7 +2261,7 @@ Package microtype Info: Redefining babel's language switching commands.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-ppl.cfg
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
-Package hyperref Info: Link coloring OFF on input line 160.
+Package hyperref Info: Link coloring OFF on input line 224.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -2271,9 +2271,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count474
 )
-LaTeX Info: Redefining \ref on input line 160.
-LaTeX Info: Redefining \pageref on input line 160.
-LaTeX Info: Redefining \nameref on input line 160.
+LaTeX Info: Redefining \ref on input line 224.
+LaTeX Info: Redefining \pageref on input line 224.
+LaTeX Info: Redefining \nameref on input line 224.
 
 (./sci-pdflatex.out) (./sci-pdflatex.out)
 \@outlinefile=\write8
@@ -2287,8 +2287,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'sci-pdflatex.bbl' found.
  (./sci-pdflatex.bbl)
-Package biblatex Info: Reference section=0 on input line 160.
-Package biblatex Info: Reference segment=0 on input line 160.
+Package biblatex Info: Reference section=0 on input line 224.
+Package biblatex Info: Reference segment=0 on input line 224.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/qpl/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -2306,54 +2306,54 @@ x 272.01625pt>
 File: fithesis/logo/mu/fithesis-base-color.pdf Graphic file (type pdf)
 <use fithesis/logo/mu/fithesis-base-color.pdf>
 Package pdftex.def Info: fithesis/logo/mu/fithesis-base-color.pdf  used on inpu
-t line 160. on input line 160.
+t line 224. on input line 224.
 Package pdftex.def Info: Requested size: 85.35826pt x 85.67311pt on input line 
-160.
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 160.
+224.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 224.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )<<ot1.cmap>>
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 160
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 224
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )<<oml.cmap>>
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 160
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 224
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )<<oms.cmap>>
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 160
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 224
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )<<omx.cmap>>
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 160.
+(Font)              scaled to size 12.50409pt on input line 224.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 160.
+(Font)              scaled to size 9.37807pt on input line 224.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 160.
+(Font)              scaled to size 7.29405pt on input line 224.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 160.
+(Font)              scaled to size 12.50409pt on input line 224.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 160.
+(Font)              scaled to size 9.37807pt on input line 224.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 160.
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 160
+(Font)              scaled to size 7.29405pt on input line 224.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 224
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1zplm.fd
@@ -2368,21 +2368,21 @@ Package microtype Info: Loading generic protrusion settings for font family
 File: fithesis/logo/mu/fithesis-sci-color.pdf Graphic file (type pdf)
 <use fithesis/logo/mu/fithesis-sci-color.pdf>
 Package pdftex.def Info: fithesis/logo/mu/fithesis-sci-color.pdf  used on input
- line 160. on input line 160.
+ line 224. on input line 224.
 Package pdftex.def Info: Requested size: 85.35826pt x 85.64561pt on input line 
-160.
+224.
 
-Overfull \hbox (28.45276pt too wide) in paragraph at lines 160--160
+Overfull \hbox (28.45276pt too wide) in paragraph at lines 224--224
 []$[]$$[]$$[]$ 
  []
 
 
-Underfull \hbox (badness 4132) in paragraph at lines 160--160
+Underfull \hbox (badness 4132) in paragraph at lines 224--224
 \T1/qpl/b/n/24.88 fos-fo-si-li-kát· a je-jich si-li-ká-to-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
 
  []
 
@@ -2400,7 +2400,7 @@ i-color.pdf>]
 \@left=\skip121
 \@right=\skip122
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
 
  []
 
@@ -2417,7 +2417,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--160
 \@left=\skip132
 \@right=\skip133
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
 
  []
 
@@ -2425,13 +2425,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--160
 
 ] [5
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.v}) has
- been already used, duplicate ignored
+]
+<zadani.pdf, id=152, pagebox=cropbox, 597.432pt x 845.07718pt>
+File: zadani.pdf Graphic file (type pdf)
+<use zadani.pdf>
+Package pdftex.def Info: zadani.pdf  used on input line 224. on input line 224.
+
+Package pdftex.def Info: Requested size: 597.43054pt x 845.07512pt on input lin
+e 224.
+File: zadani.pdf Graphic file (type pdf)
+<use zadani.pdf>
+Package pdftex.def Info: zadani.pdf  used on input line 224. on input line 224.
+
+Package pdftex.def Info: Requested size: 597.43054pt x 845.07512pt on input lin
+e 224.
+<zadani.pdf, id=155, page=1, pagebox=cropbox, 597.432pt x 845.07718pt>
+File: zadani.pdf Graphic file (type pdf)
+<use zadani.pdf, page 1>
+Package pdftex.def Info: zadani.pdf , page1 used on input line 224. on input li
+ne 224.
+Package pdftex.def Info: Requested size: 597.43054pt x 845.07512pt on input lin
+e 224.
+File: zadani.pdf Graphic file (type pdf)
+<use zadani.pdf, page 1>
+Package pdftex.def Info: zadani.pdf , page1 used on input line 224. on input li
+ne 224.
+Package pdftex.def Info: Requested size: 597.45789pt x 845.1138pt on input line
+ 224.
+File: zadani.pdf Graphic file (type pdf)
+<use zadani.pdf, page 1>
+Package pdftex.def Info: zadani.pdf , page1 used on input line 224. on input li
+ne 224.
+Package pdftex.def Info: Requested size: 597.45789pt x 845.1138pt on input line
+ 224.
+File: zadani.pdf Graphic file (type pdf)
+<use zadani.pdf, page 1>
+Package pdftex.def Info: zadani.pdf , page1 used on input line 224. on input li
+ne 224.
+Package pdftex.def Info: Requested size: 597.45789pt x 845.1138pt on input line
+ 224.
+File: zadani.pdf Graphic file (type pdf)
+<use zadani.pdf, page 1>
+Package pdftex.def Info: zadani.pdf , page1 used on input line 224. on input li
+ne 224.
+Package pdftex.def Info: Requested size: 597.45789pt x 845.1138pt on input line
+ 224.
+pdfTeX warning (ext4): destination with the same identifier (name{page.v}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.160 \begin{document}
-                       [5]
-Overfull \hbox (26.74248pt too wide) in paragraph at lines 160--160
+l.224 \begin{document}
+                       [5 <./zadani.pdf, page is rotated 90 degrees>]
+Overfull \hbox (26.74248pt too wide) in paragraph at lines 224--224
 \T1/qpl/m/n/12 (-20) Tato práce vznikla za pod-pory pro-jekt· CE-RIT Scien-ti-f
 ic Cloud (LM2015085)
  []
@@ -2460,7 +2505,7 @@ Underfull \vbox (badness 1024) has occurred while \output is active []
 \openout11 = `sci-pdflatex.lof'.
 
  [11]
-Overfull \hbox (35.38188pt too wide) in paragraph at lines 164--188
+Overfull \hbox (35.38188pt too wide) in paragraph at lines 228--252
  [][] 
  []
 
@@ -2469,86 +2514,86 @@ Overfull \hbox (35.38188pt too wide) in paragraph at lines 164--188
 ]
 Kapitola 1.
 [2]
-<si_velky_kruh.png, id=398, 483.4863pt x 271.7352pt>
+<si_velky_kruh.png, id=404, 483.4863pt x 271.7352pt>
 File: si_velky_kruh.png Graphic file (type png)
 <use si_velky_kruh.png>
-Package pdftex.def Info: si_velky_kruh.png  used on input line 203. on input li
-ne 203.
+Package pdftex.def Info: si_velky_kruh.png  used on input line 267. on input li
+ne 267.
 Package pdftex.def Info: Requested size: 284.52756pt x 159.91602pt on input lin
-e 203.
-<rtg_kruh_samostatne.png, id=401, 459.6372pt x 459.6372pt>
+e 267.
+<rtg_kruh_samostatne.png, id=407, 459.6372pt x 459.6372pt>
 File: rtg_kruh_samostatne.png Graphic file (type png)
 <use rtg_kruh_samostatne.png>
-Package pdftex.def Info: rtg_kruh_samostatne.png  used on input line 207. on in
-put line 207.
+Package pdftex.def Info: rtg_kruh_samostatne.png  used on input line 271. on in
+put line 271.
 Package pdftex.def Info: Requested size: 170.71652pt x 170.71535pt on input lin
-e 207.
+e 271.
  [3 <./si_velky_kruh.png (PNG copy)>]
-<si_polymer_cely.png, id=416, 948.54375pt x 669.50125pt>
+<si_polymer_cely.png, id=422, 948.54375pt x 669.50125pt>
 File: si_polymer_cely.png Graphic file (type png)
 <use si_polymer_cely.png>
-Package pdftex.def Info: si_polymer_cely.png  used on input line 211. on input 
-line 211.
+Package pdftex.def Info: si_polymer_cely.png  used on input line 275. on input 
+line 275.
 Package pdftex.def Info: Requested size: 284.52756pt x 200.82127pt on input lin
-e 211.
-<obr_si_kryst_struktura_real.png, id=419, 449.5194pt x 458.1918pt>
+e 275.
+<obr_si_kryst_struktura_real.png, id=425, 449.5194pt x 458.1918pt>
 File: obr_si_kryst_struktura_real.png Graphic file (type png)
 <use obr_si_kryst_struktura_real.png>
-Package pdftex.def Info: obr_si_kryst_struktura_real.png  used on input line 21
-5. on input line 215.
+Package pdftex.def Info: obr_si_kryst_struktura_real.png  used on input line 27
+9. on input line 279.
 Package pdftex.def Info: Requested size: 227.62204pt x 232.01077pt on input lin
-e 215.
+e 279.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 217.
+(Font)              scaled to size 15.0049pt on input line 281.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 217.
+(Font)              scaled to size 10.42007pt on input line 281.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 217.
+(Font)              scaled to size 8.33606pt on input line 281.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 217.
+(Font)              scaled to size 15.0049pt on input line 281.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 217.
+(Font)              scaled to size 10.42007pt on input line 281.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 217.
+(Font)              scaled to size 8.33606pt on input line 281.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 217.
+(hyperref)                removing `math shift' on input line 281.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 217.
+(hyperref)                removing `math shift' on input line 281.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
 
  []
 
 [4 <./rtg_kruh_samostatne.png (PNG copy)>] [5 <./si_polymer_cely.png> <./obr_si
 _kryst_struktura_real.png>]
-<drawing.pdf, id=430, pagebox=cropbox, 338.82355pt x 80.42232pt>
+<drawing.pdf, id=436, pagebox=cropbox, 338.82355pt x 80.42232pt>
 File: drawing.pdf Graphic file (type pdf)
 <use drawing.pdf>
-Package pdftex.def Info: drawing.pdf  used on input line 225. on input line 225
+Package pdftex.def Info: drawing.pdf  used on input line 289. on input line 289
 .
 Package pdftex.def Info: Requested size: 284.52756pt x 67.53586pt on input line
- 225.
+ 289.
 
 Underfull \vbox (badness 6252) has occurred while \output is active []
 
  [6 <./drawing.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 231--233
+Underfull \hbox (badness 10000) in paragraph at lines 295--297
 
  []
 
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 235.
+(Font)              scaled to size 7.91925pt on input line 299.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 235.
+(Font)              scaled to size 6.25204pt on input line 299.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 235.
+(Font)              scaled to size 7.91925pt on input line 299.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 235.
+(Font)              scaled to size 6.25204pt on input line 299.
 Package epstopdf Info: Source file: <si_f6.eps>
 (epstopdf)                    date: 2018-05-21 15:32:04
 (epstopdf)                    size: 14076 bytes
@@ -2557,15 +2602,15 @@ Package epstopdf Info: Source file: <si_f6.eps>
 (epstopdf)                    size: 3997 bytes
 (epstopdf)             Command: <repstopdf --outfile=si_f6-eps-converted-to.pdf
  si_f6.eps>
-(epstopdf)             \includegraphics on input line 239.
+(epstopdf)             \includegraphics on input line 303.
 Package epstopdf Info: Output file is already uptodate.
-<si_f6-eps-converted-to.pdf, id=471, pagebox=cropbox, 112.42pt x 93.34875pt>
+<si_f6-eps-converted-to.pdf, id=476, pagebox=cropbox, 112.42pt x 93.34875pt>
 File: si_f6-eps-converted-to.pdf Graphic file (type pdf)
 <use si_f6-eps-converted-to.pdf>
-Package pdftex.def Info: si_f6-eps-converted-to.pdf  used on input line 239. on
- input line 239.
+Package pdftex.def Info: si_f6-eps-converted-to.pdf  used on input line 303. on
+ input line 303.
 Package pdftex.def Info: Requested size: 112.41972pt x 93.34851pt on input line
- 239.
+ 303.
 Package epstopdf Info: Source file: <si_cl_o.eps>
 (epstopdf)                    date: 2018-05-21 15:32:04
 (epstopdf)                    size: 14418 bytes
@@ -2574,16 +2619,16 @@ Package epstopdf Info: Source file: <si_cl_o.eps>
 (epstopdf)                    size: 4320 bytes
 (epstopdf)             Command: <repstopdf --outfile=si_cl_o-eps-converted-to.p
 df si_cl_o.eps>
-(epstopdf)             \includegraphics on input line 240.
+(epstopdf)             \includegraphics on input line 304.
 Package epstopdf Info: Output file is already uptodate.
-<si_cl_o-eps-converted-to.pdf, id=472, pagebox=cropbox, 86.3225pt x 115.43124pt
+<si_cl_o-eps-converted-to.pdf, id=477, pagebox=cropbox, 86.3225pt x 115.43124pt
 >
 File: si_cl_o-eps-converted-to.pdf Graphic file (type pdf)
 <use si_cl_o-eps-converted-to.pdf>
-Package pdftex.def Info: si_cl_o-eps-converted-to.pdf  used on input line 240. 
-on input line 240.
+Package pdftex.def Info: si_cl_o-eps-converted-to.pdf  used on input line 304. 
+on input line 304.
 Package pdftex.def Info: Requested size: 86.32227pt x 115.43095pt on input line
- 240.
+ 304.
 Package epstopdf Info: Source file: <si_o_f.eps>
 (epstopdf)                    date: 2018-05-21 15:32:12
 (epstopdf)                    size: 16398 bytes
@@ -2592,15 +2637,15 @@ Package epstopdf Info: Source file: <si_o_f.eps>
 (epstopdf)                    size: 4277 bytes
 (epstopdf)             Command: <repstopdf --outfile=si_o_f-eps-converted-to.pd
 f si_o_f.eps>
-(epstopdf)             \includegraphics on input line 241.
+(epstopdf)             \includegraphics on input line 305.
 Package epstopdf Info: Output file is already uptodate.
-<si_o_f-eps-converted-to.pdf, id=473, pagebox=cropbox, 190.7125pt x 128.48pt>
+<si_o_f-eps-converted-to.pdf, id=478, pagebox=cropbox, 190.7125pt x 128.48pt>
 File: si_o_f-eps-converted-to.pdf Graphic file (type pdf)
 <use si_o_f-eps-converted-to.pdf>
-Package pdftex.def Info: si_o_f-eps-converted-to.pdf  used on input line 241. o
-n input line 241.
+Package pdftex.def Info: si_o_f-eps-converted-to.pdf  used on input line 305. o
+n input line 305.
 Package pdftex.def Info: Requested size: 190.71202pt x 128.47968pt on input lin
-e 241.
+e 305.
 Package epstopdf Info: Source file: <si_f_n.eps>
 (epstopdf)                    date: 2018-05-21 15:32:08
 (epstopdf)                    size: 14191 bytes
@@ -2609,15 +2654,15 @@ Package epstopdf Info: Source file: <si_f_n.eps>
 (epstopdf)                    size: 4166 bytes
 (epstopdf)             Command: <repstopdf --outfile=si_f_n-eps-converted-to.pd
 f si_f_n.eps>
-(epstopdf)             \includegraphics on input line 242.
+(epstopdf)             \includegraphics on input line 306.
 Package epstopdf Info: Output file is already uptodate.
-<si_f_n-eps-converted-to.pdf, id=474, pagebox=cropbox, 123.46124pt x 96.36pt>
+<si_f_n-eps-converted-to.pdf, id=479, pagebox=cropbox, 123.46124pt x 96.36pt>
 File: si_f_n-eps-converted-to.pdf Graphic file (type pdf)
 <use si_f_n-eps-converted-to.pdf>
-Package pdftex.def Info: si_f_n-eps-converted-to.pdf  used on input line 242. o
-n input line 242.
+Package pdftex.def Info: si_f_n-eps-converted-to.pdf  used on input line 306. o
+n input line 306.
 Package pdftex.def Info: Requested size: 123.46092pt x 96.35974pt on input line
- 242.
+ 306.
 Package epstopdf Info: Source file: <si_with_fluor_carbons.eps>
 (epstopdf)                    date: 2018-05-21 15:32:12
 (epstopdf)                    size: 15851 bytes
@@ -2627,16 +2672,16 @@ Package epstopdf Info: Source file: <si_with_fluor_carbons.eps>
 (epstopdf)                    size: 4084 bytes
 (epstopdf)             Command: <repstopdf --outfile=si_with_fluor_carbons-eps-
 converted-to.pdf si_with_fluor_carbons.eps>
-(epstopdf)             \includegraphics on input line 243.
+(epstopdf)             \includegraphics on input line 307.
 Package epstopdf Info: Output file is already uptodate.
-<si_with_fluor_carbons-eps-converted-to.pdf, id=475, pagebox=cropbox, 211.79124
+<si_with_fluor_carbons-eps-converted-to.pdf, id=480, pagebox=cropbox, 211.79124
 pt x 106.3975pt>
 File: si_with_fluor_carbons-eps-converted-to.pdf Graphic file (type pdf)
 <use si_with_fluor_carbons-eps-converted-to.pdf>
 Package pdftex.def Info: si_with_fluor_carbons-eps-converted-to.pdf  used on in
-put line 243. on input line 243.
+put line 307. on input line 307.
 Package pdftex.def Info: Requested size: 211.79073pt x 106.39723pt on input lin
-e 243.
+e 307.
 Package epstopdf Info: Source file: <si_only_c.eps>
 (epstopdf)                    date: 2018-05-21 15:32:08
 (epstopdf)                    size: 14854 bytes
@@ -2645,16 +2690,16 @@ Package epstopdf Info: Source file: <si_only_c.eps>
 (epstopdf)                    size: 4299 bytes
 (epstopdf)             Command: <repstopdf --outfile=si_only_c-eps-converted-to
 .pdf si_only_c.eps>
-(epstopdf)             \includegraphics on input line 244.
+(epstopdf)             \includegraphics on input line 308.
 Package epstopdf Info: Output file is already uptodate.
-<si_only_c-eps-converted-to.pdf, id=476, pagebox=cropbox, 121.45375pt x 95.3562
+<si_only_c-eps-converted-to.pdf, id=481, pagebox=cropbox, 121.45375pt x 95.3562
 5pt>
 File: si_only_c-eps-converted-to.pdf Graphic file (type pdf)
 <use si_only_c-eps-converted-to.pdf>
-Package pdftex.def Info: si_only_c-eps-converted-to.pdf  used on input line 244
-. on input line 244.
-Package pdftex.def Info: Requested size: 121.45343pt x 95.356pt on input line 2
-44.
+Package pdftex.def Info: si_only_c-eps-converted-to.pdf  used on input line 308
+. on input line 308.
+Package pdftex.def Info: Requested size: 121.45343pt x 95.356pt on input line 3
+08.
 Package epstopdf Info: Source file: <si_only_o.eps>
 (epstopdf)                    date: 2018-05-21 15:32:08
 (epstopdf)                    size: 15102 bytes
@@ -2663,16 +2708,16 @@ Package epstopdf Info: Source file: <si_only_o.eps>
 (epstopdf)                    size: 4129 bytes
 (epstopdf)             Command: <repstopdf --outfile=si_only_o-eps-converted-to
 .pdf si_only_o.eps>
-(epstopdf)             \includegraphics on input line 252.
+(epstopdf)             \includegraphics on input line 316.
 Package epstopdf Info: Output file is already uptodate.
-<si_only_o-eps-converted-to.pdf, id=477, pagebox=cropbox, 215.80624pt x 124.465
+<si_only_o-eps-converted-to.pdf, id=482, pagebox=cropbox, 215.80624pt x 124.465
 pt>
 File: si_only_o-eps-converted-to.pdf Graphic file (type pdf)
 <use si_only_o-eps-converted-to.pdf>
-Package pdftex.def Info: si_only_o-eps-converted-to.pdf  used on input line 252
-. on input line 252.
+Package pdftex.def Info: si_only_o-eps-converted-to.pdf  used on input line 316
+. on input line 316.
 Package pdftex.def Info: Requested size: 194.22382pt x 112.01746pt on input lin
-e 252.
+e 316.
 Package epstopdf Info: Source file: <si_n_o_c.eps>
 (epstopdf)                    date: 2018-05-21 15:32:08
 (epstopdf)                    size: 21484 bytes
@@ -2681,16 +2726,16 @@ Package epstopdf Info: Source file: <si_n_o_c.eps>
 (epstopdf)                    size: 5448 bytes
 (epstopdf)             Command: <repstopdf --outfile=si_n_o_c-eps-converted-to.
 pdf si_n_o_c.eps>
-(epstopdf)             \includegraphics on input line 253.
+(epstopdf)             \includegraphics on input line 317.
 Package epstopdf Info: Output file is already uptodate.
-<si_n_o_c-eps-converted-to.pdf, id=478, pagebox=cropbox, 358.33875pt x 273.02pt
+<si_n_o_c-eps-converted-to.pdf, id=483, pagebox=cropbox, 358.33875pt x 273.02pt
 >
 File: si_n_o_c-eps-converted-to.pdf Graphic file (type pdf)
 <use si_n_o_c-eps-converted-to.pdf>
-Package pdftex.def Info: si_n_o_c-eps-converted-to.pdf  used on input line 253.
- on input line 253.
+Package pdftex.def Info: si_n_o_c-eps-converted-to.pdf  used on input line 317.
+ on input line 317.
 Package pdftex.def Info: Requested size: 250.83542pt x 191.11269pt on input lin
-e 253.
+e 317.
 Package epstopdf Info: Source file: <si_fluor_vodik_kyslik.eps>
 (epstopdf)                    date: 2018-05-21 15:32:08
 (epstopdf)                    size: 14878 bytes
@@ -2700,16 +2745,16 @@ Package epstopdf Info: Source file: <si_fluor_vodik_kyslik.eps>
 (epstopdf)                    size: 4408 bytes
 (epstopdf)             Command: <repstopdf --outfile=si_fluor_vodik_kyslik-eps-
 converted-to.pdf si_fluor_vodik_kyslik.eps>
-(epstopdf)             \includegraphics on input line 254.
+(epstopdf)             \includegraphics on input line 318.
 Package epstopdf Info: Output file is already uptodate.
-<si_fluor_vodik_kyslik-eps-converted-to.pdf, id=479, pagebox=cropbox, 147.55125
+<si_fluor_vodik_kyslik-eps-converted-to.pdf, id=484, pagebox=cropbox, 147.55125
 pt x 134.5025pt>
 File: si_fluor_vodik_kyslik-eps-converted-to.pdf Graphic file (type pdf)
 <use si_fluor_vodik_kyslik-eps-converted-to.pdf>
 Package pdftex.def Info: si_fluor_vodik_kyslik-eps-converted-to.pdf  used on in
-put line 254. on input line 254.
+put line 318. on input line 318.
 Package pdftex.def Info: Requested size: 147.55087pt x 134.50215pt on input lin
-e 254.
+e 318.
 Package epstopdf Info: Source file: <si_o_n.eps>
 (epstopdf)                    date: 2018-05-21 15:32:12
 (epstopdf)                    size: 15866 bytes
@@ -2718,21 +2763,21 @@ Package epstopdf Info: Source file: <si_o_n.eps>
 (epstopdf)                    size: 4800 bytes
 (epstopdf)             Command: <repstopdf --outfile=si_o_n-eps-converted-to.pd
 f si_o_n.eps>
-(epstopdf)             \includegraphics on input line 255.
+(epstopdf)             \includegraphics on input line 319.
 Package epstopdf Info: Output file is already uptodate.
-<si_o_n-eps-converted-to.pdf, id=480, pagebox=cropbox, 154.5775pt x 119.44624pt
+<si_o_n-eps-converted-to.pdf, id=485, pagebox=cropbox, 154.5775pt x 119.44624pt
 >
 File: si_o_n-eps-converted-to.pdf Graphic file (type pdf)
 <use si_o_n-eps-converted-to.pdf>
-Package pdftex.def Info: si_o_n-eps-converted-to.pdf  used on input line 255. o
-n input line 255.
+Package pdftex.def Info: si_o_n-eps-converted-to.pdf  used on input line 319. o
+n input line 319.
 Package pdftex.def Info: Requested size: 154.5771pt x 119.44594pt on input line
- 255.
+ 319.
 
-LaTeX Warning: Float too large for page by 14.22221pt on input line 259.
+LaTeX Warning: Float too large for page by 14.22221pt on input line 323.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
+Underfull \hbox (badness 10000) in paragraph at lines 326--327
 
  []
 
@@ -2747,22 +2792,19 @@ s-eps-converted-to.pdf> <./si_only_c-eps-converted-to.pdf>] [9 <./si_only_o-eps
 ps-converted-to.pdf> <./si_o_n-eps-converted-to.pdf>] [10] [11]
 Kapitola 2.
 [12]
-Overfull \hbox (0.96558pt too wide) in paragraph at lines 291--294
+Overfull \hbox (0.96558pt too wide) in paragraph at lines 355--358
 $\OML/zplm/m/it/12 R[]$ \T1/qpl/m/n/12 (-20) jsou sou-°ad-nice ja-der, $\OT1/zp
 lm/m/n/12 	[](\OML/zplm/m/it/12 r[]\OT1/ppl/m/n/12 , \OML/zplm/m/it/12 R[]\OT1/
 zplm/m/n/12 )$ \T1/qpl/m/n/12 (-20) je elektor-nová vl-nová funkce,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--294
+Underfull \hbox (badness 10000) in paragraph at lines 355--358
 
  []
 
-
-Underfull \vbox (badness 3428) has occurred while \output is active []
-
- [13]
-Underfull \hbox (badness 10000) in paragraph at lines 315--317
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 379--381
 
  []
 
@@ -2771,12 +2813,12 @@ Overfull \vbox (2.46475pt too high) has occurred while \output is active []
 
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 328--329
+Underfull \hbox (badness 10000) in paragraph at lines 392--393
 
  []
 
 [16]
-Overfull \hbox (10.45587pt too wide) in paragraph at lines 346--349
+Overfull \hbox (10.45587pt too wide) in paragraph at lines 410--413
 $\OML/zplm/m/it/12 T[]\OT1/zplm/m/n/12 [\OML/zplm/m/it/12 %\OT1/zplm/m/n/12 ([]
 )]$ \T1/qpl/m/n/12 (-20) je ki-ne-tická ener-gie na-vzá-jem ne-in-ter-a-gu-jí-c
 ích elek-tron·, snadno
@@ -2786,12 +2828,8 @@ $\OML/zplm/m/it/12 T[]\OT1/zplm/m/n/12 [\OML/zplm/m/it/12 %\OT1/zplm/m/n/12 ([]
 Overfull \vbox (3.68637pt too high) has occurred while \output is active []
 
 
-[17] [18]
-Overfull \vbox (2.80066pt too high) has occurred while \output is active []
-
-
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 408--409
+[17] [18] [19]
+Underfull \hbox (badness 10000) in paragraph at lines 471--473
 
  []
 
@@ -2800,31 +2838,23 @@ Overfull \vbox (7.08572pt too high) has occurred while \output is active []
 
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 429--431
+Underfull \hbox (badness 10000) in paragraph at lines 493--495
 
  []
 
-
-Overfull \vbox (9.95366pt too high) has occurred while \output is active []
-
-
-[22]
-Overfull \vbox (3.45679pt too high) has occurred while \output is active []
-
-
-[23] [24]
+[22] [23] [24]
 Kapitola 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 469--471
+Underfull \hbox (badness 10000) in paragraph at lines 531--533
 
  []
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 472--479
+Underfull \hbox (badness 10000) in paragraph at lines 534--541
 
  []
 
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 480.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 542.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2834,98 +2864,103 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [26]
-Underfull \hbox (badness 10000) in paragraph at lines 493--495
+Underfull \hbox (badness 10000) in paragraph at lines 555--557
 
  []
 
 [27]
-<si_ch3_och3.png, id=822, 458.9145pt x 388.8126pt>
+<si_ch3_och3.png, id=828, 458.9145pt x 388.8126pt>
 File: si_ch3_och3.png Graphic file (type png)
 <use si_ch3_och3.png>
-Package pdftex.def Info: si_ch3_och3.png  used on input line 498. on input line
- 498.
+Package pdftex.def Info: si_ch3_och3.png  used on input line 560. on input line
+ 560.
 Package pdftex.def Info: Requested size: 142.26378pt x 120.53065pt on input lin
-e 498.
-<si_och3_4.png, id=823, 432.1746pt x 453.1329pt>
+e 560.
+<si_och3_4.png, id=829, 432.1746pt x 453.1329pt>
 File: si_och3_4.png Graphic file (type png)
 <use si_och3_4.png>
-Package pdftex.def Info: si_och3_4.png  used on input line 499. on input line 4
-99.
+Package pdftex.def Info: si_och3_4.png  used on input line 561. on input line 5
+61.
 Package pdftex.def Info: Requested size: 142.26378pt x 149.16095pt on input lin
-e 499.
-<si_ch3_och3_5.png, id=824, 456.0237pt x 442.2924pt>
+e 561.
+<si_ch3_och3_5.png, id=830, 456.0237pt x 442.2924pt>
 File: si_ch3_och3_5.png Graphic file (type png)
 <use si_ch3_och3_5.png>
-Package pdftex.def Info: si_ch3_och3_5.png  used on input line 500. on input li
-ne 500.
+Package pdftex.def Info: si_ch3_och3_5.png  used on input line 562. on input li
+ne 562.
 Package pdftex.def Info: Requested size: 142.26378pt x 137.97983pt on input lin
-e 500.
-<si_och3_6.png, id=825, 463.2507pt x 466.1415pt>
+e 562.
+<si_och3_6.png, id=831, 463.2507pt x 466.1415pt>
 File: si_och3_6.png Graphic file (type png)
 <use si_och3_6.png>
-Package pdftex.def Info: si_och3_6.png  used on input line 501. on input line 5
-01.
+Package pdftex.def Info: si_och3_6.png  used on input line 563. on input line 5
+63.
 Package pdftex.def Info: Requested size: 142.26378pt x 143.15094pt on input lin
-e 501.
-<si_cl_4.png, id=826, 495.7722pt x 523.2348pt>
+e 563.
+<si_cl_4.png, id=832, 495.7722pt x 523.2348pt>
 File: si_cl_4.png Graphic file (type png)
 <use si_cl_4.png>
-Package pdftex.def Info: si_cl_4.png  used on input line 502. on input line 502
+Package pdftex.def Info: si_cl_4.png  used on input line 564. on input line 564
 .
 Package pdftex.def Info: Requested size: 56.9055pt x 60.05496pt on input line 5
-02.
-<acetylmethyltriflurosila.png, id=827, 364.9635pt x 240.6591pt>
+64.
+<acetylmethyltriflurosila.png, id=833, 364.9635pt x 240.6591pt>
 File: acetylmethyltriflurosila.png Graphic file (type png)
 <use acetylmethyltriflurosila.png>
-Package pdftex.def Info: acetylmethyltriflurosila.png  used on input line 503. 
-on input line 503.
+Package pdftex.def Info: acetylmethyltriflurosila.png  used on input line 565. 
+on input line 565.
 Package pdftex.def Info: Requested size: 142.26378pt x 93.80893pt on input line
- 503.
-<si_o_et_4.png, id=833, 496.4949pt x 464.6961pt>
+ 565.
+<si_o_et_4.png, id=839, 496.4949pt x 464.6961pt>
 File: si_o_et_4.png Graphic file (type png)
 <use si_o_et_4.png>
-Package pdftex.def Info: si_o_et_4.png  used on input line 516. on input line 5
-16.
+Package pdftex.def Info: si_o_et_4.png  used on input line 578. on input line 5
+78.
 Package pdftex.def Info: Requested size: 170.71652pt x 159.78143pt on input lin
-e 516.
-<si_fenyl_f3.png, id=834, 283.2984pt x 401.0985pt>
+e 578.
+<si_fenyl_f3.png, id=840, 283.2984pt x 401.0985pt>
 File: si_fenyl_f3.png Graphic file (type png)
 <use si_fenyl_f3.png>
-Package pdftex.def Info: si_fenyl_f3.png  used on input line 517. on input line
- 517.
+Package pdftex.def Info: si_fenyl_f3.png  used on input line 579. on input line
+ 579.
 Package pdftex.def Info: Requested size: 71.13188pt x 100.70891pt on input line
- 517.
-<si_ocl_oet_3.png, id=835, 380.1402pt x 420.6114pt>
+ 579.
+<si_ocl_oet_3.png, id=841, 380.1402pt x 420.6114pt>
 File: si_ocl_oet_3.png Graphic file (type png)
 <use si_ocl_oet_3.png>
-Package pdftex.def Info: si_ocl_oet_3.png  used on input line 518. on input lin
-e 518.
+Package pdftex.def Info: si_ocl_oet_3.png  used on input line 580. on input lin
+e 580.
 Package pdftex.def Info: Requested size: 128.0374pt x 141.67104pt on input line
- 518.
-<si_o_ac_4.png, id=836, 385.9218pt x 426.393pt>
+ 580.
+<si_o_ac_4.png, id=842, 385.9218pt x 426.393pt>
 File: si_o_ac_4.png Graphic file (type png)
 <use si_o_ac_4.png>
-Package pdftex.def Info: si_o_ac_4.png  used on input line 519. on input line 5
-19.
+Package pdftex.def Info: si_o_ac_4.png  used on input line 581. on input line 5
+81.
 Package pdftex.def Info: Requested size: 128.0374pt x 141.46484pt on input line
- 519.
-<si_h_oac_3.png, id=837, 333.8874pt x 409.7709pt>
+ 581.
+<si_h_oac_3.png, id=843, 333.8874pt x 409.7709pt>
 File: si_h_oac_3.png Graphic file (type png)
 <use si_h_oac_3.png>
-Package pdftex.def Info: si_h_oac_3.png  used on input line 520. on input line 
-520.
+Package pdftex.def Info: si_h_oac_3.png  used on input line 582. on input line 
+582.
 Package pdftex.def Info: Requested size: 128.0374pt x 157.14015pt on input line
- 520.
-<si_ch3_oac_3.png, id=838, 398.9304pt x 325.215pt>
+ 582.
+<si_ch3_oac_3.png, id=844, 398.9304pt x 325.215pt>
 File: si_ch3_oac_3.png Graphic file (type png)
 <use si_ch3_oac_3.png>
-Package pdftex.def Info: si_ch3_oac_3.png  used on input line 521. on input lin
-e 521.
+Package pdftex.def Info: si_ch3_oac_3.png  used on input line 583. on input lin
+e 583.
 Package pdftex.def Info: Requested size: 128.0374pt x 104.37859pt on input line
- 521.
+ 583.
 
 
-LaTeX Warning: Float too large for page by 25.56653pt on input line 524.
+LaTeX Warning: Float too large for page by 25.56653pt on input line 586.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 588--589
+
+ []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2939,13 +2974,14 @@ copy)> <./si_h_oac_3.png (PNG copy)> <./si_ch3_oac_3.png (PNG copy)>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [31]
-Underfull \hbox (badness 10000) in paragraph at lines 580--580
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 640--640
 [][][]\T1/qpl/m/n/10 (+20) Rozd¥lení p°í-sp¥vku k°e-míku do or-bi-tál-ních kom-
 po-nent, sou-£et
  []
 
-[32]
-Underfull \hbox (badness 10000) in paragraph at lines 603--603
+
+Underfull \hbox (badness 10000) in paragraph at lines 663--663
 [][][]\T1/qpl/m/n/10 (+20) Rozd¥lení p°í-sp¥vku k°e-míku do or-bi-tál-ních kom-
 po-nent, sou-£et
  []
@@ -2954,91 +2990,94 @@ po-nent, sou-£et
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [33]
-<SI_AC_70.png, id=932, 401.5pt x 401.5pt>
+Underfull \hbox (badness 10000) in paragraph at lines 680--681
+
+ []
+
+<SI_AC_70.png, id=935, 401.5pt x 401.5pt>
 File: SI_AC_70.png Graphic file (type png)
 <use SI_AC_70.png>
-Package pdftex.def Info: SI_AC_70.png  used on input line 627. on input line 62
-7.
+Package pdftex.def Info: SI_AC_70.png  used on input line 686. on input line 68
+6.
 Package pdftex.def Info: Requested size: 170.71652pt x 170.71794pt on input lin
-e 627.
-<SI_AC_71.png, id=933, 1003.75pt x 1003.75pt>
+e 686.
+<SI_AC_71.png, id=936, 1003.75pt x 1003.75pt>
 File: SI_AC_71.png Graphic file (type png)
 <use SI_AC_71.png>
-Package pdftex.def Info: SI_AC_71.png  used on input line 628. on input line 62
-8.
+Package pdftex.def Info: SI_AC_71.png  used on input line 687. on input line 68
+7.
 Package pdftex.def Info: Requested size: 170.71652pt x 170.71182pt on input lin
-e 628.
-<SI_AC_72.png, id=934, 1003.75pt x 1003.75pt>
+e 687.
+<SI_AC_72.png, id=937, 1003.75pt x 1003.75pt>
 File: SI_AC_72.png Graphic file (type png)
 <use SI_AC_72.png>
-Package pdftex.def Info: SI_AC_72.png  used on input line 629. on input line 62
-9.
+Package pdftex.def Info: SI_AC_72.png  used on input line 688. on input line 68
+8.
 Package pdftex.def Info: Requested size: 170.71652pt x 170.71182pt on input lin
-e 629.
-<SI_AC_73.png, id=935, 1003.75pt x 1003.75pt>
+e 688.
+<SI_AC_73.png, id=938, 1003.75pt x 1003.75pt>
 File: SI_AC_73.png Graphic file (type png)
 <use SI_AC_73.png>
-Package pdftex.def Info: SI_AC_73.png  used on input line 630. on input line 63
-0.
+Package pdftex.def Info: SI_AC_73.png  used on input line 689. on input line 68
+9.
 Package pdftex.def Info: Requested size: 170.71652pt x 170.71182pt on input lin
-e 630.
-<si_h_30.png, id=936, 401.5pt x 401.5pt>
+e 689.
+<si_h_30.png, id=939, 401.5pt x 401.5pt>
 File: si_h_30.png Graphic file (type png)
 <use si_h_30.png>
-Package pdftex.def Info: si_h_30.png  used on input line 638. on input line 638
+Package pdftex.def Info: si_h_30.png  used on input line 697. on input line 697
 .
 Package pdftex.def Info: Requested size: 170.71652pt x 170.71794pt on input lin
-e 638.
-<si_h_31.png, id=937, 401.5pt x 401.5pt>
+e 697.
+<si_h_31.png, id=940, 401.5pt x 401.5pt>
 File: si_h_31.png Graphic file (type png)
 <use si_h_31.png>
-Package pdftex.def Info: si_h_31.png  used on input line 639. on input line 639
+Package pdftex.def Info: si_h_31.png  used on input line 698. on input line 698
 .
 Package pdftex.def Info: Requested size: 170.71652pt x 170.71794pt on input lin
-e 639.
-<si_h_32.png, id=938, 401.5pt x 401.5pt>
+e 698.
+<si_h_32.png, id=941, 401.5pt x 401.5pt>
 File: si_h_32.png Graphic file (type png)
 <use si_h_32.png>
-Package pdftex.def Info: si_h_32.png  used on input line 640. on input line 640
+Package pdftex.def Info: si_h_32.png  used on input line 699. on input line 699
 .
 Package pdftex.def Info: Requested size: 170.71652pt x 170.71794pt on input lin
-e 640.
-<si_h_33.png, id=939, 401.5pt x 401.5pt>
+e 699.
+<si_h_33.png, id=942, 401.5pt x 401.5pt>
 File: si_h_33.png Graphic file (type png)
 <use si_h_33.png>
-Package pdftex.def Info: si_h_33.png  used on input line 641. on input line 641
+Package pdftex.def Info: si_h_33.png  used on input line 700. on input line 700
 .
 Package pdftex.def Info: Requested size: 170.71652pt x 170.71794pt on input lin
-e 641.
-<si_ch3_59.png, id=940, 401.5pt x 401.5pt>
+e 700.
+<si_ch3_59.png, id=943, 401.5pt x 401.5pt>
 File: si_ch3_59.png Graphic file (type png)
 <use si_ch3_59.png>
-Package pdftex.def Info: si_ch3_59.png  used on input line 649. on input line 6
-49.
+Package pdftex.def Info: si_ch3_59.png  used on input line 708. on input line 7
+08.
 Package pdftex.def Info: Requested size: 170.71652pt x 170.71794pt on input lin
-e 649.
-<si_ch3_63.png, id=941, 401.5pt x 401.5pt>
+e 708.
+<si_ch3_63.png, id=944, 401.5pt x 401.5pt>
 File: si_ch3_63.png Graphic file (type png)
 <use si_ch3_63.png>
-Package pdftex.def Info: si_ch3_63.png  used on input line 650. on input line 6
-50.
+Package pdftex.def Info: si_ch3_63.png  used on input line 709. on input line 7
+09.
 Package pdftex.def Info: Requested size: 170.71652pt x 170.71794pt on input lin
-e 650.
-<si_ch3_64.png, id=942, 401.5pt x 401.5pt>
+e 709.
+<si_ch3_64.png, id=945, 401.5pt x 401.5pt>
 File: si_ch3_64.png Graphic file (type png)
 <use si_ch3_64.png>
-Package pdftex.def Info: si_ch3_64.png  used on input line 651. on input line 6
-51.
+Package pdftex.def Info: si_ch3_64.png  used on input line 710. on input line 7
+10.
 Package pdftex.def Info: Requested size: 170.71652pt x 170.71794pt on input lin
-e 651.
-<si_ch3_65.png, id=943, 401.5pt x 401.5pt>
+e 710.
+<si_ch3_65.png, id=946, 401.5pt x 401.5pt>
 File: si_ch3_65.png Graphic file (type png)
 <use si_ch3_65.png>
-Package pdftex.def Info: si_ch3_65.png  used on input line 652. on input line 6
-52.
+Package pdftex.def Info: si_ch3_65.png  used on input line 711. on input line 7
+11.
 Package pdftex.def Info: Requested size: 170.71652pt x 170.71794pt on input lin
-e 652.
-
+e 711.
 [34] [35 <./SI_AC_70.png (PNG copy)> <./SI_AC_71.png (PNG copy)> <./SI_AC_72.pn
 g (PNG copy)> <./SI_AC_73.png (PNG copy)>] [36 <./si_h_30.png (PNG copy)> <./si
 _h_31.png (PNG copy)> <./si_h_32.png (PNG copy)> <./si_h_33.png (PNG copy)>]
@@ -3053,37 +3092,31 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [40]
-<si_model_methyl.png, id=1005, 430.7292pt x 252.2223pt>
+<si_model_methyl.png, id=1007, 430.7292pt x 252.2223pt>
 File: si_model_methyl.png Graphic file (type png)
 <use si_model_methyl.png>
-Package pdftex.def Info: si_model_methyl.png  used on input line 747. on input 
-line 747.
+Package pdftex.def Info: si_model_methyl.png  used on input line 805. on input 
+line 805.
 Package pdftex.def Info: Requested size: 170.71652pt x 99.96732pt on input line
- 747.
+ 805.
 
-Overfull \hbox (1.79274pt too wide) in paragraph at lines 747--747
+Overfull \hbox (1.79274pt too wide) in paragraph at lines 805--805
 [] $[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$\T1/
 qpl/m/n/10 (-20) , \T1/qpl/b/n/10 M 
  []
 
-<si_model_orezany.png, id=1006, 482.0409pt x 355.5684pt>
+<si_model_orezany.png, id=1008, 482.0409pt x 355.5684pt>
 File: si_model_orezany.png Graphic file (type png)
 <use si_model_orezany.png>
-Package pdftex.def Info: si_model_orezany.png  used on input line 748. on input
- line 748.
+Package pdftex.def Info: si_model_orezany.png  used on input line 806. on input
+ line 806.
 Package pdftex.def Info: Requested size: 142.26378pt x 104.93517pt on input lin
-e 748.
+e 806.
 
-Overfull \hbox (11.81444pt too wide) in paragraph at lines 741--754
-\T1/qpl/m/n/12 (-20) na-vá-zaný fos-fát a p°í-mou vazbu k°emík-uhlík. Mo-del $[
-][][][][][][][][][][][][][][][][][][][]$
- []
-
-
-Underfull \vbox (badness 1910) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [41]
-Underfull \hbox (badness 10000) in paragraph at lines 778--778
+Underfull \hbox (badness 10000) in paragraph at lines 836--836
 [][][]\T1/qpl/m/n/10 (+20) Rozd¥lení p°í-sp¥vku k°e-míku do or-bi-tál-ních kom-
 po-nent, sou-£et
  []
@@ -3092,7 +3125,7 @@ po-nent, sou-£et
 Underfull \vbox (badness 2253) has occurred while \output is active []
 
  [42 <./si_model_methyl.png (PNG copy)> <./si_model_orezany.png (PNG copy)>]
-Overfull \hbox (9.1459pt too wide) in paragraph at lines 797--811
+Overfull \hbox (9.1459pt too wide) in paragraph at lines 855--869
  [] 
  []
 
@@ -3112,28 +3145,23 @@ Package epstopdf Info: Source file: <schema_fosfat_1.eps>
 (epstopdf)                    size: 6333 bytes
 (epstopdf)             Command: <repstopdf --outfile=schema_fosfat_1-eps-conver
 ted-to.pdf schema_fosfat_1.eps>
-(epstopdf)             \includegraphics on input line 839.
+(epstopdf)             \includegraphics on input line 897.
 Package epstopdf Info: Output file is already uptodate.
-<schema_fosfat_1-eps-converted-to.pdf, id=1061, pagebox=cropbox, 361.35pt x 307
+<schema_fosfat_1-eps-converted-to.pdf, id=1063, pagebox=cropbox, 361.35pt x 307
 .1475pt>
 File: schema_fosfat_1-eps-converted-to.pdf Graphic file (type pdf)
 <use schema_fosfat_1-eps-converted-to.pdf>
 Package pdftex.def Info: schema_fosfat_1-eps-converted-to.pdf  used on input li
-ne 839. on input line 839.
+ne 897. on input line 897.
 Package pdftex.def Info: Requested size: 199.16928pt x 169.29251pt on input lin
-e 839.
-<rtg_4_kruh_samotne.png, id=1066, 474.0912pt x 443.0151pt>
+e 897.
+<rtg_4_kruh_samotne.png, id=1068, 474.0912pt x 443.0151pt>
 File: rtg_4_kruh_samotne.png Graphic file (type png)
 <use rtg_4_kruh_samotne.png>
-Package pdftex.def Info: rtg_4_kruh_samotne.png  used on input line 845. on inp
-ut line 845.
+Package pdftex.def Info: rtg_4_kruh_samotne.png  used on input line 903. on inp
+ut line 903.
 Package pdftex.def Info: Requested size: 199.16928pt x 186.1124pt on input line
- 845.
-
-Underfull \hbox (badness 10000) in paragraph at lines 838--851
-
- []
-
+ 903.
 Package epstopdf Info: Source file: <struktrua_c_trans_1.eps>
 (epstopdf)                    date: 2018-05-21 14:04:33
 (epstopdf)                    size: 24173 bytes
@@ -3142,16 +3170,16 @@ Package epstopdf Info: Source file: <struktrua_c_trans_1.eps>
 (epstopdf)                    size: 5919 bytes
 (epstopdf)             Command: <repstopdf --outfile=struktrua_c_trans_1-eps-co
 nverted-to.pdf struktrua_c_trans_1.eps>
-(epstopdf)             \includegraphics on input line 853.
+(epstopdf)             \includegraphics on input line 910.
 Package epstopdf Info: Output file is already uptodate.
-<struktrua_c_trans_1-eps-converted-to.pdf, id=1073, pagebox=cropbox, 315.1775pt
+<struktrua_c_trans_1-eps-converted-to.pdf, id=1075, pagebox=cropbox, 315.1775pt
  x 282.05376pt>
 File: struktrua_c_trans_1-eps-converted-to.pdf Graphic file (type pdf)
 <use struktrua_c_trans_1-eps-converted-to.pdf>
 Package pdftex.def Info: struktrua_c_trans_1-eps-converted-to.pdf  used on inpu
-t line 853. on input line 853.
+t line 910. on input line 910.
 Package pdftex.def Info: Requested size: 199.16928pt x 178.23708pt on input lin
-e 853.
+e 910.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -3164,30 +3192,30 @@ Package epstopdf Info: Source file: <struktrua_c_trans_1.eps>
 (epstopdf)                    size: 5919 bytes
 (epstopdf)             Command: <repstopdf --outfile=struktrua_c_trans_1-eps-co
 nverted-to.pdf struktrua_c_trans_1.eps>
-(epstopdf)             \includegraphics on input line 857.
+(epstopdf)             \includegraphics on input line 914.
 Package epstopdf Info: Output file is already uptodate.
 File: struktrua_c_trans_1-eps-converted-to.pdf Graphic file (type pdf)
 <use struktrua_c_trans_1-eps-converted-to.pdf>
 Package pdftex.def Info: struktrua_c_trans_1-eps-converted-to.pdf  used on inpu
-t line 857. on input line 857.
+t line 914. on input line 914.
 Package pdftex.def Info: Requested size: 227.62204pt x 203.70259pt on input lin
-e 857.
-<struktura_puvodni.png, id=1086, 463.9734pt x 497.9403pt>
+e 914.
+<struktura_puvodni.png, id=1088, 463.9734pt x 497.9403pt>
 File: struktura_puvodni.png Graphic file (type png)
 <use struktura_puvodni.png>
-Package pdftex.def Info: struktura_puvodni.png  used on input line 862. on inpu
-t line 862.
+Package pdftex.def Info: struktura_puvodni.png  used on input line 919. on inpu
+t line 919.
 Package pdftex.def Info: Requested size: 170.71652pt x 183.2093pt on input line
- 862.
-<srtuktura_bez_naboje.png, id=1087, 506.6127pt x 467.5869pt>
+ 919.
+<srtuktura_bez_naboje.png, id=1089, 506.6127pt x 467.5869pt>
 File: srtuktura_bez_naboje.png Graphic file (type png)
 <use srtuktura_bez_naboje.png>
-Package pdftex.def Info: srtuktura_bez_naboje.png  used on input line 863. on i
-nput line 863.
+Package pdftex.def Info: srtuktura_bez_naboje.png  used on input line 920. on i
+nput line 920.
 Package pdftex.def Info: Requested size: 170.71652pt x 157.56474pt on input lin
-e 863.
+e 920.
 
-Underfull \hbox (badness 10000) in paragraph at lines 869--871
+Underfull \hbox (badness 10000) in paragraph at lines 926--928
 
  []
 
@@ -3196,41 +3224,41 @@ Underfull \vbox (badness 1924) has occurred while \output is active []
 
  [47 <./rtg_4_kruh_samotne.png (PNG copy)>] [48 <./struktrua_c_trans_1-eps-conv
 erted-to.pdf>]
-<struktura_cis.png, id=1105, 442.2924pt x 317.2653pt>
+<struktura_cis.png, id=1106, 442.2924pt x 317.2653pt>
 File: struktura_cis.png Graphic file (type png)
 <use struktura_cis.png>
-Package pdftex.def Info: struktura_cis.png  used on input line 875. on input li
-ne 875.
+Package pdftex.def Info: struktura_cis.png  used on input line 932. on input li
+ne 932.
 Package pdftex.def Info: Requested size: 170.71652pt x 122.45976pt on input lin
-e 875.
-<struktura_trans.png, id=1106, 416.9979pt x 472.6458pt>
+e 932.
+<struktura_trans.png, id=1107, 416.9979pt x 472.6458pt>
 File: struktura_trans.png Graphic file (type png)
 <use struktura_trans.png>
-Package pdftex.def Info: struktura_trans.png  used on input line 876. on input 
-line 876.
+Package pdftex.def Info: struktura_trans.png  used on input line 933. on input 
+line 933.
 Package pdftex.def Info: Requested size: 170.71652pt x 193.49754pt on input lin
-e 876.
-<strukutra_5_opravena.png, id=1107, 338.9463pt x 498.663pt>
+e 933.
+<strukutra_5_opravena.png, id=1108, 338.9463pt x 498.663pt>
 File: strukutra_5_opravena.png Graphic file (type png)
 <use strukutra_5_opravena.png>
-Package pdftex.def Info: strukutra_5_opravena.png  used on input line 877. on i
-nput line 877.
+Package pdftex.def Info: strukutra_5_opravena.png  used on input line 934. on i
+nput line 934.
 Package pdftex.def Info: Requested size: 170.71652pt x 251.16464pt on input lin
-e 877.
+e 934.
 
-Underfull \hbox (badness 10000) in paragraph at lines 881--883
+Underfull \hbox (badness 10000) in paragraph at lines 938--940
 
  []
 
-<rtg_5_koordinace.png, id=1114, 290.5254pt x 278.2395pt>
+<rtg_5_koordinace.png, id=1115, 290.5254pt x 278.2395pt>
 File: rtg_5_koordinace.png Graphic file (type png)
 <use rtg_5_koordinace.png>
-Package pdftex.def Info: rtg_5_koordinace.png  used on input line 888. on input
- line 888.
+Package pdftex.def Info: rtg_5_koordinace.png  used on input line 945. on input
+ line 945.
 Package pdftex.def Info: Requested size: 227.62204pt x 218.00241pt on input lin
-e 888.
+e 945.
 
-Underfull \hbox (badness 10000) in paragraph at lines 885--893
+Underfull \hbox (badness 10000) in paragraph at lines 942--950
 
  []
 
@@ -3245,21 +3273,21 @@ Package epstopdf Info: Source file: <struktura_5.eps>
 (epstopdf)                    size: 5327 bytes
 (epstopdf)             Command: <repstopdf --outfile=struktura_5-eps-converted-
 to.pdf struktura_5.eps>
-(epstopdf)             \includegraphics on input line 895.
+(epstopdf)             \includegraphics on input line 952.
 Package epstopdf Info: Output file is already uptodate.
-<struktura_5-eps-converted-to.pdf, id=1130, pagebox=cropbox, 201.75375pt x 256.
+<struktura_5-eps-converted-to.pdf, id=1132, pagebox=cropbox, 201.75375pt x 256.
 96pt>
 File: struktura_5-eps-converted-to.pdf Graphic file (type pdf)
 <use struktura_5-eps-converted-to.pdf>
-Package pdftex.def Info: struktura_5-eps-converted-to.pdf  used on input line 8
-95. on input line 895.
+Package pdftex.def Info: struktura_5-eps-converted-to.pdf  used on input line 9
+52. on input line 952.
 Package pdftex.def Info: Requested size: 170.71652pt x 217.43288pt on input lin
-e 895.
+e 952.
  [51 <./rtg_5_koordinace.png (PNG copy)>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [52 <./struktura_5-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 922--922
+Underfull \hbox (badness 10000) in paragraph at lines 979--979
 [][][]\T1/qpl/m/n/10 (+20) Rozd¥lení p°í-sp¥vku k°e-míku do or-bi-tál-ních kom-
 po-nent, sou-£et
  []
@@ -3274,17 +3302,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [55] [56]
 Kapitola 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1006--1007
+Underfull \hbox (badness 10000) in paragraph at lines 1063--1064
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1011--1012
+Underfull \hbox (badness 10000) in paragraph at lines 1068--1069
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1013--1014
+Underfull \hbox (badness 10000) in paragraph at lines 1070--1071
 
  []
 
@@ -3298,7 +3326,7 @@ Kapitola 5.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [59]
-Underfull \hbox (badness 10000) in paragraph at lines 1080--1080
+Underfull \hbox (badness 10000) in paragraph at lines 1137--1137
 [][][]\T1/qpl/m/n/10 (+20) Rozd¥lení p°í-sp¥vku k°e-míku do or-bi-tál-ních kom-
 po-nent, sou-£et
  []
@@ -3328,66 +3356,54 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [69]
 
 Package biblatex Warning: No driver for entry type 'masterthesis'.
-(biblatex)                Using fallback driver on input line 1356.
+(biblatex)                Using fallback driver on input line 1413.
 
 [70]
-LaTeX Font Info:    Try loading font information for OMS+qpl on input line 1356
+LaTeX Font Info:    Try loading font information for OMS+qpl on input line 1413
 .
-LaTeX Font Info:    No file OMSqpl.fd. on input line 1356.
+LaTeX Font Info:    No file OMSqpl.fd. on input line 1413.
 
 
 LaTeX Font Warning: Font shape `OMS/qpl/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textperiodcentered' on input line 1356.
+(Font)              for symbol `textperiodcentered' on input line 1413.
 
 
-Overfull \hbox (7.99937pt too wide) in paragraph at lines 1356--1356
+Overfull \hbox (7.99937pt too wide) in paragraph at lines 1413--1413
 []\T1/qpl/m/n/12 (-20) LAZAREV, I.; MOVCHIN-NI-KOV, Y. E; DOL-GUSHIN, G. V; STR
 UK-
  []
 
 
-Overfull \hbox (7.06583pt too wide) in paragraph at lines 1356--1356
+Overfull \hbox (7.06583pt too wide) in paragraph at lines 1413--1413
 \T1/qpl/m/n/12 (-20) lar structure of tris-(dimethylamino)-sulfonium bis-(trifl
 uoromethyl)-
  []
 
 [71]
-Overfull \hbox (12.30774pt too wide) in paragraph at lines 1356--1356
-\T1/qpl/m/n/12 (-20) 86. ISBN 9780470125922. Do-stupné z DOI: []$\T1/lmtt/m/n/1
-2 10 . 1002 / 9780470125922 .
- []
-
-
-Overfull \hbox (0.32057pt too wide) in paragraph at lines 1356--1356
-[]\T1/qpl/m/n/12 (-20) HOHENBERG, P.; KOHN, W. Inho-mo-ge-ne-ous Electron Gas. 
-\T1/qpl/m/it/12 Phys.
- []
-
-
-Overfull \hbox (2.38977pt too wide) in paragraph at lines 1356--1356
+Overfull \hbox (2.38977pt too wide) in paragraph at lines 1413--1413
 []\T1/qpl/m/n/12 (-20) BECKE, A. D. Density-functional exchange-energy ap-pro-x
 i-mation
  []
 
 [72]
-Overfull \hbox (2.38977pt too wide) in paragraph at lines 1356--1356
+Overfull \hbox (2.38977pt too wide) in paragraph at lines 1413--1413
 []\T1/qpl/m/n/12 (-20) BECKE, A. D. Density-functional exchange-energy ap-pro-x
 i-mation
  []
 
 [73] [74] [75]
-Overfull \hbox (14.47763pt too wide) in paragraph at lines 1356--1356
+Overfull \hbox (14.47763pt too wide) in paragraph at lines 1413--1413
 []\T1/qpl/m/n/12 (-20) TACKE, R.; BUR-SCHKA, Ch.; RICH-TER, I.; WAG-NER, B.; WI
 LLEKE,
  []
 
 [76]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1359.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1359.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1416.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1416.
  (./sci-pdflatex.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1359.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1359.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1416.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1416.
 
 Package rerunfilecheck Info: File `sci-pdflatex.out' has not changed.
 (rerunfilecheck)             Checksum: 63C99C918F810FB425F2EF6A68DDE787;3975.
@@ -3403,11 +3419,11 @@ Package logreq Info: Writing requests to 'sci-pdflatex.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46100 strings out of 492985
- 839170 string characters out of 6132571
- 1424369 words of memory out of 5000000
- 48096 multiletter control sequences out of 15000+600000
- 640262 words of font info for 197 fonts, out of 8000000 for 9000
+ 46143 strings out of 492985
+ 839691 string characters out of 6132571
+ 1423544 words of memory out of 5000000
+ 48098 multiletter control sequences out of 15000+600000
+ 640149 words of font info for 216 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  69i,20n,67p,10374b,3151s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
@@ -3425,10 +3441,10 @@ lb.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tex-gyre/qplri.pfb></us
 r/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local
 /texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on sci-pdflatex.pdf (89 pages, 3262981 bytes).
+Output written on sci-pdflatex.pdf (89 pages, 3703134 bytes).
 PDF statistics:
- 1768 PDF objects out of 2073 (max. 8388607)
- 1552 compressed objects within 16 object streams
+ 1769 PDF objects out of 2073 (max. 8388607)
+ 1548 compressed objects within 16 object streams
  591 named destinations out of 1000 (max. 500000)
- 31222 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 31242 words of extra memory for PDF output out of 35830 (max. 10000000)
 

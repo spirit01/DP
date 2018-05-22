@@ -4,7 +4,7 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {4\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Struktura s~12-\IeC {\v c}lenn\IeC {\'y}m kruhem nakreslen\IeC {\'a} autorkou DP v~programu Avogadro na z\IeC {\'a}klad\IeC {\v e} dat uveden\IeC {\'y}ch v~pr\IeC {\'a}ci \cite {velky_cyklus}. Struktura byla upravena tak, aby byla viditeln\IeC {\'a} existence 12-\IeC {\v c}lenn\IeC {\'e}ho cyklu, nebo\IeC {\v t} v~p\IeC {\r u}vodn\IeC {\'\i } pr\IeC {\'a}ci chyb\IeC {\'\i } konektivita jednoho z~atom\IeC {\r u} fosforu do cyklu.; Legenda: \mycircle {brown} Si, \mycircle {red}~O, \mycircle {orange}~C, \mycircle {yellow} P, \mycircleempty {black}~H.}}{3}{figure.1.1}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Struktura s~12-\IeC {\v c}lenn\IeC {\'y}m kruhem nakreslen\IeC {\'a} autorkou DP v~programu Avogadro na z\IeC {\'a}klad\IeC {\v e} dat uveden\IeC {\'y}ch v~pr\IeC {\'a}ci \cite {velky_cyklus}. Struktura byla upravena tak, aby byla viditeln\IeC {\'a} existence 12-\IeC {\v c}lenn\IeC {\'e}ho cyklu, nebo\IeC {\v t} v~p\IeC {\r u}vodn\IeC {\'\i } pr\IeC {\'a}ci chyb\IeC {\'\i } konektivita jednoho z~atom\IeC {\r u} fosforu do cyklu.; Legenda: \mycircle {brown} Si, \mycircle {red}~O, \mycircle {orange}~C, \mycircle {yellow} P, \mycircle {white!40!blue!60} N, \mycircle {green} Cl, \mycircleempty {black}~H.}}{3}{figure.1.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Struktura \ce {[(Ph2Si{O2P(O)OSiMe3})2]} z\IeC {\'\i }skan\IeC {\'a} pomoc\IeC {\'\i } rentgenov\IeC {\'e} krystalografie v~pr\IeC {\'a}ci \cite {rtg_4_pinkas}; Legenda: \mycircle {brown} Si, \mycircle {red}~O, \mycircle {orange}~C, \mycircle {yellow} P, \mycircleempty {black}~H, \mycircleempty {blue}~N.}}{4}{figure.1.2}
 \defcounter {refsection}{0}\relax 
@@ -106,7 +106,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.6}{\ignorespaces P\IeC {\v r}ehled st\IeC {\v r}edn\IeC {\v e} velk\IeC {\'y}ch model\IeC {\r u}]; Legenda: \mycircle {brown} Si, \mycircle {red} O, \mycircle {orange}~C, \mycircle {yellow} P, \mycircleempty {black}~H.}}{42}{figure.3.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Schematick\IeC {\'e} zn\IeC {\'a}zorn\IeC {\v e}n\IeC {\'\i } modelu \textbf {P}}}{46}{figure.3.7}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Schematick\IeC {\'e} zn\IeC {\'a}zorn\IeC {\v e}n\IeC {\'\i } modelu \textbf {P}.}}{46}{figure.3.7}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Struktura \ce {[(Ph2Si{O2P(O)OSiMe3})2]} z\IeC {\'\i }skan\IeC {\'a} pomoc\IeC {\'\i } rentgenov\IeC {\'e} krystalografie v~pr\IeC {\'a}ci \cite {rtg_4_pinkas}; Legenda: \mycircle {brown} Si, \mycircle {red} O, \mycircle {orange} C, \mycircleempty {black}~H.}}{47}{figure.3.8}
 \defcounter {refsection}{0}\relax 
@@ -114,9 +114,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {}{\ignorespaces { \textbf {P}}}}{47}{subfigure.3.12.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Sch\IeC {\'e}matick\IeC {\'e} zn\IeC {\'a}zorn\IeC {\v e}n\IeC {\'\i } modelu \textbf {R}}}{48}{figure.3.9}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Sch\IeC {\'e}matick\IeC {\'e} zn\IeC {\'a}zorn\IeC {\v e}n\IeC {\'\i } modelu \textbf {R}.}}{48}{figure.3.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Sch\IeC {\'e}matick\IeC {\'e} zn\IeC {\'a}zorn\IeC {\v e}n\IeC {\'\i } modelu \textbf {Q}}}{48}{figure.3.10}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Sch\IeC {\'e}matick\IeC {\'e} zn\IeC {\'a}zorn\IeC {\v e}n\IeC {\'\i } modelu \textbf {Q}.}}{48}{figure.3.10}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Model motivovan\IeC {\'y} strukturou z\IeC {\'\i }skanou z~rentgenov\IeC {\'e} krystalografie v~pr\IeC {\'a}ci \cite {C3NJ00721A}; Legenda: \mycircle {brown} Si, \mycircle {red} O, \mycircle {orange} C, \mycircle {yellow} P, \mycircleempty {black}~H.}}{49}{figure.3.11}
 \defcounter {refsection}{0}\relax 
