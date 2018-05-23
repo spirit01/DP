@@ -54,7 +54,7 @@
       \field{year}{2002}
       \keyw{AB-INITIO CALCULATIONS; GAS-PHASE; POLYHALIDE ANIONS; CRYSTAL-STRUCTURE; TRIFLUORIDE ION; SOLID-STATE; ENERGY; HYPERVALENT; APPROXIMATION; STABILITY}
     \endentry
-    \entry{Munzarova2001}{masterthesis}{}
+    \entry{Munzarova2001}{thesis}{}
       \name{author}{1}{}{%
         {{hash=6dfc278ebee3c632a06bbe027bda4b33}{%
            family={MUNZAROVÁ},
@@ -63,7 +63,7 @@
            giveni={M\bibinitperiod}}}%
       }
       \list{institution}{1}{%
-        {Max-Planck_Institut für Festkörperforschung}%
+        {Max-Planck Institut für Festkörperforschung}%
       }
       \list{location}{1}{%
         {Stuttgart}%
@@ -77,7 +77,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Quantum Chemical Calculations of EPR Parameters for Transition Metal Complexes}
-      \field{type}{Disertační práce}
+      \field{type}{PhD Thesis}
       \field{year}{2001}
     \endentry
     \entry{C3NJ00721A}{article}{}

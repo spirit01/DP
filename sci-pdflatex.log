@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.6)  23 MAY 2018 12:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.6)  23 MAY 2018 13:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3266,12 +3266,9 @@ File: struktura_5-eps-converted-to.pdf Graphic file (type pdf)
 <use struktura_5-eps-converted-to.pdf>
 Package pdftex.def Info: struktura_5-eps-converted-to.pdf  used on input line 9
 80. on input line 980.
-Package pdftex.def Info: Requested size: 170.71652pt x 217.43288pt on input lin
+Package pdftex.def Info: Requested size: 142.26378pt x 181.19211pt on input lin
 e 980.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [53 <./struktura_5-eps-converted-to.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
 [][][]\T1/qpl/m/n/10 (+20) Rozd¥lení p°í-sp¥vku k°e-míku do or-bi-tál-ních kom-
 po-nent, sou-£et
@@ -3280,38 +3277,38 @@ po-nent, sou-£et
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [54]
+ [53 <./struktura_5-eps-converted-to.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [55]
-[56] [57]
+ [54]
+[55] [56]
 Kapitola 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1064--1065
+Underfull \hbox (badness 10000) in paragraph at lines 1063--1064
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1069--1070
+Underfull \hbox (badness 10000) in paragraph at lines 1068--1069
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1071--1072
+Underfull \hbox (badness 10000) in paragraph at lines 1070--1071
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [58]
-[59]
+ [57]
+[58]
 P\v {r}\'{\i }loha A.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [60]
-Underfull \hbox (badness 10000) in paragraph at lines 1140--1140
+ [59]
+Underfull \hbox (badness 10000) in paragraph at lines 1139--1139
 [][][]\T1/qpl/m/n/10 (+20) Rozd¥lení p°í-sp¥vku k°e-míku do or-bi-tál-ních kom-
 po-nent, sou-£et
  []
@@ -3319,78 +3316,73 @@ po-nent, sou-£et
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [61]
-[62]
+ [60]
+[61]
 P\v {r}\'{\i }loha B.
 
 Underfull \vbox (badness 1478) has occurred while \output is active []
 
- [63]
-[64]
+ [62]
+[63]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [64]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [65]
+[66]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [66]
-[67]
+ [67]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [68]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [69]
-[70]
-
-Package biblatex Warning: No driver for entry type 'masterthesis'.
-(biblatex)                Using fallback driver on input line 1417.
-
-[71]
-LaTeX Font Info:    Try loading font information for OMS+qpl on input line 1417
+[69] [70]
+LaTeX Font Info:    Try loading font information for OMS+qpl on input line 1416
 .
-LaTeX Font Info:    No file OMSqpl.fd. on input line 1417.
+LaTeX Font Info:    No file OMSqpl.fd. on input line 1416.
 
 
 LaTeX Font Warning: Font shape `OMS/qpl/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textperiodcentered' on input line 1417.
+(Font)              for symbol `textperiodcentered' on input line 1416.
 
 
-Overfull \hbox (7.99937pt too wide) in paragraph at lines 1417--1417
+Overfull \hbox (7.99937pt too wide) in paragraph at lines 1416--1416
 []\T1/qpl/m/n/12 (-20) LAZAREV, I.; MOVCHIN-NI-KOV, Y. E; DOL-GUSHIN, G. V; STR
 UK-
  []
 
-
-Overfull \hbox (7.06583pt too wide) in paragraph at lines 1417--1417
+[71]
+Overfull \hbox (7.06583pt too wide) in paragraph at lines 1416--1416
 \T1/qpl/m/n/12 (-20) lar structure of tris-(dimethylamino)-sulfonium bis-(trifl
 uoromethyl)-
  []
 
 [72]
-Overfull \hbox (2.38977pt too wide) in paragraph at lines 1417--1417
+Overfull \hbox (2.38977pt too wide) in paragraph at lines 1416--1416
 []\T1/qpl/m/n/12 (-20) BECKE, A. D. Density-functional exchange-energy ap-pro-x
 i-mation
  []
 
-[73]
-Overfull \hbox (2.38977pt too wide) in paragraph at lines 1417--1417
+
+Overfull \hbox (2.38977pt too wide) in paragraph at lines 1416--1416
 []\T1/qpl/m/n/12 (-20) BECKE, A. D. Density-functional exchange-energy ap-pro-x
 i-mation
  []
 
-[74] [75]
-Overfull \hbox (14.47763pt too wide) in paragraph at lines 1417--1417
+[73] [74] [75]
+Overfull \hbox (14.47763pt too wide) in paragraph at lines 1416--1416
 []\T1/qpl/m/n/12 (-20) TACKE, R.; BUR-SCHKA, Ch.; RICH-TER, I.; WAG-NER, B.; WI
 LLEKE,
  []
 
-[76] [77]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1419.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1419.
+[76]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1418.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1418.
  (./sci-pdflatex.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1419.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1419.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1418.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1418.
 
 Package rerunfilecheck Info: File `sci-pdflatex.out' has not changed.
 (rerunfilecheck)             Checksum: A460D0DF09E39D411C3066A2A2BDB5F6;3734.
@@ -3406,10 +3398,10 @@ Package logreq Info: Writing requests to 'sci-pdflatex.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46566 strings out of 492985
- 847787 string characters out of 6132571
- 1421804 words of memory out of 5000000
- 48531 multiletter control sequences out of 15000+600000
+ 46564 strings out of 492985
+ 847757 string characters out of 6132571
+ 1421877 words of memory out of 5000000
+ 48530 multiletter control sequences out of 15000+600000
  640016 words of font info for 215 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  69i,20n,75p,10374b,3139s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3428,10 +3420,10 @@ lb.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tex-gyre/qplri.pfb></us
 r/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local
 /texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on sci-pdflatex.pdf (86 pages, 3696669 bytes).
+Output written on sci-pdflatex.pdf (85 pages, 3696508 bytes).
 PDF statistics:
- 1655 PDF objects out of 1728 (max. 8388607)
- 1437 compressed objects within 15 object streams
- 587 named destinations out of 1000 (max. 500000)
+ 1651 PDF objects out of 1728 (max. 8388607)
+ 1434 compressed objects within 15 object streams
+ 586 named destinations out of 1000 (max. 500000)
  31258 words of extra memory for PDF output out of 35830 (max. 10000000)
 
