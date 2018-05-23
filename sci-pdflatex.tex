@@ -1,4 +1,4 @@
-MO%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% I, the copyright holder of this work, release this work into the
 %% public domain. This applies worldwide. In some countries this may
 %% not be legally possible; if so: I grant anyone the right to use
@@ -233,7 +233,8 @@ assignment    = zadani.pdf,
 \tikz[baseline=(a.south)]{\node[#1, inner sep=.8ex, outer sep=0] (a) {};}%
 }
 \usepackage{etoolbox}
-
+\usepackage{caption}
+\captionsetup{labelsep=period}
 \newrobustcmd*{\mycircle}[1]{\tikz{\filldraw[draw=#1,fill=#1] (0,0) circle [radius=0.1cm];}}
 \newrobustcmd*{\mycircleempty}[1]{\tikz{\draw (0,0) circle [radius=0.1cm];}}
 \DeclareUnicodeCharacter{2009}{ }% support older LaTeX versions
@@ -584,7 +585,7 @@ Struktury pro výpočetní část jsou rozděleny podle velikosti, podle stupně
 Malé modely umožňují jednoduchý pohled na charakter vazeb mezi křemíkem a~kyslíkem, popř. jinými elektronegativními atomy. Tato část je rozdělena na modely těsného okolí křemíku v~silikofosfátových polymerech a~modely reaktantů, které byly použity v~experimentální pracích týkajících se silikofosfátů.
 
 Struktury zkoumané v~první části jsou uvedeny na obrázku \ref{prehled_male_modely}. V~silikofosfátocých polymerech se vyskytuje křemík v~koordinaci čtyři a~šest s~vazbami na kyslíky. Model \ce{SiCH3(OCH3)3} na obrázku \ref{prehled_male_modely}, \textbf{A} představuje strukturu s~přímou vazbou Si-C a~byl zařazen na základě experimentální práce Aleše Sýskalíka \cite{Styskalik2015thesis}. Vznikl jako analogie k~modelu \textbf{L}, kde není pozorován nárust koordinace křemíku.  Model \ce{Si(OCH3)4} na obrázku \ref{prehled_male_modely}, \textbf{B} představuje uspořádání křemíku v~koordinaci čyři ve kterém je křemík ochoten koordinaci navyšovat a~je jednodušší analogii struktury \textbf{J}. Naopak modely \ce{SiCH3(OCH3)5^{2-}}, \textbf{C} a~\ce{Si(OCH3)6^{2-}}, \textbf{D} na obrázku \ref{prehled_male_modely} představují těsné okolí křemíku v~silikofosfátech. Při optimalizaci geometrie struktury \ce{SiCH3(OCH3)5^{2-}},  \textbf{C}(obrázek \ref{prehled_male_modely}) bylo nutno použit klíčové slovo \texttt{Opt=CalcFC} a~při optimalizaci struktury \ce{Si(OCH3)6^{2-}}, \textbf{D}  (obrázek \ref{prehled_male_modely}),  bylo použito klíčové slovo \texttt{SCF=Vshift}.
-Poslední dvě strutkury  \ce{SiCl4},  \textbf{E} a~(acetylmethoxy)trifluorsilan, \textbf{F} na obrázku \ref{prehled_male_modely} obsahují křemík, který má jako své ligandy elektronegativní atomy. Model \ce{SiCl4} slouží jako případ sloučeniny, kde křemík není schopen navyšovat koordinaci na \ce{SiCl6^{2-}}, ale například byla připravena struktura na obrázku \ref{si_cl_o}. Důvodem mohou být vysoké repulze difúzních volných elektronových párů chloru. Naopak (acetoxymethyl)trifluorosilan je schopen tvořit intramolekulární vazbu s~Si-O a~tím navýšit koordinaci křemíku na pět. Tyto  struktury jsou experimentálně pozorovány a~nazývají se dragonoidy \cite{Chipanina2011}.\\
+Poslední dvě strutkury  \ce{SiCl4},  \textbf{E} a~(acetoxymethyl)trifluorsilan, \textbf{F} na obrázku \ref{prehled_male_modely} obsahují křemík, který má jako své ligandy elektronegativní atomy. Model \ce{SiCl4} slouží jako případ sloučeniny, kde křemík není schopen navyšovat koordinaci na \ce{SiCl6^{2-}}, ale například byla připravena struktura na obrázku \ref{si_cl_o}. Důvodem mohou být vysoké repulze difúzních volných elektronových párů chloru. Naopak (acetoxymethyl)trifluorosilan je schopen tvořit intramolekulární vazbu s~Si-O a~tím navýšit koordinaci křemíku na pět. Tyto  struktury jsou experimentálně pozorovány a~nazývají se dragonoidy \cite{Chipanina2011}.\\
 
 \begin{figure}
 \centering
@@ -593,7 +594,7 @@ Poslední dvě strutkury  \ce{SiCl4},  \textbf{E} a~(acetylmethoxy)trifluorsilan
 \subfigure[\ce{SiCH3(OCH3)5^{2-}},  \textbf{C}]{\includegraphics[width=5cm]{si_ch3_och3_5.png}\label{si_ch3_och3_5}}
 \subfigure[\ce{Si(OCH3)6^{2-}},  \textbf{D}]{\includegraphics[width=5cm]{si_och3_6.png}\label{si_och3_6}}
 \subfigure[\ce{SiCl4},  \textbf{E}]{\includegraphics[width=2cm]{si_cl_4.png}\label{si_cl4}}
-\subfigure[(acetylmethoxyl)trifluorsilan, \textbf{F}]{\includegraphics[width=5cm]{acetylmethyltriflurosila.png} \label{acetylmethylfluorsilan}}
+\subfigure[(acetoxymethyll)trifluorsilan, \textbf{F}]{\includegraphics[width=5cm]{acetylmethyltriflurosila.png} \label{acetylmethylfluorsilan}}
 \caption{Přehled malých modelů; Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange} C, \mycircle{green} Cl, \mycircle{red!50!blue!50}~F, \mycircleempty{black}~H.}
 \label{prehled_male_modely}
 \end{figure}
@@ -618,7 +619,7 @@ Druhou část malých modelů tvořily reaktanty získané například z~práce 
 
 Pro obě části byla provedena analýza HSAB. První část výsledků pro modely na obrázku \ref{prehled_male_modely} je uvedena v~tabulce \ref{hsab_small} a~druhá část výsledků pro modely na obrázku \ref{prehled_male_modely_II} je v~tabulce \ref{hsab_small_porovnani}. Výjimku tvoří dvojice struktur \ce{Si(OCH3)6^{2-}} a~\ce{SiCH3(OCH3)5^{2-}}, které mohou sloužit jako model pro těsné okolí křemíku v~silikofosfátech. Nevýhoda tohoto malého modelu je ovšem ta, že ligandy nejsou schopny převzít záporný náboj a~hodnoty energii nejvyšších obsazených MO orbitalů jsou kladné. Energie HOMO orbitalu byla přibližně 3 eV. Díky tomu jsou získané enegie HOMO a LUMO nepoužítelné pro smysluplný výpočet tvrdosti a absolutní elektronegativity. Řešením by byla kompenzace záporného náboje na strukturách, která může být předmětem dalšího výzkumu. Výsledky pro struktury \textbf{C} a \textbf{D} jsou v příloze A.\\
 
-Nejvyšší hodnotu elektronegativity 5,36 eV má model \ce{SiCl4}, \textbf{E} a~je známo, že strukutra \ce{SiCl6^{2-}} nevzniká. Druhou nejvyšší hodnotu elektronegativity 4,81 eV má struktura \ce{Si(OCl)(OC2H5)3}, \textbf{I} v~práci \cite{jahnigen2012synthesis}. Tato struktura již vedla k~vzniku silikofosfátu. Třetí nejvyšší hodnotu 4,16 měly struktury \ce{SiF3(C6H5)},\textbf{H} v~práci \cite{aksamentova2009synthesis} a~\ce{Si(OCOCH3)4}, \textbf{J} v~práci \cite{Styskalik2015thesis}. Obě struktury struktury taktéž vedou ke vzniku silikofosfátu. Struktury (acetylmethoxyl)trifluorsilan,\textbf{F} a~\ce{SiH(OCOCH3)3},\textbf{K} měly hodnotu elektronegativity 3,96 eV a~oba také vedou ke vzniku silikofosfátu. Nejnižší hodnoty elektronegativity vykazovaly struktury \ce{SiCH3(OCH3)3}, \textbf{A}, \ce{Si(OCH3)4}, \textbf{B} a~\ce{Si(OC2H5)4}, \textbf{G} a~to kolem 2,8 eV.
+Nejvyšší hodnotu elektronegativity 5,36 eV má model \ce{SiCl4}, \textbf{E} a~je známo, že struktura \ce{SiCl6^{2-}} nevzniká. Druhou nejvyšší hodnotu elektronegativity 4,81 eV má struktura \ce{Si(OCl)(OC2H5)3}, \textbf{I} v~práci \cite{jahnigen2012synthesis}. Tato struktura již vedla k~vzniku silikofosfátu. Třetí nejvyšší hodnotu 4,16 měly struktury \ce{SiF3(C6H5)},\textbf{H} v~práci \cite{aksamentova2009synthesis} a~\ce{Si(OCOCH3)4}, \textbf{J} v~práci \cite{Styskalik2015thesis}. Obě struktury struktury taktéž vedou ke vzniku silikofosfátu. Struktury (acetoxymethyll)trifluorsilan,\textbf{F} a~\ce{SiH(OCOCH3)3},\textbf{K} měly hodnotu elektronegativity 3,96 eV a~oba také vedou ke vzniku silikofosfátu. Nejnižší hodnoty elektronegativity vykazovaly struktury \ce{SiCH3(OCH3)3}, \textbf{A}, \ce{Si(OCH3)4}, \textbf{B} a~\ce{Si(OC2H5)4}, \textbf{G} a~to kolem 2,8 eV.
 
 Struktura \ce{Si(OCl)(OC2H5)3}, \textbf{I}, která na sobě nenese výrazně elektronegativní ligand má vyšší elektronegativitu než její modifikovaná analogie \ce{Si(OC2H5)4}, \textbf{G}. Podobná struktura \ce{SiCH3(OCH3)3}, \textbf{A} má hodnotou absolutní elektronegativity ještě níže. V experimentálních přípravě silikofosfátů struktura \textbf{A} nevede k~nyvýšení koordinace křemíku. Lze tedy říci, že vyšší hodnota elektronegativity struktury vede spíše k~navýšení koordinace křemíku.
 
@@ -634,7 +635,7 @@ Struktura \ce{Si(OCl)(OC2H5)3}, \textbf{I}, která na sobě nenese výrazně ele
 %\ce{SiCH3(OCH3)5^{2-}},  \textbf{C} & 3,089 & 10,089 & -6,589 & 3,500 \\ \hline
 %\ce{Si(OCH3)6^{2-}},  \textbf{D} & 3,112 & 9,625 & -6,369 & 3,256 \\ \hline
 \ce{SiCl4},  \textbf{E} & -9,338 & -1,385 & 5,361 & 3,976 \\ \hline
-(acetylmethoxyl)trifluorsilan, \textbf{F} & -7,825 & -0,066 & 3,946 & 3,880 \\ \hline
+(acetoxymethyll)trifluorsilan, \textbf{F} & -7,825 & -0,066 & 3,946 & 3,880 \\ \hline
 \end{tabular}
 \end{center}
 \end{minipage}
@@ -808,7 +809,7 @@ Atomy\footnote{Číslo atomu ve výstupu programu Gaussian.} \label{MP_si_cl4} &
 
 
 \begin{table}[H] \begin{minipage}{\textwidth}
-\caption{Mullikenova populační analýza vybraných MO pro model acetylmethyltrifluorsilanu, \textbf{F}. Výsledky jsou uvedeny v~[\%].}
+\caption{Mullikenova populační analýza vybraných MO pro model acetoxymethyltrifluorsilanu, \textbf{F}. Výsledky jsou uvedeny v~[\%].}
 \begin{center}
 \begin{tabular}{|l|r|r|r|r|r|}
 \hline
@@ -835,7 +836,7 @@ Model \ce{SiCH3(PO4)CH3(SiP2O10)(CH3)4}, \textbf{M} obsahoval jeden cyklus, voln
 \begin{center}
 \subfigure[\ce{SiCH3(PO4(CH3)2)(Si2P2O9(CH3)4)},~\textbf{M}]{\includegraphics[width=6cm]{si_model_methyl.png}\label{obr_h4sio4_MO_s1_20}}
 \subfigure[\ce{Si(Si2P2O9(CH3)4)2}, \textbf{N}]{\includegraphics[width=5cm]{si_model_orezany.png}\label{obr_h4sio4_MO_s1_24}}
-\caption{Přehled středně velkých modelů];  Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange}~C, \mycircle{yellow} P, \mycircleempty{black}~H.}
+\caption{Přehled středně velkých modelů;  Legenda: \mycircle{brown} Si, \mycircle{red} O, \mycircle{orange}~C, \mycircle{yellow} P, \mycircleempty{black}~H.}
 \label{prehled_middle}
 \end{center}
 \end{figure}
@@ -857,7 +858,7 @@ V~tabulce \ref{hsab_middle} lze vidět výsledky pro HSAB analýzu. Z~výsledku 
 
 U~středně velkých modelů bylo cílem ověřit, zda trendy v $\chi$ a~kovalence/ionicitě jednotlivých vazeb nalezené u~malých modelů platí i při rozšíření modelu a~přidání cyklů do struktur. V~tomto případě lze porovnávat dvojice struktur \textbf{M}, \textbf{N} a~\textbf{J} a~\textbf{L}. Hodnoty elektronegativity pro střední modely z~obrázku \ref{prehled_middle} jsou v~tabulce \ref{hsab_middle}. Lze zde pozorovat trend, že rozdíl elektronegativity mezi modelem \textbf{J} a~\textbf{N} je velice podobný jako rozdíl elektronegativit pro \textbf{L} a~\textbf{M}. Lze tedy říci, že použití malých modelů bez cyklů také vede ke správným trendům.
 
-Výsledky analýzy NBO jsou uvedeny v~tabulce \ref{nbo_middle}. Pro strukturu \textbf{M} lze vidět menší zapojení uhlíku do orbitalů BD*, tedy větší zapojení do vazebných orbitalů. Oproti tomu model \textbf{N} má podobná procenta křemíku v~protivazebných orbitalech. Pro středně velké modely byla provedna Mullikenova populační analýza. Vzhledem k~existenci cyklů ve strukturách \textbf{M} a \textbf{N} bylo nutno pro popis vazeb vybrat více MO, než je počet vazeb ve strukturách. Pro strukturu \textbf{M} jsou výsledky uvedeny v~tabulce \ref{si_model_methyl_MPA_I}. Z~hodnot pro MO 61 lze vidět zapojení uhlíku do vazby ve struktuře \textbf{M}. Ve struktuře \textbf{N}, která již obsahuje dva cykly, vzrostla hodnota $\chi$.
+Výsledky analýzy NBO jsou uvedeny v~tabulce \ref{nbo_middle}. Pro strukturu \textbf{M} lze vidět menší zapojení uhlíku do orbitalů BD*, tedy větší zapojení do vazebných orbitalů. Oproti tomu model \textbf{N} má podobná procenta křemíku v~protivazebných orbitalech. Pro středně velké modely byla provedna Mullikenova populační analýza. Vzhledem k~existenci cyklů ve strukturách \textbf{M} a \textbf{N} bylo nutno pro popis vazeb vybrat více MO, než odpovídá počtu vazeb ve strukturách. Pro strukturu \textbf{M} jsou výsledky uvedeny v~tabulce \ref{si_model_methyl_MPA_I}. Z~hodnot pro MO 61 lze vidět zapojení uhlíku do vazby ve struktuře \textbf{M}. Ve struktuře \textbf{N}, která již obsahuje dva cykly, vzrostla hodnota $\chi$.
 
 Výsledky MPA pro strukturu \textbf{N} jsou uvedeny v~tabulce \ref{si_model_orezany_MPA}. Vzhledem k~přítomností cyklů bylo nutno pro popis použít více MO, než je skutečný počet vazeb ve struktuře. Z~výsledky v~tabulce \ref{si_model_orezany_MPA} lze vidět, že všechny MO mají podobné rozložení. Což odpovídá relativně symetrické podobě modelu \textbf{N}.
 \begin{table}[H]
@@ -935,7 +936,7 @@ Původní rentgenová struktura silikofosfátu z~obrázku \ref{rtg_koordinace_se
 \end{center}
 \end{figure}
 
-V~experimentálních strukturách silikofosfátů byly pozorovány kromě fosfátových skupin také acetátové skupiny. Právě přítomnost acetátových skupin měla vliv na chování křemíku a~jeho sklon k~hypervalenci. Acetátové skupiny se v~okolí křemíku vždy vyskytovaly po dvou a~tento jev byl dodržen i v~modelových strukturách. Zvolila jsem dvě možnosti umístění acetátů. Při modelování silikofosfátů s~acetátovými skupinami v~polohách cis a~trans jsme vycházeli z~uspořádání v~původní rentgenové struktuře. V~prvním případě se acetylové skupiny vůči sobě vyskytovaly v~poloze trans, schéma struktury \textbf{R} na obrázku \ref{schema_fosfat_trans}. Struktura \textbf{R} je uvedena na obrázku \ref{prehled_largeI}. Ve druhém případě se acetáty vyskytovaly v~poloze cis, schéma struktury \textbf{Q} na obrázku \ref{schema_fosfat_cis}. Struktura \textbf{Q} je uvedena na obrázku \ref{prehled_largeI}.
+V~experimentálních strukturách silikofosfátů byly pozorovány kromě fosfátových skupin také acetátové skupiny. Právě přítomnost acetátových skupin měla vliv na chování křemíku a~jeho sklon k~hypervalenci. Acetátové skupiny se v~okolí křemíku vždy vyskytovaly po dvou a~tento jev byl dodržen i v~modelových strukturách. Zvolila jsem dvě možnosti umístění acetátů. Při modelování silikofosfátů s~acetátovými skupinami v~polohách cis a~trans jsme vycházeli z~uspořádání v~původní rentgenové struktuře. V~prvním případě se acetylové skupiny vůči sobě vyskytovaly v~poloze trans viz schéma struktury \textbf{R} na obrázku \ref{schema_fosfat_trans}. Struktura \textbf{R} v reprezentaci ball-and-stick je uvedena na obrázku \ref{prehled_largeI}. Ve druhém případě se acetáty vyskytovaly v~poloze cis viz schéma struktury \textbf{Q} na obrázku \ref{schema_fosfat_cis}. Struktura \textbf{Q} v reprezentaci ball-and-stick je uvedena na obrázku \ref{prehled_largeI}.
 \begin{figure}\begin{center}\includegraphics[width=7cm]{struktrua_c_trans_1.eps}
 \caption{Schematické znázornění modelu \textbf{R}.}\label{schema_fosfat_trans}
 \end{center}\end{figure}
@@ -950,7 +951,7 @@ V~experimentálních strukturách silikofosfátů byly pozorovány kromě fosfá
 \label{prehled_large}\end{center}
 \end{figure}
 
-Při modelování struktur \textbf{Q} a~\textbf{R} bylo snahou zachovat původních šest cyklů. Proto v~prvním kole optimalizace struktury s~acetáty v~poloze trans bylo ponecháno šest cyklů a~dvě fosfátové skupiny nahrazeny acetátovými. Optimalizace tohoto modelu byla algoritmem ukončena, aniž by dosáhla stacionárního bodu, kvůli příliš velké hodnotě vazebného úhlu na jednom z~atomů kyslík. Úhel 50-11-52 dosahoval hodnoty 180$^\circ$. V~literatuře tento úhel dosahuje hodnot 134$^\circ$ až 150$^\circ$, maximální hodnota je 160$^\circ$\cite{yuan2003si}. Příliš vysokou hodnotu měly i torzní úhly na atomech kyslíku. Jako řešení situace jsme zvolili odstranění dvou cyklů ze struktury. Rozpojení cyklů bylo realizováno odstraněním protilehlých čtyřkoordinovaných křemíků, které vytvářely cyklus. Díky tomu došlo k~uvolnění napětí na jednotlivých cyklech. Počet dvou cyklů byl zvolen z~důvodu zachování symetrie. Uvolněná struktura silikofosfátu s~acetáty v~poloze trans byla opět optimalizována, tentokrát s~pseudopotenciálem z~důvodu velikosti struktury. Ve druhém kroku byla provedena optimalizace již s~B3LYP/6-31G*.\\
+Při modelování struktur \textbf{Q} a~\textbf{R} bylo snahou zachovat původních šest cyklů. Proto v~prvním kole optimalizace struktury s~acetáty v~poloze trans bylo ponecháno šest cyklů a~dvě fosfátové skupiny nahrazeny acetátovými. Optimalizace tohoto modelu byla algoritmem ukončena, aniž by dosáhla stacionárního bodu, kvůli příliš velké hodnotě vazebného úhlu na jednom z~atomů kyslík. Úhel 50-11-52 dosahoval hodnoty 180$^\circ$. V~literatuře tento úhel dosahuje hodnot 134$^\circ$ až 150$^\circ$, maximální hodnota je 160$^\circ$\cite{yuan2003si}. Příliš vysokou hodnotu měly i torzní úhly na atomech kyslíku. Jako řešení situace jsme zvolili odstranění dvou cyklů ze struktury. Rozpojení cyklů bylo realizováno odstraněním protilehlých čtyřkoordinovaných křemíků, které vytvářely cyklus. Díky tomu došlo k~uvolnění napětí na jednotlivých cyklech. Počet dvou cyklů byl zvolen z~důvodu zachování symetrie. Uvolněná struktura silikofosfátu s~acetáty v~poloze trans byla opět optimalizována, tentokrát s~pseudopotenciálem z~důvodu velikosti struktury. Ve druhém kroku byla provedena optimalizace již metodou~B3LYP/6-31G*.\\
 
 \begin{figure}
 \begin{center}
@@ -976,7 +977,7 @@ Další koordinace křemíku, která byla experimentálně pozorována v~silikof
 
 Další model pětikoordinovaného křemíku byl inspirován touto rentgenovou strukturou a~fosfát byl nahrazen vodíkem. Z~detailnější analýzy struktury vyplynulo, že nerovnoměrné rozložení elektronů vedlo k~nestabilizaci struktury. Pro tento model tedy byla udělána výjimka a~celkový náboj byl snížen z~0 na -1, což se nakonec ukázalo jako vhodné řešení. Původní snaha o zachování neutrálního náboje modelových struktur silikofosfátů vycházela z~předpokaldu, že samotné polymerní struktury jsou neutrální. V~případě pětikoordinovaného křemíku ale náboj způsobil nerovnoměrnosti v~systému. Snížení náboje o~jedna vedlo k~získání správné struktury, kdy byl fosfát nahrazen vodíkem. Ve druhém kroku byla obnovena původní navrhovaná struktura s~dvěma cykly a~jedním volným fosfátem, kde byl náboj snížen na~-1. Schéma struktury je uvedeno na obrázku \ref{schema_5}. Pro velké struktury byla provedena HSAB analýza, jejiž výsledky jsou uvedeny v~tabulce~\ref{hsab_large}.
 
-\begin{figure}\begin{center}\includegraphics[width=6cm]{struktura_5.eps}
+\begin{figure}\begin{center}\includegraphics[width=5cm]{struktura_5.eps}
 \caption{Schématické znázornění modelu \textbf{S}}\label{schema_5}
 \end{center}\end{figure}
 

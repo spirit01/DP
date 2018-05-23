@@ -315,8 +315,8 @@
       \strng{authorfullhash}{0a144e804c70dc0699ea8fd92a34f051}
       \strng{supervisornamehash}{ed9167bf8d89391ffc5bc8b68da2c9d5}
       \strng{supervisorfullhash}{ed9167bf8d89391ffc5bc8b68da2c9d5}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Didaktika kvalitativní teorie MO a pojem hypervalence}
@@ -1070,8 +1070,8 @@
       \strng{fullhash}{48cae9c8e6bcff95f75f5d979cdbf0e1}
       \strng{authornamehash}{48cae9c8e6bcff95f75f5d979cdbf0e1}
       \strng{authorfullhash}{48cae9c8e6bcff95f75f5d979cdbf0e1}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Journal of Physical Chemistry}
@@ -1267,8 +1267,8 @@
       \strng{fullhash}{e336e35aadae15e1eccc914f0967baf8}
       \strng{authornamehash}{e336e35aadae15e1eccc914f0967baf8}
       \strng{authorfullhash}{e336e35aadae15e1eccc914f0967baf8}
-      \field{sortinit}{5}
-      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{sortinit}{6}
+      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9780521831284}
